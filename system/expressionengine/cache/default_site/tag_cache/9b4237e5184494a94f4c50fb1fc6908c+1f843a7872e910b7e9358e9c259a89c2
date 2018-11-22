@@ -1,0 +1,16 @@
+a:3:{s:4:"time";i:1542923408;s:3:"ttl";i:0;s:4:"data";s:1191:"<form class="search" method="post" action="http://zones.local/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="{AID:Search:do_search}" />
+<input type="hidden" name="RES" value="16" />
+<input type="hidden" name="meta" value="tPoAZgY4Xxpab2c/v2fhFPu/jSbxmvdrHzvi9Lh5XBYxy3qJ4+RIq2082nLJTejThsD5KmCqOZJIh5H+vDTQyqqsCp0gB1DJg8x8Bw9jj/WEIZ45+/MqiSg1bekmUMJrHXgKPSP136c+iCIotJqOsiFPLJq5gC/g+ZwIfpwMrBIvEzk4hDt/WSGyvjG8mjTJ78RMTr1xfZ3gMorT6cM5XiMh0h2BXYSFRLfHOB/tPlHE4bte0hGAnY92tPMTaewIMMbeXQbfDgauUTlxfQun3Qof+55HjZ13VEd18Lj5d074tVVX+/Oi5lxyTG2hvjicoJtgAdj0XNJD006ZhsZWPfCvzYkKq6a5x89/u5EvUych4ER+m0kqalY8FXd7/cH8ZgtUFbdfics3waKcZ14Y9NMiFYEcDvHeBDuU/SaJPVlV5BU+QbrxqWj25b5A5BY4ZYrVmLWfd3omiPFxQA7dah+mr7tLdrd+V6MQYc+sKGA3CJfVm76/aFmJU3kHycSRcjw2pJuIDmYSkvJYoBhzYjXtf4yC5tUURV0WZLdq0AVa1TNHhcEySWJ4ZIs0n94BXcBCuggONFNmReWeV4xICQ==" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="{csrf_token}" />
+</div>
+
+
+    <fieldset>
+    <legend></legend>
+    <input type="search" name="keywords" maxlength="100" placeholder="Search" />
+    <button type="submit" class="button" value="">Search Website</button>
+    </fieldset>
+    </form>";}
