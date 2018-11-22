@@ -1,1 +1,0 @@
-<p><?= lang('cp_nav_settings_none') ?></p>
