@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Directory"
+AuthUserFile /home/www/trafficnz/zones/public/stats/.htpasswd
+Require valid-user

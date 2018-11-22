@@ -1,0 +1,27 @@
+#wrapper {
+margin-top: 0;
+}
+#topnav {
+position: static;
+}
+#sitebanner {
+margin-bottom: 20px;
+}
+#topnav button {
+margin-top: -14px;
+}
+#breadcrumb-wrapper {
+display: none !important;
+}
+/* Old browser page */
+.oldbrowser #sitebanner form {
+display: none;
+}
+.oldbrowser #topnav {
+position: static;
+}
+.oldbrowser #wrapper {
+margin-top: 0;
+}
+
+

@@ -1,0 +1,1546 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201408 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.preview.zones.co.nz.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1999                
+POS_TIME 2675                
+POS_VISITOR 43578               
+POS_DAY 78642               
+POS_DOMAIN 3643                
+POS_LOGIN 4309                
+POS_ROBOT 4464                
+POS_WORMS 5451                
+POS_EMAILSENDER 5582                
+POS_EMAILRECEIVER 5725                
+POS_SESSION 79572               
+POS_SIDER 79785               
+POS_FILETYPES 5860                
+POS_DOWNLOADS 6095                
+POS_OS 6167                
+POS_BROWSER 6384                
+POS_SCREENSIZE 8313                
+POS_UNKNOWNREFERER 8387                
+POS_UNKNOWNREFERERBROWSER 8882                
+POS_ORIGIN 9223                
+POS_SEREFERRALS 9371                
+POS_PAGEREFS 9570                
+POS_SEARCHWORDS 11424               
+POS_KEYWORDS 12051               
+POS_MISC 2337                
+POS_ERRORS 12417               
+POS_CLUSTER 4165                
+POS_SIDER_404 12604               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20140901000046 2 194 11261002681617
+FirstTime 20140801011804
+LastTime 20140831235446
+LastUpdate 20140902000606 2 0 0 0 1
+TotalVisits 1257                
+TotalUnique 535                 
+MonthHostsKnown 494                 
+MonthHostsUnknown 123                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 195 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 165 482 17550682 361 416 3366741
+1 148 246 6564548 219 253 2067264
+2 208 293 6022290 396 483 4111094
+3 167 338 8632617 268 295 2539477
+4 54 168 7187927 193 226 1764061
+5 52 131 4329290 333 374 2692173
+6 40 158 5850037 255 306 2304935
+7 69 184 6420102 281 344 3735601
+8 156 392 13592644 217 278 3665518
+9 188 568 21031995 316 367 3432696
+10 251 655 15495650 206 281 3593939
+11 251 684 16914795 263 342 4627109
+12 189 470 16588631 259 365 4762503
+13 253 921 34108787 431 529 5837682
+14 146 730 24865884 167 244 3136185
+15 203 656 25574008 297 372 3753560
+16 155 815 35344798 239 323 4258924
+17 146 578 24041901 160 204 2234712
+18 157 336 11078363 235 268 2077960
+19 77 312 11835596 178 252 3862372
+20 130 447 18708257 229 301 3730525
+21 153 383 13542358 200 233 2299613
+22 103 379 14225386 289 337 2481457
+23 80 239 10065150 247 277 2504561
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 28
+ip 1215 1955 52181242
+nz 645 3845 171258018
+cn 598 613 6275235
+com 506 2158 55177435
+net 391 669 23766276
+gt 87 211 16504317
+eu 30 32 742128
+br 28 686 28183051
+io 11 15 152939
+id 10 49 2019565
+pt 2 60 2419874
+tr 1 1 22734
+jp 1 1 1621
+cl 1 30 1198016
+es 1 30 1221864
+ru 1 30 1221861
+is 0 1 99924
+mx 1 30 1221861
+au 2 22 829714
+fr 2 15 481685
+in 2 46 1542274
+co 1 30 1198017
+pl 1 1 1621
+za 2 2 45460
+ar 1 30 1198015
+lt 0 1 302664
+de 1 1 1621
+uy 0 1 302664
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 23
+baiduspider 1479 29790539 20140831233006 1
+bot[\s_+:,\.\;\/\\-] 1072 20845450 20140831225643 222
+mj12bot 758 4371649 20140829085902 76
+googlebot 755 4090858 20140831114848 57
+yandex 499 2875762 20140831224417 52
+crawl 171 898577 20140829085515 6
+robot 166 824923 20140831222855 9
+[\s_+:,\.\;\/\\-]bot 83 409639 20140824141927 1
+no_user_agent 80 541125 20140830035426 0
+unknown 37 2255 20140831063759 37
+exabot 33 107295 20140831130003 13
+spider 2 11679 20140803045751 0
+java\/[0-9] 7 82263 20140829053318 0
+mail\.ru 4 11765 20140821235647 2
+msnbot 2 5461 20140801041632 1
+slurp 6 24750 20140827145010 2
+python 1 5835 20140818131547 0
+favicon 3 16223 20140827021806 0
+archive\.org_bot 27 354618 20140818225711 3
+cfnetwork 2 28515 20140831155555 0
+msnbot\-media 34 2830745 20140829100712 12
+netcraft 8 158606 20140814222200 0
+nutch 2 5903 20140830104841 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+css 773 5598509 0 0
+png 4999 267047945 0 0
+php 481 4213915 0 0
+html 2893 32282854 0 0
+js 687 34043865 0 0
+jpg 195 23680160 0 0
+Unknown 167 1380094 0 0
+gif 370 1324354 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/robots.txt 495 0 25162
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 15
+linuxandroid 372
+winxp 1354
+winlong 563
+win2000 27
+winnt 78
+java 4
+linuxubuntu 4
+winvista 1049
+linux 150
+win7 3759
+macosx 3035
+linuxgentoo 2
+winunknown 38
+win2003 42
+Unknown 88
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 106
+msie6.0 595
+firefox28.0 26
+safari7.0.3 25
+chrome13.0.764.0 1
+chrome18.0.1025.308 13
+chrome20.0.1092.0 1
+chrome12.0.742.100 1
+chrome12.0.702.0 1
+chrome10.0.602.0 1
+chrome34.0.1847.137 20
+firefox26.0 48
+chrome28.0.1500.94 39
+chrome11.0.654.0 1
+firefox18.0 2
+safari5.0.6 58
+chrome31.0.1650.63 17
+firefox3.6.15 106
+safari5.0.2 13
+safari6.1.4 16
+msie8.0 737
+msie7.0 524
+chrome32.0.1653.0 65
+chrome27.0.1453 101
+safari7.0.5 177
+chrome11.0.698.0 1
+chrome12.0.742.53 1
+chrome15.0.864.0 1
+chrome18.0.1025.45 1
+msie5.01 27
+chrome10.0.648.133 1
+chrome34.0.1847.131 19
+firefox21.0 17
+lg\- 52
+firefox29.0 18
+chrome15.0.874.120 1
+safari6.0 106
+chrome12.0.704.0 1
+firefox3.5.2 5
+firefox7.0.1 1
+chrome32.0.1700.107 235
+chrome35.0.1916.114 45
+safari7.0.6 160
+safari6.0.5 14
+chrome36.0.1985.143 775
+mozilla 885
+netscape5.0 2
+chrome33.0.1750.117 15
+chrome32.0.1700.76 26
+firefox14.0.1 11
+netscape4.0 22
+chrome11.0.694.0 1
+firefox3.6.3 218
+safari6.1.1 16
+safari5.1.9 35
+firefox15.0.1 1
+safari 190
+safari7.0 966
+firefox5.0 8
+chrome11.0.672.2 2
+firefox3.0.7 1
+firefox20.0 2
+android 137
+chrome18.0.1025.11 1
+chrome36.0.1985.131 44
+firefox8.0 1
+chrome19.0.1061.1 1
+chrome36.0.1985.125 690
+chrome14.0.815.0 1
+chrome12.0.742.112 2
+chrome11.0.696.50 1
+opera9.80 31
+safari6.1.6 30
+firefox31.0 1445
+chrome19.0.1042.0 1
+chrome32.0.1700.102 6
+chrome30.0.1599.13014 1
+chrome24.0.1312.57 25
+chrome19.0.1084.9 1
+chrome13.0.766.0 1
+firefox3.6.9 2
+chrome33.0.1750.154 1
+msie5.0 2
+chrome10.0.648.11 1
+chrome33.0.1750.146 3
+chrome28.0.1500.52 1
+msie9.0 296
+Unknown 49
+firefox27.0 1
+chrome30.0.1599.101 14
+firefox11.0 1
+chrome37.0.2062.94 107
+chrome17.0.963.56 1
+chrome21.0.1180.75 20
+chrome17.0.963.66 1
+chrome35.0.1916.141 44
+chrome27.0.1453.110 2
+firefox30.0 17
+safari6.1.5 67
+safari5.1.7 13
+chrome36.0.1985.135 43
+chrome10.0.612.1 1
+chrome35.0.1916.153 851
+firefox22.0 10
+firefox5.0.1 40
+msie10.0 81
+safari5.1 7
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 8
+kraken/0.6.0 20140827153225
+Mozilla/5.0_(compatible;_Google-Site-Verification/1.0) 20140803205050
+Mozilla/4.0 20140825020622
+Mozilla/5.0_() 20140827145211
+MetaURI_API/2.0__metauri.com 20140827145008
+GigablastOpenSource/1.0 20140826090337
+KiwiStatus/0.3_(NZS.com_New_Zealand_Search;_http://www.nzs.com/kiwi-status/) 20140829101235
+Mozilla/5.0_(Android;_Mobile;_rv:31.0)_Gecko/31.0_Firefox/31.0 20140803161350
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 5
+Google-HTTP-Java-Client/1.17.0-rc_(gzip) 20140828173631
+kraken/0.6.0 20140827153225
+MetaURI_API/2.0__metauri.com 20140827145008
+GigablastOpenSource/1.0 20140826090337
+KiwiStatus/0.3_(NZS.com_New_Zealand_Search;_http://www.nzs.com/kiwi-status/) 20140829101235
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 1837 1933
+From1 0 0
+From2 328 355
+From3 53 53
+From4 1323 8224
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 5
+google 290 317
+baidu 27 27
+ask 1 1
+sogou 1 1
+yahoo 9 9
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 43
+http://semalt.semalt.com/crawler.php 3 3
+http://72.semalt.com/crawler.php 3 3
+http://youtube-downloader.savetubevideo.com/youtube-downloader.php 2 2
+http://13.semalt.com/crawler.php 2 2
+http://www.homeprize.co.nz/sponsors.html 2 2
+http://91.semalt.com/crawler.php 2 2
+http://parnell.net.nz/businesses/zones.html 2 2
+http://80.semalt.com/crawler.php 2 2
+http://29.semalt.com/crawler.php 1 1
+http://25.semalt.com/crawler.php 1 1
+http://130460.semalt.com/crawler.php 1 1
+http://www.zerowaste.co.nz/make-your-own-worm-farm/ 1 1
+http://90.semalt.com/crawler.php 1 1
+http://73.semalt.com/crawler.php 1 1
+http://71.semalt.com/crawler.php 1 1
+http://27.semalt.com/crawler.php 1 1
+http://5.semalt.com/crawler.php 1 1
+http://28.semalt.com/crawler.php 1 1
+http://99.semalt.com/crawler.php 1 1
+http://40.semalt.com/crawler.php 1 1
+http://379.semalt.com/crawler.php 1 1
+http://2.semalt.com/crawler.php 1 1
+http://57.semalt.com/crawler.php 1 1
+http://98.semalt.com/crawler.php 1 1
+http://95.173.210.42/url 1 1
+http://81.semalt.com/crawler.php 1 1
+http://20.semalt.com/crawler.php 1 1
+http://85.semalt.com/crawler.php 1 1
+http://10.semalt.com/crawler.php 1 1
+http://33.semalt.com/crawler.php 1 1
+http://1.semalt.com/crawler.php 1 1
+http://vodafone.station 1 1
+http://96.semalt.com/crawler.php 1 1
+http://26.semalt.com/crawler.php 1 1
+http://89.semalt.com/crawler.php 1 1
+http://856.semalt.com/crawler.php 1 1
+http://151370.semalt.com/crawler.php 1 1
+http://musica.descargar-musica-gratis.net/descargar-musica-gratis.php 1 1
+http://www-ist.massey.ac.nz/csnotes/codewarrior/ 1 1
+http://www.homeprize.co.nz 1 1
+http://69.semalt.com/crawler.php 1 1
+http://44.semalt.com/crawler.php 1 1
+http://115.semalt.com/crawler.php 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 20
+zonesoutdoorrenovations%7czones 27
+outdoor+kitchen+nz 3
+outdoor+rooms+new+zealand 2
+outdoor+kitchens 2
+titoki+trees 2
+outdoor+room+design+nz 2
+outside+rooms+nz 2
+outdoor+rooms 2
+nz+landscape+around+pools+and+bbq 1
+design+for+outdoor+living+area+for+new+zealand 1
+paving+stone 1
+zones 1
+titoki+tree 1
+how+we+can+protect+the+titoki+tree 1
+is+a+titoki+tree+fast+growing 1
+zones+outdoor+nz 1
+outdoor+kitchens+nz 1
+how+to+protect+a+titoki+tree 1
+care+for+titoki+trees 1
+titoki 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 36
+zonesoutdoorrenovations%7czones 27
+outdoor 14
+nz 10
+titoki 8
+rooms 6
+tree 4
+kitchens 3
+kitchen 3
+new 3
+trees 3
+the 1
+around 1
+a 2
+paving 1
+stone 1
+zones 2
+growing 1
+how 2
+for 3
+outside 2
+living 1
+and 1
+area 1
+protect 2
+care 1
+room 2
+we 1
+is 1
+design 3
+to 1
+pools 1
+can 1
+bbq 1
+zealand 3
+fast 1
+landscape 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 9
+403 2 0
+503 1 26
+206 21 890505
+400 45 3123
+401 285 88311
+302 44 880
+500 427 8120
+301 1121 11940
+404 298 3149858
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 236
+/competitions/%22https://plus.google.com/share 2 -
+/admin/fckeditor/editor/filemanager/connectors/asp/connector.asp 1 -
+/pergola-decks-patios/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7q 1 http://www.zones.co.nz/pergola-decks-patios/landscaping-ideas/
+/admin/fckeditor/editor/filemanager/connectors/php/connector.php 1 -
+/renovate-magazine/%22http://twitter.com/share 1 -
+/forums/ 1 http://www.zones.co.nz/
+/contact-us/franchise-opportunities/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPw 1 http://www.zones.co.nz/contact-us/franchise-opportunities/
+/garden-plants/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUB 1 http://www.zones.co.nz/garden-plants/landscaping-ideas/
+/ckeditor/ckfinder/core/connector/php/connector.php 1 -
+/landscape-designers/new-zealand/%22http://www.linkedin.com/shareArticle 1 -
+/clippings/community/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0Jzyer 1 http://www.zones.co.nz/clippings/community/
+/newsletter/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0JzyerJn1CRMO2t 1 http://www.zones.co.nz/newsletter/october-2013
+/what-is-zones/project-management/%22http://www.facebook.com/sharer.php 1 -
+/contact-us/etion 1 http://www.zones.co.nz/landscape-designers/overview/
+/contact-us/franchise-opportunities/\\ 1 -
+/outdoor-lightinCf=/landscape-designers/team/ 1 http://www.zones.co.nz/landscape-design/project-management/
+/mrczqnbycxaolu.html 1 -
+/contact-us/franchise-opportunities/tel:+6493030670 1 -
+/ydahpkmgdgnkqw.html 1 -
+/fckeditor/editor/filemanager/connectors/php/connector.php 1 -
+/landscaping-ideas-product/sort/home-decorating/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZ 1 http://www.zones.co.nz/landscaping-ideas-product/sort/home-decorating/
+/xmlrpc.php 1 -
+/landscape-designers/overview/\\ 2 -
+//\"//pinterest.com/pin/create/button/ 2 -
+/what-is-zones/httance/ 1 http://www.zones.co.nz/what-is-zones/landscape-design-and-garden-maintenance
+/grass-lawns-and-lawn-mowing-services/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG 1 http://www.zones.co.nz/grass-lawns-and-lawn-mowing-services/landscaping-ideas/
+/register.php 3 http://www.zones.co.nz/
+/ckeditor/ckfinder/core/connector/aspx/connector.aspx 1 -
+/landscape-design-brochure/%22https://plus.google.com/share 1 -
+/register 1 http://www.zones.co.nz/
+/contact-us/designer-jobs/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0 1 http://www.zones.co.nz/contact-us/designer-jobs/
+/rain-water-tanks/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPw 1 http://www.zones.co.nz/rain-water-tanks/landscaping-ideas/
+/privacy-statement/\\ 1 -
+/landscaping-ideas-product/sort/fixtures-and-fis-and-fittings/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBIczo/K4al31FeDG29lIRmcchW9JT+9HK6kilLkin+4JCVP8IpdCnYNWfgA3rxgMqyyfV9K4UpqZqV5DqNIIMSSckRhUv196MKBZI0Iv3Bmcqfa4uiLO2SdSeoH5u/VEpmuUi1kqLWKV6s/DAmUA6w6eI 1 http://www.zones.co.nz/landscaping-ideas-product/sort/fixtures-and-fis-and-fittings/
+/outdoor-lighting-and-power/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTN 1 http://www.zones.co.nz/outdoor-lighting-and-power/landscaping-ideas/
+/landscape-designers/landscape-supplies/%22http://www.facebook.com/sharer.php 1 -
+/competitions/%22//pinterest.com/pin/create/button/ 2 -
+/clippings/alt=Community 1 http://www.zones.co.nz/clippings/
+/contact-uteggion 1 http://www.zones.co.nz/clippings/community/zones-at-the-2014-cornwall-park-school-fair
+/landscape-designers/landscape-supplies/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7q 1 http://www.zones.co.nz/landscape-designers/landscape-supplies/
+/what-is-zones/landscape-design-and-garden-maintenance/\\ 2 -
+/what-is-zones/%22https://plus.google.com/share 1 -
+/wp-login.php 1 -
+/contact-us/enquire-about-landscaping-services/%22//pinterest.com/pin/create/button/ 1 -
+/renovate-magazine/%22http://www.facebook.com/sharer.php 1 -
+/contact-us/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0JzyerJn1CRMO2t 1 http://www.zones.co.nz/contact-us/enquire-about-landscaping-services
+/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx 1 -
+/landscape-designers/team/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0 1 http://www.zones.co.nz/landscape-designers/team/
+/wp/wp-admin/ 4 -
+/landscape-designers/new-zealand/\\ 1 -
+/landscape-designers/team/%22http://twitter.com/share 1 -
+/contact-us/enquire-about-landscaping-services/\\ 1 -
+/what-is-zones/landscape-design-and-garden-maintenance/%22https://plus.google.com/share 1 -
+/landscape-designers/history/%22//pinterest.com/pin/create/button/ 1 -
+/wtjxwxorfxf.html 1 -
+/special-offer/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0JzyerJn1CRM 1 http://www.zones.co.nz/special-offer/
+/competitions/%22http://www.facebook.com/sharer.php 2 -
+/landscaping-ideas/a-natural-way-to-protect-wood/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jta 1 http://www.zones.co.nz/landscaping-ideas/a-natural-way-to-protect-wood/
+/all/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0Jzy 1 http://www.zones.co.nz/all/landscaping-ideas/
+/garden-plants/project-management/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZU 1 http://www.zones.co.nz/garden-plants/project-management/
+/landscape-design-faq/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0Jzye 1 http://www.zones.co.nz/landscape-design-faq/
+/what-is-zones/landscape-design/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBv 1 http://www.zones.co.nz/what-is-zones/landscape-design/
+/landscape-designers/new-zealand/%22http://twitter.com/share 1 -
+/wordpress/wordpress/wp-admin/ 3 -
+/what-is-zones/project-management/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZU 1 http://www.zones.co.nz/what-is-zones/project-management/
+/landscape-designers/history/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6 1 http://www.zones.co.nz/landscape-designers/history/
+/landscaping-ideas-product/sort/home-decorating/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBIczo/K4al31FeDG29lIRmcchW9JT+9HK6kilLkin+4JCVP8IpdCnYNWfgA3rxgMqyyfV9K4UpqZqV5DqNIIMSSckRhUv196MKBZI0Iv3Bmcqfa4uiLO2SdSeoH5u/VEpmuUi1kqLWKV6s/DAmUA6w6eIL0FgTVhxZ7OEyG 1 http://www.zones.co.nz/landscaping-ideas-product/sort/home-decorating/
+/admin/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp 1 -
+/landscaping-ideas-product/sort/finance/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBIczo/K4al31FeDG29lIRmcchW9JT+9HK6kilLkin+4JCVP8IpdCnYNWfgA3rxgMqyyfV9K4UpqZqV5DqNIIMSSckRhUv196MKBZI0Iv3Bmcqfa4uiLO2SdSeoH5u/VEpmuUi1kqLWKV6s/DAmUA6w6eIL0FgTVhxZ7OEyGF78dDGMJ 1 http://www.zones.co.nz/landscaping-ideas-product/sort/finance/
+/what-is-zones/landscape-design-and-garden-maintenance/%22http://www.facebook.com/sharer.php 1 -
+/landscape-design-faq/\\ 1 -
+/landscape-designers/landscape-supplies/%22http://twitter.com/share 1 -
+/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp 1 -
+/Fckeditor/editor/filemanager/browser/default/connectors/test.html 1 -
+/art-and-craft/tables-easels-and-boards/ 1 http://www.zones.co.nz/landscaping-ideas/top-10-new-zealand-gardening-trends
+/landscape-designers/history/%22https://plus.google.com/share 1 -
+/clippings/community/%22http://www.linkedin.com/shareArticle 2 -
+/landscape-designers/new-zealand/%22//pinterest.com/pin/create/button/ 1 -
+/landscaping-ideas/landscape-design-insurance/%22http://twitter.com/share 1 -
+/editor/editor/filemanager/browser/default/connectors/uploadtest.html 1 -
+/contact-us/designer-jobs/%22http://www.linkedin.com/shareArticle 1 -
+/landscaping-ideas/\\ 2 -
+/concrete-asphalt-paving-stonei 1 http://www.zones.co.nz/landscape-designers/history/
+/contact-us/enquire-able=5 1 http://www.zones.co.nz/landscaping-ideas/a-natural-way-to-protect-wood/
+/landscaping-ideas-product/sort/flooring/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7 1 http://www.zones.co.nz/landscaping-ideas-product/sort/flooring/
+/landscaping-ideas/%22https://plus.google.com/share 1 -
+/site/signup.php 1 http://www.zones.co.nz/
+/clippings/community/%22http://twitter.com/share 2 -
+/what-is-zones/landscape-design/%22https://plus.google.com/share 1 -
+/design/search- 1 http://www.zones.co.nz/contact-us/franchise-opportunities/
+/ali.txt 1 -
+/contact-us/designer-jobs/\\ 2 -
+/xnvecoasyf.html 1 -
+/landscaping-ideas/landscape-design-plans/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu 1 http://www.zones.co.nz/landscaping-ideas/landscape-design-plans/
+/registration_rules.asp 1 http://www.zones.co.nz/registration_rules.asp
+/landscaping-ideas-product/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBIczo/K4al31FeDG29lIRmcchW9JT+9HK6kilLkin+4JCVP8IpdCnYNWfgA3rxgMqyyfV9K4UpqZqV5DqNIIMSSckRhUv196MKBZI0Iv3Bmcqfa4uiLO2SdSeoH5u/VEpmuUi1kqLWKV6s/DAmUA6w6eIL0FgTVhxZ7OEyGF78dDGMJohUpSue9lML1l 1 http://www.zones.co.nz/landscaping-ideas-product/
+/special-offer/%22http://twitter.com/share 1 -
+/what-is-zones/landscape-design/%22http://www.facebook.com/sharer.php 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx 1 -
+/member.php 1 http://www.zones.co.nz/
+/landscape-design-cost/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBIUlH1NFQ5xE+5dWpTprmYMJAX0zt/xET8GZAVrm7heyqpuWMbLq0C6Km1pB3rS0EPexZT58uF9YDaY33wSDLR9lssXRC+RoCmk5Eu3VUDqGLJcQ3/YAhnxj94dqJxZvvF8+/nNCoByWzFYSj1uNaccEY2VDOLRPyY6+OXUtZLsezar4U3OxHUB1EX2ZtgCr 1 http://www.zones.co.nz/landscape-design-cost/
+/landscaping-ideas/landscape-design-plans/\\ 1 -
+/clippings/alt=Renovate 1 http://www.zones.co.nz/clippings/
+/wordpress/wp-admin/ 4 -
+/landscaping-ideas-product/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ 1 http://www.zones.co.nz/landscaping-ideas-product/
+/forum.php 1 -
+/landscaping-ideas-product/sort/flooring/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBIczo/K4al31FeDG29lIRmcchW9JT+9HK6kilLkin+4JCVP8IpdCnYNWfgA3rxgMqyyfV9K4UpqZqV5DqNIIMSSckRhUv196MKBZI0Iv3Bmcqfa4uiLO2SdSeoH5u/VEpmuUi1kqLWKV6s/DAmUA6w6eIL0FgTVhxZ7OEyGF78dDGM 1 http://www.zones.co.nz/landscaping-ideas-product/sort/flooring/
+/fencing/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ 1 http://www.zones.co.nz/fencing/landscaping-ideas/
+/clippings/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0JzyerJn1CRMO2tT 1 http://www.zones.co.nz/clippings/
+/contact-us/designer-jobs/tel:+6493030670 2 -
+/landscape-designers/history/rel=t 1 http://www.zones.co.nz/landscape-designers/history/
+/\\ 1 -
+/what-is-zones/project-management/%22https://plus.google.com/share 1 -
+/garden-plants/project-management/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBImizoZ1SJPSB0rYXdx6TVXyohVkqo/CukryrsHX0 1 http://www.zones.co.nz/garden-plants/project-management/
+/ucp.php 1 http://www.zones.co.nz/
+/landscape-design-cost/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJttext 1 http://www.zones.co.nz/landscape-design-cost/
+/competitions/\\ 1 -
+/web/css/base.css 1 http://www.zones.co.nz/newsletter/october-2013
+/landscaping-ideas-product/sort/finance/htte.png/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jta 1 http://www.zones.co.nz/landscaping-ideas-product/sort/finance/htte.png/
+/contact-us/enquire-about-landscaping-services/%22http://twitter.com/share 1 -
+/sitemap.xml 1 -
+/landscaping-ideas-product/so\xd3js 1 http://www.taupodc.govt.nz/Pages/404.aspx
+/what-is-zones/landscape-design/%22http://www.linkedin.com/shareArticle 1 -
+/landscape-designers/landscape-supplies/\\ 2 -
+/xxsvhmwvhgo.html 1 -
+/gardening-and-gardening-maintenance/project-management/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG 1 http://www.zones.co.nz/gardening-and-gardening-maintenance/project-management/
+/landscape-designers/landscape-supplies/%22http://www.linkedin.com/shareArticle 1 -
+/landscaping-ideas/landscape-design-insurance/\\ 1 -
+/landscape-designers/team/\\ 2 -
+/landscape-designers/overview/%22https://plus.google.com/share 1 -
+/landscaping-ideas-product/sort/finance/htte.png/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBIczo/K4al31FeDG29lIRmcchW9JT+9HK6kilLkin+4JCVP8IpdCnYNWfgA3rxgMqyyfV9K4UpqZqV5DqNIIMSSckRhUv196MKBZI0Iv3Bmcqfa4uiLO2SdSeoH5u/VEpmuUi1kqLWKV6s/DAmUA6w6eIL0FgTVhxZ7OEy 1 http://www.zones.co.nz/landscaping-ideas-product/sort/finance/htte.png/
+/images/uploads/panoramas/maximise-your-view-with-deck-balss=cleaoutdoor-kitchen/ 1 http://www.zones.co.nz/landscaping-ideas/maximise-your-view-with-deck-balustrades/
+/outdoor-rooms/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUB 1 http://www.zones.co.nz/outdoor-rooms/landscaping-ideas/
+/wp-admin/ 5 -
+/landscape-design-cost/\\ 1 -
+/landscape-designers/team/%22http://www.facebook.com/sharer.php 1 -
+/clippings/community/\\ 1 -
+/landscaping-ideas-product/sort/paint/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qlu 1 http://www.zones.co.nz/landscaping-ideas-product/sort/paint/
+/rain-water-tanks/project-management/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluP 1 http://www.zones.co.nz/rain-water-tanks/project-management/
+/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/what-is-zones/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0JzyerJn1CRM 1 http://www.zones.co.nz/what-is-zones/landscape-design-and-garden-maintenance
+/retaining-wall/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZU 1 http://www.zones.co.nz/retaining-wall/landscaping-ideas/
+/lancberPanel_txtFirstName 1 http://www.fieldays.co.nz/nationwide/nationwide/swimming-pool-spa-pool-equipment/x,1,3948/Home/defaultNoHost.aspx
+/landscape-design-faq/%22http://twitter.com/share 1 -
+/browserconfig.xml 3 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/test.html 1 -
+/landscaping-ideas-product/sort/re-cladding/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNoh 1 http://www.zones.co.nz/landscaping-ideas-product/sort/re-cladding/
+/desi280.0 1 http://www.taupodc.govt.nz/our-services/rubbish-and-recycling/home-composting/Pages/home-composting.aspx
+/FCKeditor/editor/filemanager/connectors/uploadtest.html 1 -
+/what-is-zones/landscape-cost-and-services/%22//pinterest.com/pin/create/button/ 1 -
+/what-is-zones/landscape-cost-and-services/%22http://www.linkedin.com/shareArticle 1 -
+/fckeditor/editor/filemanager/connectors/aspx/connector.aspx 1 -
+/landscaping-ideas-product/sort/finance/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7q 1 http://www.zones.co.nz/landscaping-ideas-product/sort/finance/
+/clippings/alt=competitions 1 http://www.zones.co.nz/clippings/
+/images/uploads/banners314/zones-teggion 1 http://www.zones.co.nz/what-is-zones/landscape-design-and-garden-maintenance
+/kcfinder/browse.php 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/clippings/alt=newsletters 1 http://www.zones.co.nz/clippings/
+/landscaping-ideas/maximise-your-view-with-deck-balustrades/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5E 1 http://www.zones.co.nz/landscaping-ideas/maximise-your-view-with-deck-balustrades/
+/what-is-zones/landscape-cost-and-services/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohU 1 http://www.zones.co.nz/what-is-zones/landscape-cost-and-services/
+/fckeditor/editor/filemanager/connectors/asp/connector.asp 1 -
+/what-is-zones/landscape-design-and-garden-maintenance/%22http://www.linkedin.com/shareArticle 1 -
+/contact-us/enquire-about-landscaping-services/%22http://www.facebook.com/sharer.php 1 -
+/special-offer/%22//pinterest.com/pin/create/button/ 1 -
+/landscaping-ideas/landscape-design-plans/%22http://www.linkedin.com/shareArticle 1 -
+/pcstore/ 1 -
+/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0JzyerJn1CRMO2tTpkv+7OF9Uj 1 http://www.zones.co.nz/
+/what-is-zones/landscape-cost-and-services/%22http://www.facebook.com/sharer.php 1 -
+/landscaping-ideas/landscape-design-plans/( 1 http://www.zones.co.nz/landscaping-ideas/landscape-design-plans/
+/editor/editor/filemanager/browser/default/connectors/test.html 1 -
+/blog/wp-admin/ 5 -
+//pinterest.com/pin/create/button/ 8 -
+/a 4 -
+/clippings/community/%22http://www.facebook.com/sharer.php 2 -
+/gardening-and-gardening-maintenance/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5 1 http://www.zones.co.nz/gardening-and-gardening-maintenance/landscaping-ideas/
+/newsletter/january-2014/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0J 1 http://www.zones.co.nz/newsletter/january-2014/
+/landscape-design-faq/%22http://www.linkedin.com/shareArticle 1 -
+/landscaping-ideas/maximiutdoor-kitchen/ 1 http://www.zones.co.nz/landscaping-ideas-product/sort/fixtures-and-fis-and-fittings/
+/competitions/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0JzyerJn1CRMO 1 http://www.zones.co.nz/competitions/
+/what-is-zones/%22//pinterest.com/pin/create/button/ 1 -
+/renovate-magazine/\\ 1 -
+/contact-us/designer-jobs/%22https://plus.google.com/share 1 -
+/what-is-zones/project-management/%22//pinterest.com/pin/create/button/ 1 -
+/landscaping-ideas/landscape-design-insurance/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTN 1 http://www.zones.co.nz/landscaping-ideas/landscape-design-insurance/
+/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0JzyerJn 1 http://www.zones.co.nz/landscaping-ideas/top-10-new-zealand-gardening-trends
+/old/wp-admin/ 5 -
+/js/te2010.js 1 http://www.zones.co.nz/newsletter/october-2013
+/design/images/prettyPhoto/light_rounded/btnNext.png 3 http://www.zones.co.nz/
+/landscape-designers/overview/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF 1 http://www.zones.co.nz/landscape-designers/overview/
+/PicsHotel/Fieldays/StylesNew.css 1 http://www.zones.co.nz/newsletter/october-2013
+/what-is-zones/landscape-cost-and-services/\\ 2 -
+/gardening-and-gardening-maintenance/project-management/yrsHX3do2Tg/BxOYUmHWxFaqoapcCftwKqi2oQi9ntdjOg3z/NQkzYorPpYfAqd3LY5wUvl5G8cbGOk3MoYmfbmbuNRgayO89kS5bLkhanxmpuCQnePi47e6svq/ahg1lkOD/landscape-design-faq/ 1 http://www.zones.co.nz/gardening-and-gardening-maintenance/project-management/
+/landscape-design-brochure/\\ 1 -
+/macstore/default.asp 3 -
+/ckeditor/ckfinder/core/connector/asp/connector.asp 1 -
+/wp-content/uploads/ftp.php 2 -
+/clippings/community/%22//pinterest.com/pin/create/button/ 2 -
+/landscape-design-brochure/%22http://twitter.com/share 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/uploadtest.html 1 -
+/competitions/%22http://twitter.com/share 2 -
+/contact-us/designer-jobs/%22//pinterest.com/pin/create/button/ 2 -
+/landscaping-ideas-product/sort/outdoors/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBIczo/K4al31FeDG29lIRmcchW9JT+9HK6kilLkin+4JCVP8IpdCnYNWfgA3rxgMqyyfV9K4UpqZqV5DqNIIMSSckRhUv196MKBZI0Iv3Bmcqfa4uiLO2SdSeoH5u/VEpmuUi1kqLWKV6s/DAmUA6w6eIL0FgTVhxZ7OEyGF78dDGM 1 http://www.zones.co.nz/landscaping-ideas-product/sort/outdoors/
+/contact-us/enquire-about-landscaping-services/tel:+6493030670 1 -
+/what-is-zones/project-management/\\ 2 -
+/profile.php 1 http://www.zones.co.nz/profile.php
+/what-is-zones/project-management/%22http://www.linkedin.com/shareArticle 1 -
+/competitions/%22http://www.linkedin.com/shareArticle 2 -
+/landscaping-ideas-product/sort/lighting/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7 1 http://www.zones.co.nz/landscaping-ideas-product/sort/lighting/
+/landscape-design/project-management/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluP 1 http://www.zones.co.nz/landscape-design/project-management/
+/landscaping-ideas/landscape-design-plans/%22http://twitter.com/share 1 -
+/what-isnes 1 http://www.zones.co.nz/clippings/community/
+/landscaping-ideas/%22http://twitter.com/share 1 -
+/what-is-zones/landscape-design/\\ 1 -
+/landscape-design/landscaping-ideas/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPw 1 http://www.zones.co.nz/landscape-design/landscaping-ideas/
+/landscaping-ideas/%22//pinterest.com/pin/create/button/ 1 -
+/hskdrzklfl.html 1 -
+/landscaping-ideas/reviving-the-exterior-of-a-cedar-home/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBAB 1 http://www.zones.co.nz/landscaping-ideas/reviving-the-exterior-of-a-cedar-home/
+/admin/fckeditor/editor/filemanager/connectors/aspx/connector.aspx 1 -
+/special-offer/\\ 1 -
+/landscape-designers/team/%22http://www.linkedin.com/shareArticle 1 -
+/renovate-magazine/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUBvnF6HQ0JzyerJn 1 http://www.zones.co.nz/renovate-magazine/
+/landscaping-ideas-product/sort/lighting/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBIczo/K4al31FeDG29lIRmcchW9JT+9HK6kilLkin+4JCVP8IpdCnYNWfgA3rxgMqyyfV9K4UpqZqV5DqNIIMSSckRhUv196MKBZI0Iv3Bmcqfa4uiLO2SdSeoH5u/VEpmuUi1kqLWKV6s/DAmUA6w6eIL0FgTVhxZ7OEyGF78dDGM 1 http://www.zones.co.nz/landscaping-ideas-product/sort/lighting/
+/landscape-design-cost/%22http://twitter.com/share 1 -
+/landscape-designers/history/\\ 2 -
+/landscape-designers/new-zealand/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7qluPwZUB 1 http://www.zones.co.nz/landscape-designers/new-zealand/
+/landscape-design-faq/%22https://plus.google.com/share 1 -
+/landscape-designers/history/%22http://www.linkedin.com/shareArticle 1 -
+/landscape-design-cost/%22http://www.facebook.com/sharer.php 1 -
+/landscaping-ideas-product/sort/outdoors/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M+0jtaZTNohUu7 1 http://www.zones.co.nz/landscaping-ideas-product/sort/outdoors/
+/pcstore/default.asp 3 -
+/yzcxgflgbzglhgf.html 1 -
+/signup.php 1 http://www.zones.co.nz/
+/landscaping-ideas/landscape-design-insurance/%22http://www.linkedin.com/shareArticle 1 -
+/what-is-zones/project-management/%22http://twitter.com/share 1 -
+/what-is-zones/landscape-design-and-garden-maintenance/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5 1 http://www.zones.co.nz/what-is-zones/landscape-design-and-garden-maintenance/
+/landscaping-ideas-product/sort/fixtures-and-fis-and-fittings/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727+Of58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W 1 http://www.zones.co.nz/landscaping-ideas-product/sort/fixtures-and-fis-and-fittings/
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 617
+114-134-170-153.static.nztechnologygroup.com 345 1210 25068391 20140828151736
+ns500848.ip-192-99-19.net 270 270 4397355 20140820005705
+ptr.cnsat.com.cn 195 195 4328243 20140831211531
+64.115.26.186.static.intelnet.net.gt 85 207 15837410 20140830002045
+14.114.23.186 85 85 1398824 20140824033002
+103.225.183.78 74 76 1470892 20140820074230
+36.250.185.220 66 68 586411 20140831185305
+36.248.161.159 64 66 565122 20140809022355
+183.13.152.231 49 49 904725 20140813020722
+116.24.216.126 49 49 905109 20140825125112
+60.234.182.164 0 1 41897 
+224.237.153.27.broad.pt.fj.dynamic.163data.com.cn 5 5 17020 20140831153213
+122-60-217-77.jetstream.xtra.co.nz 1 14 227796 20140807121725
+200.111.129.18 1 5 105106 20140810023426
+69.58.178.56 10 10 152609 20140824032913
+195.2.240.103 19 19 293178 20140828001007
+222-154-105-131.jetstream.xtra.co.nz 5 19 1112255 20140819203011
+122-57-119-21.jetstream.xtra.co.nz 4 23 427855 20140829115910
+p11w9.geo.bf1.hostingprod.com 1 1 1621 20140816234234
+121.75.44.51 1 30 1197834 20140819175305
+69.gprs.mts.ru 1 30 1221861 20140808172944
+121-99-225-119.bng1.nct.orcon.net.nz 1 12 203188 20140826133045
+google-proxy-66-249-85-105.google.com 1 14 387097 20140817213018
+245.11.89.110.broad.pt.fj.dynamic.163data.com.cn 5 5 17019 20140829112458
+131.203.112.141 0 1 689 
+38.241.37.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5705 20140829172335
+125-239-26-137.jetstream.xtra.co.nz 1 12 441193 20140831144154
+62-210-75-104.rev.poneytelecom.eu 1 3 90930 20140812060132
+122-61-48-21.jetstream.xtra.co.nz 7 22 960872 20140824165917
+115-188-29-55.jetstream.xtra.co.nz 0 1 248141 
+122-62-92-77.jetstream.xtra.co.nz 3 38 1659542 20140828131149
+172.246.129.194 4 4 72802 20140811213247
+msnbot-199-30-25-47.search.msn.com 0 1 16288 
+118-92-48-242.dsl.dyn.ihug.co.nz 2 15 448064 20140825122212
+138.109.252.27.dyn.cust.vf.net.nz 1 12 227031 20140804000755
+209.133.77.163.t01713-01.above.net 2 2 45452 20140807174508
+162.223.10.198 4 4 22794 20140825074245
+222-155-234-211.jetstream.xtra.co.nz 1 14 203949 20140825163659
+118-93-13-95.dsl.dyn.ihug.co.nz 1 13 474994 20140810211517
+150.73.252.27.dyn.cust.vf.net.nz 1 13 199774 20140822194946
+203-184-45-177-dynamic.callplus.net.nz 0 1 22519 
+110.235.153.27.broad.pt.fj.dynamic.163data.com.cn 1 1 5607 20140831194333
+host.colocrossing.com 4 4 18358 20140829044748
+122-60-212-162.jetstream.xtra.co.nz 1 13 223615 20140814133438
+115-188-240-122.jetstream.xtra.co.nz 0 1 22519 
+ec2-54-241-198-78.us-west-1.compute.amazonaws.com 2 2 0 20140827145008
+121-99-62-170.bng1.tvc.orcon.net.nz 5 23 779321 20140830082307
+222-155-198-225.jetstream.xtra.co.nz 1 1 5837 20140821120318
+217.96.18.163 18 18 87485 20140829160144
+static-177-184-150-104.infowaysc.net.br 1 30 1198017 20140822005935
+202-0-55-202.cable.paradise.net.nz 2 15 481686 20140812145724
+61.135.190.220 4 13 348117 20140821204746
+b3d08ee5.virtua.com.br 1 30 1221862 20140815003115
+185.23.114.200 0 1 195185 
+115-188-66-240.jetstream.xtra.co.nz 1 15 504477 20140818100516
+116.28.116.24 46 48 409657 20140820222443
+203-96-195-210.dsl.dyn.ihug.co.nz 0 1 22519 
+180.239.205.121.broad.pt.fj.dynamic.163data.com.cn 5 5 17018 20140829110133
+65.49.68.188 2 27 971901 20140812152016
+122-60-141-219.jetstream.xtra.co.nz 2 8 64505 20140802211148
+195-154-65-52.rev.poneytelecom.eu 27 27 613714 20140830234652
+125-238-54-129.jetstream.xtra.co.nz 1 14 465802 20140803201415
+116.199.222.83 11 54 3373052 20140813164515
+ec2-107-21-187-224.compute-1.amazonaws.com 1 1 4414 20140827162610
+125-237-145-65.jetstream.xtra.co.nz 1 12 203185 20140823144050
+123-2-141-42.static.dsl.dodo.com.au 0 2 199848 
+ec2-54-166-233-45.compute-1.amazonaws.com 1 1 22726 20140814231753
+243.137.153.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140828211840
+ec2-54-204-195-63.compute-1.amazonaws.com 1 1 4411 20140827153225
+rate-limited-proxy-66-249-92-188.google.com 1 1 5838 20140803161743
+154.238.205.121.broad.pt.fj.dynamic.163data.com.cn 6 6 17118 20140831021136
+122-60-218-18.jetstream.xtra.co.nz 1 12 231012 20140803171802
+ec2-54-164-0-191.compute-1.amazonaws.com 0 1 22721 
+100.162.153.27.broad.pt.fj.dynamic.163data.com.cn 6 6 17115 20140831182653
+118-93-30-117.dsl.dyn.ihug.co.nz 1 14 529633 20140803170100
+14.151.183.75 7 7 113969 20140812172210
+msnbot-157-55-39-203.search.msn.com 0 4 4266 
+122.56.204.184 2 14 719183 20140814075629
+18.119.26.117.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140829125704
+88.247.181.114.static.ttnet.com.tr 1 1 22734 20140821000612
+202.50.252.65 0 1 22519 
+177.53.35.120.broad.fz.fj.dynamic.163data.com.cn 1 1 5836 20140808021933
+ec2-54-164-119-163.compute-1.amazonaws.com 1 1 13056 20140822085952
+233.215.205.121.broad.pt.fj.dynamic.163data.com.cn 4 4 11411 20140831094551
+180.153.163.191 1 4 537740 20140815200608
+204.44.65.155.static.quadranet.com 1 1 5830 20140807033727
+198.199.66.138 11 15 141706 20140827201626
+29.115.26.186.static.intelnet.net.gt 2 4 666907 20140830093144
+ec2-54-198-188-231.compute-1.amazonaws.com 0 1 17649 
+bl14-104-91.dsl.telepac.pt 1 30 1198014 20140827033929
+121-72-102-81.dsl.telstraclear.net 0 1 248141 
+125-237-4-254.jetstream.xtra.co.nz 18 36 2530731 20140817093309
+162.223.8.26 4 4 21818 20140817181612
+23.95.21.220 2 2 10304 20140826132507
+14.147.77.151 5 5 79404 20140813045304
+187-5-169-53.fns-sc-a1k-02.dsl.brasiltelecom.net.br 1 30 1221861 20140811181430
+215.81.252.27.dyn.cust.vf.net.nz 1 14 505789 20140822073646
+248.239.153.27.broad.pt.fj.dynamic.163data.com.cn 6 6 17116 20140829133020
+179.186.97.231.dynamic.adsl.gvt.net.br 0 1 302664 
+90.105.85.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5709 20140829182849
+c935fb49.virtua.com.br 1 30 1221860 20140811083544
+78-61-190-167.static.zebra.lt 0 1 302664 
+125-236-229-179.adsl.xtra.co.nz 19 85 7534120 20140831172139
+47.74.85.110.broad.pt.fj.dynamic.163data.com.cn 4 4 11411 20140830155009
+212.234.159.27.broad.pt.fj.dynamic.163data.com.cn 6 6 17117 20140830094101
+166.179.68.11 2 11 445607 20140817145514
+125-239-149-197.jetstream.xtra.co.nz 1 14 451841 20140819222155
+162.243.170.64 11 15 152941 20140812130109
+findsa.co.za 2 2 45460 20140830013003
+118-92-141-227.dsl.dyn.ihug.co.nz 2 13 209020 20140817201732
+ns4006999.ip-198-27-82.net 1 1 22726 20140808200344
+dnsresearch.dnsdigger.com 2 2 45452 20140801165837
+222-154-141-235.jetstream.xtra.co.nz 5 19 1113108 20140821190304
+ec2-54-164-128-4.compute-1.amazonaws.com 1 1 11617 20140822084106
+k.rush.intoff.auckland.ac.nz 3 18 717488 20140826123241
+189-10-27-254.bsaco700.dsl.brasiltelecom.net.br 1 28 1155673 20140816032237
+202.239.205.121.broad.pt.fj.dynamic.163data.com.cn 1 1 5609 20140826134331
+23.19.153.227 2 2 10835 20140808142111
+host-116-251-192-83.xdsl.kinect.net.nz 2 25 406449 20140827135447
+121-98-144-27.bng1.mdr.orcon.net.nz 2 16 759931 20140830085802
+212.234.159.27.broad.xm.fj.dynamic.163data.com.cn 4 4 11413 20140829100128
+219-89-127-205.adsl.xtra.co.nz 1 6 61204 20140805175237
+google-proxy-66-249-84-1.google.com 6 59 1851657 20140830103815
+125-237-212-222.jetstream.xtra.co.nz 0 1 16288 
+118-92-133-114.dsl.dyn.ihug.co.nz 0 1 89954 
+5acf011a.bb.sky.com 2 13 447299 20140831214412
+static.uber.co.nz 5 40 1775776 20140831144845
+125-237-104-84.jetstream.xtra.co.nz 12 59 4890594 20140826171356
+bb14dc50.virtua.com.br 1 30 1198015 20140829003313
+121-72-222-121.dsl.telstraclear.net 7 43 1499482 20140814000026
+255.184.153.27.broad.pt.fj.dynamic.163data.com.cn 5 5 17021 20140829034753
+crawler.acquia.com 2 2 11678 20140828195425
+247.236.153.27.broad.pt.fj.dynamic.163data.com.cn 4 4 11413 20140829083954
+119.63.193.132 26 26 590972 20140831211708
+68.123.252.27.dyn.cust.vf.net.nz 9 39 1315763 20140817112914
+google-proxy-66-249-93-41.google.com 2 15 405566 20140826063216
+40.106.85.110.broad.pt.fj.dynamic.163data.com.cn 12 12 34234 20140831213114
+egress104.cws.sco.cisco.com 0 1 22519 
+cpe-124-185-80-72.lns3.cha.bigpond.net.au 2 18 514491 20140824215327
+85.202.224.49.dyn.cust.vf.net.nz 0 1 22519 
+bfb7e6ed.virtua.com.br 1 30 1198017 20140817051312
+ks4001626.ip-198-100-144.net 1 1 22734 20140818160753
+64.116.26.117.broad.pt.fj.dynamic.163data.com.cn 4 4 11408 20140830132212
+118-93-108-81.dsl.dyn.ihug.co.nz 1 4 425585 20140827181945
+121-99-164-126.bng1.tvc.orcon.net.nz 1 13 527556 20140808160344
+172.246.129.195 5 5 73595 20140830070120
+107.184.153.27.broad.pt.fj.dynamic.163data.com.cn 1 1 5459 20140802083254
+11.234.150.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5705 20140828213408
+ip-118-90-40-173.xdsl.xnet.co.nz 0 1 243826 
+msnbot-157-55-39-143.search.msn.com 0 1 1911 
+ec2-75-101-204-33.compute-1.amazonaws.com 0 1 20053 
+58.213.14.190 2 41 1422606 20140811093512
+186.88.234.119 2 2 10300 20140828152656
+222-152-158-101.jetstream.xtra.co.nz 6 25 1180742 20140827165311
+125-239-124-130.jetstream.xtra.co.nz 2 13 457080 20140831224827
+42-104-15-249.live.vodafone.in 1 30 1198017 20140816005858
+23.95.93.173 2 2 11406 20140811100312
+124.157.113.156 0 1 243826 
+122.56.210.16 0 4 230750 
+210.246.42.209 3 17 803638 20140821200454
+93.54.35.120.broad.fz.fj.dynamic.163data.com.cn 1 1 5840 20140806000741
+121-72-184-60.dsl.telstraclear.net 0 1 252938 
+61.135.190.103 6 12 266534 20140831231401
+ks3283192.kimsufi.com 2 2 10835 20140805212102
+msnbot-199-30-24-231.search.msn.com 0 5 104953 
+23.232.133.189 6 6 26846 20140821202255
+118-93-113-171.dsl.dyn.ihug.co.nz 4 17 974570 20140812200153
+ec2-54-185-234-0.us-west-2.compute.amazonaws.com 1 1 5837 20140809111801
+92.55.85.189 1 30 1198016 20140822010215
+115-188-3-50.jetstream.xtra.co.nz 3 15 755391 20140830172723
+44.131.69.111.dynamic.snap.net.nz 2 13 480923 20140805224251
+121.75.42.215 0 1 340222 
+190.43.143.189 1 30 1221862 20140807104456
+hm1360.locaweb.com.br 1 1 1621 20140818203849
+89-145-108-207.as29017.net 1 1 22726 20140807172634
+203-118-181-35.dsl.dyn.ihug.co.nz 17 60 3706060 20140808211528
+202.9.43.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140831041530
+dynamicip.pppoe.176.32.10.239.vntp.net 0 1 396684 
+122-59-72-166.jetstream.xtra.co.nz 1 12 451077 20140829203040
+cfrt-comb.tkcr4.global-gateway.net.nz 0 1 15451 
+b3db6839.virtua.com.br 1 30 1221860 20140807024612
+222-155-143-201.jetstream.xtra.co.nz 2 41 2726728 20140831091929
+118-92-26-107.dsl.dyn.ihug.co.nz 1 12 203368 20140824104858
+69.12.65.109.static.quadranet.com 2 2 11514 20140824133325
+62.240.150.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5708 20140828192533
+177.133.234.142.dynamic.adsl.gvt.net.br 1 30 1198015 20140824034130
+121-72-117-133.dsl.telstraclear.net 1 14 441959 20140831165706
+203-97-174-20.cable.telstraclear.net 1 14 475684 20140803144230
+122-62-66-89.jetstream.xtra.co.nz 1 14 451841 20140828144928
+ec2-54-83-86-241.compute-1.amazonaws.com 0 1 16048 
+97.226.77.222.broad.pt.fj.dynamic.163data.com.cn 6 6 17116 20140829043738
+60.190.34.150 1 1 22734 20140827053604
+121-99-160-142.bng1.tvc.orcon.net.nz 1 1 5840 20140821160446
+118-93-246-139.dsl.dyn.ihug.co.nz 5 26 1026438 20140810092355
+61.135.190.221 3 5 100812 20140826155849
+118-92-59-219.dsl.dyn.ihug.co.nz 1 12 474921 20140803204229
+198.167.136.46 2 2 6844 20140825193321
+186.212.106.129.static.host.gvt.net.br 1 30 1198016 20140823001352
+114-134-169-58.static.nztechnologygroup.com 1 30 1197836 20140827144843
+140.237.4.68 8 8 22818 20140831090203
+203-190-215-225.thecloud.net.nz 5 42 2866959 20140813124503
+ec2-54-87-96-75.compute-1.amazonaws.com 2 2 45468 20140829083709
+104.37.56.58 2 2 11261 20140802000010
+209.133.77.166.t01713-01.above.net 1 1 22726 20140814104629
+17.206.252.27.dyn.cust.vf.net.nz 4 41 1558387 20140807161456
+ec2-54-242-200-35.compute-1.amazonaws.com 1 5 93673 20140824052243
+222-154-1-40.jetstream.xtra.co.nz 0 1 22519 
+google-proxy-66-249-80-86.google.com 1 1 5840 20140820144758
+fr01.infra.tryelsejobs.com 2 2 11196 20140823033032
+14.216.37.120.broad.pt.fj.dynamic.163data.com.cn 10 10 28525 20140829091643
+node1.neonetdigital.com 1 1 1621 20140810025718
+59.92.66.113 0 1 228523 
+60.234.201.124.bitstream.orcon.net.nz 27 51 2219756 20140805165807
+seccomm12.actrix.co.nz 1 13 203260 20140818091145
+222-153-23-115.jetstream.xtra.co.nz 1 15 528321 20140810220315
+162-216-174-69-na5.opsourcecloud.net 2 2 6339 20140812034610
+119.63.193.194 39 39 886442 20140830232049
+103.14.41.23 41 41 217570 20140829101235
+248.21.89.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5704 20140830150200
+189-78-14-214.dsl.telesp.net.br 1 26 1070558 20140827091145
+161.110.252.27.dyn.cust.vf.net.nz 1 12 474921 20140802164243
+99-189-169-168.lightspeed.snjsca.sbcglobal.net 1 30 1221862 20140807060949
+125-238-69-180.jetstream.xtra.co.nz 8 26 1330873 20140809105439
+198.199.78.18 11 15 141706 20140819080707
+118-92-142-144.dsl.dyn.ihug.co.nz 2 13 447302 20140815200854
+203-171-52-225.static-xtreme.net.nz 1 6 71269 20140803110132
+61.135.190.102 6 14 349819 20140826155853
+210-54-90-118.adsl.xtra.co.nz 4 38 1756266 20140829113910
+183.13.162.194 21 21 374515 20140817082331
+gwc02.ovh.net 1 1 1621 20140818201937
+ds0556-02-n.solidseodedicated.com 2 2 10301 20140818064202
+61.131.17.74 2 2 11677 20140816071815
+124.157.101.2 1 14 475684 20140812130452
+230.219.78.125.broad.pt.fj.dynamic.163data.com.cn 2 2 5703 20140830083318
+98.250-157-192.rdns.scalabledns.com 1 1 16692 20140808055210
+202.0.124.3 1 14 753549 20140811134643
+32.96.252.27.dyn.cust.vf.net.nz 7 38 559280 20140818164848
+84.252.218.218 1 16 804770 20140821222938
+115.146.135.101 0 1 9924 
+msnbot-199-30-24-47.search.msn.com 0 5 104953 
+cat2.net 11 11 59097 20140825212734
+121-73-18-21.cable.telstraclear.net 1 15 708277 20140819185943
+222-152-9-21.jetstream.xtra.co.nz 4 20 639987 20140814092125
+201-26-72-245.dsl.telesp.net.br 1 30 1198017 20140820054403
+210-86-29-25.adsl.xtra.co.nz 3 18 730720 20140803134351
+89-145-108-203.as29017.net 1 1 22726 20140814145243
+ec2-54-80-190-244.compute-1.amazonaws.com 0 1 18257 
+client-23-238-19-40.hostwindsdns.com 2 2 11408 20140831073616
+1.250.252.27.dyn.cust.vf.net.nz 0 1 302664 
+189.80.26.117.broad.pt.fj.dynamic.163data.com.cn 14 14 39943 20140830100015
+125-236-236-249.adsl.xtra.co.nz 1 30 1197834 20140820175126
+ec2-54-211-132-134.compute-1.amazonaws.com 0 1 21468 
+115-188-221-30.jetstream.xtra.co.nz 1 12 441194 20140817233647
+171.75.85.110.broad.pt.fj.dynamic.163data.com.cn 7 7 22724 20140831154409
+209.133.77.164.t01713-01.above.net 3 3 68202 20140820152136
+222-155-94-167.jetstream.xtra.co.nz 0 1 22519 
+118-93-200-168.dsl.dyn.ihug.co.nz 1 13 474996 20140803154008
+83.199.205.121.broad.pt.fj.dynamic.163data.com.cn 2 2 5707 20140829142431
+ec2-54-88-146-196.compute-1.amazonaws.com 0 1 361 
+174.252.252.27.dyn.cust.vf.net.nz 3 5 78300 20140807161850
+121-79-230-161.dsl.sta.inspire.net.nz 3 29 413546 20140825165352
+140.237.13.50 3 3 11313 20140828125124
+118-93-223-246.dsl.dyn.ihug.co.nz 1 12 227030 20140802140254
+239.198.78.125.broad.pt.fj.dynamic.163data.com.cn 4 4 11413 20140831193409
+243.218.78.125.broad.pt.fj.dynamic.163data.com.cn 4 4 11408 20140831040510
+198.167.137.228 1 1 6107 20140823193653
+222-154-53-65.jetstream.xtra.co.nz 1 12 303176 20140829233239
+unassigned205-85.akl.netlink.net.nz 2 16 755076 20140826145518
+177-104-219-131.brasconect.net.br 1 27 1167825 20140813065227
+70.6.40.189.isp.timbrasil.com.br 1 30 1221860 20140810040840
+210.54.1.137 1 14 453251 20140831220135
+ec2-23-23-50-75.compute-1.amazonaws.com 2 6 110945 20140831030433
+46.228.150.27.broad.pt.fj.dynamic.163data.com.cn 6 6 17115 20140831234632
+fm-dyn-139-194-88-90.fast.net.id 9 36 1274345 20140817190313
+118-93-56-103.dsl.dyn.ihug.co.nz 4 18 795779 20140813170846
+222-154-69-105.jetstream.xtra.co.nz 0 1 22519 
+122-62-94-95.jetstream.xtra.co.nz 0 1 98600 
+118-93-175-212.dsl.dyn.ihug.co.nz 2 15 481683 20140812102539
+110.243.37.120.broad.pt.fj.dynamic.163data.com.cn 9 9 28433 20140831133202
+118-93-120-255.dsl.dyn.ihug.co.nz 1 12 451076 20140818222213
+118-93-166-72.dsl.dyn.ihug.co.nz 1 14 453251 20140817093254
+222-153-65-65.jetstream.xtra.co.nz 2 16 303615 20140818141809
+62-210-89-12.rev.poneytelecom.eu 1 1 22734 20140829075627
+120.1.116.37 1 17 1827336 20140815193123
+static-73.239.93.111-tataidc.co.in 1 16 344257 20140801014212
+122-59-146-126.jetstream.xtra.co.nz 1 15 534300 20140810195906
+bd78fcdd.virtua.com.br 1 30 1221862 20140810073431
+107.168.10.59 2 2 10839 20140826094007
+89-145-108-205.as29017.net 3 3 68194 20140820120450
+226.237.37.120.broad.pt.fj.dynamic.163data.com.cn 4 4 11413 20140831024601
+125-239-159-214.jetstream.xtra.co.nz 2 13 457081 20140822211820
+b18fbcd2.virtua.com.br 1 30 1198013 20140826160153
+222-154-44-18.jetstream.xtra.co.nz 0 1 248141 
+61.135.190.222 3 7 174910 20140825181012
+121.75.46.97 1 15 504476 20140828173306
+122-62-24-129.jetstream.xtra.co.nz 0 1 99924 
+61.135.190.101 2 6 178262 20140814171507
+76.91.252.27.dyn.cust.vf.net.nz 3 23 522779 20140825161245
+ec2-54-221-27-139.compute-1.amazonaws.com 1 5 105107 20140810042427
+93.234.159.27.broad.xm.fj.dynamic.163data.com.cn 46 48 408920 20140812003232
+118-93-244-170.dsl.dyn.ihug.co.nz 1 14 475682 20140802115227
+125-239-109-128.jetstream.xtra.co.nz 1 14 475686 20140807205257
+219-89-145-160.jetstart.xtra.co.nz 1 12 474921 20140803143344
+121-74-248-82.telstraclear.net 0 1 302664 
+119.210.37.120.broad.pt.fj.dynamic.163data.com.cn 4 4 11411 20140831131210
+121-72-198-37.dsl.telstraclear.net 20 77 8418944 20140806133212
+178.93.224.49.dyn.cust.vf.net.nz 1 30 1197834 20140820165348
+. 6 6 24700 20140826155500
+ec2-54-80-23-210.compute-1.amazonaws.com 0 1 21634 
+119.63.193.130 32 32 727280 20140829151524
+cat3.net 18 18 88776 20140816160126
+118-93-22-12.dsl.dyn.ihug.co.nz 3 14 477248 20140811092428
+101-98-159-192-dynamic.callplus.net.nz 1 2 106329 20140831130523
+122-61-21-106.jetstream.xtra.co.nz 3 20 333761 20140814112018
+ec2-54-226-57-210.compute-1.amazonaws.com 1 1 5840 20140824062506
+122-62-80-169.jetstream.xtra.co.nz 2 21 464473 20140805172950
+119.129.244.233 27 27 152131 20140808000218
+48.68.252.27.dyn.cust.vf.net.nz 4 24 604456 20140820112154
+122-59-55-24.jetstream.xtra.co.nz 3 28 2127407 20140810164204
+ec2-184-169-203-101.us-west-1.compute.amazonaws.com 2 2 0 20140828173631
+b.custweb.sonic.net 1 1 1621 20140829144359
+ec2-54-164-112-77.compute-1.amazonaws.com 2 2 39621 20140822101611
+175.red-83-37-102.dynamicip.rima-tde.net 1 30 1198018 20140820224618
+b3db97e0.virtua.com.br 1 18 926113 20140814122646
+122-56-53-27.gis.global-gateway.net.nz 19 70 3954150 20140825171223
+dsl-189-190-225-3-dyn.prod-infinitum.com.mx 1 30 1221861 20140807155921
+153.12.89.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140831151752
+22.184.86.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5704 20140829072749
+ec2-67-202-16-42.compute-1.amazonaws.com 1 1 5840 20140803065607
+41.208.37.120.broad.pt.fj.dynamic.163data.com.cn 6 6 17118 20140829070606
+232.207.224.49.dyn.cust.vf.net.nz 5 39 863984 20140828182715
+adsl186-287199.dyn.etb.net.co 1 30 1198017 20140828153800
+101.248.153.27.broad.pt.fj.dynamic.163data.com.cn 1 1 5607 20140831102742
+121-74-249-150.telstraclear.net 0 1 182798 
+122-61-36-6.jetstream.xtra.co.nz 1 13 223618 20140812122905
+155.94.139.227.static.quadranet.com 1 1 6003 20140817024524
+ec2-54-226-199-24.compute-1.amazonaws.com 1 5 93672 20140818014509
+122-62-230-129.jetstream.xtra.co.nz 3 17 750066 20140826101937
+215.pool85-49-202.dynamic.orange.es 1 30 1221864 20140814192843
+219-89-174-69.jetstart.xtra.co.nz 0 1 22519 
+203-109-220-193.dsl.dyn.ihug.co.nz 1 11 445410 20140809223717
+google-proxy-64-233-172-11.google.com 10 136 5075298 20140825053729
+121-74-252-11.telstraclear.net 0 1 22519 
+89-145-108-202.as29017.net 3 3 68186 20140827172237
+120.28.171.3 1 24 1041620 20140805130526
+190-172-162-78.speedy.com.ar 1 30 1198015 20140817152631
+185.host-203-96-42.compassnet.co.nz 3 20 532589 20140817202933
+50.217.153.27.broad.pt.fj.dynamic.163data.com.cn 4 4 11411 20140829100907
+61.135.190.223 2 4 85780 20140824181028
+125-236-240-21.adsl.xtra.co.nz 1 14 556790 20140822090119
+125-238-27-9.jetstream.xtra.co.nz 5 21 309342 20140827083835
+187-123-69-59.cpentl.viaembratel.net.br 1 27 1100023 20140814043523
+ec2-54-81-146-7.compute-1.amazonaws.com 0 1 18032 
+192.81.211.179 11 15 152936 20140802203944
+adsl-074-251-200-248.sip.rmo.bellsouth.net 1 1 22734 20140829222640
+203-109-218-62.dsl.dyn.ihug.co.nz 1 13 445865 20140828132153
+ec2-54-84-115-215.compute-1.amazonaws.com 0 1 18032 
+61.135.190.100 3 5 100807 20140814171503
+217-151-185-101.c.is 0 1 99924 
+pool-173-51-108-125.lsanca.dsl-w.verizon.net 1 30 1198016 20140817180419
+121-98-138-44.bng1.nct.orcon.net.nz 18 62 3301352 20140813005853
+210.246.46.116 1 14 455992 20140816140919
+123.95.69.111.dynamic.snap.net.nz 1 1 5839 20140827205044
+118-92-172-50.dsl.dyn.ihug.co.nz 4 38 1397290 20140824133234
+204.12.197.106 1 1 22734 20140827150852
+ec2-54-166-131-93.compute-1.amazonaws.com 1 1 5837 20140810041554
+61.135.190.219 9 13 200753 20140831231359
+google-proxy-66-249-88-105.google.com 7 70 2890653 20140831094734
+27.153.202.82 3 3 11315 20140830071208
+203-160-123-158.callplus.net.nz 0 1 252938 
+122-59-74-59.jetstream.xtra.co.nz 1 14 451840 20140824004159
+203-100-214-143-dynamic.callplus.net.nz 1 1 5428 20140802220254
+121-73-16-202.cable.telstraclear.net 2 15 471908 20140814094719
+ec2-54-235-239-221.compute-1.amazonaws.com 0 1 19693 
+43.133.82.110.broad.pt.fj.dynamic.163data.com.cn 7 7 22726 20140830111840
+125-238-152-229.jetstream.xtra.co.nz 1 15 456511 20140824105143
+118-93-114-116.dsl.dyn.ihug.co.nz 1 12 451077 20140825220842
+54.223.150.27.broad.pt.fj.dynamic.163data.com.cn 5 5 17019 20140829152221
+smtp.tile.co.nz 4 19 727605 20140806092723
+238.186.86.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140830081754
+ec2-54-198-218-225.compute-1.amazonaws.com 1 1 5840 20140818012633
+225.20.89.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5704 20140831103334
+65.52.244.38 1 1 4414 20140827145011
+n20h219.sprintdatacenter.net 27 27 0 20140831100815
+111-236-149-118.nzcomms.co.nz 1 14 451842 20140828230552
+cc006.topsy.com 1 1 4412 20140827145211
+154.241.150.27.broad.pt.fj.dynamic.163data.com.cn 12 12 34234 20140831115927
+ec2-54-88-174-168.compute-1.amazonaws.com 0 1 295005 
+121-99-138-139.bng1.tvc.orcon.net.nz 7 32 1777629 20140816075154
+58.84.225.184 1 13 227106 20140807140301
+209.161.99.118 2 2 11514 20140823211319
+122.58.124.193 3 20 519267 20140830084053
+222-153-138-96.jetstream.xtra.co.nz 11 55 4243701 20140828155300
+rate-limited-proxy-66-249-92-145.google.com 1 1 5840 20140803205050
+ec2-54-83-107-145.compute-1.amazonaws.com 0 1 18105 
+37.232.37.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140829002920
+31.241.224.49.dyn.cust.vf.net.nz 5 43 2335876 20140802112403
+ec2-54-242-137-103.compute-1.amazonaws.com 0 1 17934 
+47.72.236.52 4 20 1867588 20140805231620
+61.135.190.224 8 16 343118 20140831011831
+202-56-41-166.static.nownz.co.nz 3 40 1350272 20140808224259
+210.87.17.202 7 24 1088641 20140826200731
+pspc18-245.parliament.govt.nz 1 15 528320 20140812140202
+wel-cache.massey.ac.nz 8 25 816036 20140810110437
+25.40.89.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5704 20140829142254
+103-14-141-29.ip.cis.gen.nz 8 41 1237232 20140828112149
+44.115.85.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140831071411
+121-74-220-174.telstraclear.net 2 15 448064 20140827144958
+119-224-62-221.callplus.net.nz 3 17 780002 20140812092149
+dslakpx.datacom.co.nz 5 25 1392850 20140815114415
+222-152-158-139.jetstream.xtra.co.nz 0 1 99924 
+ec2-54-164-112-28.compute-1.amazonaws.com 0 1 21634 
+23.140.252.27.dyn.cust.vf.net.nz 1 1 4583 20140807204137
+122-60-122-68.jetstream.xtra.co.nz 1 15 294585 20140828195138
+google-proxy-66-249-80-49.google.com 4 74 2878286 20140828161520
+80.40.134.104 1 1 22734 20140829053341
+coxis.uh.net.pl 1 1 1621 20140829145435
+119-224-81-10.callplus.net.nz 1 14 203949 20140829151622
+17.176.69.111.dynamic.snap.net.nz 1 12 451079 20140831143549
+60.234.242.100 15 51 1736291 20140824140354
+ks305436.kimsufi.com 6 6 31991 20140822115532
+41.21.89.110.broad.pt.fj.dynamic.163data.com.cn 1 1 5461 20140816051232
+222-152-196-171.jetstream.xtra.co.nz 5 20 2089155 20140830225917
+46.229.170.197 2 2 45460 20140827081315
+host86-169-45-243.range86-169.btcentralplus.com 0 1 99924 
+162.243.170.57 11 15 141704 20140815175015
+68.129.69.111.dynamic.snap.net.nz 1 1 6002 20140809082914
+14.150.73.87 4 4 12039 20140812101437
+122.56.200.98 1 17 912826 20140803161346
+122-60-204-123.jetstream.xtra.co.nz 1 30 1221679 20140811134535
+ec2-54-86-87-7.compute-1.amazonaws.com 1 2 31880 20140822093341
+222-154-60-246.jetstream.xtra.co.nz 2 2 12212 20140802100548
+232.244.150.27.broad.pt.fj.dynamic.163data.com.cn 1 1 5608 20140829175149
+hm3386.locaweb.com.br 1 1 1621 20140816232307
+219.6.43.120.broad.pt.fj.dynamic.163data.com.cn 4 4 11414 20140831201103
+ec2-54-88-185-206.compute-1.amazonaws.com 0 1 76315 
+203.96.132.53 0 1 356489 
+118-93-111-96.dsl.dyn.ihug.co.nz 14 24 977026 20140820213508
+117.201.112.87 1 1 5838 20140819184446
+222-152-202-57.jetstream.xtra.co.nz 0 1 302664 
+198.199.66.173 11 15 141710 20140823205506
+183.14.10.9 1 1 22734 20140818224952
+210.246.5.67 1 12 451076 20140820204816
+hq.greenstonegroup.co.nz 0 1 228523 
+244.112.85.110.broad.pt.fj.dynamic.163data.com.cn 4 4 11409 20140828192048
+122-60-209-153.jetstream.xtra.co.nz 6 64 2419023 20140831115953
+224.197.205.121.broad.pt.fj.dynamic.163data.com.cn 2 2 5705 20140830055737
+124.240.150.27.broad.pt.fj.dynamic.163data.com.cn 1 1 5608 20140828213440
+121-74-104-44.telstraclear.net 3 27 955993 20140813123324
+112.63.232.221.broad.wh.hb.dynamic.163data.com.cn 1 14 455993 20140820214827
+tokokurnia3.cyberplus.net.id 1 13 745220 20140823092406
+198.199.91.116 11 15 152933 20140806023728
+egress105.cws.sco.cisco.com 2 26 403033 20140820144526
+ec2-54-242-94-35.compute-1.amazonaws.com 0 1 23846 
+b121d903.virtua.com.br 1 5 93672 20140827113014
+125-237-104-102.jetstream.xtra.co.nz 2 15 209603 20140828213346
+36.250.185.71 1 1 16887 20140823042747
+140.237.12.156 6 6 17114 20140831061311
+c233a7a5.fsp.oleane.fr 2 15 481685 20140814013838
+27.153.202.42 4 4 11410 20140831154212
+69.12.73.221.static.quadranet.com 4 4 16160 20140826223944
+ec2-54-164-117-85.compute-1.amazonaws.com 1 1 12747 20140822092724
+36.248.182.3 1 1 22734 20140822232817
+117.113.85.110.broad.pt.fj.dynamic.163data.com.cn 6 6 17116 20140831235446
+ec2-54-253-117-228.ap-southeast-2.compute.amazonaws.com 18 18 289947 20140825020622
+227.161.153.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5704 20140830080941
+68.105.85.110.broad.pt.fj.dynamic.163data.com.cn 1 1 5472 20140823025524
+103-224-128-1.flip.co.nz 0 1 248141 
+119.9.15.122 1 1 22726 20140807090255
+118-92-99-123.dsl.dyn.ihug.co.nz 2 15 457842 20140817075253
+118-92-154-8.dsl.dyn.ihug.co.nz 1 14 441956 20140826200709
+202.50.252.57 1 23 341323 20140826105511
+198.50.238.243 8 8 42394 20140814192741
+11.244.33.120.broad.pt.fj.dynamic.163data.com.cn 6 6 17121 20140831145049
+147.155.252.27.dyn.cust.vf.net.nz 11 17 67569 20140807162558
+122-62-132-155.jetstream.xtra.co.nz 3 37 1536743 20140801194314
+107.75.85.110.broad.pt.fj.dynamic.163data.com.cn 4 4 11411 20140829111602
+p3slhssl23.shr.phx3.secureserver.net 1 1 1621 20140816235215
+64.201.252.27.dyn.cust.vf.net.nz 1 13 223618 20140809130152
+125-237-206-241.jetstream.xtra.co.nz 33 87 4568864 20140822220833
+72.227.37.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5708 20140829124558
+google-proxy-66-249-82-1.google.com 2 43 1649168 20140820144758
+www1121.sakura.ne.jp 1 1 1621 20140829151630
+122-62-63-86.jetstream.xtra.co.nz 8 47 1486945 20140824141825
+198.100.158.240 1 1 6105 20140801153345
+124.157.113.206 0 2 481981 
+61.135.190.105 3 5 100807 20140828061432
+ks4009295.ip-192-99-3.net 1 1 5928 20140818161623
+156.13.220.4 1 15 295994 20140827113605
+222-155-185-64.jetstream.xtra.co.nz 2 46 1935627 20140821204431
+r179-26-16-60.dialup.adsl.anteldata.net.uy 0 1 302664 
+222-153-185-174.jetstream.xtra.co.nz 9 55 5169682 20140826163531
+248.254.224.49.dyn.cust.vf.net.nz 1 3 20013 20140808132824
+106.117.25.164 18 65 2966494 20140827145012
+125-239-91-90.jetstream.xtra.co.nz 0 1 99924 
+8.xrfuwuqi.com 1 1 22734 20140822091423
+93.102.52.64.rev.optimus.pt 1 30 1221860 20140809035849
+150.241.150.27.broad.pt.fj.dynamic.163data.com.cn 4 4 11413 20140829113228
+222-154-104-16.jetstream.xtra.co.nz 7 42 3076456 20140811201100
+60-234-142-15.bitstream.orcon.net.nz 1 14 441956 20140830202359
+53.88.252.27.dyn.cust.vf.net.nz 1 1 5840 20140807134033
+143.228.159.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140828215850
+118-92-203-164.dsl.dyn.ihug.co.nz 7 49 3596665 20140825085657
+99.215.77.222.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140830214544
+121-99-219-195.bng1.nct.orcon.net.nz 4 50 2305359 20140809215849
+ec2-54-84-147-78.compute-1.amazonaws.com 0 1 1949 
+118-92-98-46.dsl.dyn.ihug.co.nz 2 13 447302 20140822225110
+187-34-200-94.dsl.telesp.net.br 1 30 1198018 20140820082254
+aylin2.ndx21.com 1 1 1621 20140810024746
+119.63.193.195 34 34 772780 20140831151546
+115-188-177-239.jetstream.xtra.co.nz 3 17 994536 20140806084733
+122-61-61-109.jetstream.xtra.co.nz 3 14 453407 20140831010621
+185.host-182-48-129.compassnet.co.nz 2 41 2749164 20140805120404
+219-88-64-146.adsl.xtra.co.nz 6 25 2663687 20140810204959
+74.117.238.235.rdns.ubiquityservers.com 4 4 12674 20140821045407
+122-62-8-57.jetstream.xtra.co.nz 1 14 441960 20140831140831
+ec2-54-88-152-115.compute-1.amazonaws.com 1 1 2510 20140822085701
+121-99-135-18.bng1.tvc.orcon.net.nz 36 97 3430749 20140805172729
+83.228.150.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140828215556
+209.133.77.165.t01713-01.above.net 1 1 22726 20140808093641
+alfa3019.alfahosting-server.de 1 1 1621 20140810023649
+194.157.58.59.broad.pt.fj.dynamic.163data.com.cn 2 2 5705 20140829142256
+179.108.188.10 1 30 1221859 20140809063415
+122-61-87-37.jetstream.xtra.co.nz 2 15 473316 20140813142747
+218-101-6-209.dsl.clear.net.nz 2 34 1204188 20140825124355
+bd3f87ee.virtua.com.br 1 30 1221859 20140805080655
+151.234.153.27.broad.pt.fj.dynamic.163data.com.cn 3 3 11316 20140826063658
+210.246.48.99 1 2 6443 20140827211412
+122-60-124-174.jetstream.xtra.co.nz 1 30 1221678 20140802170151
+ec2-54-164-99-100.compute-1.amazonaws.com 1 1 14539 20140822092324
+122-56-3-99.cid.global-gateway.net.nz 1 14 701206 20140821133720
+google-proxy-66-249-83-11.google.com 13 253 9136080 20140831113132
+61.135.190.104 4 6 97465 20140830090340
+ec2-54-90-13-119.compute-1.amazonaws.com 1 5 93674 20140831032512
+222.124.186.232 2 2 10600 20140816021002
+gator3028.hostgator.com 1 1 1621 20140818204818
+119.63.193.131 27 27 613714 20140830211707
+121-72-140-179.dsl.telstraclear.net 0 1 89954 
+149.236.153.27.broad.pt.fj.dynamic.163data.com.cn 1 1 5929 20140829193022
+222-154-71-36.jetstream.xtra.co.nz 3 18 730146 20140806151339
+252.238.153.27.broad.pt.fj.dynamic.163data.com.cn 3 3 11314 20140830142536
+42.222.60.187.ampernet.com.br 1 1 5839 20140831064458
+24.107.85.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140829121353
+183.25.4.252 27 27 478938 20140807153411
+222-155-186-107.jetstream.xtra.co.nz 3 14 463083 20140828193735
+105.229.77.222.broad.pt.fj.dynamic.163data.com.cn 2 2 5705 20140830125428
+253.238.159.27.broad.xm.fj.dynamic.163data.com.cn 6 6 22627 20140831213401
+203-109-236-243.dsl.dyn.ihug.co.nz 1 15 456510 20140825214548
+177-191-026-180.xd-dynamic.ctbcnetsuper.com.br 1 11 578551 20140813120721
+108.85.26.117.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140830123029
+124-197-44-113.callplus.net.nz 1 5 94639 20140816152406
+118-93-15-143.dsl.dyn.ihug.co.nz 2 13 447301 20140819192304
+118-92-205-165.dsl.dyn.ihug.co.nz 5 33 1289258 20140802190035
+160.75.85.110.broad.pt.fj.dynamic.163data.com.cn 8 8 22821 20140830091359
+ec2-54-185-131-104.us-west-2.compute.amazonaws.com 6 6 28719 20140830094739
+173-45-229-34.static.cloud-ips.com 1 1 1621 20140829150532
+65.49.68.170 0 8 256931 
+157.152.69.111.dynamic.snap.net.nz 1 12 451076 20140816190643
+mail.peteweb.com 1 1 1621 20140810030652
+103-224-130-1.flip.co.nz 1 11 474229 20140802120619
+122.56.203.137 2 36 1468395 20140801155212
+250.110-88-23.rdns.scalabledns.com 1 1 16692 20140808172011
+210.207.86.203.static.snap.net.nz 1 1 5838 20140806170211
+ec2-54-83-174-43.compute-1.amazonaws.com 0 1 22649 
+116.24.251.113 49 49 905109 20140820120213
+122-61-111-58.jetstream.xtra.co.nz 1 14 441957 20140817203416
+122.12.89.110.broad.pt.fj.dynamic.163data.com.cn 6 6 17115 20140830121419
+62-210-122-209.rev.poneytelecom.eu 1 1 14750 20140821105335
+ec2-54-164-18-36.compute-1.amazonaws.com 0 2 20717 
+191.250.128.235.dynamic.adsl.gvt.net.br 1 30 1198017 20140821151959
+115-188-235-54.jetstream.xtra.co.nz 1 14 403789 20140827234725
+236.20.89.110.broad.pt.fj.dynamic.163data.com.cn 4 4 11411 20140831222827
+52.218.153.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5705 20140828212421
+222-153-120-149.jetstream.xtra.co.nz 1 13 262959 20140827092703
+179-199-55-10.user.veloxzone.com.br 1 30 1221860 20140804003003
+122-57-173-208.jetstream.xtra.co.nz 1 15 1826572 20140823180148
+231.242.150.27.broad.pt.fj.dynamic.163data.com.cn 6 6 17119 20140830184853
+db-01.eu.amsterdam.m.status.io 11 15 152939 20140809073446
+222-153-242-141.jetstream.xtra.co.nz 4 16 827645 20140815205946
+149-128-148-118.nzcomms.co.nz 1 1 6066 20140824142020
+msnbot-157-55-39-144.search.msn.com 0 1 1911 
+222-153-146-104.jetstream.xtra.co.nz 1 14 203951 20140825202435
+75.21.43.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5706 20140831033546
+125-238-91-115.jetstream.xtra.co.nz 1 14 475685 20140812162808
+50.249.153.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5705 20140830104642
+ec2-54-200-236-77.us-west-2.compute.amazonaws.com 2 2 10301 20140816172748
+192.175.98.199 1 1 22734 20140826090337
+jcore1-at-0-1-0-2-acld.auckland.clix.net.nz 1 14 519885 20140813174041
+157.216.37.120.broad.pt.fj.dynamic.163data.com.cn 10 10 28531 20140831091039
+203-173-221-249.dialup.ihug.co.nz 1 14 441957 20140829195042
+147.156.58.59.broad.pt.fj.dynamic.163data.com.cn 20 20 57051 20140831133841
+202-56-48-139.static.nownz.co.nz 10 58 4122919 20140818162256
+msnbot-157-55-39-255.search.msn.com 0 1 84307 
+107-155-73-2-customer-incero.com 2 2 18823 20140827145008
+177-92-182-89.dyn.provedortechnet.com.br 1 30 1221862 20140812081942
+119.63.193.196 29 29 659126 20140830031358
+ec2-54-86-49-124.compute-1.amazonaws.com 1 1 63 20140822092800
+gator4026.hostgator.com 1 1 1621 20140818202919
+14-200-46-191.static.tpgi.com.au 0 2 115375 
+190-21-12-21.baf.movistar.cl 1 30 1198016 20140821165059
+cc001.topsy.com 1 1 4412 20140827145107
+165.231.14.233 2 2 11410 20140820225022
+ec2-75-101-223-169.compute-1.amazonaws.com 0 1 22721 
+199.23.89.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5705 20140831045936
+google-proxy-66-249-81-41.google.com 3 42 1208982 20140822024307
+238.7.43.120.broad.pt.fj.dynamic.163data.com.cn 7 7 22726 20140830075827
+254.13.89.110.broad.pt.fj.dynamic.163data.com.cn 4 4 11412 20140831101533
+175.111.102.142.3t.net.nz 0 1 340222 
+smtp.atlasconcrete.co.nz 6 40 1554760 20140813121536
+203-173-130-109.dsl.dyn.ihug.co.nz 1 5 104924 20140810171749
+ec2-54-86-8-42.compute-1.amazonaws.com 0 1 21468 
+203-97-213-197.cable.telstraclear.net 0 1 238155 
+116.24.212.54 49 49 905109 20140825114925
+191.ip-198-50-149.net 1 1 22726 20140813110938
+ec2-54-243-4-188.compute-1.amazonaws.com 0 1 16156 
+177.249.69.111.dynamic.snap.net.nz 1 15 528318 20140801140552
+155.94.138.222.static.quadranet.com 2 2 10296 20140814125608
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20140801 183 427 9898474 34
+20140802 129 295 9128964 43
+20140803 50 193 6231258 47
+20140804 70 138 3936500 37
+20140805 108 350 14622965 42
+20140806 92 253 14009521 43
+20140807 91 314 9394483 48
+20140808 78 230 8655385 33
+20140809 117 316 10093696 25
+20140810 46 251 11518113 27
+20140811 36 253 10892286 25
+20140812 107 350 10771023 35
+20140813 183 595 21558224 37
+20140814 129 497 14583553 36
+20140815 204 618 15093743 30
+20140816 32 145 5746179 25
+20140817 120 403 14367948 32
+20140818 60 243 9900509 35
+20140819 35 122 4335168 18
+20140820 255 568 16041638 38
+20140821 70 298 12848586 33
+20140822 61 219 6576733 37
+20140823 88 186 6532717 31
+20140824 152 430 18033548 33
+20140825 218 516 20300458 36
+20140826 86 398 19072837 38
+20140827 132 434 12233192 69
+20140828 134 422 14606454 74
+20140829 128 302 7935377 73
+20140830 150 328 12257045 74
+20140831 197 471 18395119 69
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 7
+5mn-15mn 26
+0s-30s 1098
+15mn-30mn 15
+2mn-5mn 29
+30s-2mn 71
+30mn-1h 11
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 131
+/ 747 12124244 655 593
+/admin.php 263 4090460 5 5
+/contact-us/franchise-opportunities/ 251 1685546 202 33
+/forms/contact-business.php 178 17376 0 169
+/outdoor-rooms/project-management/ 178 1545002 60 50
+/outdoor-kitchen/project-management/ 141 1259241 58 56
+/landscape-design/project-management/ 119 1184348 50 47
+/what-is-zones/landscape-design-and-garden-maintenance/ 104 828100 10 11
+/pergola-decks-patios/project-management/ 84 826305 11 11
+/gardening-and-gardening-maintenance/project-management/ 82 690691 7 41
+/grass-lawns-and-lawn-mowing-services/landscaping-ideas/ 1 19075 0 0
+/landscaping-ideas/sort/rain-water-tanks/ 2 22830 1 0
+/landscaping-ideas/reviving-the-exterior-of-a-cedar-home 11 85718 6 5
+/landscape-designers/team/matt-steele 8 36679 1 2
+/landscape-designers/new-zealand/ 20 254190 1 2
+/adwords/contact-enquiry.html 1 434 0 0
+/gardening-and-gardening-maintenance/landscaping-ideas/sort/landscaping-advice/ 1 5496 0 1
+/swimming-pools/landscaping-ideas/ 15 94816 8 2
+/renovate-magazine 1 14513 0 0
+/swimming-pools/project-management/ 58 691984 7 6
+/outdoor-rooms/landscaping-ideas/sort/mostviewed 1 5434 0 0
+/fencing/landscaping-ideas/ 1 19568 0 0
+/landscape-designers/history/ 16 183825 1 2
+/pergola-decks-patios/landscaping-ideas/ 7 67054 0 1
+/newsletter/october-2013 1 23652 1 0
+/adwords/right-getintouch.html 3 1317 0 0
+/landscape-design-cost/ 13 171701 1 1
+/landscaping-ideas-product/sort/finance/htte.png/ 1 16269 0 0
+/landscaping-ideas/sort/gardening-and-gardening-maintenance/ 2 24240 0 0
+/forms/getintouch-part2.php 4 120 0 3
+/landscape-design/landscaping-ideas/ 5 40470 0 1
+/landscape-designers/landscape-supplies/ 19 192179 1 4
+/landscape-designers/team/sort/south-island/ 1 13332 0 1
+/landscape-designers/team/sort/north-island/ 2 18451 1 0
+/landscaping-ideas-expert/ 4 43516 2 3
+/landscaping-ideas/sort/swimming-pools/ 1 5304 0 0
+/landscaping-ideas/sort/garden-plants/ 1 5394 0 0
+/all/project-management/ 40 439013 1 2
+/wp-login.php 15 24315 15 15
+/garden-plants/landscaping-ideas/ 5 41522 0 1
+/landscaping-ideas/ 47 432462 10 6
+/landscaping-ideas/a-zen-and-subtropical-outdoor-landscape/ 1 7425 1 0
+/forms/contact-enquiry.php 3 151 0 0
+/adwords/contact-bus.html 1 432 0 1
+/rain-water-tanks/landscaping-ideas/ 1 18895 0 0
+/gardening-and-gardening-maintenance/landscaping-ideas/ 2 25864 0 1
+/landscaping-ideas-product/sort/finance/ 1 16269 0 0
+/contact-us/enquire-about-landscaping-services 1 14471 0 0
+/member/register 1 632 0 1
+/outdoor-lighting-and-power/landscaping-ideas/ 1 18983 0 0
+/landscaping-ideas/top-10-new-zealand-gardening-trends 16 114969 10 11
+/outdoor-kitchen/landscaping-ideas/sort/mostviewed 2 24522 1 2
+/contact-us/franchise-opportunities 1 5544 1 0
+/landscaping-ideas/a-natural-way-to-protect-wood 1 5739 0 0
+/competitions 1 11549 0 0
+/landscaping-ideas/sort/mostviewed 1 20720 0 0
+/landscaping-ideas/titoki-tree-planting-and-care-instructions/ 1 19956 0 0
+/landscaping-ideas-product/sort/fixtures-and-fittings/ 1 16965 0 0
+/landscaping-ideas/sort/pergola-decks-patios/ 2 23636 0 0
+/fencing/project-management/ 43 473824 6 11
+/concrete-asphalt-paving-stones-driveways/project-management/ 54 662278 12 14
+/what-is-zones/project-management/ 56 582843 1 4
+/clippings/ 1 14359 0 0
+/landscaping-ideas-product/sort/paint/ 1 16269 0 0
+/landscaping-ideas-product/sort/fixtures-and-fis-and-fittings/ 1 19466 0 1
+/competitions/ 19 174801 2 2
+/landscape-design-faq/ 15 182691 1 1
+/outdoor-kitchen/landscaping-ideas/ 4 35128 1 0
+/contact-us/designer-jobs/ 42 317218 3 2
+/landscaping-ideas/titoki-tree-planting-and-care-instructions 35 226480 29 24
+/concrete-asphalt-paving-stones-driveways/landscaping-ideas/ 4 35259 0 1
+/contact-us/enquire-about-landscaping-services/ 79 580237 2 11
+/newsletter/january-2014/ 1 11560 0 0
+/landscaping-ideas/a-natural-way-to-protect-wood/ 1 20309 0 0
+/what-is-zones/landscape-design/ 60 501096 1 2
+/outdoor-rooms/landscaping-ideas/ 7 64784 0 1
+/landscaping-ideas/maximise-your-view-with-deck-balustrades/ 1 21719 0 0
+/retaining-wall/landscaping-ideas/ 2 24323 1 1
+/grass-lawns-and-lawn-mowing-services/project-management/ 50 654432 2 3
+/landscaping-ideas/landscape-design-plans/ 16 209307 1 1
+/site/ArticlesSiteSearchNoResults/4afcdb83cd34ed38867af886051ad47d/ 1 4856 0 1
+/renovate-magazine/ 17 208657 3 1
+/landscaping-ideas/sort/grass-lawns-and-lawn-mowing-services/ 1 17542 0 0
+/landscaping-ideas/sort/outdoor-kitchen/ 1 17521 0 0
+/special-offer/free-magazine 4 6474 1 1
+/landscaping-ideas-product/sort/fc 1 19466 0 0
+/landscaping-ideas/sort/retaining-wall/ 1 17520 0 0
+/landscape-designers/team/ 35 302257 0 2
+/garden-plants/project-management/ 60 678841 4 5
+/special-offer/ 17 178789 1 1
+/landscaping-ideas-product/sort/outdoors/ 2 23004 0 0
+/landscaping-ideas-product/sort/outdoors/httarfix 1 17511 0 0
+/concrete-asphalt-paving-stones-driveways/project-management 1 5359 1 0
+/landscaping-ideas-product/sort/home-decorating/htt 1 16269 0 0
+/what-is-zones/landscape-design-and-garden-maintenance 29 456001 1 2
+/landscape-designers/overview/ 21 213572 1 1
+/all/landscaping-ideas/ 1 21900 0 0
+/landscaping-ideas-product/sort/home-decorating/ 1 16269 0 0
+/landscape-design-brochure/ 15 165590 1 1
+/grass-lawns-and-lawn-mowing-services/landscaping-ideas/sort/landscaping-advice/ 2 24559 2 2
+/landscaping-ideas/a-zen-and-subtropical-outdoor-landscape 2 14897 0 0
+/concrete-asphalt-paving-stones-driveways/trackback/ 1 661 0 1
+/fencing/project-management 1 19336 1 1
+/forms/newsletter.php 1 63 1 1
+/enquiry.html 12 12604 0 11
+/forms/getintouch-extra/ 4 9946 0 0
+/concrete-asphalt-paving-stones-driveways/project-management/trackback/ 1 661 0 1
+/clippings/community/zones-at-the-2014-cornwall-park-school-fair 1 14107 0 0
+/landscaping-ideas/reviving-the-exterior-of-a-cedar-home/ 1 21526 0 0
+/landscaping-ideas/sort/landscape-design/ 1 5300 0 0
+/outdoor-lighting-and-power/project-management/ 49 610144 2 4
+/landscaping-ideas/maximise-your-view-with-deck-balustrades 12 75731 4 5
+/forms/getintouch-part1.php 6 310 0 0
+/landscaping-ideas/sort/outdoor-lighting-and-power/ 1 5309 0 0
+/landscaping-ideas-product/sort/flooring/ 1 16269 0 0
+/landscaping-ideas-product/sort/finance/htte.png/htt 1 16269 0 1
+/enquirenow.html 31 51860 2 1
+/rain-water-tanks/project-management/ 39 454846 6 3
+/site/browser 28 113055 23 27
+/landscaping-ideas/sort/outdoor-rooms/ 7 49398 1 1
+/newsletter/january-2014 1 11560 1 1
+/landscape-design-brochure/zones-brochure 3 3437 0 0
+/privacy-statement/ 13 173323 2 2
+/landscaping-ideas-product/ 3 40796 1 1
+/clippings/community/ 13 169604 2 2
+/landscaping-ideas-product/sort/lighting/ 1 16269 0 0
+/what-is-zones/landscape-cost-and-services/ 50 447829 0 3
+/landscaping-ideas/landscape-design-insurance/ 14 174397 1 1
+/index.php 11 81120 0 1
+/landscaping-ideas-product/sort/re-cladding/ 1 16847 0 0
+/retaining-wall/project-management/ 35 416141 5 3
+END_SIDER

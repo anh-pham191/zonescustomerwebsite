@@ -1,0 +1,150 @@
+{exp:channel:entries disable="member_data|pagination" limit="1" channel="content_page" cache="yes" refresh="1500"}
+{if no_results}{redirect="404"}{/if}
+{snippet-doctype}
+<meta name="robots" content="noindex" />
+<title>{seo_page_header_title_page} | Zones</title>    
+
+<script type="text/javascript" language="javascript"> 
+var navlevels = "single";
+</script>
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_page}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+	"url": "https://www.zones.co.nz",
+	"telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_page}"
+}
+</script>
+<style>
+    .row{margin:40px 0;text-align:center;font-family:'Montserrat',sans-serif;}
+    @media only all and (max-width: 47.937em){.row .col-sm-5ths{margin-bottom:80px}}
+    .row img{display:block;margin:0 auto}
+    .row .browser-icon img{width:38%}
+    .row .box-title{font-weight:bold;font-size:1.4em;line-height:2.5;margin-top:15px}
+    .row .box-title span{font-size:0.8em}
+    .row .platforms{width:100%;margin:0 auto}
+    @media only all and (min-width: 78em){.row .platforms{width:50%}}
+    .row .platforms li{float:left;width:33.3%;padding:20px 0}
+    .row .platforms li.full-width{width:100%}
+    .row .platforms li img{width:35px}
+    .download-button {display:block;transition:0.3s;width:150px;padding:10px 25px;border:1px solid #077b3a;font-size:1.2em;font-weight:bold;margin:20px auto}
+    .download-button:hover{color:#fff;background-color:#077b3a}
+    .full-width-text{margin:80px auto}
+    .full-width-text p{font-weight: bold}
+</style>
+<meta name="description" content="{seo_meta_description_page}">
+<meta name="keywords" content="{seo_meta_keywords_page}">
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+<div id="sitebanner" class="clearfix">
+<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+      <li><a href="{link}" class="button">{text}</a></li>
+{/exp:navee:custom}
+</ul>	
+
+{snippet-bannersearch}
+
+</div>
+<div class="sep"></div>
+</nav>
+
+<div id="wrapper" class="clearfix">
+<!-- end mobile nav -->
+
+<div id="wideslideshow"  class="overlay">
+    <h1>1231546456</h1>
+    {panorama_slideshow_images_page}
+    <img src="{pano-image-page}" alt="{alt-pano-image-page}"/>
+    {/panorama_slideshow_images_page}
+    <div class="overlay-container">
+        <h2 id="top">Important Security Update</h2>
+        <h1>{page_h1_heading_c}</h1>
+        <h2 id="bottom"><b>Keeping your browser up to date keeps you protected from a variety of threats and ensures that your personal information is protected.</b></h2>
+        <h2 id="arrow"><b class="link-builders">Check below for latest versions.</b></h2>
+    </div>
+    </div>
+   
+<div class="row">
+    <div class="col-md-5ths col-sm-5ths">
+        <div class="browser-icon"><img data-src="/design/chrome-icon.png" alt="Chrome" class="lazy-load" /></div>
+        <div class="box-title">GOOGLE CHROME<br/><span>AVAILABLE FOR</span></div>
+        <ul class="platforms clearfix"><li><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li><li><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li><li><img data-src="/design/linux.png" alt="Linux" class="lazy-load" /></li></ul>
+        <a href="https://www.google.com/chrome/" target="_blank" class="download-button">Download</a>
+    </div>
+    <div class="col-md-5ths col-sm-5ths">
+        <div class="browser-icon"><img data-src="/design/firefox-icon.png" alt="Firefox" class="lazy-load" /></div>
+        <div class="box-title">MOZILLA FIREFOX<br/><span>AVAILABLE FOR</span></div>
+        <ul class="platforms clearfix"><li><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li><li><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li><li><img data-src="/design/linux.png" alt="Linux" class="lazy-load" /></li></ul>
+        <a href="https://www.mozilla.org/firefox/new/" target="_blank" class="download-button">Download</a>
+    </div>
+    <div class="col-md-5ths col-sm-5ths">
+        <div class="browser-icon"><img data-src="/design/safari-icon.png" alt="Safari" class="lazy-load" /></div>
+        <div class="box-title">APPLE SAFARI<br/><span>AVAILABLE FOR</span></div>
+        <ul class="platforms clearfix"><li class="full-width"><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li></ul>
+        <a href="https://support.apple.com/HT204416" target="_blank" class="download-button">Download</a>
+    </div>
+    <div class="col-md-5ths col-sm-5ths">
+        <div class="browser-icon"><img data-src="/design/opera-icon.png" alt="Opera" class="lazy-load" /></div>
+        <div class="box-title">OPERA<br/><span>AVAILABLE FOR</span></div>
+        <ul class="platforms clearfix"><li><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li><li><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li><li><img data-src="/design/linux.png" alt="Linux" class="lazy-load" /></li></ul>
+        <a href="https://www.opera.com/download" target="_blank" class="download-button">Download</a>
+    </div>
+    <div class="col-md-5ths col-sm-5ths">
+        <div class="browser-icon"><img data-src="/design/edge-icon.png" alt="Edge" class="lazy-load" /></div>
+        <div class="box-title">MICROSOFT EDGE<br/><span>AVAILABLE FOR</span></div>
+        <ul class="platforms clearfix"><li class="full-width"><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li></ul>
+        <a href="https://www.microsoft.com/windows/microsoft-edge" target="_blank" class="download-button">Download</a>
+    </div>
+</div>
+
+<div class="inner">
+  <div class="full-width-text">
+      <p><a href="javascript:history.back(-1)">Continue without updating</a>. Note: Unstable results can be expected if you do not update your browser.</p>
+  </div>
+</div>
+    {exp:channel:form channel="content_page" entry_id="{entry_id}" return="contentPage/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
+    {exp:ifelse parse="inward"}
+    {if "{sharing_count_con}" == "" }
+    <input type="hidden" id="count" name="sharing_count_con" value="0" />
+    {if:else}
+    <input type="hidden" id="count" name="sharing_count_con" value="{sharing_count_con}" />
+    {/if}
+    {/exp:ifelse}
+    {/exp:channel:form}
+    </div>
+    {/exp:channel:entries}
+    
+    
+    <div class="sep footersep"></div>	
+    
+    {snippet-partners}
+    </div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+
+{embed="includes/footer-with-slider"}

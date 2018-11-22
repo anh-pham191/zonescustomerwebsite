@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-nz">
+<head>
+<meta charset="utf-8">
+<title>Get in touch | Refresh Renovations</title>
+</head>
+<body id="top">
+<div id="content-body" class="form popup">
+<img src="/design/popup-logo.png" alt="Refresh Renovations" class="popuplogo" />
+<div class="theformarea">
+<h1>Get in touch</h1>
+<p class="instructions">Give us some details if you are interested in a quote or consultation.</p> 
+<form action="/forms/getintouch.php" method="post" id="myform">
+<fieldset>
+<legend></legend>
+<label id="c-enq-firstname" class="input"><span>First Name</span> <input type="text" name="p-enq-firstname" class="required" /></label>
+<label id="c-enq-email" class="input"><span>Email Address</span> <input type="email" name="p-enq-email" class="email required" /></label>
+<label id="c-enq-tel" class="input"><span>Phone Number</span> <input type="text" name="p-enq-tel" class="required" /></label>
+<fieldset class="clearfix">
+<legend></legend>
+<p>Preferred time to be contacted</p>
+		<p>
+		<label><input type="checkbox" class="uniform-styles" name="intouch-time-am" id="intouch-am" checked="checked" /> Morning</label> 
+		<label><input type="checkbox" class="uniform-styles" name="intouch-time-pm" id="intouch-pm" checked="checked" /> Afternoon</label> 
+		</p>
+<p class="subscribe">Subscribe to our newsletter</p>
+		<p>
+		<label><input type="checkbox" class="uniform-styles" name="p-enq-subscribe" id="c-enq-subscribe" checked="checked" /> Subscribe</label> 
+		</p>
+</fieldset>
+<input type="submit" value="Submit" name="send" id="c-enq-submit" class="submitbutton" />
+</fieldset>
+</form>
+</div>
+
+</div>
+
+
+</body>
+</html>

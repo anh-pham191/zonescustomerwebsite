@@ -1,0 +1,32 @@
+#topnav .input span {
+display: none;
+}
+.textnav li {
+padding: 18px 25px;
+}
+.sep {
+background: #c4c5c5;
+width: 992px;
+}
+.list-tools .fleft span,
+.list-tools .fleft a.switch-layout {
+display: none !important;
+}
+#list .item {
+margin-bottom: 20px;
+}
+ul.serviceslist {
+width: 992px;
+}
+#international div {
+background: #666;
+}
+/* Widescreen */
+@media screen and (min-width: 1236px) {
+ul.serviceslist {
+width: 1000px;
+}
+}
+
+
+

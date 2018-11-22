@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-nz">
+<head>
+<meta charset="utf-8">
+<title>Welcome | Zones</title>
+</head>
+<body id="top">
+<div id="content-body" class="form popup welcome">
+<div id="welcome-panel-1">
+<img src="/design/popup-logo-large.png" alt="Zones Landscape Design and Maintenance" class="popuplogo" />
+<div class="clearfix">
+<img src="/design/renovate-thumb.png" alt="" class="fleft" />
+<div class="fleft copy">
+<h1>Would you like a free copy of Renovate Magazine?</h1>
+<p>Simply subscribe to our mailing list and we'll send you a free copy of the latest Renovate magazine, New Zealand's first and only magazine dedicated solely to home renovations.</p> 
+</div>
+</div>
+<ul class="bigbuttons clearfix">
+<li style="width: 270px;" class="current"><a href="#" class="button" onclick="$('#welcome-panel-1').css('display', 'none');$('#welcome-panel-2').css('display', 'block');return false;">Yes, Please subscribe me</a></li>
+<li style="width: 118px;" class="current"><a href="#" class="button big_close" onclick="$.prettyPhoto.close(); return false;">No thanks</a></li>
+</ul>
+</div>
+<div id="welcome-panel-2" style="display: none;">
+<div class="theformarea formholder">
+<h1>Subscribe to the Zones newsletter</h1>
+<p class="instructions">Please provide us with your information so that we know where <br />to send your free copy of Renovate magazine.</p> 
+<form action="/forms/welcome-subscribe.php" method="post" id="myformext-first" class="clearfix">
+<fieldset class="fleft leftcol">
+<legend></legend>
+<label id="c-enq-firstname" class="input"><span>First Name</span> <input type="text" name="p-enq-firstname" class="required" /></label>
+<label id="c-enq-lastname" class="input"><span>Last Name</span> <input type="text" name="p-enq-lastname" /></label>
+<label id="c-enq-email" class="input"><span>Email Address</span> <input type="email" name="p-enq-email" class="email required" /></label>
+<label id="c-enq-tel" class="input"><span>Phone Number</span> <input type="text" name="p-enq-tel" /></label>
+<fieldset class="clearfix">
+<legend></legend>
+<p class="clearfix singleline"><span class="fleft flabel">Gender </span>
+<label><input type="radio" class="uniform-stylespop" id="p-enq-gender-m" name="p-enq-gender" value="Male" /> Male</label> 
+<label><input type="radio" class="uniform-stylespop" id="p-enq-gender-f" name="p-enq-gender" value="Female" /> Female</label> 
+</p>
+</fieldset>
+</fieldset>
+<fieldset class="fleft">
+<legend></legend>
+<label id="c-enq-streetnumber" class="input"><span>Street Number</span> <input type="text" name="p-enq-streetnum" class="required" /></label>
+<label id="c-enq-streetname" class="input"><span>Street Name</span> <input type="text" name="p-enq-streetname" class="required" /></label>
+<label id="c-enq-suburb" class="input"><span>Suburb</span> <input type="text" name="p-enq-suburb" class="required" /></label>
+<label id="c-enq-city" class="input"><span>City</span> <input type="text" name="p-enq-city" class="required" /></label>
+<label id="c-enq-postcode" class="input"><span>Post Code</span> <input type="text" name="p-enq-postcode" class="required" /></label>
+</fieldset>
+<input type="submit" value="Subscribe" name="send" id="c-enq-submit" class="submitbutton" />
+</form>
+<div id="progvis" class="progress" style="display: none;"></div>
+</div>
+<div class="clearfix formdetails">
+<p><strong>Terms and Conditions</strong>: Offer available to New Zealand residents only. One free magazine can only be sent if a valid New Zealand address is supplied. Offer only available to new subscribers.</p>
+</div>
+</div><div class="adwordstracking"></div>
+<div id="welcome-panel-3" style="display: none;">
+<img src="/design/popup-logo-large.png" alt="Zones Landscape Design and Maintenance" class="popuplogo" />
+<div class="theformarea3 formholder">
+<div class="clearfix">
+<img src="/design/renovate-thumb-small.png" alt="" class="fleft" />
+<div class="fleft copy">
+<h1>Thank you for subscribing<br /> to our newsletter</h1>
+<p>A free copy of the latest Renovate magazine will be on it's way to you shortly.</p> 
+</div>
+</div>
+<p class="invitation">Would you like to arrange a consultation with one of our specialist renovation builders to discuss your renovation project?</p>
+<ul class="bigbuttons clearfix">
+<li style="width: 100px;" class="current"><form action="/forms/welcome-request-appt.php" method="post" id="myformext-second">
+<input type="submit" value="Yes" name="send" id="c-enq-submit-two" class="submitbutton" />
+</form></li>
+<li style="width: 100px;" class="current"><a href="#" class="button big_close" onclick="$.prettyPhoto.close(); return false;">No</a></li>
+</ul>
+<div id="progvis2" class="progress" style="display: none;"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

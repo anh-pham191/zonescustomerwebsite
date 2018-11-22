@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-nz">
+<head>
+<meta charset="utf-8">
+<title>Get in touch if you're thinking about landscaping | Zones</title>
+</head>
+<body id="top">
+<div id="content-body" class="form enquiry">
+<div class="theformarea formholder">
+<h1>Get in touch if you're thinking about landscaping</h1>
+<p class="instructions">Please fill in your enquiry below and one of our team members will be in touch shortly</p>  
+<form action="/forms/enquiry-stage1.php" method="post" id="enquiry-s1" class="clearfix">
+<!--first+last name-->
+<div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+          <label class="labelname">First name</label>
+          <input type="text" class="form-control" placeholder="Enter first name" name="firstName" id="firstName-s1" data-prefix="s1" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)">
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+          <label class="labelname">Last name</label>
+          <input type="text" class="form-control" placeholder="Enter last name"  name="lastName" id="lastName-s1" data-prefix="s1" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)" >
+        </div>
+      </div>
+      <!--/first+last name-->
+
+      <!--email #-->
+      <div class="row">
+        <div class="col-md-12 input-label-wrapper">
+          <label class="labelname">Email address</label>
+          <input type="text" class="form-control" placeholder="Enter email address" name="email" id="email-s1" data-prefix="s1" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)">
+        </div>
+      </div>
+      <!--/email #-->
+
+      <!--phone # + Preferred time #-->
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper phone-number-stage1">
+          <label class="labelname">Phone number</label>
+          <input type="text" class="form-control" placeholder="Enter phone number" name="mobile" id="mobile-s1" data-prefix="s1" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)">
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper">
+          <label class="labelname">Preferred time to be contacted</label>
+        <select id="select-preftime" name="preftime" class="apply-fancy form-control">
+                <option value="Any Time">Don't mind</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+        </select>
+        </div>
+      </div>
+      <!--/phone # + Preferred time # #-->
+
+      <!--enquiry-->
+      <div class="row">
+          <div class="col-sm-12 col-xs-12 input-label-wrapper">
+            <label class="labelname">Enquiry</label>
+            <textarea rows=5 class="form-control col-xs-12" name="enquiry" id="enquiry-s1" placeholder="Enter message / enquiry"></textarea>
+          </div>         
+      </div>
+      <!--/enquiry-->
+
+      <div class="row">
+          <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                <label><input type="checkbox" class="uniform-stylespop" name="privacy" id="privacy-s1" checked="checked" data-prefix="s1" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)" /> I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy.</a></label>   
+           </div>      
+        </div>
+      <div class="row">
+          <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                <label><input type="checkbox" class="uniform-stylespop" name="subscribe" checked="checked" /> I consent to receiving advice and information relating to home improvements.</label>
+          </div>      
+      </div>
+      <fieldset class="clearfix form-website">
+            <legend></legend>
+            <label id="c-enq-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" autocomplete="off" /></label>
+            </fieldset>
+            <input type="hidden" name="formpage" id="formpage-s1"/>
+        <div class="row">
+              <div class="col-sm-12 col-xs-12 input-label-wrapper">
+               <div id="captcha_container"></div>
+              </div>      
+         </div>
+     <!--submit buttons-->
+     <div class="row">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-primary btn-block" id="submit" onclick="submitEnquirePart1('Enquire');">Submit Enquiry</button>
+            </div>
+          </div>
+          <!--submit buttons--> 
+</form>
+<div id="prog1" class="progress" style="display: none;"></div>
+</div><div class="adwordstracking"></div>
+</div>
+<div style="display: none">  
+  <iframe style="display:none" onload="javascript: grecaptcha.render('captcha_container', {'sitekey' : '6Le4MFwUAAAAAC_xQ5nTR3GC8S6e4qKds-C4Yfkr'});"></iframe>  
+ </div> 
+</body>
+</html>

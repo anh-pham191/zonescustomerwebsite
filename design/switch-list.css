@@ -1,0 +1,17 @@
+/* List view option is the default */
+.gallery-icon {
+background: url(sprites.png) no-repeat;
+background-position: -262px -16px;
+}
+.list-icon {
+background: url(sprites.png) no-repeat;
+background-position: -163px -17px;
+}
+#list.switchable div.item:first-child {
+border-top: 0;
+}
+#list.switchable.nosort div.item:first-child {
+border-top: 1px dashed #666666;
+}
+
+

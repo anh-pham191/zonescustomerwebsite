@@ -1,0 +1,6 @@
+#sidey {display: none !important; visibility: hidden !important;}
+form label span.hide {
+position: static;
+display: block;
+padding-bottom: 2px;
+}

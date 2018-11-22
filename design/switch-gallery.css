@@ -1,0 +1,85 @@
+/* Gallery view option */
+.gallery-icon {
+background: url(sprites.png) no-repeat;
+background-position: -214px -16px;
+}
+.list-icon {
+background: url(sprites.png) no-repeat;
+background-position: -114px -15px;
+}
+#list div.paginate-bottom, #list nav.paginate-bottom {
+float: left;
+width: 100%;
+clear: both;
+margin-top: 24px;
+}
+#list nav.paginate-bottom:last-child {
+border-top: 1px dashed #666;
+}
+#list nav.paginate-bottom:first-child {
+margin-top: 0;
+}
+#list nav.paginate-bottom:first-child p.fright {
+margin-right: 12px;
+}
+.list-tools.top.nosort {
+border-bottom: 1px dashed #666666;
+}
+#list.switchable div.item:nth-of-type(1), #list.switchable div.item:nth-of-type(2), #list.switchable div.item:nth-of-type(3), #list.switchable div.item:nth-of-type(4) {
+margin-top: 8px;
+}
+#list.switchable div.item {
+float: left;
+clear: none;
+margin-right: 8px;
+margin-bottom: 0;
+min-height: 205px;
+width: 239px;
+}
+#list.switchable .item img {
+height: 167px;
+width: 229px;
+}
+#list.switchable div.item:nth-of-type(4n+0) {
+margin-right: 0;
+}
+#list.switchable div.item:nth-of-type(4n+1) {
+clear: both;
+}
+#list.switchable div.item h2 {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.2;
+margin-bottom: 8px;
+width: 230px;
+}
+#list.switchable div.item h2 a {
+color: #191919;
+}
+#list.switchable div.item p {
+display: none;
+}
+/* Undo listview styles */
+#list.switchable div.item {
+border-top: none;
+border-bottom: none;
+padding: 0 0;
+}
+#list.switchable div.item a.fleft {
+margin-right: 0;
+margin-bottom: 8px;
+}
+#list.switchable div.item div.fleft {
+clear: both;
+width: auto;
+}
+/* Widescreen */
+@media screen and (min-width: 1236px) {
+#list.switchable div.item {
+margin-right: 14px;
+}
+#list.switchable div.item:nth-of-type(4n+0) {
+margin-right: 0;
+}
+}
+

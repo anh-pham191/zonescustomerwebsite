@@ -1,0 +1,1138 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201406 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.preview.zones.co.nz.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1999                
+POS_TIME 2683                
+POS_VISITOR 15052               
+POS_DAY 38654               
+POS_DOMAIN 3645                
+POS_LOGIN 4220                
+POS_ROBOT 4409                
+POS_WORMS 5119                
+POS_EMAILSENDER 5250                
+POS_EMAILRECEIVER 5393                
+POS_SESSION 39549               
+POS_SIDER 39760               
+POS_FILETYPES 5528                
+POS_DOWNLOADS 5762                
+POS_OS 5834                
+POS_BROWSER 6042                
+POS_SCREENSIZE 7305                
+POS_UNKNOWNREFERER 7379                
+POS_UNKNOWNREFERERBROWSER 7732                
+POS_ORIGIN 7915                
+POS_SEREFERRALS 8064                
+POS_PAGEREFS 8264                
+POS_SEARCHWORDS 8737                
+POS_KEYWORDS 9313                
+POS_MISC 2345                
+POS_ERRORS 9737                
+POS_CLUSTER 4076                
+POS_SIDER_404 9908                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20140701001846 170 51897 11816728154995
+FirstTime 20140601002253
+LastTime 20140630231625
+LastUpdate 20140702000514 170 0 0 0 169
+TotalVisits 1169                
+TotalUnique 392                 
+MonthHostsKnown 333                 
+MonthHostsUnknown 98                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 246 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 54 189 7956209 153 177 1806160
+1 77 194 5944549 145 166 1857579
+2 36 110 3208716 135 152 1601432
+3 65 175 5772155 231 267 2630076
+4 48 162 10549021 157 187 1913614
+5 90 224 6819360 148 163 1761510
+6 20 50 1160736 237 255 1807108
+7 72 212 6034381 149 176 2057340
+8 90 386 15800777 164 204 2300061
+9 230 687 17791525 172 211 2077798
+10 259 924 39304721 236 399 5578520
+11 198 895 38411168 211 368 6040329
+12 95 495 24934630 238 338 5558282
+13 202 949 30694152 154 237 4364584
+14 187 691 28482013 159 279 5427113
+15 239 790 31133453 174 264 3803422
+16 151 505 24880054 188 236 2892148
+17 414 1086 35509828 260 288 2441803
+18 121 551 20381083 190 216 1965094
+19 244 645 19375070 199 222 2093468
+20 121 560 25997811 213 253 2453455
+21 313 898 35850206 217 247 2235406
+22 138 292 13548361 287 326 2363496
+23 89 239 8695719 210 238 2045953
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 23
+nz 1104 5140 225790927
+com 937 3099 87687059
+ip 839 1816 64222277
+cn 323 323 7332019
+net 249 1041 52304260
+au 31 99 5221909
+nu 14 34 839878
+ae 9 25 481114
+in 8 43 2336329
+eu 8 8 141413
+tr 1 30 1221862
+ru 5 46 2904833
+ro 1 1 1621
+at 2 2 10056
+it 1 30 1215641
+br 6 144 6227892
+org 1 1 1621
+pl 5 5 0
+za 3 3 47073
+arpa 1 1 1621
+lt 1 1 5525
+de 1 1 5839
+se 3 16 234929
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 1
+Super 70 70 346859 20140606110324
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 16
+baiduspider 1566 30984640 20140630231210 0
+bot[\s_+:,\.\;\/\\-] 1070 19177038 20140630234500 145
+googlebot 471 2707156 20140630233447 60
+yandex 358 1571557 20140630154038 37
+robot 185 924369 20140630225510 6
+exabot 48 176038 20140629201045 13
+slurp 33 721002 20140619094357 12
+mj12bot 31 266354 20140627220552 12
+no_user_agent 10 157772 20140624173339 0
+favicon 9 52788 20140617084850 0
+spider 6 35034 20140628234708 0
+msnbot 4 10947 20140630042928 2
+mail\.ru 3 24109 20140610113150 2
+unknown 6 359 20140630203327 6
+voila 2 5901 20140613114554 1
+crawl 3 51292 20140628020012 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+css 805 5939414 0 0
+png 6129 338514216 0 0
+php 411 5654632 0 0
+html 3025 30214039 0 0
+js 758 33243149 0 0
+jpg 236 42553735 0 0
+Unknown 117 720547 0 0
+gif 428 1395966 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/robots.txt 289 0 14559
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 15
+linuxandroid 645
+winlong 905
+winxp 1145
+unix 5
+win2000 18
+winnt 1
+linux 107
+winvista 1463
+win7 4114
+macosx 3455
+winme 1
+winunknown 1
+win2003 39
+linuxdebian 1
+Unknown 9
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 72
+firefox28.0 18
+safari7.0.3 117
+msie6.0 71
+chrome18.0.1025.308 39
+chrome34.0.1847.137 22
+firefox26.0 1
+chrome33.0.1750.149 1
+chrome22.0.1190.0 5
+chrome28.0.1500.94 91
+safari7.0.4 87
+safari5.0.6 1
+chrome31.0.1650.63 60
+chrome23.0.1271.95 1
+firefox3.6.15 60
+safari5.0.2 30
+msie8.0 1083
+msie7.0 718
+chrome27.0.1453 86
+opera9.64 6
+safari7.0.2 21
+chrome32.0.1667.0 1
+chrome33.0.1750.152 66
+msie5.01 18
+chrome34.0.1847.131 51
+firefox21.0 22
+lg\- 52
+safari6.0 30
+firefox29.0 1997
+chrome32.0.1700.107 322
+chrome35.0.1916.114 2058
+safari6.0.5 2
+mozilla 996
+safari6.0.4 14
+netscape5.0 1
+firefox14.0.1 11
+netscape4.0 1
+firefox3.6.3 120
+safari5.1.9 131
+safari 144
+safari7.0 1244
+firefox5.0 1
+firefox4.0.1 9
+android 321
+chrome29.0.1547.0 1
+opera9.80 11
+firefox31.0 1
+chrome13.0.782.112 1
+chrome35.0.1916.122 56
+safari5.1.5 11
+msie5.0 1
+msie9.0 277
+Unknown 2
+chrome30.0.1599.101 1
+chrome21.0.1180.75 10
+chrome35.0.1916.138 44
+safari6.1.3 28
+samsung 13
+chrome35.0.1916.141 15
+chrome27.0.1453.110 6
+chrome28.0.1500.71 40
+firefox30.0 93
+safari5.1.7 18
+chrome35.0.1916.153 645
+firefox22.0 129
+msie10.0 241
+chrome25.0.1364.172 2
+firefox5.0.1 2
+firefox6.0 1
+safari5.1 89
+firefox3.6.12 17
+chrome27.0.1453.116 10
+chrome23.0.1271.97 14
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 6
+Mozilla/5.0 20140625053925
+HTTPClient/1.0_(2.4.0,_ruby_1.9.3_(2013-06-27)) 20140622154914
+Mozilla/5.0_(compatible;_Google-Site-Verification/1.0) 20140604201732
+Mozilla/4.0_(compatible;) 20140627181551
+Xenu_Link_Sleuth/1.3.8 20140612074836
+Mozilla/4.0 20140608090052
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+HTTPClient/1.0_(2.4.0,_ruby_1.9.3_(2013-06-27)) 20140622154914
+Xenu_Link_Sleuth/1.3.8 20140612074836
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 1257 1302
+From1 0 0
+From2 290 315
+From3 18 18
+From4 1988 10274
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 5
+google 267 292
+baidu 15 15
+yandex 4 4
+ask 1 1
+yahoo 3 3
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 6
+http://semalt.semalt.com/crawler.php 12 12
+http://www.googleadservices.com/pagead/aclk 2 2
+http://notify.proxy.page/notify-ITD_AcceptableUsePolicy 1 1
+http://www.linkedin.com/lite/external-redirect 1 1
+http://engage.ubiquity.co.nz/campaigns/mailouts/design/HtmlPreview/ws5DIrQ_UU2PNAjRT4po_w 1 1
+http://www.nowmail.co.nz 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 17
+zoneslandscapedesignandmaintenance 13
+landscape+design 3
+www.zones.co.nz 3
+zonesoutdoorrenovations%7czones 2
+landscaping+ideas 2
+titoki+tree+fertilizer+for 1
+outdoor+brochures 1
+ourdoor+room+designs+auckland 1
+outdoor+kitchen+nz 1
+how+to+build+an+outside+room+nz 1
+zones+outdoor 1
+build+a+cocnrete+patio+and+pergola+nz 1
+landscape+design+nz 1
+water+tank+landscaping 1
+zones.co.nz 1
+outdoor+kitchens 1
+outdoor+kitchens+nz 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 34
+zoneslandscapedesignandmaintenance 13
+outdoor 5
+nz 5
+design 4
+landscape 4
+landscaping 3
+www.zones.co.nz 3
+kitchens 2
+room 2
+zonesoutdoorrenovations%7czones 2
+a 1
+tree 1
+tank 1
+zones 1
+kitchen 1
+patio 1
+zones.co.nz 1
+pergola 1
+how 1
+for 1
+outside 1
+ourdoor 1
+designs 1
+brochures 1
+and 1
+auckland 1
+to 1
+fertilizer 1
+build 2
+cocnrete 1
+water 1
+titoki 1
+ideas 2
+an 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 7
+401 321 95865
+302 63 1260
+206 118 2855124
+500 435 8200
+400 32 3148
+301 634 9440
+404 215 1293962
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 97
+/bavzfeqrlzpxwrmo.html 1 -
+/oa/fckeditor/editor/filemanager/browser/default/browser.html 2 -
+/login/editors/fckeditor/editor/filemanager/upload/test.html 2 -
+/main.php 1 -
+/%22https://plus.google.com/share 1 -
+/admin/editor/filemanager/connectors/uploadtest.html 3 -
+/web.sql.gz 7 -
+/public/js/fckeditor/editor/filemanager/browser/default/connectors/test.html 2 -
+/editors/fckeditor/editor/filemanager/upload/test.html 1 -
+/webeditor/editor/filemanager/connectors/uploadtest.html 2 -
+/system/fckeditor/editor/filemanager/browser/default/connectors/test.html 4 http://www.zones.co.nz/system/fckeditor/editor/filemanager/browser/default/connectors/test.html
+/admin/fckeditor_ap/editor/filemanager/connectors/uploadtest.html 2 -
+/bbadmin/editors/fckeditor/editor/filemanager/upload/test.html 3 -
+/contact.htm 1 -
+/photo-gallery//RK=0/RS=WPoMzlHIZVbCTI8cth9Q9A8Xi28- 1 http://www.zones.co.nz/
+/wp-admin/ 1 -
+/js/fckeditor/editor/filemanager/browser/default/connectors/test.html 2 -
+/btozsqitnrgqk.html 1 -
+/fckeditor/editor/filemanager/connectors/uploadtest.html 2 -
+/what-is-zones/landscape-design-and-gassrden-maintenance/ 1 -
+/fckeditor/editor/fckdialog.html 2 -
+/fckeditor_ap/editor/filemanager/connectors/uploadtest.html 3 -
+/browserconfig.xml 10 -
+/fckeditor/editor/filemanager/browser/default/connectors/test.html 7 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/test.html 5 -
+/admin/editor/filemanager/upload/test.html 3 -
+/editor/editor/filemanager/connectors/test.html 1 -
+/webmanage/fckeditor/editor/filemanager/connectors/uploadtest.html 2 -
+/%22http://twitter.com/share 1 -
+/newsletters/ 2 -
+/%22http://www.facebook.com/sharer.php 1 -
+/editor/editor/filemanager/connectors/uploadtest.html 3 -
+/what-is-zones/landscape-design-and-gardddden-maintenance/ 1 -
+/mods/ckeditor/filemanager/connectors/uploadtest.html 1 -
+/public/js/fckeditor/editor/filemanager/upload/test.html 1 -
+/fckeditor/_samples/default.html 2 -
+/main.aspx 1 -
+/path/fckeditor/editor/filemanager/browser/default/browser.html 1 -
+/js/fckeditor/editor/filemanager/upload/test.html 1 -
+/public/js/fckeditor/editor/filemanager/connectors/test.html 2 -
+/administrator/editors/fckeditor/editor/filemanager/upload/test.html 2 -
+/admin/fckeditor/editor/filemanager/connectors/test.html 3 -
+/nbbahsctl.html 1 -
+/contact.php 1 -
+/admin/fckeditor/editor/filemanager/connectors/uploadtest.html 2 -
+/gxmxxugyjb.html 1 -
+/blog/wp-admin/ 1 -
+/editor/editor/filemanager/browser/default/connectors/test.html 1 -
+/fckeditor/editor/filemanager/browser/default/browser.html 2 -
+/editor/filemanager/browser/default/connectors/test.html 6 -
+/a 2 -
+/%22http://www.linkedin.com/shareArticle 1 -
+/js/fckeditor/editor/filemanager/browser/default/browser.html 1 -
+/.7z 7 -
+/webmanage/fckeditor/editor/filemanager/browser/default/connectors/test.html 2 -
+/main.jsp 1 -
+/editor/filemanager/connectors/uploadtest.html 2 -
+/administrator/fckeditor1/editor/filemanager/connectors/uploadtest.html 1 -
+/blnyrmenf.html 1 -
+/cms/fckeditor/editor/filemanager/connectors/uploadtest.html 2 -
+/fckeditor/editor/fckeditor.original.html 1 -
+/contact.asp 1 -
+/zones.co.nz.rar 7 -
+/zones.co.nz.zip 7 -
+/old/wp-admin/ 1 -
+/design/images/prettyPhoto/light_rounded/btnNext.png 5 http://www.zones.co.nz/photo-gallery/
+/wordpress/wordpress/wp-admin/ 1 -
+/admin/system/editor/fckeditor/editor/fckeditor.html 3 -
+/fckeditor/editor/filemanager/connectors/test.html 3 -
+/admin/fckeditor/editor/filemanager/upload/test.html 1 -
+/macstore/default.asp 1 -
+/%22//pinterest.com/pin/create/button/ 1 -
+/js/fckeditor/editor/filemanager/connectors/uploadtest.html 1 -
+/administrator/fckeditor/editor/filemanager/connectors/uploadtest.html 3 -
+/manage/fckeditor/editor/filemanager/browser/default/connectors/test.html 5 -
+/themes/third_party/navee/images/backgrounds_sprite.png 2 http://zones.co.nz/admin.php
+/public/js/fckeditor/editor/filemanager/connectors/uploadtest.html 3 -
+/zones.tar.gz 7 -
+/webmanage/fckeditor/editor/filemanager/connectors/test.html 2 -
+/backup.sql 7 -
+/edit/editor/filemanager/browser/default/browser.html 1 -
+/webeditor/editor/filemanager/connectors/test.html 1 -
+/main.html 1 -
+/contact.aspx 1 -
+/admin/editors/fckeditor/editor/filemanager/upload/test.html 1 -
+/editor/editor/filemanager/upload/test.html 2 -
+/main.asp 1 -
+/fckeditor1/editor/filemanager/connectors/uploadtest.html 1 -
+/fckeditor/editor/fckeditor.html 3 -
+/main.htm 1 -
+/wordpress/wp-admin/ 1 -
+/webeditor/editor/filemanager/browser/default/connectors/test.html 3 -
+/editor/filemanager/browser/default/browser.html 1 -
+/fckeditor/editor/filemanager/upload/test.html 2 -
+/admin/fckeditor1/editor/filemanager/connectors/uploadtest.html 1 -
+/landscape-design/project-management//RK=0/RS=h9kWlPXkNKoJVPhXQf_ciptnKpA- 1 http://www.zones.co.nz/
+/admin/fckeditor/editor/filemanager/browser/default/browser.html 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 431
+114-134-170-153.static.nztechnologygroup.com 811 2180 57268470 20140627133211
+ptr.cnsat.com.cn 320 320 7320235 20140630231450
+222-155-143-201.jetstream.xtra.co.nz 112 206 12177479 20140623225412
+222-153-79-45.jetstream.xtra.co.nz 65 114 6304829 20140607182441
+119.63.193.131 63 63 1436918 20140630091727
+119.63.193.195 59 59 1357669 20140630131819
+113.110.230.112 58 59 988725 20140606223902
+119.63.193.130 57 57 1303152 20140630191756
+119.63.193.194 57 57 1303152 20140629231523
+119.63.193.132 52 52 1193407 20140630111933
+122-57-166-127.jetstream.xtra.co.nz 5 74 4234296 20140606124019
+bexairrouter.arl.net.nz 1 14 403333 20140603133425
+121-99-32-119.bng1.nct.orcon.net.nz 3 18 805579 20140628215634
+222-155-140-100.jetstream.xtra.co.nz 8 21 881140 20140618143546
+121-72-194-210.dsl.telstraclear.net 1 30 1221679 20140616185647
+rate-limited-proxy-66-249-92-146.google.com 1 1 5958 20140604201332
+69.58.178.56 10 10 152350 20140613063530
+37.59.202.82 2 2 6449 20140602083620
+203-79-104-67.cable.telstraclear.net 19 63 4357128 20140615162747
+146.171.254.96 1 6 123162 20140609095436
+host244-138-dynamic.33-79-r.retail.telecomitalia.it 1 30 1215641 20140605034151
+124.157.96.94 2 60 2443359 20140616103556
+axido.com 1 1 5838 20140612232418
+rcrtom.lnk.telstra.net 3 18 292623 20140617073021
+219-89-147-251.jetstart.xtra.co.nz 2 14 229267 20140619083746
+222-153-191-221.jetstream.xtra.co.nz 8 24 476189 20140601214339
+google-proxy-66-249-85-213.google.com 7 85 2445130 20140624001239
+120.1.62.195 32 32 554022 20140618215510
+131.203.244.66 1 14 227795 20140624110452
+121-74-207-67.telstraclear.net 1 1 5839 20140610165928
+r256-pw-pocogrande.ibys.com.br 0 1 22519 
+121-74-221-19.telstraclear.net 1 30 1221680 20140609181535
+207.102.138.158 1 1 0 20140621220847
+125-239-130-205.jetstream.xtra.co.nz 3 16 279723 20140619190158
+msnbot-199-30-24-106.search.msn.com 0 5 104953 
+103.254.133.18 3 32 1233354 20140630153637
+222-152-81-102.jetstream.xtra.co.nz 1 14 404744 20140605093747
+202-154-133-56.ubs-dynamic.connections.net.nz 0 1 182798 
+31.106.252.27.dyn.cust.vf.net.nz 0 1 22519 
+31.148.246.16 1 1 14094 20140615162408
+222-155-195-43.jetstream.xtra.co.nz 4 39 1301430 20140607103433
+197.0.146.55 4 40 1291295 20140621012456
+121-99-195-167.bng1.tvc.orcon.net.nz 2 32 1226783 20140606191633
+ec2-23-21-24-219.compute-1.amazonaws.com 1 1 22726 20140606204303
+89-145-108-202.as29017.net 1 1 22726 20140606132344
+122-57-155-214.jetstream.xtra.co.nz 2 17 314206 20140609212644
+118-92-248-14.dsl.dyn.ihug.co.nz 2 16 773892 20140630214201
+209.133.77.163.t01713-01.above.net 1 1 24021 20140605233306
+203.86.204.98.static.snap.net.nz 4 22 467800 20140602214000
+61.135.190.223 3 4 18537 20140608130543
+114.23.241.111 9 44 2735035 20140602122218
+202-3-84-65.static.diginet.co.nz 5 41 2153494 20140606120121
+203-100-218-59.callplus.net.nz 2 2 10489 20140607191826
+host.colocrossing.com 2 2 10250 20140613201345
+121-74-56-13.telstraclear.net 2 12 407213 20140605211902
+5.135.112.57 4 4 21192 20140628102434
+61.135.190.100 5 8 195352 20140629060241
+183.15.157.227 49 49 904725 20140626193823
+rate-limited-proxy-66-249-92-215.google.com 1 1 5960 20140604201732
+loft2579.serverloft.com 1 1 1621 20140605065629
+nat-vlan550.las1.sco.cisco.com 9 9 153492 20140617101944
+1.127.127.233 3 36 1227258 20140604161617
+222-155-72-82.jetstream.xtra.co.nz 1 30 1221680 20140622134854
+61.135.190.220 1 3 89253 20140601211510
+61.135.190.219 5 7 110681 20140630223529
+129.12.198.186.isp.timbrasil.com.br 1 1 5838 20140622132513
+203-97-48-229.dsl.clear.net.nz 1 14 475684 20140610104055
+host-116-251-185-214.xdsl.kinect.net.nz 14 30 502644 20140603170317
+125-238-111-74.jetstream.xtra.co.nz 6 40 641725 20140617202403
+37.238.159.27.broad.xm.fj.dynamic.163data.com.cn 1 1 20 20140608203932
+192.81.210.204 11 15 152942 20140627154517
+116.199.222.83 13 64 5278285 20140617093653
+125-238-38-103.jetstream.xtra.co.nz 13 59 3163298 20140612212701
+kon-27-85.svserv.net 2 2 10962 20140614031138
+alofinorthap.niue.nu 14 34 839878 20140602194526
+125-237-5-209.jetstream.xtra.co.nz 8 35 717007 20140606000526
+125-237-137-22.jetstream.xtra.co.nz 2 18 734310 20140612200013
+121.98.162.23 1 30 1221678 20140615170809
+162.243.170.65 11 15 152937 20140630162847
+222-155-80-181.jetstream.xtra.co.nz 1 32 1223853 20140606184452
+1912ob.scansafe.net 1 14 475683 20140612113013
+118-92-41-8.dsl.dyn.ihug.co.nz 6 43 2281765 20140608205403
+122-60-219-44.jetstream.xtra.co.nz 2 20 226630 20140604093604
+203-173-128-179.dsl.dyn.ihug.co.nz 3 22 425735 20140604164510
+host-203-94-33-38.xdsl.kinect.net.nz 4 22 336519 20140610104942
+d6989.dc.unit-is.com 2 2 5842 20140629131543
+210.246.14.79 8 48 3899383 20140617192124
+222-153-90-20.jetstream.xtra.co.nz 11 27 490274 20140605163520
+ip-58-28-152-198.static-xdsl.xnet.co.nz 1 1 5571 20140609085734
+google-proxy-66-249-80-117.google.com 6 117 4462944 20140630191848
+222-155-139-42.jetstream.xtra.co.nz 0 1 22519 
+131.203.79.38 2 36 1479688 20140609131147
+161.248.69.111.dynamic.snap.net.nz 5 38 1307591 20140606115946
+gvo23839.gvodatacenter.com 1 1 1621 20140605064000
+ec2-54-234-221-155.compute-1.amazonaws.com 1 1 22726 20140617105353
+37.143.69.111.dynamic.snap.net.nz 1 16 742616 20140604210033
+125.91.69.111.dynamic.snap.net.nz 1 1 5838 20140620171811
+122-60-159-98.jetstream.xtra.co.nz 17 65 5819386 20140608152637
+180.153.163.191 1 1 22726 20140608090052
+165.231.1.205 2 2 6482 20140616193419
+ec2-174-129-159-121.compute-1.amazonaws.com 1 1 24021 20140603105444
+125-239-83-42.jetstream.xtra.co.nz 4 18 784745 20140609195612
+118-92-47-124.dsl.dyn.ihug.co.nz 3 16 679488 20140601165247
+222-154-109-230.jetstream.xtra.co.nz 2 16 486357 20140607234738
+121-72-102-81.dsl.telstraclear.net 0 1 248141 
+122-60-144-123.jetstream.xtra.co.nz 2 20 462537 20140601211801
+da-www06.ballou.se 1 1 1621 20140614093603
+210.246.63.27 5 5 24775 20140603151512
+61.135.190.224 6 16 451847 20140629060243
+125-238-45-88.jetstream.xtra.co.nz 18 47 5240311 20140604213332
+155.113.252.27.dyn.cust.vf.net.nz 2 14 291174 20140607141719
+ec2-23-20-115-183.compute-1.amazonaws.com 1 1 2510 20140606204303
+192.81.210.100 11 15 152935 20140624081330
+121-74-146-230.telstraclear.net 22 48 5262893 20140602164721
+103-14-141-29.ip.cis.gen.nz 3 39 1287546 20140608192521
+118-92-157-243.dsl.dyn.ihug.co.nz 2 6 111237 20140612085142
+76-227-98-170.lightspeed.elpstx.sbcglobal.net 0 1 302664 
+103-224-130-2.flip.co.nz 5 67 2656346 20140625183433
+122-60-199-182.jetstream.xtra.co.nz 2 15 481687 20140627101555
+37.59.150.121 1 1 5428 20140627091713
+ec2-50-19-31-100.compute-1.amazonaws.com 1 1 13048 20140606204303
+c32-126.i07-9.onvol.net 0 1 243826 
+202.27.146.2 1 14 475683 20140619175709
+122.58.87.136 15 31 510098 20140601172007
+124.157.119.126 11 49 1341737 20140619090317
+96.111.224.49.dyn.cust.vf.net.nz 6 22 1444042 20140628210628
+115-188-241-18.jetstream.xtra.co.nz 1 30 1221680 20140606191921
+findsa.co.za 2 2 45452 20140626184419
+103-224-128-5.flip.co.nz 1 14 231846 20140630125306
+188.240.134.117 1 1 918 20140603024025
+118-92-4-113.dsl.dyn.ihug.co.nz 1 30 1221860 20140617164429
+183.15.167.89 49 49 904725 20140606215005
+125-237-100-128.jetstream.xtra.co.nz 0 1 248141 
+abts-north-dynamic-252.56.177.122.airtelbroadband.in 8 42 2295777 20140622212744
+ks305436.kimsufi.com 4 4 20306 20140625133013
+google-proxy-66-249-81-93.google.com 3 42 1232826 20140630055416
+222-152-196-171.jetstream.xtra.co.nz 1 11 464350 20140628210130
+46.229.170.197 1 1 24021 20140604143327
+222-152-82-146.jetstream.xtra.co.nz 1 30 1221679 20140609205812
+p3plcpnl023.prod.phx3.secureserver.net 1 1 1621 20140627113712
+91.236.75.44 2 2 9013 20140603171740
+219-89-175-241.jetstart.xtra.co.nz 14 48 1104454 20140615210917
+115-188-110-97.jetstream.xtra.co.nz 3 14 477249 20140610111749
+122.56.190.74 1 30 1221679 20140606144711
+122-62-37-238.jetstream.xtra.co.nz 3 36 1297343 20140620204020
+222-152-215-157.jetstream.xtra.co.nz 1 12 402569 20140601171012
+125-236-163-15.jetstream.xtra.co.nz 34 51 590534 20140605154414
+202.49.183.91 0 1 22519 
+103.14.62.172 1 30 1221860 20140614195151
+121-74-180-193.telstraclear.net 16 58 3286403 20140608204832
+122-62-220-100.jetstream.xtra.co.nz 5 34 946958 20140601102325
+122.56.232-55.mobile.telecom.co.nz 1 12 474923 20140630202819
+google-proxy-66-249-84-1.google.com 5 80 3300311 20140624223311
+121-72-109-102.dsl.telstraclear.net 7 22 471490 20140605225216
+118.82.151.9 0 3 862365 
+122.58.97.81 4 18 457411 20140602213114
+101.174.36.100 1 14 465801 20140623155234
+78.174.22.247.dynamic.ttnet.com.tr 1 30 1221862 20140612215906
+static.uber.co.nz 1 13 223615 20140619170557
+122-58-209-137.jetstream.xtra.co.nz 33 74 3221215 20140604210625
+118-92-17-223.dsl.dyn.ihug.co.nz 1 15 232646 20140614130533
+195-154-168-130.rev.poneytelecom.eu 2 2 10057 20140602215314
+122-62-49-207.jetstream.xtra.co.nz 4 18 777243 20140602191941
+222-154-61-249.jetstream.xtra.co.nz 0 1 243826 
+121-74-84-18.telstraclear.net 8 41 1618371 20140605015929
+msnbot-199-30-25-45.search.msn.com 0 29 1216022 
+google-proxy-66-249-88-213.google.com 5 54 2515361 20140629043434
+unassigned.static.cust.vf.net.nz 19 105 6333623 20140608174707
+msnbot-199-30-25-57.search.msn.com 0 5 104953 
+122.56.197.130 0 1 22519 
+ppp158-255-165-162.pppoe.spdop.ru 1 4 15761 20140602010331
+122-62-42-241.jetstream.xtra.co.nz 1 14 475686 20140614135309
+187-24-205-113.3g.claro.net.br 1 30 1221860 20140610105150
+google-proxy-64-233-172-21.google.com 6 57 1965078 20140627215836
+118-93-213-65.dsl.dyn.ihug.co.nz 8 53 3113605 20140616212329
+115-188-117-165.jetstream.xtra.co.nz 1 14 227793 20140606192132
+ec2-54-221-155-176.compute-1.amazonaws.com 1 1 22726 20140625053925
+91.236.75.110 4 4 57376 20140625232806
+222-152-19-179.jetstream.xtra.co.nz 5 23 616539 20140627072730
+198.100.30.237 2 2 10690 20140628105404
+118-93-167-162.dsl.dyn.ihug.co.nz 9 26 1148823 20140604003328
+dynamicip-94-180-164-7.pppoe.kzn.ertelecom.ru 1 17 1844980 20140603144532
+ec2-50-17-52-104.compute-1.amazonaws.com 0 1 361 
+115.197.83.201 1 1 22726 20140620175231
+122-60-162-7.jetstream.xtra.co.nz 33 47 584629 20140603192343
+210.246.7.60 2 34 1576381 20140604171049
+203-184-48-190-dynamic.callplus.net.nz 5 7 296148 20140604210819
+87.121.252.27.dyn.cust.vf.net.nz 1 30 1221679 20140606113131
+msnbot-199-30-25-215.search.msn.com 0 4 104726 
+121-99-31-252.bng1.nct.orcon.net.nz 0 1 1461893 
+119.9.15.122 1 1 24021 20140605142005
+124-197-44-83.callplus.net.nz 2 60 1243804 20140613161339
+219-89-144-201.jetstart.xtra.co.nz 13 58 5159106 20140607041036
+203-167-188-88.dsl.clear.net.nz 1 14 523435 20140603103636
+222-154-234-29.adsl.xtra.co.nz 2 15 485196 20140609155246
+bzq-114-71-13.static.bezeqint.net 2 2 11799 20140618080344
+121-74-245-85.telstraclear.net 7 37 1365454 20140601133322
+115.249.55.155 1 30 1215641 20140603180137
+122-59-103-150.jetstream.xtra.co.nz 1 14 403332 20140601223127
+121-72-162-175.dsl.telstraclear.net 15 36 3189856 20140605085205
+122-61-153-220.jetstream.xtra.co.nz 2 16 759443 20140607175004
+forbes.wernon.com 1 1 1621 20140627113015
+61.135.190.103 2 6 178263 20140628020046
+233.84.252.27.dyn.cust.vf.net.nz 20 137 7180184 20140609153919
+ks3283192.kimsufi.com 4 4 20309 20140615122602
+219-89-123-37.adsl.xtra.co.nz 14 86 4623132 20140617085545
+static.139.48.76.144.clients.your-server.de 1 1 5839 20140612153450
+203-184-24-206-dynamic.callplus.net.nz 4 26 1427022 20140606122600
+61.135.190.105 2 4 96891 20140630223524
+121-74-137-206.telstraclear.net 11 27 490473 20140605090402
+ns155.altervista.org 1 1 1621 20140611173056
+161-233-148-118.nzcomms.co.nz 1 1 5956 20140603134653
+1-195-2-50.static-reverse.dallas-cloud.serverhub.com 2 2 6613 20140603125448
+proxy22.messagelabs.net 40 104 8224212 20140606115755
+121-98-159-213.bng1.mdr.orcon.net.nz 3 20 552898 20140617233823
+86.51.26.15 2 2 10599 20140623160348
+37.59.216.239 2 2 10879 20140616113840
+89-145-108-207.as29017.net 1 1 16692 20140606145907
+rev.opentransfer.com.118.2.130.98.in-addr.arpa 1 1 1621 20140614092735
+121-72-180-34.dsl.telstraclear.net 0 1 340222 
+121-73-222-103.broadband.telstraclear.net 1 14 475685 20140623224239
+116.12.57.10 1 30 1221678 20140610134938
+ec2-50-16-36-247.compute-1.amazonaws.com 1 1 13751 20140606204303
+125-238-23-240.jetstream.xtra.co.nz 0 1 22519 
+118-92-137-208.dsl.dyn.ihug.co.nz 28 77 4404211 20140618143118
+101.98.204.137 0 1 22519 
+36.162.252.27.dyn.cust.vf.net.nz 0 1 22519 
+n20h219.rev.sprintdatacenter.pl 5 5 0 20140630060959
+121-99-248-115.bng1.nct.orcon.net.nz 10 26 485228 20140603120757
+147.84.252.27.dyn.cust.vf.net.nz 23 75 6013666 20140611200304
+222-155-173-243.jetstream.xtra.co.nz 3 19 454830 20140604143851
+122-61-133-69.jetstream.xtra.co.nz 5 21 464799 20140603192008
+ec2-107-20-129-75.compute-1.amazonaws.com 1 1 12739 20140606204303
+203-100-214-84-dynamic.callplus.net.nz 3 3 13912 20140603190824
+192.99.170.65 4 4 20110 20140601150430
+121-99-27-147.bng1.nct.orcon.net.nz 12 50 1410268 20140608172525
+121-74-148-180.telstraclear.net 1 30 1221679 20140612181403
+vpn-vic082.vpnsolutions.com.au 1 30 1221861 20140616153610
+5x164x120x193.dynamic.spb.ertelecom.ru 1 12 255695 20140603144915
+115-188-88-212.jetstream.xtra.co.nz 4 40 2002180 20140606124309
+170.130.110.106 2 2 10054 20140601100026
+222-152-206-44.jetstream.xtra.co.nz 3 39 1600648 20140609203609
+186-244-196-243.user.veloxzone.com.br 1 30 1221861 20140626000108
+222-155-165-47.jetstream.xtra.co.nz 2 31 1227519 20140617164932
+131.203.132.78 5 41 2057187 20140616134736
+124-197-38-73.callplus.net.nz 4 17 977004 20140628184315
+189-68-79-81.dsl.telesp.net.br 0 1 396684 
+121-74-220-232.telstraclear.net 8 38 1273142 20140612212716
+209.236.123.191.blackboxrdp.com 1 1 0 20140612074836
+122-62-230-128.jetstream.xtra.co.nz 5 33 697199 20140605134101
+118-92-31-227.dsl.dyn.ihug.co.nz 1 30 1221861 20140606175715
+122-61-177-218.jetstream.xtra.co.nz 34 60 4240448 20140602050114
+122-60-209-194.jetstream.xtra.co.nz 1 14 475685 20140628173612
+ks301224.kimsufi.com 2 2 10251 20140614085458
+x2.oryon.net 1 1 1621 20140614094426
+210.246.45.42 1 14 475684 20140624142113
+gw.shared-server.net 1 1 1621 20140619113142
+115-188-33-102.jetstream.xtra.co.nz 7 26 504949 20140602204139
+61.135.190.221 1 1 5838 20140628020038
+ptr222.scorch.co.nz 1 13 402644 20140601172633
+urlc07.asd.mail.ne1.yahoo.com 2 2 45452 20140608202215
+178.32.234.129 1 1 5429 20140628083151
+91.204.77.222.broad.pt.fj.dynamic.163data.com.cn 1 1 5657 20140624051150
+209.133.77.165.t01713-01.above.net 1 1 24021 20140605165639
+116.30.174.75 1 1 5838 20140619200117
+188.198.224.49.dyn.cust.vf.net.nz 6 45 2832927 20140608204735
+186-230-20-242.ded.intelignet.com.br 1 28 1203575 20140619034325
+89-145-108-201.as29017.net 1 1 16692 20140606130633
+google-proxy-66-249-80-197.google.com 1 1 5838 20140617192331
+237.144.252.27.dyn.cust.vf.net.nz 14 39 4329299 20140629121732
+27.123.171.141 1 1 4394 20140605221011
+218-101-6-209.dsl.clear.net.nz 1 13 566649 20140611155210
+222-153-28-147.jetstream.xtra.co.nz 1 28 1118492 20140630181700
+118-92-16-146.dsl.dyn.ihug.co.nz 7 43 2189557 20140606114215
+222-155-18-53.jetstream.xtra.co.nz 0 1 22519 
+125-237-89-117.jetstream.xtra.co.nz 21 38 817844 20140602185905
+222-153-254-239.jetstream.xtra.co.nz 1 14 475686 20140622113528
+212.216.159.27.broad.pt.fj.dynamic.163data.com.cn 1 1 6107 20140629045552
+103.11.178.253 2 36 1783544 20140606123409
+188.114.252.27.dyn.cust.vf.net.nz 1 30 1221681 20140609135254
+222-154-76-120.jetstream.xtra.co.nz 3 24 630449 20140602145907
+75-144-21-129-sfba.hfc.comcastbusiness.net 0 1 16288 
+msnbot-199-30-25-154.search.msn.com 0 6 121241 
+95-170-83-246.colo.transip.net 1 1 24021 20140603034025
+122-61-220-67.jetstream.xtra.co.nz 0 1 252938 
+125-238-80-174.jetstream.xtra.co.nz 0 1 243826 
+101.98.106.201 7 8 285759 20140604221646
+122-59-252-82.jetstream.xtra.co.nz 3 23 721948 20140601232631
+svr2.iso9001india.com 2 2 10600 20140630015556
+14.1.34.62.host.layer2.co.nz 3 21 2403532 20140629222653
+pool-203.122.27.rev.spectranet.in 0 1 40552 
+122-62-207-22.jetstream.xtra.co.nz 15 32 810893 20140602194833
+80.67.12.244 2 2 10056 20140605134345
+122-61-185-249.jetstream.xtra.co.nz 1 32 1223852 20140608090051
+27.123.149.141 5 19 462273 20140603110905
+61.135.190.104 1 1 5839 20140627024044
+170.130.24.141 2 2 10876 20140616125416
+121-72-173-156.dsl.telstraclear.net 1 13 402644 20140604205036
+103-224-130-4.flip.co.nz 2 7 312063 20140612214927
+ip-58-28-208-104.wxnz.net 3 16 32855 20140604174404
+ec2-54-82-33-252.compute-1.amazonaws.com 1 1 22726 20140622154914
+ec2-50-19-30-169.compute-1.amazonaws.com 0 1 1949 
+63.238.69.111.dynamic.snap.net.nz 11 27 490631 20140603123518
+121-99-70-170.bng1.nct.orcon.net.nz 1 12 468729 20140601184928
+122-57-214-219.jetstream.xtra.co.nz 7 21 470819 20140605204424
+fiber.pdl123.co.nz 1 14 475685 20140609150234
+14.147.207.214 2 2 6018 20140626154714
+125-236-195-243.adsl.xtra.co.nz 2 35 1291792 20140612155506
+122-57-18-81.jetstream.xtra.co.nz 1 15 480354 20140629102830
+ks4001663.ip-198-100-144.net 2 2 10766 20140609161859
+196-216-18-94.mexcom.co.za 1 1 1621 20140605064825
+61.135.190.102 3 9 267511 20140630061354
+d5721.dc.unit-is.com 2 2 5839 20140628142939
+198.199.75.123 22 30 305866 20140620115704
+c-75-75-10-96.hsd1.va.comcast.net 1 30 1221859 20140613102226
+snopxyout-01.asiapac.hp.net 0 3 0 
+121-73-166-136.dsl.telstraclear.net 1 10 400878 20140603211914
+115.214.141.77 21 21 374355 20140611081728
+189-69-10-15.dsl.telesp.net.br 1 30 1221863 20140620145023
+118-93-11-102.dsl.dyn.ihug.co.nz 5 66 2460882 20140611132446
+host-186-101-82-1.telconet.net 1 30 1221862 20140624051720
+115-188-254-122.jetstream.xtra.co.nz 5 20 677015 20140602103050
+203-211-75-221.ue.woosh.co.nz 7 41 1521837 20140607233112
+222-155-94-67.jetstream.xtra.co.nz 1 1 5836 20140607092224
+95-25-37-32.broadband.corbina.ru 2 13 788397 20140614230559
+118-93-131-155.dsl.dyn.ihug.co.nz 15 64 5742224 20140606123543
+155.94.130.107.static.quadranet.com 2 2 10688 20140630223938
+120.38.252.27.dyn.cust.vf.net.nz 9 13 99842 20140612211350
+195.2.240.106 1 1 22726 20140624091144
+cpe-72-178-157-103.hot.res.rr.com 0 1 302664 
+27.72.46.252 0 1 254598 
+121-73-229-202.broadband.telstraclear.net 3 36 1812275 20140612200946
+219-88-101-246.adsl.xtra.co.nz 1 14 475683 20140615142109
+27-32-241-101.static.tpgi.com.au 28 50 1745996 20140602005353
+122-62-39-242.jetstream.xtra.co.nz 3 15 767226 20140603203449
+121-72-67-97.dsl.telstraclear.net 3 17 413893 20140603163128
+bba470573.alshamil.net.ae 9 25 481114 20140603051740
+119.15.2.10 3 36 1297635 20140609114919
+121-98-48-46.bng1.tvc.orcon.net.nz 1 14 465803 20140624095132
+107.161.81.35.static.quadranet.com 2 2 10835 20140628232113
+121-74-203-78.telstraclear.net 10 45 2573034 20140609222146
+host109-148-60-220.range109-148.btcentralplus.com 3 19 524635 20140604081721
+203-173-194-40.dsl.dyn.ihug.co.nz 1 14 475683 20140623214925
+253.52.252.27.dyn.cust.vf.net.nz 1 12 474922 20140610125508
+118-93-57-231.dsl.dyn.ihug.co.nz 3 19 745285 20140603111609
+122-60-238-130.jetstream.xtra.co.nz 6 39 1247629 20140619144321
+msnbot-199-30-24-27.search.msn.com 0 5 104953 
+125-236-197-196.adsl.xtra.co.nz 2 12 407212 20140603202609
+101.98.205.65 0 1 252938 
+148.242.224.49.dyn.cust.vf.net.nz 1 16 1855087 20140611000559
+host-41.239.52.111.tedata.net 0 1 243826 
+25-207-148-118.nzcomms.co.nz 3 43 2759696 20140629232927
+121-74-98-254.telstraclear.net 18 37 1404605 20140602213339
+ks311135.kimsufi.com 13 13 0 20140616141027
+118-92-114-156.dsl.dyn.ihug.co.nz 7 23 991666 20140602054220
+124-197-47-59.callplus.net.nz 1 1 5332 20140604202052
+122-62-212-142.jetstream.xtra.co.nz 11 27 489426 20140605181807
+210.246.62.34 1 22 1015956 20140606113750
+12.224.252.27.dyn.cust.vf.net.nz 1 11 528182 20140614123032
+203-173-195-5.dsl.dyn.ihug.co.nz 2 13 232681 20140629111318
+203-79-124-165.adsl.paradise.net.nz 3 40 1329073 20140607092946
+121-99-87-122.bng1.tvc.orcon.net.nz 4 18 731943 20140628182611
+121-74-109-244.telstraclear.net 4 17 906592 20140601201811
+214.204.224.49.dyn.cust.vf.net.nz 2 33 1581776 20140608131953
+203.97.95.94 1 11 269580 20140618134142
+118-92-72-223.dsl.dyn.ihug.co.nz 1 3 6247 20140605084303
+121-74-142-247.telstraclear.net 4 21 560317 20140622214151
+122-60-191-127.jetstream.xtra.co.nz 0 1 353808 
+gator4001.hostgator.com 1 1 1621 20140627114442
+115-188-204-250.jetstream.xtra.co.nz 1 14 475683 20140628201610
+ip101.hichina.com 1 5 105105 20140608112958
+254.120.224.49.dyn.cust.vf.net.nz 1 15 408001 20140602145458
+93.118.74.200 1 1 918 20140606144610
+121-72-206-89.dsl.telstraclear.net 1 30 1221679 20140609142252
+google-proxy-66-249-84-169.google.com 3 41 1218327 20140609092506
+122-60-193-149.jetstream.xtra.co.nz 1 30 1221679 20140616214131
+37.250.36.174.bredband.tre.se 1 14 227976 20140629074720
+125-239-51-85.jetstream.xtra.co.nz 21 66 5299022 20140622101513
+125-238-192-224.jetstream.xtra.co.nz 4 41 1724808 20140608201644
+89-145-108-205.as29017.net 1 1 24021 20140604160449
+122-60-15-172.jetstream.xtra.co.nz 1 30 1221681 20140625214633
+remote.jadepromotions.co.nz 6 45 385478 20140612093751
+101.98.54.41 0 1 238155 
+mail.pumpt.co.nz 8 33 626894 20140604153428
+228.205.224.49.dyn.cust.vf.net.nz 1 2 19805 20140619133215
+121-99-150-84.bng1.nct.orcon.net.nz 10 27 488146 20140601022653
+222-154-22-213.jetstream.xtra.co.nz 2 36 1629576 20140607180419
+122-61-100-172.jetstream.xtra.co.nz 19 33 524750 20140602192613
+121-79-215-229.dsl.sta.inspire.net.nz 6 47 3292374 20140609180107
+20-156-148-118.nzcomms.co.nz 1 1 5866 20140630093845
+118-92-22-200.dsl.dyn.ihug.co.nz 15 56 2228507 20140605094632
+255.87.224.49.dyn.cust.vf.net.nz 2 31 1227519 20140606131708
+61.135.190.101 1 1 5958 20140601083855
+122-60-112-216.jetstream.xtra.co.nz 7 37 747149 20140602090404
+146.171.254.99 1 30 1512662 20140609085725
+119.63.193.196 37 37 840862 20140630231625
+198.199.86.202 11 15 152930 20140612174428
+101.172.170.162 7 41 1324122 20140607015245
+hst-169-48-25-185.ist.lt 1 1 5525 20140604001649
+220.181.132.218 1 1 22726 20140608112941
+ec2-107-22-67-105.compute-1.amazonaws.com 1 1 14344 20140607001254
+124-198-136-133.dynamic.dsl.maxnet.co.nz 6 42 1526112 20140603150941
+170.126.252.27.dyn.cust.vf.net.nz 2 21 419779 20140604181635
+183.221.227.4 2 2 10056 20140603105104
+122.56.200.154 4 44 2765507 20140606135457
+ec2-50-19-4-40.compute-1.amazonaws.com 1 1 11609 20140606204303
+122-60-240-85.jetstream.xtra.co.nz 1 12 402571 20140603205832
+ip-83-75-136-213.static.contabo.net 1 1 4636 20140605141142
+17.ip-192-99-212.net 4 4 21927 20140620095435
+69.12.74.51.static.quadranet.com 2 2 9184 20140604040725
+255.251.224.49.dyn.cust.vf.net.nz 3 36 1297337 20140619085616
+host-203-94-49-211.xdsl.kinect.net.nz 0 1 302664 
+tur-cache2.massey.ac.nz 1 14 403332 20140604145044
+. 2 2 6615 20140604173215
+252.110.252.27.dyn.cust.vf.net.nz 3 34 1485392 20140608132934
+125-239-84-36.jetstream.xtra.co.nz 3 17 413895 20140605104302
+122-59-224-10.jetstream.xtra.co.nz 4 18 795779 20140625203331
+201-0-73-136.dsl.telesp.net.br 1 23 933692 20140619050441
+173.0.60.137 1 1 5358 20140606222310
+212-83-129-209.rev.poneytelecom.eu 6 6 131356 20140606001628
+google-proxy-66-249-83-21.google.com 17 292 10054385 20140628033821
+122-59-208-204.jetstream.xtra.co.nz 2 13 232684 20140623164859
+77-75-22-66.rz01.sysup.at 2 2 10056 20140604203746
+93.115.108.210.gazduiresite.ro 1 1 1621 20140611174654
+121-72-179-11.dsl.telstraclear.net 12 47 804375 20140604192502
+122.58.69.194 21 64 4358289 20140606144438
+cu-px01.wsahs.nsw.gov.au 2 19 2254052 20140615110234
+118-93-181-57.dsl.dyn.ihug.co.nz 1 12 402566 20140602183452
+17.134.69.111.dynamic.snap.net.nz 3 20 289466 20140608140053
+host-88-80-20-128.cust.prq.se 1 1 5332 20140604032624
+121-74-202-169.telstraclear.net 2 39 2853775 20140606151012
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20140601 102 390 10831363 48
+20140602 256 641 25772477 49
+20140603 281 728 17041783 62
+20140604 384 1113 31911961 40
+20140605 192 608 16464864 35
+20140606 610 2018 92143091 57
+20140607 138 490 22349768 42
+20140608 126 551 27932935 47
+20140609 92 582 23399010 50
+20140610 42 178 5898758 36
+20140611 82 237 12744982 35
+20140612 83 410 13331784 43
+20140613 70 319 8602193 34
+20140614 39 143 6717505 36
+20140615 73 271 15730799 35
+20140616 71 345 13744369 40
+20140617 67 322 13538309 37
+20140618 97 200 7893555 33
+20140619 123 494 13073910 41
+20140620 43 101 3071555 32
+20140621 30 80 2491487 27
+20140622 76 255 13039931 34
+20140623 69 154 7085618 30
+20140624 44 141 4224147 34
+20140625 66 313 15176697 36
+20140626 77 124 3171197 28
+20140627 59 168 7111276 35
+20140628 56 165 6446283 40
+20140629 52 188 11451368 33
+20140630 53 180 5842723 40
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 9
+5mn-15mn 27
+0s-30s 997
+2mn-5mn 47
+15mn-30mn 5
+30s-2mn 74
+30mn-1h 10
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 143
+/ 944 17020479 866 787
+/admin.php 387 5634480 2 3
+/landscape-design/project-management/ 239 1541169 135 106
+/what-is-zones/landscape-design-and-garden-maintenance/ 142 732472 1 7
+/photo-gallery/ 126 540448 0 4
+/outdoor-kitchen/project-management/ 87 681327 27 28
+/contact-us/enquire-about-landscaping-services/ 81 496150 2 10
+/outdoor-rooms/project-management/ 76 611208 12 16
+/pergola-decks-patios/project-management/ 69 511601 6 8
+/contact-us/franchise-opportunities/ 68 410582 11 14
+/photo-gallery/gardening-and-gardening-maintenance/ 12 52517 0 11
+/landscape-design/design-ideas/ 11 50416 0 0
+/grass-lawns-and-lawn-mowing-services/landscaping-ideas/ 1 5446 0 0
+/landscaping-ideas/reviving-the-exterior-of-a-cedar-home 14 90929 0 4
+/landscape-designers/team/matt-steele 19 87626 1 2
+/professional-testimonials 1 4526 0 0
+/landscape-designers/new-zealand/ 10 71574 0 0
+/swimming-pools/project-management/ 38 345408 0 2
+/fencing/landscaping-ideas/ 2 10841 0 0
+/photo-gallery/outdoor-lighting-and-power/ 2 8772 0 0
+/landscape-designers/history/ 12 63671 0 1
+/site/NoSearchResults/4bc470d8c1b6c0ac03498422975bf97d/ 1 4154 0 0
+/pergola-decks-patios/landscaping-ideas/ 7 39606 3 0
+/photo-gallery/landscape-design/ 16 69944 0 0
+/grass-lawns-and-lawn-mowing-services/project-management 1 5612 0 0
+/design-ideas/outdoor-kitchen/ 1 4650 0 0
+/landscape-design-cost/ 10 65623 0 1
+/garden-plants/design-ideas/ 5 23226 0 0
+/garden-plants/photo-gallery/ 13 58069 0 1
+/case-studies/ 1 5046 0 0
+/landscape-design/landscaping-ideas/ 10 54476 0 0
+/landscape-designers/team/sort/north-island/ 5 22759 0 0
+/landscape-designers/team/sort/south-island/ 2 8870 0 0
+/landscape-designers/landscape-supplies/ 17 82869 0 1
+/testimonials/ 1 4434 0 0
+/gardening-and-gardening-maintenance/landscaping-ideas/sort/landscaping-ideas-expert/ 2 11226 0 0
+/all/project-management/ 35 282174 0 5
+/site/SearchResults/033215f7a8a3b71496bb5e6310e12b86/ 1 4358 0 0
+/wp-login.php 12 19452 12 12
+/landscaping-ideas/ 39 244970 10 7
+/adwords/contact-bus.html 5 2160 0 2
+/rain-water-tanks/landscaping-ideas/ 1 5384 0 0
+/gardening-and-gardening-maintenance/landscaping-ideas/ 3 16636 0 0
+/landscaping-ideas/top-10-new-zealand-gardening-trends 7 42268 2 2
+/landscaping-ideas/a-natural-way-to-protect-wood 2 11689 0 0
+/contact-us/franchise-opportunities 3 38894 2 2
+/all/photo-gallery/ 32 140360 1 2
+/fencing/project-management/ 45 386112 5 9
+/concrete-asphalt-paving-stones-driveways/project-management/ 49 400673 5 4
+/outdoor-kitchen/landscape-design-cost/ 1 5171 0 0
+/what-is-zones/project-management/ 36 295631 1 6
+/site/sitemap-xml 3 1811 0 0
+/landscape-design/landscape-design-cost/ 4 20283 0 0
+/concrete-asphalt-paving-stones-driveways/photo-gallery/ 5 22330 0 0
+/competitions/ 5 35163 1 3
+/fencing/photo-gallery/ 4 17971 0 0
+/photo-gallery/rain-water-tanks/ 3 13145 0 1
+/landscape-design-faq/ 11 70077 0 0
+/outdoor-kitchen/landscaping-ideas/ 4 21762 0 1
+/contact-us/designer-jobs/ 27 136899 1 2
+/landscaping-ideas/titoki-tree-planting-and-care-instructions 28 190618 14 13
+/forms/contact-business.php 9 542 0 0
+/concrete-asphalt-paving-stones-driveways/landscaping-ideas/ 3 16312 1 1
+/includes/editors/fckeditor/editor/filemanager/upload/test.html 1 20 1 1
+/swimming-pools/photo-gallery/ 1 4448 0 0
+/landscaping-ideas/a-natural-way-to-protect-wood/ 1 5716 0 0
+/photo-gallery 2 8409 0 0
+/what-is-zones/landscape-design/ 39 244211 0 1
+/pergola-decks-patios/photo-gallery/ 3 13310 0 1
+/outdoor-rooms/landscaping-ideas/ 5 27386 1 0
+/customer-testimonials/ 2 9841 0 0
+/retaining-wall/landscaping-ideas/ 4 21750 1 1
+/grass-lawns-and-lawn-mowing-services/project-management/ 44 383496 1 3
+/landscape-design/photo-gallery/ 46 203329 0 3
+/landscaping-ideas/landscape-design-plans/ 6 52141 2 0
+/renovate-magazine/ 4 28992 1 1
+/design-ideas/ 18 80794 0 1
+/case-studies 1 5045 0 0
+/photo-gallery/concrete-asphalt-paving-stones-driveways/ 3 13137 0 0
+/landscaping-ideas/sort/outdoor-kitchen/ 3 15933 0 0
+/all/design-ideas/ 13 60025 0 0
+/photo-gallery/swimming-pools/ 12 52535 0 0
+/special-offer/free-magazine 1 759 0 0
+/photo-gallery/garden-plants/ 20 87672 0 0
+/design-ideas/landscape-design/ 1 4381 0 0
+/swimming-pools/design-ideas/ 1 4640 0 0
+/design-ideas/grass-lawns-and-lawn-mowing-services/ 1 4233 0 0
+/grass-lawns-and-lawn-mowing-services/design-ideas/ 2 9302 0 0
+/landscape-designers/team/ 38 240334 1 2
+/garden-plants/project-management/ 57 463020 2 1
+/special-offer/ 3 22982 0 0
+/photo-gallery/outdoor-rooms/ 6 26185 0 0
+/concrete-asphalt-paving-stones-driveways/design-ideas/ 2 9283 0 0
+/adwords/enquire-button.html 1 431 0 0
+/photo-gallery/retaining-wall/ 2 8758 1 1
+/what-is-zones/landscape-design-and-garden-maintenance 11 134948 0 2
+/landscape-designers/overview/ 13 70079 0 3
+/photo-gallery/outdoor-kitchen/ 10 43673 0 0
+/all/landscaping-ideas/ 13 69952 0 0
+/photo-gallery/fencing/ 10 43782 0 1
+/gardening-and-gardening-maintenance/project-management/ 39 347055 0 18
+/all/landscaping-ideas/sort/landscaping-advice/ 1 5359 0 0
+/landscaping-ideas/landscape-design-plans/trackback/ 2 1322 0 2
+/landscape-design-brochure/ 6 50958 2 2
+/photo-gallery/grass-lawns-and-lawn-mowing-services/ 6 26262 0 0
+/concrete-asphalt-paving-stones-driveways/trackback/ 1 661 0 1
+/fencing/design-ideas/ 4 18538 0 0
+/client-testimonial-videos/ 1 4249 0 0
+/forms/newsletter.php 1 30 0 0
+/enquiry.html 11 9180 2 6
+/outdoor-rooms/design-ideas/ 2 9275 0 0
+/all/landscape-design-cost/ 2 10187 0 0
+/clippings/community/zones-at-the-2014-cornwall-park-school-fair 2 9586 0 0
+/landscape-designers/team/sort/wellington/ 2 9181 0 1
+/outdoor-lighting-and-power/project-management/ 35 317884 0 3
+/outdoor-lighting-and-power/photo-gallery/ 2 8971 0 0
+/photo-gallery/pergola-decks-patios/ 6 26310 0 0
+/professional-testimonials/ 1 4528 0 0
+/forms/getintouch-part1.php 1 98 0 0
+/all/photo-gallery 1 4293 0 0
+/site/SearchResults/b42eeced9e0e33176cf588f35039ce75/ 1 4325 0 0
+/all/landscaping-ideas/sort/landscaping-ideas-expert/ 1 5500 0 0
+/grass-lawns-and-lawn-mowing-services/landscape-design-cost/ 1 5028 0 0
+/enquirenow.html 14 24003 1 1
+/all/landscaping-ideas/sort/landscaping-ideas-product/ 1 5523 0 0
+/design-ideas/garden-plants/ 1 4410 0 0
+/franchisee-testimonial-videos/ 1 4863 0 0
+/outdoor-kitchen/photo-gallery/ 1 4416 0 0
+/outdoor-rooms/photo-gallery/ 8 35645 0 1
+/rain-water-tanks/project-management/ 32 286126 0 2
+/contact-us/job-opportunities 1 4348 0 0
+/site/browser 17 76909 13 16
+/landscaping-ideas/sort/outdoor-rooms/ 1 5311 0 0
+/landscape-design-brochure/zones-brochure 3 2277 0 0
+/privacy-statement/ 15 93407 10 0
+/grass-lawns-and-lawn-mowing-services/photo-gallery/ 3 13276 0 0
+/clippings/community/ 5 39428 1 1
+/what-is-zones/landscape-cost-and-services/ 43 269907 2 6
+/landscaping-ideas/landscape-design-insurance/ 11 59275 3 3
+/rain-water-tanks/landscape-design-cost/ 1 5203 0 1
+/retaining-wall/photo-gallery/ 1 4425 0 0
+/forms/enquire-now-popup.php 1 30 0 0
+/retaining-wall/project-management/ 54 421673 3 5
+END_SIDER

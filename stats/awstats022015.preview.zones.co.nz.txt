@@ -1,0 +1,2146 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201502 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.preview.zones.co.nz.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1999                
+POS_TIME 2684                
+POS_VISITOR 15705               
+POS_DAY 89520               
+POS_DOMAIN 3649                
+POS_LOGIN 4409                
+POS_ROBOT 4598                
+POS_WORMS 5470                
+POS_EMAILSENDER 5601                
+POS_EMAILRECEIVER 5744                
+POS_SESSION 90382               
+POS_SIDER 90595               
+POS_FILETYPES 5879                
+POS_DOWNLOADS 6129                
+POS_OS 6201                
+POS_BROWSER 6404                
+POS_SCREENSIZE 8229                
+POS_UNKNOWNREFERER 8303                
+POS_UNKNOWNREFERERBROWSER 9155                
+POS_ORIGIN 9714                
+POS_SEREFERRALS 9863                
+POS_PAGEREFS 10096               
+POS_SEARCHWORDS 11166               
+POS_KEYWORDS 12182               
+POS_MISC 2346                
+POS_ERRORS 12904               
+POS_CLUSTER 4265                
+POS_SIDER_404 13079               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20150301001005 374 118327 17892032073166
+FirstTime 20150201004938
+LastTime 20150228220724
+LastUpdate 20150302000632 374 0 0 1 372
+TotalVisits 1522                
+TotalUnique 1074                
+MonthHostsKnown 996                 
+MonthHostsUnknown 408                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 376 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 122 293 7596895 105 144 1620473
+1 133 185 4149343 117 151 1972493
+2 80 242 7674594 74 98 454705
+3 88 160 3553978 356 389 2451720
+4 56 158 4673987 99 119 1573057
+5 73 251 7611645 88 128 851114
+6 77 203 6621939 92 145 1735094
+7 114 372 18823635 73 110 1026534
+8 127 505 18701153 93 136 1994193
+9 287 1239 63096991 118 157 1160516
+10 155 651 36528387 116 257 5377172
+11 216 1079 50249408 94 181 3165052
+12 212 926 45868715 141 296 6501360
+13 274 1207 44277173 117 294 7320620
+14 208 923 32950399 151 217 3429628
+15 185 1056 45990002 118 153 1785068
+16 155 907 36444085 149 196 2031696
+17 258 1132 39208647 168 221 1613835
+18 165 662 37112436 112 166 2531502
+19 122 588 18728846 153 201 2483295
+20 221 1072 42143692 79 152 2419579
+21 180 1057 52064898 112 154 1631016
+22 183 836 39622990 131 198 2537546
+23 116 494 21135461 103 152 1561766
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 34
+nz 1455 9075 418945854
+ip 1151 3161 134115840
+cn 601 602 2219618
+com 355 954 28278766
+net 147 1098 47006593
+gh 21 21 388172
+br 20 584 23879903
+jp 10 55 1934811
+org 6 6 117876
+eu 6 18 489102
+pt 2 60 2395583
+bd 1 14 543366
+es 1 30 1197791
+no 0 1 86875
+ru 1 30 1197789
+fr 0 1 98600
+in 5 45 1385607
+sg 0 1 98600
+th 2 47 1829604
+de 2 3 110013
+be 0 2 64909
+md 1 1 21976
+cl 1 17 896196
+gr 1 30 1197790
+au 5 87 5856202
+info 1 15 294497
+it 6 164 6825719
+aw 0 1 98600
+hu 0 1 302664
+za 2 3 142552
+pl 2 31 1219765
+nl 0 1 98600
+arpa 1 25 1047610
+se 1 14 441856
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 1
+stats 21 21 101656 20150205132552
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 20
+bot[\s_+:,\.\;\/\\-] 927 19103778 20150228231901 87
+googlebot 716 3838550 20150228234423 58
+baiduspider 584 15717110 20150228193705 0
+yandex 245 994569 20150228184958 52
+crawl 207 1116889 20150226033401 2
+slurp 153 702521 20150228173536 16
+robot 132 645309 20150228200829 9
+archive\.org_bot 40 138289 20150205092109 19
+mj12bot 36 332333 20150228220732 15
+java\/[0-9] 32 478153 20150221145316 0
+no_user_agent 31 526591 20150228055710 1
+exabot 7 22846 20150227160552 3
+unknown 29 1808 20150226195318 29
+facebook 6 1597920 20150214142328 0
+titan 1 5705 20150226003009 0
+favicon 1 21976 20150214124026 0
+discovery 1 21975 20150211111111 0
+webfilter 6 17304 20150223215827 3
+cfnetwork 5 23345 20150219135412 0
+netcraft 3 43951 20150211130124 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+css 1215 7989080 0 0
+png 8658 431325615 0 0
+swf 1 0 0 0
+php 362 1469027 0 0
+html 2969 23728292 0 0
+js 1100 47442458 0 0
+jpg 865 167623665 0 0
+Unknown 476 3021745 0 0
+gif 552 2229417 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/robots.txt 277 0 15190
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 14
+linuxsuse 4
+linuxandroid 786
+winxp 1475
+winlong 600
+macintosh 1
+unix 17
+win2000 2
+winnt 21
+winvista 1703
+linux 227
+win7 5985
+macosx 5240
+linuxdebian 1
+Unknown 136
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 105
+msie6.0 932
+safari7.0.3 3
+firefox28.0 4
+chrome40.0.2214.115 512
+chrome40.0.2214.94 437
+chrome40.0.2214.91 177
+firefox3.6 1
+chrome34.0.1847.137 13
+firefox26.0 25
+chrome22.0.1190.0 15
+sonyericsson 15
+chrome28.0.1500.94 75
+chrome40.0.2214.111 1408
+chrome39.0.2171.95 33
+firefox4.0 2
+firefox18.0 2
+safari5.0.6 42
+chrome31.0.1650.57 39
+chrome31.0.1650.63 36
+firefox34.0 10
+alcatel 1
+msie8.0 403
+chrome11.0.696.34 1
+chrome39.0.2171.65 5
+msie7.0 497
+firefox23.0 67
+chrome27.0.1453 89
+opera9.64 1
+safari7.0.5 1
+firefox2.0.0.2 4
+chrome39.0.2171.71 6
+chrome39.0.2171.96 2
+chrome34.0.1847.131 9
+chrome40.0.2214.109 273
+firefox21.0 7
+lg\- 28
+safari6.0 29
+firefox29.0 2
+firefox12.0 15
+chrome32.0.1700.107 149
+chrome35.0.1916.114 5
+safari7.0.6 74
+safari6.0.5 14
+chrome36.0.1985.143 998
+firefox33.0 13
+mozilla 2012
+firefox25.0 1
+chrome26.0.1410.64 15
+chrome32.0.1700.76 80
+firefox14.0.1 10
+chrome40.0.2214.89 18
+chrome38.0.2125.114 1
+safari8.0.2 127
+firefox3.6.3 2
+chrome41.0.2220.0 1
+safari5.1.9 83
+firefox36.0 17
+chrome40.0.2214.93 294
+safari8.0.3 373
+safari 479
+firefox15.0.1 2
+firefox35.0 1104
+firefox16.0.1 1
+safari7.0 913
+chrome37.0.2062.124 33
+firefox5.0 2
+firefox20.0 14
+android 295
+chrome36.0.1985.125 17
+firefox24.0 1
+firefox3.5.3 2
+safari6.1.6 268
+opera9.80 2
+firefox31.0 36
+chrome33.0.0.0 6
+iphone 56
+safari6.2.2 4
+firefox6.0.2 159
+safari6.2.3 66
+chrome34.0.1847.116 1
+safari8.0 1914
+safari7.1.3 71
+msie5.0 1
+msie9.0 468
+Unknown 64
+firefox11.0 48
+chrome37.0.2062.94 1
+chrome30.0.0.0 20
+safari7.1 1
+firefox32.0 43
+chrome39.0.2171.93 18
+firefox3.5.6 1
+chrome30.0.1599.105 1
+safari7.1.2 41
+firefox30.0 1
+safari6.1.5 3
+firefox3.0.3 1
+chrome36.0.1985.135 35
+chrome35.0.1916.153 120
+firefox22.0 23
+msie10.0 231
+chrome25.0.1364.172 29
+safari5.1 47
+chrome22.0 2
+chrome39.0.2171.99 45
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 15
+Mozilla/5.0_(Android;_Tablet;_rv:23.0)_Gecko/23.0_Firefox/23.0 20150226183105
+Mozilla/5.0_(compatible;_SiteExplorer/1.0b;__http://siteexplorer.info/) 20150210141202
+WWW-Mechanize/1.72 20150217235712
+Firefox 20150223202419
+Xenu_Link_Sleuth/1.3.8 20150210100859
+Go_1.1_package_http 20150223145509
+HTTP_TEST_CLIENT 20150213120543
+Mozilla/5.0_(Android;_Mobile;_rv:34.0)_Gecko/34.0_Firefox/34.0 20150217141607
+M 20150209115210
+ShortLinkTranslate 20150225191927
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_swampfox556) 20150228054920
+GigablastOpenSource/1.0 20150210111734
+ltx71_-_(http://ltx71.com/) 20150212104750
+Mozilla/2.0_(compatible;_crw) 20150210211314
+KiwiStatus/0.3_(NZS.com_New_Zealand_Search;_http://www.nzs.com/kiwi-status/) 20150226195322
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 11
+WWW-Mechanize/1.72 20150217235712
+Firefox 20150223202419
+Xenu_Link_Sleuth/1.3.8 20150210100859
+Go_1.1_package_http 20150223145509
+HTTP_TEST_CLIENT 20150213120543
+ShortLinkTranslate 20150225191927
+M 20150209115210
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_swampfox556) 20150228054920
+ltx71_-_(http://ltx71.com/) 20150212104750
+GigablastOpenSource/1.0 20150210111734
+KiwiStatus/0.3_(NZS.com_New_Zealand_Search;_http://www.nzs.com/kiwi-status/) 20150226195322
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 1505 2115
+From1 0 0
+From2 549 794
+From3 87 89
+From4 1666 13200
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 8
+google 519 760
+search 1 1
+mysearch 1 1
+bing 1 5
+ask 3 3
+baidu 7 7
+yandex 1 1
+yahoo 16 16
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 15
+http://semalt.semalt.com/crawler.php 31 31
+http://buttons-for-website.com 17 17
+http://www.renovatemagazine.co.nz 12 12
+http://www.renovatemagazine.co.nz/blogs/from-the-magazine-home-renovation-advice-articles/16925532-zones-are-specialists-at-designing-building-and-renovating-outdoor-landscapes-and-living-spaces 6 6
+http://www.homeideas.co.nz/products/outdoor/decking/zones-outdoor-renovations 4 4
+http://www.domain2008.com 4 4
+http://www.gototal.co.nz/zones-are-specialists-at-designing-building-and-renovating-outdoor-landscapes-and-living-spaces/ 3 3
+http://www.renovatemagazine.co.nz/blogs/from-the-magazine-home-renovation-advice-articles 3 3
+https://www.linkedin.com 2 2
+http://homeprize.co.nz 1 1
+https://www.pinterest.com 0 2
+http://abodo.co.nz/in-the-zone/ 1 1
+http://58.176.217.12/url 1 1
+http://www.homeideas.co.nz/products/outdoor/landscaping/zones-outdoor-renovations 1 1
+http://localhost:8181/1.html 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 31
+landscapingspecialistsinnewzealand%7czones 7
+titoki+tree 5
+outdoor+rooms+ideas+nz 2
+jules+moore+landscape+design 2
+outdoor+area+nz 2
+zones+landscaping 2
+cost+of+paving+vs+decking+nz 1
+titoki+tree+facts 1
+do+titoki+trees+prefer+damp+places 1
+titoki+tree+nz+care 1
+http+%2f%2fwww.zones.co.nz%2flandscaping-ideas%2ftitoki-tree-planting-and-care-instructions 1
+new+zealand+native+tree+titoki+pruning 1
+outdoor+kitchen+nz 1
+rainwater+bladder 1
+how+fast+do+titoki+trees+grow 1
+how+does+a+titoki+tree+reproduce 1
+restoration+cedar+cladding 1
+outside+rooms+nz 1
+ti+toki+tree 1
+cedar+cladding+maintenance 1
+outdoor+living+ideas+in+nz 1
+native+planting+around+nz+swimming+pools 1
+how+to+grow+a+standard+titoki 1
+zones.co.nz 1
+titoki+growing+conditions 1
+buiding+outdoor+rooms 1
+growing+titoki 1
+cedar+cladding 1
+titoki+trees 1
+outdoor+rooms+nz 1
+concrete+terrace+cost+nz 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 62
+titoki 15
+nz 12
+tree 10
+outdoor 8
+landscapingspecialistsinnewzealand%7czones 7
+rooms 5
+cladding 3
+how 3
+cedar 3
+trees 3
+restoration 1
+%2f%2fwww.zones.co.nz%2flandscaping-ideas%2ftitoki-tree-planting-and-care-instructions 1
+standard 1
+around 1
+a 2
+paving 1
+jules 2
+grow 2
+kitchen 1
+native 2
+damp 1
+zones 2
+http 1
+planting 1
+in 1
+facts 1
+does 1
+pruning 1
+new 1
+growing 2
+cost 2
+buiding 1
+swimming 1
+prefer 1
+zones.co.nz 1
+moore 2
+reproduce 1
+outside 1
+living 1
+concrete 1
+conditions 1
+toki 1
+area 2
+of 1
+decking 1
+do 2
+care 1
+landscaping 2
+ti 1
+design 2
+to 1
+maintenance 1
+rainwater 1
+terrace 1
+pools 1
+places 1
+zealand 1
+vs 1
+bladder 1
+fast 1
+landscape 2
+ideas 3
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 8
+206 18 477264
+400 15 1077
+401 56 16351
+302 39 780
+416 2 628
+500 29 540
+301 612 9252
+404 106 1013720
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 41
+/cms/uploadify/uploadify.swf 1 http://www.zones.co.nz/cms/uploadify/uploadify.swf
+/advice/a-zen-and-subtropical-outdoor-landscape 1 http://www.zones.co.nz/site/SearchResults/ceb2410b8b307137fcac59ae9e037681/
+/design/icon-test-written-blue.png 1 http://www.zones.co.nz/design/style-1508.min.css
+/plugins/uploadify/uploadify.swf 1 http://www.zones.co.nz/plugins/uploadify/uploadify.swf
+/gyhhkvzkg.html 1 -
+/lib/uploadify/uploadify.swf 1 http://www.zones.co.nz/lib/uploadify/uploadify.swf
+/old/wp-admin/ 9 -
+/design/images/prettyPhoto/light_rounded/btnNext.png 3 http://www.zones.co.nz/design/style-1508.min.css
+/wp-admin/ 9 -
+/macstore/default.asp 4 -
+/%22//pinterest.com/pin/create/button/ 1 -
+/g 1 -
+/admin/fckeditor/editor 1 -
+/browserconfig.xml 7 -
+/contact-us/index.php 2 http://www.zones.co.nz/index.php
+/design/images/prettyPhoto/facebook/default_thumbnail.gif 1 http://www.zones.co.nz/design/style-1508.min.css
+/rvvklktowjgxoblu.html 1 -
+/design/icon-test-video-blue.png 1 http://www.zones.co.nz/design/style-1508.min.css
+/landscaping-ideas/a-zen-and-subtropical-outdoor-landscape/trackback/ 1 http://www.zones.co.nz/landscaping-ideas/a-zen-and-subtropical-outdoor-landscape
+//wp-login.php 1 -
+/index.php/checkout/cart/ 1 http://zones.co.nz/index.php/checkout/cart/
+/nhgvikepakr.html 1 -
+/docs/wp-login.php 2 -
+/inc/uploadify/uploadify.swf 1 http://www.zones.co.nz/inc/uploadify/uploadify.swf
+/wordpress/wp-admin/ 10 -
+/js/uploadify/uploadify.swf 1 http://www.zones.co.nz/js/uploadify/uploadify.swf
+/design/images/prettyPhoto/light_square/sprite.png 1 http://www.zones.co.nz/design/style-1508.min.css
+/pcstore/ 1 -
+/blog/wp-admin/ 10 -
+/fckeditor/editor 1 -
+/macstore/Default.asp 1 -
+/blog/wp-login.php 2 -
+/uploadify/uploadify.swf 1 http://www.zones.co.nz/uploadify/uploadify.swf
+/rain-water-tanks/project-management/yQA7ZKCCENAOT3PVAMiK2Mc9jlt9cr1Rh2iJRLEvxBJInBIrxwlgJkhHI0LVvTUsshcDgQhCjDONd4XwXwC/WH727%2BOf58m97B0SFracccsxS9YUELVYtFR11jX2k1RvFy5Ule1J6L8rI5Tfd0ei0BaOTarOC1X2RLlVNCbN21rQZJtedjoYzqoJyaVXrZIL3W5EBABG5M%2B0jtaZTNohUu7 1 http://www.zones.co.nz/rain-water-tanks/project-management/
+/eifmpwjkegnmk.html 1 -
+/what-is-refresh/ 1 -
+/admin/uploadify/uploadify.swf 1 http://www.zones.co.nz/admin/uploadify/uploadify.swf
+/wp-login.php 3 -
+/test/wp-admin/ 8 -
+/dev/wp-login.php 2 -
+/wp/wp-admin/ 8 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 1404
+122-57-6-67.jetstream.xtra.co.nz 202 638 20937676 20150216150934
+123.53.16.49 76 78 603677 20150224011540
+36.248.171.165 72 74 565455 20150213171300
+36.248.171.26 64 66 489787 20150211002517
+202-180-91-246.callplus.net.nz 53 153 3382052 20150203093251
+203.98.14.26 45 105 8967784 20150226073212
+203-96-207-94.dsl.dyn.ihug.co.nz 42 172 12072804 20150216230138
+224.23.43.120.broad.pt.fj.dynamic.163data.com.cn 36 36 140775 20150214100727
+38.218.77.222.broad.pt.fj.dynamic.163data.com.cn 34 34 129591 20150219194349
+202-74-222-245.ue.woosh.co.nz 33 88 8062013 20150203111139
+baiduspider-123-125-71-74.crawl.baidu.com 1 1 5706 20150227224232
+baiduspider-220-181-108-104.crawl.baidu.com 2 2 11408 20150222224219
+69.58.178.56 10 10 151910 20150222094005
+219-89-40-232.dialup.xtra.co.nz 0 1 353808 
+122-62-157-116.jetstream.xtra.co.nz 1 1 5705 20150222135849
+ec2-54-158-250-206.compute-1.amazonaws.com 3 3 10037 20150204084654
+ptr140.scorch.co.nz 1 15 1826439 20150227210243
+cpe-121-222-103-122.lnse2.cha.bigpond.net.au 0 1 98600 
+122-57-7-213.jetstream.xtra.co.nz 1 12 202918 20150207090901
+180.76.4.9 2 2 43952 20150226021415
+122-61-227-13.jetstream.xtra.co.nz 1 13 303597 20150224201313
+131.48.252.27.dyn.cust.vf.net.nz 0 2 506038 
+210.246.42.13 0 1 238155 
+122-58-197-119.jetstream.xtra.co.nz 0 1 1461893 
+125-237-197-171.jetstream.xtra.co.nz 5 23 2166949 20150222181627
+121-75-197-91.dyn.vf.net.nz 1 13 199503 20150204174658
+msnbot-65-55-210-82.search.msn.com 0 3 91779 
+122.56.200.49 0 1 98600 
+180.76.4.147 2 2 43952 20150208181716
+173.232.118.89 1 1 5173 20150219080800
+210.246.20.122 10 61 2535688 20150220114946
+175.44.4.155 4 4 15882 20150227041112
+121-98-53-221.bng1.nct.orcon.net.nz 0 1 16288 
+ip-120-136-57-89.solarix.net.nz 0 2 708522 
+219-89-201-71.adsl.xtra.co.nz 0 1 98600 
+121-72-219-119.dsl.telstraclear.net 1 20 456354 20150216213349
+29.192.159.27.broad.pt.fj.dynamic.163data.com.cn 6 6 22548 20150214032523
+202.37.64.1 6 54 1937169 20150212135137
+ec2-23-20-161-233.compute-1.amazonaws.com 2 2 43952 20150211203330
+121-99-63-49.bng1.tvc.orcon.net.nz 1 12 1309906 20150201165434
+203-173-223-6.dialup.ihug.co.nz 0 1 243826 
+cpe-1-122-67-111.wpl9.pie.bigpond.net.au 2 14 695211 20150217011007
+ec2-54-152-62-116.compute-1.amazonaws.com 1 1 5703 20150219023535
+baiduspider-123-125-71-21.crawl.baidu.com 2 2 43952 20150225004556
+180.76.4.166 1 1 21976 20150213180105
+host.colocrossing.com 1 1 4263 20150205215758
+203.167.236.26 0 1 98600 
+155.94.224.49.dyn.cust.vf.net.nz 2 34 1448551 20150225103401
+115-188-88-141.jetstream.xtra.co.nz 3 17 702070 20150211115745
+badd013f.virtua.com.br 1 17 900180 20150207070857
+180.76.4.163 2 2 43952 20150211161558
+112.215.36.144 0 1 98600 
+180.76.4.189 1 1 21976 20150218162122
+ec2-54-211-133-250.compute-1.amazonaws.com 1 1 21976 20150201205054
+217.96.18.163 1 1 5122 20150221015531
+baiduspider-220-181-108-105.crawl.baidu.com 3 3 33387 20150228174142
+122.58.135.208 1 11 202229 20150220124605
+222-152-25-202.jetstream.xtra.co.nz 1 12 202917 20150209182757
+245.252.159.27.broad.pt.fj.dynamic.163data.com.cn 24 24 90185 20150219012402
+222-153-227-109.jetstream.xtra.co.nz 3 17 251618 20150228130726
+google-proxy-66-102-6-248.google.com 1 2 5326 20150204175713
+41-218-214-133-adsl-dyn.4u.com.gh 1 1 18242 20150208205253
+121-75-10-255.dyn.vf.net.nz 3 15 701309 20150218173558
+122.58.137.116 3 17 387207 20150225170558
+180.76.4.149 1 1 21976 20150216041656
+224-175-148-118.nzcomms.co.nz 3 39 1725456 20150214121012
+122.58.86.113 2 14 451857 20150203064012
+baiduspider-220-181-108-99.crawl.baidu.com 1 1 21976 20150224024032
+ip-58-28-207-7.ftth.xnet.co.nz 1 14 203680 20150214114120
+118-93-200-95.dsl.dyn.ihug.co.nz 0 2 32576 
+1912ob.scansafe.net 0 1 456191 
+122-57-211-196.jetstream.xtra.co.nz 0 1 22519 
+175.44.26.223 4 4 15881 20150206094347
+122.56.201.99 10 34 5043362 20150206103516
+219-89-124-137.adsl.xtra.co.nz 1 14 279514 20150216143829
+118-93-61-146.dsl.dyn.ihug.co.nz 1 13 202990 20150222105238
+ip-58-28-218-47.wxnz.net 1 12 202916 20150201142823
+addie.static.korbank.pl 1 1 21976 20150224231711
+28.66.252.27.dyn.cust.vf.net.nz 0 1 16288 
+177.99.140.dynamic.adsl.gvt.net.br 1 30 1197788 20150207074504
+180.76.4.170 1 1 21976 20150216060315
+14.114.26.116 3 3 65928 20150207091416
+122-61-32-216.jetstream.xtra.co.nz 2 31 1203310 20150218220822
+baiduspider-220-181-108-92.crawl.baidu.com 1 1 21976 20150221064645
+180.76.4.188 1 1 21976 20150219060334
+219.7.43.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5685 20150203232813
+122.56.203.9 1 15 208347 20150220134543
+118-93-211-111.dsl.dyn.ihug.co.nz 1 13 201997 20150208210550
+103-242-24-21.2talk.co.nz 14 84 4592328 20150225153215
+google-proxy-66-249-83-186.google.com 0 3 79413 
+baiduspider-220-181-108-175.crawl.baidu.com 3 3 33385 20150227174200
+118-93-59-166.dsl.dyn.ihug.co.nz 3 18 640568 20150228220041
+baiduspider-123-125-71-86.crawl.baidu.com 1 1 21976 20150226224545
+178.62.247.171 2 2 43952 20150210140036
+baiduspider-123-125-71-46.crawl.baidu.com 3 3 33385 20150227034249
+192.81.210.100 11 13 129105 20150223171602
+103-224-128-82.flip.co.nz 0 1 97865 
+180.76.4.178 1 1 21976 20150205221459
+mx-ll-180.183.244-224.dynamic.3bb.co.th 0 1 98600 
+101.98.46.39 1 5 1607348 20150222184120
+115.188.188.184 4 46 2404477 20150214221048
+246.112.252.27.dyn.cust.vf.net.nz 0 2 32576 
+ppp118-208-152-228.lns20.bne7.internode.on.net 1 17 435379 20150227222838
+118-93-168-201.dsl.dyn.ihug.co.nz 1 14 203682 20150219183554
+219-89-56-109.dialup.xtra.co.nz 1 14 441855 20150211195102
+203-96-206-135.dsl.dyn.ihug.co.nz 4 37 1276437 20150216144004
+ec2-184-73-89-140.compute-1.amazonaws.com 1 1 21976 20150226230320
+205.197.242.141 0 1 98600 
+findsa.co.za 2 2 43952 20150225010515
+122.56.196.43 16 71 4451377 20150215141818
+dslb-094-223-126-029.094.223.pools.vodafone-ip.de 0 1 98600 
+170.177.86.110.broad.pt.fj.dynamic.163data.com.cn 6 6 22548 20150213025017
+175.44.25.250 9 9 39038 20150214094008
+60-242-254-188.static.tpgi.com.au 0 1 98600 
+115-188-212-69.jetstream.xtra.co.nz 1 12 202917 20150206143218
+180.76.4.192 3 3 65928 20150224161913
+110.173.227.28 2 31 1202120 20150205135318
+146.197.159.27.broad.xm.fj.dynamic.163data.com.cn 12 12 45094 20150215213142
+baiduspider-220-181-108-115.crawl.baidu.com 1 1 21976 20150227034250
+217.21.233.250 0 1 98600 
+125-238-35-48.jetstream.xtra.co.nz 13 68 3114531 20150217132033
+180.76.4.245 1 1 21976 20150202020102
+175.44.26.48 2 2 14557 20150209192033
+ge-0-0-402.core01.horizonpacific.com 17 57 3777439 20150223125714
+122-57-176-233.jetstream.xtra.co.nz 2 15 465990 20150206130116
+baiduspider-123-125-71-32.crawl.baidu.com 2 2 43952 20150226234407
+121-74-212-79.telstraclear.net 17 42 3570807 20150219132942
+baiduspider-123-125-71-51.crawl.baidu.com 2 2 43952 20150226081232
+net-93-150-255-220.cust.dsl.teletu.it 1 14 836768 20150214081453
+180.76.4.199 1 1 21976 20150213201513
+180.76.4.250 1 1 21976 20150207181703
+122.111-27-211.dynamic.dsl.mel.iprimus.net.au 0 1 302664 
+200.225.224.49.dyn.cust.vf.net.nz 1 30 1197607 20150220114207
+222-152-208-45.jetstream.xtra.co.nz 1 15 294317 20150202200152
+6.201.77.222.broad.pt.fj.dynamic.163data.com.cn 9 9 33823 20150216124225
+smtp.mpg.co.nz 0 1 16288 
+baiduspider-123-125-71-30.crawl.baidu.com 5 5 44792 20150226234406
+125-239-8-205.jetstream.xtra.co.nz 8 27 302644 20150210203353
+101-100-4-35.vectorcommunications.net.nz 0 1 98600 
+c-24-16-58-233.hsd1.wa.comcast.net 0 1 302664 
+152.160.153.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150211212605
+unassigned.static.cust.vf.net.nz 18 113 4245623 20150227105652
+197.235.52.52 0 1 243826 
+222-154-232-92.adsl.xtra.co.nz 5 31 4178181 20150226115548
+180.76.4.160 3 3 65928 20150219201657
+baiduspider-123-125-71-27.crawl.baidu.com 1 1 21976 20150222224221
+122-57-180-130.jetstream.xtra.co.nz 0 1 248141 
+177.203.49.235 1 15 860612 20150217090539
+180.76.4.60 1 1 21976 20150201162057
+180.76.4.239 3 3 65928 20150221141555
+197.242.90.110.broad.fz.fj.dynamic.163data.com.cn 1 2 9100 20150204230246
+121.54.54.172 1 14 836766 20150213121759
+baiduspider-123-125-71-28.crawl.baidu.com 1 1 5706 20150226030448
+125-237-48-134.jetstream.xtra.co.nz 1 17 729542 20150222225249
+121-99-28-186.bng1.nct.orcon.net.nz 0 2 32576 
+google-proxy-66-249-82-236.google.com 1 38 1360527 20150224205404
+103.255.26.189 1 15 208349 20150220131052
+101.165.87.106 0 1 98600 
+48.239.159.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150205172112
+203.97.95.84 1 5 38047 20150216111741
+bzq-114-71-13.cust.bezeqint.net 1 1 5704 20150209165732
+122.58.81.190 0 1 98600 
+143.237.69.111.dynamic.snap.net.nz 8 30 2166584 20150222115650
+ks4001626.ip-198-100-144.net 2 2 36279 20150225090802
+cm-84.211.82.224.getinternet.no 0 1 86875 
+nne.techonlinead.info 1 15 294497 20150211201102
+0.198.150.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150203091206
+203-97-174-15.cable.telstraclear.net 0 1 98600 
+smtp.tumu.co.nz 1 14 441858 20150213123716
+122-57-89-196.jetstream.xtra.co.nz 1 15 304360 20150222190047
+125.236.69.139 2 20 268442 20150217164441
+106.44.252.27.dyn.cust.vf.net.nz 2 34 1452038 20150210220100
+41.13.226.49.dyn.cust.vf.net.nz 1 31 1202277 20150201134720
+60-241-106-67.static.tpgi.com.au 0 1 98600 
+46.105.248.161 1 1 5172 20150211085301
+115-188-191-237.jetstream.xtra.co.nz 1 15 446523 20150227212103
+58-120-87-66.pools.cgn.spcsdns.net 0 1 98600 
+69.12.89.232.static.quadranet.com 1 1 5704 20150205084338
+122-60-145-13.jetstream.xtra.co.nz 1 15 460541 20150227162858
+122-60-97-128.jetstream.xtra.co.nz 1 12 201921 20150224153314
+118-93-13-235.dsl.dyn.ihug.co.nz 1 13 303596 20150202143110
+180.76.4.78 1 1 21976 20150215040242
+61.135.190.103 1 5 157329 20150208231315
+180.76.4.216 2 2 43952 20150225102731
+124-197-18-66.callplus.net.nz 1 1 5472 20150203124439
+119-224-26-202.callplus.net.nz 5 7 565698 20150227220616
+13.pool85-59-27.dynamic.orange.es 1 30 1197791 20150220065557
+122-60-40-69.jetstream.xtra.co.nz 1 14 207659 20150225175054
+cpc16-heme9-2-0-cust36.9-1.cable.virginm.net 0 1 252938 
+proxy2.nzpost.co.nz 0 1 238155 
+baiduspider-123-125-71-44.crawl.baidu.com 1 1 5707 20150222235310
+h11.6.130.174.dynamic.ip.windstream.net 0 1 64934 
+180.76.4.117 1 1 21976 20150218140215
+103.241.89.10 2 36 1458331 20150204154841
+57.90.224.49.dyn.cust.vf.net.nz 1 15 304357 20150211221820
+180.76.4.145 1 1 21976 20150212020209
+212.26.43.120.broad.pt.fj.dynamic.163data.com.cn 16 16 61958 20150205111503
+116.8.43.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150228190929
+58.231.143.49.static.amuri.net 1 14 203679 20150224174101
+163.53.85.243 2 2 27680 20150217221135
+180.76.4.205 1 1 21976 20150217162029
+118-92-207-187.dsl.dyn.ihug.co.nz 0 4 65152 
+180.76.4.168 1 1 21976 20150220220058
+94.249.240.49 1 1 5171 20150225105852
+n219079103137.netvigator.com 1 30 1197790 20150216001037
+google-proxy-66-249-82-239.google.com 0 2 32576 
+220.157.252.27.dyn.cust.vf.net.nz 0 1 16288 
+baiduspider-220-181-108-93.crawl.baidu.com 1 1 5705 20150224032710
+210.246.18.80 1 12 441091 20150207194637
+118-93-226-44.dsl.dyn.ihug.co.nz 1 9 286378 20150216224941
+219-89-238-34.jetstream.xtra.co.nz 2 15 447562 20150207101719
+ppp-94-66-134-158.home.otenet.gr 1 30 1197790 20150202022618
+121-72-182-34.dsl.telstraclear.net 3 17 315067 20150205211653
+ip-58-28-220-204.wxnz.net 16 81 2803541 20150216171318
+175.44.24.247 1 1 7279 20150201102718
+201-229-56-160.ctanet.aw 0 1 98600 
+83-223-122-18.as29017.net 1 1 21976 20150208163144
+ec2-54-145-202-202.compute-1.amazonaws.com 2 2 43952 20150226031122
+125-236-208-122.adsl.xtra.co.nz 1 30 1197608 20150211152358
+101.174.128.55 0 1 98600 
+175.44.6.196 4 4 15880 20150217095743
+84.159.252.27.dyn.cust.vf.net.nz 1 14 203681 20150211091920
+122-61-169-201.jetstream.xtra.co.nz 1 11 202229 20150214140056
+104.203.224.49.dyn.cust.vf.net.nz 2 12 207700 20150222142250
+220.181.51.103 2 2 11410 20150208214539
+121-99-88-94.bng1.tvc.orcon.net.nz 1 15 294316 20150214171043
+cm-171-100-37-14.revip10.asianet.co.th 1 30 1197789 20150226062903
+125-238-6-213.jetstream.xtra.co.nz 1 15 294316 20150206171118
+180.76.4.25 1 1 21976 20150216080133
+222-154-98-143.jetstream.xtra.co.nz 0 1 266320 
+121-99-138-228.bng1.tvc.orcon.net.nz 1 15 304360 20150210215547
+121-98-139-161.bng1.nct.orcon.net.nz 0 4 65152 
+203-118-180-87.dsl.dyn.ihug.co.nz 0 1 302664 
+firewall.naturo.co.nz 1 14 441855 20150227114656
+177-95-221-56.dsl.telesp.net.br 1 30 1197789 20150209123826
+gpi-auto-comb.tkcr4.global-gateway.net.nz 10 41 471937 20150225112326
+101.98.198.192 0 1 238155 
+cm-171-98-99-22.revip7.asianet.co.th 0 1 98600 
+baiduspider-220-181-108-184.crawl.baidu.com 2 2 27681 20150224144316
+122-60-53-198.jetstream.xtra.co.nz 0 3 0 
+65.55.183.94 0 1 16288 
+92.234.159.27.broad.pt.fj.dynamic.163data.com.cn 1 1 5588 20150211084156
+quarry.lnk.telstra.net 0 1 89954 
+175.44.5.229 3 3 15218 20150205140516
+42.115.80.45 1 30 1197789 20150221145845
+baiduspider-220-181-108-147.crawl.baidu.com 1 1 21976 20150222214716
+180.76.4.19 1 1 21976 20150213020139
+ec2-23-20-68-243.compute-1.amazonaws.com 1 1 919 20150209203728
+56.220-242-81.adsl-dyn.isp.belgacom.be 0 2 64909 
+222-153-64-18.jetstream.xtra.co.nz 3 25 726690 20150210235946
+219-89-18-220.dialup.xtra.co.nz 1 14 203680 20150207155222
+219-88-71-239.adsl.xtra.co.nz 0 1 248141 
+121-75-60-180.dyn.vf.net.nz 15 89 4192026 20150226222215
+smtp.pattersons.com 3 19 612330 20150204175929
+165.220.150.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5685 20150204174022
+smtp.saralee.co.nz 1 15 304360 20150210154930
+baiduspider-220-181-108-179.crawl.baidu.com 1 1 5706 20150224144315
+ec2-54-82-222-120.compute-1.amazonaws.com 3 3 13976 20150209203800
+175.44.7.102 4 4 15883 20150206151519
+2-163-36-202-static.alliedtelesis.co.nz 26 73 4300551 20150211170447
+175.44.4.67 4 4 15880 20150227025716
+70.206.224.49.dyn.cust.vf.net.nz 2 31 1203313 20150223140458
+103.14.41.23 24 24 121502 20150226195322
+122-62-196-241.jetstream.xtra.co.nz 0 1 248141 
+9.205.159.27.broad.pt.fj.dynamic.163data.com.cn 15 15 56375 20150207230605
+103-224-130-19.flip.co.nz 2 20 2077029 20150214123516
+118-93-32-72.dsl.dyn.ihug.co.nz 1 12 202919 20150214142914
+192-163-195-169.unifiedlayer.com 2 2 43952 20150220144354
+125-236-136-138.jetstream.xtra.co.nz 0 1 248141 
+105.238.37.120.broad.pt.fj.dynamic.163data.com.cn 19 19 73235 20150212060924
+178.165.131.231.wireless.dyn.drei.com 1 30 1197789 20150212055307
+baiduspider-220-181-108-119.crawl.baidu.com 1 1 5706 20150225094412
+21-145-148-118.nzcomms.co.nz 0 1 16288 
+cpe-70-121-203-229.satx.res.rr.com 0 1 98600 
+122-61-216-7.jetstream.xtra.co.nz 18 70 8164677 20150203220635
+msnbot-199-30-25-3.search.msn.com 0 1 227 
+122.56.196.234 2 18 590336 20150205170817
+180.76.4.52 1 1 21976 20150201041257
+122-57-35-252.jetstream.xtra.co.nz 1 18 325265 20150201145359
+ec2-184-73-103-96.compute-1.amazonaws.com 3 10 185119 20150223150347
+mail.s22.1126.wa-01.com 1 1 5173 20150202084119
+www43.aidensmusic.com 1 1 5173 20150201074517
+122-60-110-157.jetstream.xtra.co.nz 21 72 5315046 20150201232131
+baiduspider-123-125-71-18.crawl.baidu.com 2 2 27682 20150226034443
+mail.sistema.co.nz 2 15 457704 20150224083431
+google-proxy-66-249-84-167.google.com 0 4 2849 
+cust126.telwestnet.net 0 2 197200 
+115-188-141-97.jetstream.xtra.co.nz 1 31 1202277 20150207082015
+118-92-99-63.dsl.dyn.ihug.co.nz 2 15 209152 20150208162609
+180.76.4.158 1 1 21976 20150209200057
+186.213.152.59.static.host.gvt.net.br 1 30 1197790 20150203052505
+24.78.252.27.dyn.cust.vf.net.nz 1 8 196393 20150205134938
+70.47.89.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150208140435
+125-239-166-134.jetstream.xtra.co.nz 4 20 1821775 20150211161200
+149-71-134-253.v4.ngi.it 1 30 1197791 20150211083808
+224-234-148-118.nzcomms.co.nz 0 2 32576 
+ec2-54-167-201-78.compute-1.amazonaws.com 1 1 5704 20150209191916
+ec2-54-197-106-33.compute-1.amazonaws.com 2 2 43952 20150218164732
+175.44.7.60 4 4 22496 20150216035456
+118-92-62-250.dsl.dyn.ihug.co.nz 2 17 540314 20150220193831
+google-proxy-66-249-82-197.google.com 1 1 5702 20150220142042
+net-2-34-59-87.cust.vodafonedsl.it 1 30 1197792 20150204050939
+180.76.4.30 1 1 21976 20150218040431
+bt1.transportationes.cn 4 4 87904 20150228213534
+217.210.252.27.dyn.cust.vf.net.nz 1 5 93264 20150206182307
+baiduspider-220-181-108-144.crawl.baidu.com 1 1 21976 20150223134057
+218-101-66-169.dsl.dyn.ihug.co.nz 0 1 356489 
+180.76.4.186 2 2 43952 20150211221455
+122-59-143-140.jetstream.xtra.co.nz 2 15 447955 20150209194957
+5.231.76.83 1 1 5173 20150209075610
+122.58.131.132 3 14 214324 20150228154854
+43.249.199.4 19 67 6846606 20150226183105
+pa49-183-176-109.pa.vic.optusnet.com.au 0 1 98600 
+122-61-105-184.jetstream.xtra.co.nz 6 25 867017 20150214131039
+119-224-63-153.callplus.net.nz 1 1 5703 20150203053854
+185.45.13.140 1 1 5173 20150206051413
+122-60-224-83.jetstream.xtra.co.nz 1 13 303597 20150208170511
+210.246.13.4 1 14 203680 20150222214705
+baiduspider-123-125-71-88.crawl.baidu.com 1 1 21976 20150222214717
+202-0-33-239.adsl.paradise.net.nz 1 30 1197609 20150210132957
+125-237-28-1.jetstream.xtra.co.nz 0 1 98600 
+baiduspider-220-181-108-171.crawl.baidu.com 1 1 5705 20150222033806
+118.82.138.150 1 14 203681 20150225184650
+115-188-44-236.jetstream.xtra.co.nz 1 14 451725 20150216222534
+61.135.190.222 1 2 6491 20150213085122
+162.248.205.121.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150206123120
+cpe-167-114-162-101-dsl.montrealnetworx.com 1 1 5705 20150224123537
+180.76.4.43 2 2 43952 20150226042822
+ec2-54-166-139-45.compute-1.amazonaws.com 3 11 185519 20150204091051
+219.145.40.120.broad.pt.fj.dynamic.163data.com.cn 15 15 56367 20150228172704
+210.246.5.46 0 1 98600 
+msnbot-199-30-24-148.search.msn.com 0 23 1083108 
+61.135.190.101 1 2 21907 20150211181029
+222-153-87-253.jetstream.xtra.co.nz 0 1 243826 
+122-60-206-71.jetstream.xtra.co.nz 1 14 203681 20150205133449
+180.76.4.179 1 1 21976 20150205161803
+180.76.4.82 2 2 43952 20150214100631
+118-92-130-211.dsl.dyn.ihug.co.nz 1 15 446524 20150226220728
+180.189.196.157 0 1 41897 
+121-73-153-222.cable.telstraclear.net 1 13 202989 20150209095118
+180.76.4.72 2 2 43952 20150225020751
+122.58.175.186 2 14 800164 20150214223918
+smtp.corpcons.co.nz 0 1 41897 
+122-60-18-96.jetstream.xtra.co.nz 1 14 203679 20150214222743
+115-188-177-36.jetstream.xtra.co.nz 5 24 366251 20150224205003
+125-237-81-220.jetstream.xtra.co.nz 8 26 1831889 20150205204454
+static.42.50.9.176.clients.your-server.de 2 2 11413 20150210211314
+180.76.4.139 2 2 43952 20150209102209
+46.102.99.135 1 1 5172 20150224095558
+baiduspider-123-125-71-70.crawl.baidu.com 2 2 27681 20150228174143
+146.197.159.27.broad.pt.fj.dynamic.163data.com.cn 6 6 22545 20150217063837
+33.248.26.117.broad.pt.fj.dynamic.163data.com.cn 15 15 56361 20150207211756
+122-60-114-153.jetstream.xtra.co.nz 0 1 98600 
+121-75-35-197.dyn.vf.net.nz 0 1 98600 
+118-92-0-151.dsl.dyn.ihug.co.nz 6 77 1928307 20150206150510
+120.18.34.51 1 13 303778 20150209090030
+101.103.47.210 0 1 89954 
+ec2-54-161-208-213.compute-1.amazonaws.com 3 14 276419 20150209204917
+180.76.4.137 1 1 21976 20150218201635
+122.58.104.164 1 14 203683 20150202084500
+220.181.132.216 3 3 65928 20150211231426
+122-61-137-142.jetstream.xtra.co.nz 6 21 320471 20150210215634
+202-3-82-14.static.dignet.co.nz 5 24 2091871 20150215143117
+203-109-223-194.dsl.dyn.ihug.co.nz 0 1 302664 
+180.76.4.184 3 3 65928 20150227200041
+101.188.76.151 0 1 353808 
+101.98.48.21 0 1 266320 
+121-72-200-197.dsl.telstraclear.net 1 12 202916 20150214231648
+118-93-61-53.dsl.dyn.ihug.co.nz 2 44 1403534 20150211175108
+google-proxy-66-249-82-244.google.com 2 40 1670636 20150220142041
+122-57-2-249.jetstream.xtra.co.nz 5 64 1977160 20150219114806
+95.179.122.206 0 1 0 
+smtp.simpsonwestern.co.nz 0 22 32576 
+mobile-166-137-136-021.mycingular.net 0 1 98600 
+94.212.159.27.broad.pt.fj.dynamic.163data.com.cn 6 6 22549 20150206022252
+125-236-170-218.jetstream.xtra.co.nz 1 14 203681 20150202193627
+baiduspider-123-125-71-16.crawl.baidu.com 2 2 11410 20150226081231
+13.250.153.27.broad.pt.fj.dynamic.163data.com.cn 3 3 11270 20150210024109
+62-210-189-96.rev.poneytelecom.eu 4 12 326069 20150219165507
+203.86.203.53.static.snap.net.nz 0 1 98600 
+122.58.103.38 0 22 0 
+180.76.4.185 2 2 43952 20150214001808
+140.237.14.54 2 2 5686 20150204121107
+112.198.90.42 1 16 337177 20150203162654
+203.106.153.186 1 14 556671 20150216002637
+180.76.4.211 1 1 21976 20150212141412
+61.135.190.223 0 1 75027 
+124.248.134.218 1 14 443268 20150216115726
+175.44.7.47 1 1 7278 20150201094506
+121-98-132-85.bng1.nct.orcon.net.nz 1 12 202918 20150221151809
+82.29.69.111.static.snap.net.nz 8 42 1356664 20150219091635
+baiduspider-220-181-108-100.crawl.baidu.com 1 1 21976 20150219183934
+122-61-240-71.jetstream.xtra.co.nz 14 38 2349416 20150208081048
+210.54.38.81 0 1 98600 
+118-93-56-224.dsl.dyn.ihug.co.nz 15 57 82754 20150220215441
+192.188.185.138 7 54 6624839 20150202152842
+ks4002909.ip-198-100-149.net 1 1 5705 20150221192333
+91.217.153.27.broad.pt.fj.dynamic.163data.com.cn 4 4 11373 20150208032915
+5.153.235.85 1 1 5171 20150215061014
+104.254.212.122 3 3 65925 20150221225004
+ec2-54-163-177-177.compute-1.amazonaws.com 2 2 43952 20150205001534
+122-60-38-44.jetstream.xtra.co.nz 1 12 202916 20150214230655
+host236-24-static.9-188-b.business.telecomitalia.it 1 30 1197789 20150226041103
+222-152-253-18.jetstream.xtra.co.nz 1 12 441093 20150207131805
+122-148-145-121.static.dsl.dodo.com.au 0 1 98600 
+102.157.69.111.dynamic.snap.net.nz 0 1 252938 
+122.58.28.142 0 1 353808 
+bb24ffa0.virtua.com.br 1 30 1197790 20150201230302
+google-proxy-66-249-82-230.google.com 0 3 48864 
+121-74-197-56.telstraclear.net 1 14 441857 20150201102154
+83.19-broadband.acttv.in 5 44 1287007 20150206170247
+121-74-129-159.telstraclear.net 0 2 32576 
+83.143.242.94 1 1 5427 20150217141607
+103-224-128-50.flip.co.nz 2 23 404950 20150222215125
+116.89.224.153 11 54 4924338 20150220135435
+122-57-1-166.jetstream.xtra.co.nz 0 1 98600 
+163.47.247.190 5 24 2345500 20150216120913
+cpe-121-218-191-94.lnse4.cht.bigpond.net.au 0 1 98600 
+122.58.125.209 0 2 758855 
+101.98.188.159 0 1 302664 
+210-54.147-99.n4l.sparkdigital.co.nz 1 14 452631 20150226220450
+203-184-39-156-dynamic.callplus.net.nz 7 23 626569 20150227162653
+122-60-114-172.jetstream.xtra.co.nz 0 1 238155 
+host-116-251-151-4.xdsl.kinect.net.nz 0 1 98600 
+122-59-80-242.jetstream.xtra.co.nz 2 13 208392 20150226085120
+180.76.4.36 2 2 43952 20150218122203
+179.183.111.68.dynamic.adsl.gvt.net.br 1 29 1111192 20150227162058
+204.12.251.37 17 17 272933 20150207034524
+175.44.26.200 9 9 39041 20150217145120
+203.86.202.203.static.snap.net.nz 1 13 199503 20150217104242
+187-127-240-206.user.veloxzone.com.br 1 30 1197789 20150219024823
+220.181.132.197 1 5 93447 20150211231504
+121-99-141-19.bng1.tvc.orcon.net.nz 0 1 16288 
+122-58-244-99.jetstream.xtra.co.nz 0 1 22519 
+baiduspider-123-125-71-109.crawl.baidu.com 1 1 5705 20150226215542
+ded4u.com 31 51 842245 20150224061148
+156.host-182-48-136.compassnet.co.nz 2 2 43950 20150225191927
+107-155-70-242-customer-incero.com 0 1 16288 
+ip-103-14-69-146.static.vorco.net 0 2 16288 
+ip54553079.adsl-surfen.hetnet.nl 0 1 98600 
+baiduspider-220-181-108-108.crawl.baidu.com 1 1 21976 20150228204322
+180.76.4.195 1 1 21976 20150210201505
+122-57-69-196.jetstream.xtra.co.nz 3 16 454052 20150221122315
+180.76.4.156 2 2 43952 20150219100624
+218.107.252.27.dyn.cust.vf.net.nz 0 2 32576 
+177.41.53.208.static.host.gvt.net.br 1 30 1197790 20150219182255
+122.56.198.52 2 13 208386 20150214123935
+210-86-106-30.jetstream.xtra.co.nz 0 1 302664 
+121-75-187-201.dyn.vf.net.nz 1 15 208350 20150201202552
+118-93-108-79.dsl.dyn.ihug.co.nz 8 23 625585 20150227201557
+50.35.89.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150214212832
+c211-30-162-39.livrp2.nsw.optusnet.com.au 0 1 514841 
+2.197.159.27.broad.xm.fj.dynamic.163data.com.cn 10 10 28432 20150228220724
+47-72-92-32.dsl.dyn.ihug.co.nz 1 12 202917 20150226035756
+107.236.150.27.broad.pt.fj.dynamic.163data.com.cn 27 27 101464 20150206014833
+180.76.4.118 2 2 43952 20150211000643
+203-173-241-8.dsl.dyn.ihug.co.nz 2 34 1429079 20150214214042
+baiduspider-123-125-71-49.crawl.baidu.com 1 1 5704 20150226134804
+122.56.201.174 0 1 98600 
+125-239-149-159.jetstream.xtra.co.nz 1 15 304361 20150204213721
+baiduspider-123-125-71-73.crawl.baidu.com 1 1 5704 20150225134148
+46.229.170.197 2 2 43952 20150218154644
+wlan-186-194-191-98.clickrede.com.br 1 29 1111193 20150213043919
+122-60-209-103.jetstream.xtra.co.nz 1 13 199504 20150216120541
+egress109.cws.sco.cisco.com 0 1 41897 
+103.255.224.126 2 2 27681 20150217190757
+203-173-130-135.dsl.dyn.ihug.co.nz 1 13 202990 20150206113444
+101.168.42.141 0 1 98600 
+121-75-206-80.dyn.vf.net.nz 5 28 416217 20150219183810
+175.44.4.142 1 1 7279 20150201140909
+180.76.4.109 1 1 21976 20150223141833
+baiduspider-123-125-71-14.crawl.baidu.com 1 1 21976 20150222235312
+c-59-101-116-93.syd.connect.net.au 0 1 98600 
+s0106b4750ebab564.vf.shawcable.net 1 14 556671 20150221072816
+222-152-134-92.jetstream.xtra.co.nz 0 3 48864 
+121-74-211-125.telstraclear.net 1 14 441856 20150206200215
+223.169.161.220.broad.pt.fj.dynamic.163data.com.cn 7 7 28135 20150202092033
+208.43.252.201-static.reverse.softlayer.com 1 1 5704 20150210141202
+122-60-254-85.jetstream.xtra.co.nz 1 14 203681 20150223102041
+180.76.4.229 1 1 21976 20150206020403
+122-62-209-246.jetstream.xtra.co.nz 1 14 203678 20150210105127
+9.205.159.27.broad.xm.fj.dynamic.163data.com.cn 10 10 39407 20150208131613
+125-238-58-175.jetstream.xtra.co.nz 0 2 758855 
+47.100.252.27.dyn.cust.vf.net.nz 0 1 98600 
+118-93-168-162.dsl.dyn.ihug.co.nz 1 14 441855 20150226154249
+46.102.99.147 1 1 5171 20150210083952
+mail.austinstone.co.nz 6 36 3568672 20150206124516
+31.218.77.222.broad.pt.fj.dynamic.163data.com.cn 1 1 5590 20150214235129
+46.102.96.39 1 1 5174 20150208064420
+219-88-67-143.adsl.xtra.co.nz 0 2 32576 
+122.56.203.206 0 1 16288 
+118-92-36-179.dsl.dyn.ihug.co.nz 5 39 1708517 20150212210614
+49.68.252.27.dyn.cust.vf.net.nz 1 13 441166 20150214074649
+han1632780.lnk.telstra.net 1 1 6228 20150209120131
+109.73.170.223 1 1 5173 20150205034932
+baiduspider-123-125-71-25.crawl.baidu.com 2 2 27681 20150224032710
+118-92-224-255.dsl.dyn.ihug.co.nz 1 4 6838 20150221174922
+baiduspider-220-181-108-172.crawl.baidu.com 1 1 21976 20150225004555
+92.234.159.27.broad.xm.fj.dynamic.163data.com.cn 2 2 5686 20150208130451
+baiduspider-220-181-108-141.crawl.baidu.com 1 1 5706 20150223134056
+115-188-246-230.jetstream.xtra.co.nz 1 14 203681 20150205173935
+163.53.85.180 2 2 27682 20150217165616
+122-59-200-205.jetstream.xtra.co.nz 0 1 514841 
+node-1297.pool-101-109.dynamic.totbb.net 0 1 98600 
+180.76.4.102 1 1 21976 20150208080821
+46.102.99.144 2 2 10345 20150228123533
+183.164.86.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150203125813
+pacenet.64.115.203.in-addr.arpa 1 25 1047610 20150223202710
+ec2-54-146-183-129.compute-1.amazonaws.com 2 2 43952 20150212192110
+121-74-84-101.telstraclear.net 0 1 98600 
+216.236.37.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5685 20150206155557
+122-57-239-126.jetstream.xtra.co.nz 16 38 3069232 20150224183815
+46.161.41.199 25 25 442600 20150226035208
+222-154-58-104.jetstream.xtra.co.nz 6 44 3225814 20150206162915
+baiduspider-220-181-108-174.crawl.baidu.com 2 2 11410 20150222214715
+125-236-62-33.cid.global-gateway.net.nz 5 20 1194368 20150203153040
+concern.ninetydamascene.com 1 1 5172 20150204105525
+baiduspider-220-181-108-78.crawl.baidu.com 1 1 21976 20150226224545
+seo5.heilink.com 11 11 56957 20150221105801
+159.113.85.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150203032325
+baiduspider-220-181-108-142.crawl.baidu.com 2 2 27680 20150225174003
+31.12.89.110.broad.pt.fj.dynamic.163data.com.cn 3 3 11273 20150205141741
+180.76.4.175 1 1 21976 20150210101400
+baiduspider-123-125-71-90.crawl.baidu.com 1 1 5707 20150225124729
+180.76.4.208 1 1 21976 20150224120119
+44.200.178.107.gae.googleusercontent.com 0 1 11721 
+180.76.4.161 1 1 21976 20150215201758
+98.237.150.27.broad.pt.fj.dynamic.163data.com.cn 9 9 33826 20150202055553
+122-60-56-181.jetstream.xtra.co.nz 1 20 456359 20150210112116
+bm1.waikatodhb.health.nz 27 77 3139086 20150225153510
+36.248.167.87 4 4 15879 20150204213522
+122.56.202.190 2 13 208389 20150217082547
+180.76.4.230 1 1 21976 20150208020824
+125-239-127-59.jetstream.xtra.co.nz 7 42 3033939 20150218204904
+13.239.159.27.broad.pt.fj.dynamic.163data.com.cn 1 1 5588 20150205013156
+180.76.4.124 1 1 21976 20150213142034
+179-236-103-164.user.veloxzone.com.br 1 30 1197789 20150213002059
+122-59-0-86.jetstream.xtra.co.nz 1 14 203681 20150226160913
+179.248.205.121.broad.pt.fj.dynamic.163data.com.cn 2 2 5684 20150201054200
+ec2-54-152-136-96.compute-1.amazonaws.com 1 1 5705 20150221065202
+3.219.224.49.dyn.cust.vf.net.nz 2 17 289808 20150224201901
+175.44.4.191 4 4 15880 20150205162742
+ps284650.foed.auckland.ac.nz 0 1 98600 
+121-73-51-126.cable.telstraclear.net 2 19 312678 20150222230230
+baiduspider-123-125-71-87.crawl.baidu.com 1 1 21976 20150226215543
+122-60-63-97.jetstream.xtra.co.nz 0 1 16288 
+122.58.119.70 3 23 597938 20150209220205
+219-89-138-73.jetstart.xtra.co.nz 2 13 207181 20150209083956
+115-188-244-33.jetstream.xtra.co.nz 5 40 1745184 20150208100740
+199.146.40.120.broad.pt.fj.dynamic.163data.com.cn 9 9 33824 20150228003932
+121-98-143-167.bng1.nct.orcon.net.nz 0 2 32576 
+dsl.49.148.38.163.pldt.net 0 1 98600 
+host-203-94-39-52.xdsl.kinect.net.nz 1 14 203864 20150214162131
+150-70-173-51.trendmicro.com 0 1 256030 
+115-188-205-197.jetstream.xtra.co.nz 1 14 203681 20150222200359
+121-72-165-26.dsl.telstraclear.net 0 1 456191 
+121.98.141.77 0 2 32576 
+119-224-43-195.callplus.net.nz 0 1 98600 
+219-89-59-84.dialup.xtra.co.nz 1 15 304359 20150201122812
+baiduspider-220-181-108-157.crawl.baidu.com 1 1 5706 20150223124104
+43.124.224.49.dyn.cust.vf.net.nz 3 14 701125 20150209203254
+180.76.4.201 1 1 21976 20150211020335
+baiduspider-220-181-108-143.crawl.baidu.com 1 1 5702 20150222134530
+121-73-138-3.cable.telstraclear.net 19 62 4099263 20150226122849
+122-58-215-247.jetstream.xtra.co.nz 0 1 16288 
+host86-165-77-190.range86-165.btcentralplus.com 1 1 1656 20150202051855
+122-59-81-155.jetstream.xtra.co.nz 1 1 5799 20150209210142
+cpe-121-208-9-100.bqzl1.cha.bigpond.net.au 0 1 98600 
+244.225.69.111.dynamic.snap.net.nz 11 53 3499676 20150209122222
+31.65.224.49.dyn.cust.vf.net.nz 0 1 340222 
+baiduspider-220-181-108-90.crawl.baidu.com 1 1 5705 20150226215602
+217.92.252.27.dyn.cust.vf.net.nz 0 1 228252 
+125-239-128-61.jetstream.xtra.co.nz 1 15 304359 20150220201545
+baiduspider-220-181-108-182.crawl.baidu.com 1 1 21976 20150225235517
+97.121.252.27.dyn.cust.vf.net.nz 3 69 3099587 20150213105451
+203-173-214-74.dialup.ihug.co.nz 1 14 203681 20150204174719
+google-proxy-64-233-173-216.google.com 0 1 98600 
+219-89-201-239.adsl.xtra.co.nz 1 1 5703 20150207101401
+180.76.4.116 2 2 43952 20150204161908
+103-224-128-14.flip.co.nz 4 31 2473371 20150222215451
+114.23.126.154 2 18 360161 20150220132542
+83.1.be.static.xlhost.com 1 1 5706 20150209115210
+180.76.4.182 2 2 43952 20150217140228
+188.251.178.242 1 14 836768 20150208030423
+cpe-142-136-82-121.socal.res.rr.com 0 1 98600 
+212.9.116.77 0 1 11889 
+104.243.150.27.broad.pt.fj.dynamic.163data.com.cn 4 4 11374 20150228174416
+190.248.153.27.broad.pt.fj.dynamic.163data.com.cn 1 1 5589 20150205101754
+176-123-6-127.alexhost.md 1 1 21976 20150225112832
+250.203.168.125.sta.wbroadband.net.au 0 1 252938 
+160.125.224.49.dyn.cust.vf.net.nz 0 1 243826 
+165-168-148-118.nzcomms.co.nz 0 1 16288 
+103-224-130-23.flip.co.nz 6 6 31678 20150214123618
+42.200.178.107.gae.googleusercontent.com 0 1 75027 
+210-86-66-143.jetstream.xtra.co.nz 1 1 6229 20150208115507
+180.76.4.61 1 1 21976 20150219020332
+202-180-96-249.callplus.net.nz 4 5 124837 20150222155745
+125-237-11-161.jetstream.xtra.co.nz 0 1 456191 
+29.236.69.111.dynamic.snap.net.nz 0 1 238155 
+203-96-205-143.dsl.dyn.ihug.co.nz 0 1 98600 
+122-59-138-187.jetstream.xtra.co.nz 0 1 302664 
+122.56.200.84 0 1 16288 
+baiduspider-123-125-71-43.crawl.baidu.com 2 2 27679 20150222134532
+google-proxy-66-102-6-236.google.com 0 11 491139 
+125-239-130-6.jetstream.xtra.co.nz 1 12 441091 20150213204231
+203-118-177-24.dsl.dyn.ihug.co.nz 1 16 209135 20150225222342
+119-224-81-39.callplus.net.nz 1 1 5472 20150222180218
+static-96-254-233-186.tampfl.fios.verizon.net 0 1 299802 
+99.112.85.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150201012916
+118-92-50-142.dsl.dyn.ihug.co.nz 0 1 98600 
+23-95-138-218-host.colocrossing.com 1 1 0 20150221221342
+103-29-30-13.2talk.co.nz 13 93 4335377 20150207064713
+208.96.183.182 0 1 98600 
+tl-er6120.macminicloud.net 3 90 2401284 20150205135953
+180.76.4.34 1 1 21976 20150207220840
+ec2-54-211-238-128.compute-1.amazonaws.com 1 5 92219 20150223145807
+118-93-36-66.dsl.dyn.ihug.co.nz 16 68 7506866 20150214111636
+215.208.153.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150215144816
+167-160-127-99.contina.com 1 1 5705 20150206162932
+122-61-231-212.jetstream.xtra.co.nz 1 12 441095 20150219153220
+131.203.241.98 1 14 205090 20150224153247
+180.76.4.217 1 1 21976 20150205195917
+83.92.252.27.dyn.cust.vf.net.nz 0 1 98600 
+baiduspider-220-181-108-148.crawl.baidu.com 2 2 27683 20150226234407
+121-73-36-128.cable.telstraclear.net 1 14 217751 20150215135652
+49.205.227.49.dyn.cust.vf.net.nz 1 15 208348 20150219145739
+122-58-211-166.jetstream.xtra.co.nz 1 12 202918 20150214161655
+121-99-85-115.bng1.tvc.orcon.net.nz 0 10 65152 
+219-89-131-77.jetstart.xtra.co.nz 2 17 2048443 20150228080711
+101.221.252.27.dyn.cust.vf.net.nz 1 13 303597 20150222135317
+180.76.4.97 2 2 43952 20150218100648
+119.15.2.10 12 48 3005392 20150213143501
+103.255.26.149 3 18 292050 20150207165601
+181.66.157.251 1 12 651855 20150228143421
+115-188-120-34.jetstream.xtra.co.nz 0 1 252938 
+14-202-136-55.static.tpgi.com.au 0 1 98600 
+ec2-54-226-96-37.compute-1.amazonaws.com 2 2 43952 20150225194441
+marshall.cial.co.nz 0 1 98600 
+baiduspider-220-181-108-140.crawl.baidu.com 1 1 21976 20150224124148
+cpe-167-114-162-105-dsl.montrealnetworx.com 1 1 5705 20150224000015
+118-93-62-143.dsl.dyn.ihug.co.nz 7 44 2203653 20150207093723
+180.76.4.104 1 1 21976 20150204020144
+118-93-163-132.dsl.dyn.ihug.co.nz 1 12 202916 20150210215918
+186-78-216-120.baf.movistar.cl 1 17 896196 20150219072438
+163-226-148-118.nzcomms.co.nz 0 2 32576 
+219-89-211-28.dialup.xtra.co.nz 1 1 5472 20150226204753
+122-57-14-135.jetstream.xtra.co.nz 0 1 238155 
+121-75-80-249.dyn.vf.net.nz 0 1 98600 
+180.76.4.47 1 1 21976 20150225120630
+175.44.25.122 2 2 7940 20150201144624
+180.76.4.143 2 2 43952 20150214122025
+122.56.196.201 0 1 16288 
+ip-118-90-77-129.xdsl.xnet.co.nz 15 67 5826270 20150223182248
+125-237-179-214.jetstream.xtra.co.nz 3 35 3615516 20150217210302
+118-93-89-70.dsl.dyn.ihug.co.nz 3 5 16671 20150201142728
+124.157.109.186 0 1 22519 
+2.197.159.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150226205931
+175.44.26.19 4 4 15880 20150205151847
+175.136.173.154 1 13 202178 20150210204440
+184-217-148-118.nzcomms.co.nz 1 1 4893 20150215172434
+121-75-229-126.dyn.vf.net.nz 5 7 435894 20150222162250
+121-99-167-87.bng1.tvc.orcon.net.nz 5 22 2571856 20150222181417
+78.95.244.131 0 1 340222 
+green15.organicphenomenon.com 3 3 4968 20150205021202
+33.200.178.107.gae.googleusercontent.com 0 1 75027 
+165.86.71.71 0 1 98600 
+175.44.26.142 4 4 15881 20150205141055
+ec2-54-162-42-130.compute-1.amazonaws.com 2 5 97834 20150204085246
+c-50-135-86-205.hsd1.wa.comcast.net 0 1 98600 
+122-59-159-8.jetstream.xtra.co.nz 1 12 202918 20150223160450
+122-60-38-116.jetstream.xtra.co.nz 0 1 16288 
+cpe-58-169-200-6.lns6.woo.bigpond.net.au 0 2 163534 
+189-79-153-11.dsl.telesp.net.br 0 1 396684 
+14-1-88-120.worldnet.co.nz 1 18 1809624 20150211175718
+249.100.252.27.dyn.cust.vf.net.nz 1 12 202918 20150211085020
+180.76.4.56 1 1 21976 20150209020544
+246.107.252.27.dyn.cust.vf.net.nz 1 14 303672 20150210213128
+142.0.141.144 13 13 212204 20150210164105
+95.70.245.141 0 1 98600 
+244.27.43.120.broad.pt.fj.dynamic.163data.com.cn 12 12 45095 20150206162141
+18.115.85.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150213112024
+118-92-202-142.dsl.dyn.ihug.co.nz 1 17 533109 20150227195235
+101.98.212.154 10 13 832988 20150205110655
+122-61-96-101.jetstream.xtra.co.nz 1 12 202917 20150228140259
+122.56.196.142 0 1 16288 
+msnbot-157-55-39-199.search.msn.com 0 1 1911 
+baiduspider-220-181-108-91.crawl.baidu.com 1 1 21976 20150226134804
+219-89-209-73.jetstream.xtra.co.nz 1 14 203682 20150226162349
+121-72-223-9.dsl.telstraclear.net 1 14 203679 20150215202526
+202.36.134.22 1 15 554125 20150203132754
+118-93-229-52.dsl.dyn.ihug.co.nz 0 1 98600 
+ec2-54-159-97-91.compute-1.amazonaws.com 1 1 4789 20150209203744
+76.111.252.27.dyn.cust.vf.net.nz 4 66 2691164 20150216210806
+cpe-124-185-153-215.lns5.cha.bigpond.net.au 0 2 197200 
+mail.wam.co.nz 1 15 304360 20150219124559
+28-156-148-118.nzcomms.co.nz 0 1 98600 
+121-98-54-191.bng1.nct.orcon.net.nz 2 17 700347 20150221174137
+203-100-223-212.callplus.net.nz 2 19 386029 20150206190359
+121-72-217-204.dsl.telstraclear.net 1 15 304359 20150217090746
+122-60-232-127.jetstream.xtra.co.nz 1 12 202917 20150207165556
+5-195-149-118.nzcomms.co.nz 0 1 16288 
+180.76.4.10 1 1 21976 20150212221836
+126.207.37.120.broad.pt.fj.dynamic.163data.com.cn 3 3 11274 20150211032236
+81-65-177-105.rev.numericable.fr 0 1 98600 
+baiduspider-220-181-108-94.crawl.baidu.com 1 1 21976 20150226034443
+ec2-54-198-149-4.compute-1.amazonaws.com 2 2 43952 20150212035414
+222-153-36-214.jetstream.xtra.co.nz 1 12 224748 20150202172452
+114.23.124.253 2 20 459056 20150205161256
+14.139.62.114 1 30 1197789 20150211174651
+125-238-28-27.jetstream.xtra.co.nz 11 42 1559350 20150207142112
+baiduspider-123-125-71-39.crawl.baidu.com 1 1 5704 20150225235516
+217.212.205.121.broad.pt.fj.dynamic.163data.com.cn 3 3 11274 20150204074337
+122-62-254-60.jetstream.xtra.co.nz 1 13 293552 20150210193541
+118.82.241.26 2 25 405905 20150226203417
+baiduspider-123-125-71-89.crawl.baidu.com 2 2 11412 20150222214716
+122.58.100.39 0 1 16288 
+203-167-191-69.dsl.clear.net.nz 1 30 1197606 20150224155836
+dsl.49.151.62.1.pldt.net 0 1 98600 
+dsl.49.144.177.49.pldt.net 1 30 1197789 20150222163432
+203-96-84-1.cid.global-gateway.net.nz 1 12 202918 20150214122238
+180.76.4.33 1 1 21976 20150212101359
+baiduspider-220-181-108-102.crawl.baidu.com 1 1 21976 20150225124734
+122.56.198.54 2 14 294682 20150218134324
+baiduspider-123-125-71-12.crawl.baidu.com 2 2 27682 20150226134805
+122-59-214-85.jetstream.xtra.co.nz 0 1 98600 
+180.76.4.76 2 2 43952 20150227120831
+mail.intermed.co.nz 0 1 98600 
+198.20.168.136 3 3 4968 20150226225915
+ds0056-01-n.solidseodedicated.com 1 1 5704 20150205073842
+76-216-166-119.lightspeed.frokca.sbcglobal.net 0 1 98600 
+122-57-44-198.jetstream.xtra.co.nz 16 135 4678464 20150219112629
+ec2-54-144-57-218.compute-1.amazonaws.com 1 5 93446 20150209194115
+180.76.4.193 1 1 21976 20150217041758
+62-210-75-104.rev.poneytelecom.eu 1 3 81518 20150225034013
+d110-33-8-95.bla800.nsw.optusnet.com.au 0 1 98600 
+120.22.2.102 0 1 98600 
+180.76.4.177 3 3 65928 20150225062858
+159.146.102.159 0 1 98600 
+122-60-251-64.jetstream.xtra.co.nz 1 12 202918 20150216134704
+180.76.4.251 2 2 43952 20150220002444
+125-237-133-119.jetstream.xtra.co.nz 1 15 1804193 20150208190947
+71.119.252.27.dyn.cust.vf.net.nz 0 1 302664 
+baiduspider-220-181-108-150.crawl.baidu.com 1 1 21976 20150221133535
+89-180-134-189.net.novis.pt 1 30 1197790 20150220125011
+85-238-91-49.pool.digikabel.hu 0 1 302664 
+122-57-18-83.jetstream.xtra.co.nz 1 14 441857 20150220081402
+125-238-123-102.jetstream.xtra.co.nz 1 14 441856 20150222172500
+180.76.4.68 1 1 21976 20150214020300
+180.76.4.232 1 1 21976 20150202200102
+baiduspider-220-181-108-158.crawl.baidu.com 3 3 33385 20150226030447
+94.249.241.36 1 1 5173 20150223092558
+108-217-78-132.lightspeed.irvnca.sbcglobal.net 0 1 98600 
+115.208.150.27.broad.pt.fj.dynamic.163data.com.cn 29 29 85188 20150216003658
+google-proxy-66-249-82-228.google.com 0 50 1948048 
+ec2-50-16-48-105.compute-1.amazonaws.com 2 2 43952 20150211143321
+61.135.190.220 1 1 5705 20150211055435
+142.69.85.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5685 20150204211840
+122.58.120.223 0 3 1002681 
+180.76.4.136 2 2 43952 20150222141323
+175.141.69.111.dynamic.snap.net.nz 11 57 5951299 20150225100615
+124-148-120-192.dyn.iinet.net.au 0 1 248141 
+178.32.235.127 1 1 5173 20150207060405
+216.207.37.120.broad.pt.fj.dynamic.163data.com.cn 4 4 11370 20150211021435
+95.154.217.223 1 1 5543 20150212092450
+180.76.4.79 1 1 21976 20150207200058
+99-102-118-158.lightspeed.stlsmo.sbcglobal.net 5 38 2017843 20150225095841
+219.123.224.49.dyn.cust.vf.net.nz 1 12 441093 20150205184758
+122-60-161-169.jetstream.xtra.co.nz 4 43 2733826 20150204205202
+s16.dmoz.ixquick.com 0 1 98600 
+122-60-25-184.jetstream.xtra.co.nz 11 54 4583465 20150226171002
+112.215.36.145 0 1 98600 
+180.76.4.40 1 1 21976 20150212080700
+69.199.159.27.broad.pt.fj.dynamic.163data.com.cn 6 6 22548 20150212131439
+122-61-139-156.jetstream.xtra.co.nz 0 1 98600 
+122-60-212-46.jetstream.xtra.co.nz 1 14 203682 20150204204601
+121-99-175-197.bng1.tvc.orcon.net.nz 1 30 1197609 20150208171320
+180.76.4.57 1 1 21976 20150210140823
+198.95.226.236 11 32 3303941 20150216120455
+d50-92-103-18.bchsia.telus.net 0 1 252938 
+ec2-54-152-24-19.compute-1.amazonaws.com 1 1 5704 20150218055650
+101.184.76.44 0 1 98600 
+baiduspider-123-125-71-78.crawl.baidu.com 1 1 21976 20150221133537
+121.98.129.1 1 14 203681 20150208133124
+121-74-228-145.telstraclear.net 0 1 98600 
+117.216.88.183 1 5 58909 20150228054632
+google-proxy-66-102-6-230.google.com 0 6 94587 
+98.217.224.49.dyn.cust.vf.net.nz 1 14 1803503 20150224212845
+122-59-45-64.jetstream.xtra.co.nz 1 15 304361 20150215134550
+ec2-54-159-184-226.compute-1.amazonaws.com 2 2 9267 20150223145459
+140.237.36.53 12 12 45100 20150228013155
+google-proxy-66-249-83-173.google.com 1 7 288081 20150211182838
+27.96.212.200 0 1 238155 
+103.206.159.27.broad.xm.fj.dynamic.163data.com.cn 4 4 16861 20150227072051
+google-proxy-66-102-6-228.google.com 1 5 94841 20150225193037
+cpe-58-165-173-241.nsw.bigpond.net.au 0 2 568984 
+125-238-87-251.jetstream.xtra.co.nz 0 1 353808 
+121-99-224-77.bng1.nct.orcon.net.nz 1 14 441854 20150227151226
+baiduspider-220-181-108-154.crawl.baidu.com 1 1 5706 20150222235310
+180.76.4.95 1 1 21976 20150203020642
+177.207.120.45.dynamic.adsl.gvt.net.br 0 4 326694 
+120.10.244.243 29 29 481114 20150215223630
+180.76.4.27 2 2 43952 20150207002318
+baiduspider-220-181-108-181.crawl.baidu.com 1 1 5706 20150225004554
+host86-183-254-141.range86-183.btcentralplus.com 0 1 98600 
+101.98.249.59 0 1 243826 
+122.58.140.65 0 1 302664 
+122-60-160-215.jetstream.xtra.co.nz 1 16 533033 20150222172832
+121-74-180-35.telstraclear.net 2 6 40145 20150226204324
+122-62-99-156.jetstream.xtra.co.nz 3 14 453289 20150222201855
+131.203.117.178 5 43 1281811 20150203124742
+180.76.4.114 2 2 43952 20150219041415
+122-60-14-251.jetstream.xtra.co.nz 3 17 250099 20150208195832
+219-89-172-238.jetstart.xtra.co.nz 1 18 699249 20150228174859
+baiduspider-123-125-71-113.crawl.baidu.com 1 1 5705 20150219183944
+115-223-148-118.nzcomms.co.nz 0 1 16288 
+baiduspider-123-125-71-115.crawl.baidu.com 1 1 21976 20150219224309
+118-93-7-58.dsl.dyn.ihug.co.nz 3 18 292057 20150216082346
+175.44.27.153 3 3 15215 20150210022522
+146.171.254.97 7 77 4167075 20150227121855
+121-98-140-37.bng1.nct.orcon.net.nz 0 2 32576 
+198.211.104.210 11 13 129093 20150204155255
+41.190.89.151 0 1 258232 
+180.76.4.20 2 2 43952 20150218000924
+203-173-145-148.dsl.dyn.ihug.co.nz 0 1 99924 
+180.76.4.110 1 1 21976 20150227142029
+118-93-201-31.dsl.dyn.ihug.co.nz 0 2 494572 
+180.76.4.141 1 1 21976 20150216201425
+122-57-38-235.jetstream.xtra.co.nz 0 1 353808 
+203-97-96-247.cable.telstraclear.net 1 14 451726 20150207160444
+121-72-200-249.dsl.telstraclear.net 2 16 213820 20150218220837
+118-93-3-248.dsl.dyn.ihug.co.nz 1 12 202917 20150201135116
+23-94-36-135-host.colocrossing.com 1 1 5544 20150218211425
+150-70-173-46.trendmicro.com 0 1 1949 
+93.83.69.111.dynamic.snap.net.nz 1 30 1197610 20150212222018
+76.sub-70-196-136.myvzw.com 0 2 197200 
+126.230.37.120.broad.pt.fj.dynamic.163data.com.cn 1 1 5586 20150203121558
+google-proxy-66-102-6-239.google.com 0 6 287045 
+46.102.96.77 1 1 5174 20150226115147
+122.58.113.209 2 14 204974 20150204160836
+122.56.198.145 0 1 16288 
+94.212.159.27.broad.xm.fj.dynamic.163data.com.cn 13 13 50683 20150209124733
+180.76.4.81 1 1 21976 20150218060505
+60-234-93-1.bitstream.orcon.net.nz 9 33 1039423 20150218203120
+baiduspider-220-181-108-149.crawl.baidu.com 1 1 5703 20150225134146
+google-proxy-66-249-83-180.google.com 0 4 19466 
+115-188-157-86.jetstream.xtra.co.nz 1 14 203679 20150211105627
+121-74-194-153.telstraclear.net 0 1 98600 
+cpe-58-175-78-122.dqzk1.lon.bigpond.net.au 0 1 89954 
+baiduspider-220-181-108-159.crawl.baidu.com 1 1 5705 20150226104849
+awbl211-122.qubee.com.bd 1 14 543366 20150224203547
+114-134-4-135.rurallink.co.nz 1 15 304361 20150217105554
+bb68a792.virtua.com.br 1 30 1197788 20150218064745
+122-59-155-165.jetstream.xtra.co.nz 0 4 0 
+157.56.122.218 0 4 65152 
+202.7.39.226 2 2 43950 20150213120543
+222-153-55-134.jetstream.xtra.co.nz 0 1 266320 
+122-60-171-194.jetstream.xtra.co.nz 0 1 98600 
+32.236.150.27.broad.pt.fj.dynamic.163data.com.cn 18 18 67646 20150212081420
+5ac8ac2e.bb.sky.com 3 17 315248 20150215072314
+121-99-36-235.bng1.nct.orcon.net.nz 2 17 2048442 20150218212939
+118-93-222-226.dsl.dyn.ihug.co.nz 21 45 4400036 20150220202329
+175.44.6.120 2 2 7939 20150213142446
+65.209.224.49.dyn.cust.vf.net.nz 1 14 442829 20150218093147
+122.56.232-139.mobile.telecom.co.nz 0 1 98600 
+118-92-101-197.dsl.dyn.ihug.co.nz 3 38 1481909 20150211233811
+242.host-117-104-183.compassnet.co.nz 1 16 309030 20150227221900
+172.95.252.27.dyn.cust.vf.net.nz 1 33 1246472 20150219231553
+host-92-6-186-86.as43234.net 0 1 98600 
+121-72-215-110.dsl.telstraclear.net 0 1 98600 
+47-72-62-187.dsl.dyn.ihug.co.nz 0 1 238155 
+122-57-13-129.jetstream.xtra.co.nz 2 16 1809797 20150213215909
+180.76.4.119 1 1 21976 20150224141826
+115-188-174-233.jetstream.xtra.co.nz 0 2 32576 
+180.76.4.165 2 2 43952 20150213102459
+cpe-60-231-16-255.lns2.cha.bigpond.net.au 0 1 98600 
+122-61-230-115.jetstream.xtra.co.nz 1 4 102597 20150221142513
+122-59-100-33.jetstream.xtra.co.nz 3 37 1450414 20150208192013
+175.44.24.170 5 5 23157 20150219233727
+140.237.37.76 12 12 45096 20150214151034
+163.53.85.4 2 2 27680 20150217235713
+203.125.174.98 0 1 98600 
+121-99-93-9.bng1.tvc.orcon.net.nz 1 13 201997 20150226145316
+100.238.153.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150202072244
+baiduspider-220-181-108-114.crawl.baidu.com 1 1 5707 20150219234419
+180.76.4.89 2 2 43952 20150212181519
+91.108.180.239 1 1 5174 20150218075711
+google-proxy-66-249-84-180.google.com 2 20 584993 20150225182849
+109.161.192.44 0 1 98600 
+122.58.43.6 3 25 706430 20150206221715
+122-62-70-241.jetstream.xtra.co.nz 1 17 1804954 20150216181928
+smtp.pncc.govt.nz 1 14 452631 20150216162409
+203-89-163-160.static.ubs.maxnet.co.nz 15 53 4522385 20150228204106
+hdofb-24p3-217.ppp11.odn.ad.jp 10 55 1934811 20150208190445
+baiduspider-123-125-71-58.crawl.baidu.com 1 1 5704 20150227174152
+69.199.159.27.broad.xm.fj.dynamic.163data.com.cn 4 4 16859 20150214014626
+121-99-245-207.bng1.nct.orcon.net.nz 1 12 202917 20150201203333
+1.125.48.20 0 1 98600 
+101.199.108.54 1 5 93446 20150210100418
+152.239.159.27.broad.pt.fj.dynamic.163data.com.cn 6 6 17058 20150210043208
+36.248.167.92 4 4 15881 20150228045823
+180.76.4.66 1 1 21976 20150204040751
+121-98-159-103.bng1.mdr.orcon.net.nz 0 1 98600 
+180.76.4.187 1 1 21976 20150225141903
+203-211-112-191.ue.woosh.co.nz 1 20 215608 20150223000537
+c-67-191-119-64.hsd1.fl.comcast.net 0 1 98600 
+baiduspider-123-125-71-105.crawl.baidu.com 1 1 5705 20150223134057
+126.144.40.120.broad.pt.fj.dynamic.163data.com.cn 15 15 56366 20150228010655
+178-197-149-118.nzcomms.co.nz 0 1 16288 
+203-96-84-33.cid.global-gateway.net.nz 4 15 219332 20150212172227
+180.76.4.107 1 1 21976 20150207020242
+baiduspider-123-125-71-56.crawl.baidu.com 1 1 5704 20150222033807
+75-131-118-53.dhcp.jcsn.tn.charter.com 0 1 98600 
+219-88-71-199.adsl.xtra.co.nz 0 1 353808 
+122-59-166-78.jetstream.xtra.co.nz 6 48 2803303 20150208191027
+101.98.237.151 1 7 188689 20150217183901
+180.76.4.42 1 1 21976 20150210020248
+115-188-94-35.jetstream.xtra.co.nz 0 1 99924 
+251.26.43.120.broad.pt.fj.dynamic.163data.com.cn 6 6 22551 20150203032129
+125.18.135.86 2 2 10181 20150221154533
+115-188-91-62.jetstream.xtra.co.nz 7 30 867763 20150203220409
+180.76.4.93 1 1 21976 20150216122158
+101.98.237.234 1 5 237592 20150207200548
+baiduspider-123-125-71-84.crawl.baidu.com 3 3 33384 20150228204310
+190.236.28.92 1 1 5707 20150221155011
+247.79.26.117.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150204115620
+baiduspider-123-125-71-55.crawl.baidu.com 1 1 21976 20150226174029
+google-proxy-66-102-6-244.google.com 0 10 414677 
+222-152-253-203.jetstream.xtra.co.nz 1 14 203681 20150227111709
+180.76.4.138 3 3 65928 20150226220132
+ec2-54-82-139-86.compute-1.amazonaws.com 3 3 10421 20150223145509
+197.110.183.87 0 1 302664 
+122-61-24-128.jetstream.xtra.co.nz 1 5 91889 20150202192644
+broadband-188-255-54-71.nationalcablenetworks.ru 1 30 1197789 20150211133155
+google-proxy-66-249-84-186.google.com 0 11 768735 
+baiduspider-123-125-71-41.crawl.baidu.com 2 2 27682 20150225174004
+175.44.27.212 4 4 15882 20150210062815
+ec2-54-161-169-226.compute-1.amazonaws.com 1 1 5174 20150204084555
+125-236-133-214.jetstream.xtra.co.nz 5 25 818450 20150206221740
+fw.virtual-warehouse.net 0 98 732960 
+94.249.240.11 1 1 5174 20150220085207
+122.56.232-157.mobile.telecom.co.nz 1 12 202918 20150201155151
+baiduspider-220-181-108-85.crawl.baidu.com 1 1 21976 20150224043838
+pool-74-105-86-121.nwrknj.fios.verizon.net 0 2 487652 
+180.76.4.246 1 1 21976 20150227022301
+63.141.230.74 1 1 22630 20150219065331
+27.87.252.27.dyn.cust.vf.net.nz 1 14 455872 20150203080242
+176.119.10.88 2 2 36279 20150228055712
+180.76.4.112 1 1 21976 20150208041845
+google-proxy-66-249-84-179.google.com 0 3 503376 
+203-184-44-144-dynamic.callplus.net.nz 0 1 248141 
+122.58.143.14 1 15 226198 20150216070121
+180.76.4.101 1 1 21976 20150212200401
+ec2-54-225-63-74.compute-1.amazonaws.com 1 5 92532 20150209204331
+114-134-169-198.static.nztechnologygroup.com 4 39 1734325 20150212122331
+baiduspider-123-125-71-80.crawl.baidu.com 1 1 21976 20150228174144
+61.135.190.102 2 2 11412 20150209215533
+ec2-54-191-56-86.us-west-2.compute.amazonaws.com 2 4 82860 20150212231309
+ec2-54-196-64-21.compute-1.amazonaws.com 1 5 93447 20150204085303
+226.sub-70-197-20.myvzw.com 0 1 98600 
+180.76.4.146 1 1 21976 20150217121636
+118-92-213-131.dsl.dyn.ihug.co.nz 0 2 32576 
+56-182-148-118.nzcomms.co.nz 0 1 16288 
+219-89-216-199.jetstream.xtra.co.nz 1 14 203680 20150223163804
+ip24-170-200-220.ga.at.cox.net 0 1 98600 
+114.23.121.190 1 12 202916 20150205202525
+210.246.27.43 1 2 106150 20150204212012
+baiduspider-123-125-71-76.crawl.baidu.com 0 1 23846 
+175.44.6.112 1 1 7276 20150204212223
+200.197.224.49.dyn.cust.vf.net.nz 1 30 1197607 20150226115248
+210.246.41.124 1 1 5704 20150211152521
+246.198.252.27.dyn.cust.vf.net.nz 31 144 12291366 20150216221641
+180.76.4.167 1 1 21976 20150204081907
+121-72-199-111.dsl.telstraclear.net 1 30 1197608 20150202150638
+msnbot-157-55-39-139.search.msn.com 1 1 5473 20150220204528
+122-57-23-181.jetstream.xtra.co.nz 1 30 1197605 20150219152747
+222-152-207-31.jetstream.xtra.co.nz 1 14 203679 20150216124731
+ec2-54-205-49-251.compute-1.amazonaws.com 2 2 43952 20150218232257
+cpe-58-165-248-71.lns1.civ.bigpond.net.au 0 1 98600 
+180.76.4.171 3 3 65928 20150219180339
+255.198.159.27.broad.pt.fj.dynamic.163data.com.cn 20 20 62350 20150223144001
+103.254.228.107 1 30 1197608 20150210161446
+181.74.252.27.dyn.cust.vf.net.nz 1 13 199505 20150211172500
+122.56.207.245 3 19 2302563 20150201102706
+118-93-46-219.dsl.dyn.ihug.co.nz 0 5 32576 
+162-230-104-220.lightspeed.dybhfl.sbcglobal.net 0 1 98600 
+180.76.4.235 1 1 21976 20150222100750
+client-23-238-18-202.hostwindsdns.com 1 1 0 20150222140033
+s01060018f85e0f6a.mj.shawcable.net 0 1 353808 
+6.221.150.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150216103727
+baiduspider-123-125-71-17.crawl.baidu.com 1 1 21976 20150224043838
+180.76.4.26 2 2 43952 20150227042207
+118-92-103-58.dsl.dyn.ihug.co.nz 1 15 208348 20150221091839
+122-62-26-203.jetstream.xtra.co.nz 0 1 98600 
+host-116-251-159-199.xdsl.kinect.net.nz 1 13 199503 20150219214230
+86.44.40.191 1 16 309212 20150207123438
+122.56.203.4 1 17 1721710 20150217222741
+60.234.147.126 0 1 98600 
+baiduspider-220-181-108-109.crawl.baidu.com 2 2 11412 20150221083626
+200.109.42-117.dyn.dsl.cantv.net 1 11 559283 20150209135343
+115-188-153-94.jetstream.xtra.co.nz 2 16 695976 20150210180757
+ip101.hichina.com 1 5 93444 20150202231341
+baiduspider-123-125-71-85.crawl.baidu.com 1 1 5704 20150226224544
+218-101-64-57.dsl.dyn.ihug.co.nz 2 15 285818 20150224075703
+254.120.224.49.dyn.cust.vf.net.nz 5 25 666768 20150202211223
+baiduspider-123-125-71-110.crawl.baidu.com 1 1 21976 20150225134149
+a100.sub54.net78.udm.net 1 1 23704 20150202152649
+222-152-203-32.jetstream.xtra.co.nz 2 26 490294 20150226170628
+121-98-132-73.bng1.nct.orcon.net.nz 0 1 16288 
+c-69-180-81-146.hsd1.fl.comcast.net 0 1 98600 
+222-152-200-135.jetstream.xtra.co.nz 0 1 238155 
+ec2-54-158-156-9.compute-1.amazonaws.com 2 2 43952 20150225134854
+220.181.51.110 1 1 5704 20150216134807
+132.99.252.27.dyn.cust.vf.net.nz 1 12 202919 20150205162943
+google-proxy-66-249-82-248.google.com 0 6 435248 
+65.55.65.30 0 4 65152 
+115-188-34-69.jetstream.xtra.co.nz 4 41 1297597 20150214184953
+180.76.4.203 2 2 43952 20150213041150
+167-149-149-118.nzcomms.co.nz 0 1 16288 
+180.76.4.12 1 1 21976 20150209121720
+baiduspider-220-181-108-110.crawl.baidu.com 1 1 5704 20150224024031
+vpn.cial.co.nz 0 1 302664 
+191.33.42.17.dynamic.adsl.gvt.net.br 1 19 714780 20150203003739
+152-250-177-202.user.vivozap.com.br 1 30 1197609 20150209090205
+cpe-121-222-11-47.lnse1.cha.bigpond.net.au 1 14 203862 20150214144417
+baiduspider-220-181-108-103.crawl.baidu.com 2 2 43952 20150228174143
+202.49.165.152 1 14 441857 20150211141425
+228.72.252.27.dyn.cust.vf.net.nz 1 13 503444 20150223230111
+122.58.106.172 1 15 208347 20150203200719
+180.76.4.98 1 1 21976 20150207141626
+45.193.159.27.broad.pt.fj.dynamic.163data.com.cn 18 18 51178 20150209112754
+0.249.26.117.broad.pt.fj.dynamic.163data.com.cn 3 3 11276 20150215022107
+122-59-30-165.jetstream.xtra.co.nz 1 12 202919 20150209151501
+115-188-84-240.jetstream.xtra.co.nz 1 2 10373 20150201171235
+bd23047d.virtua.com.br 1 30 1197790 20150207204226
+123-190-148-118.nzcomms.co.nz 1 15 308342 20150217164834
+122.58.55.192 9 25 1213272 20150221183549
+23-94-164-21-host.colocrossing.com 1 1 5981 20150201220139
+160.250.224.49.dyn.cust.vf.net.nz 1 1 5705 20150227124220
+pool-72-86-45-92.clppva.fios.verizon.net 0 1 98600 
+122-59-102-206.jetstream.xtra.co.nz 5 47 3287367 20150207122318
+119.94.28.78.static.pldt.net 0 1 98600 
+125-237-46-26.jetstream.xtra.co.nz 9 39 1036451 20150210175454
+72-8-148-242.rdns.rogmeo.com 1 1 4480 20150224215021
+cm19.gamma125.maxonline.com.sg 0 1 98600 
+74.82.58.57 0 1 64934 
+baiduspider-123-125-71-100.crawl.baidu.com 1 1 5704 20150219224307
+222-153-49-69.jetstream.xtra.co.nz 2 13 447189 20150224185907
+ip-58-28-222-239.wxnz.net 0 1 98600 
+baiduspider-123-125-71-42.crawl.baidu.com 1 1 5705 20150221064645
+apollo.enternet.co.nz 2 2 12190 20150219134405
+84-10-103-50.static.chello.pl 1 30 1197789 20150203021329
+baiduspider-220-181-108-95.crawl.baidu.com 1 1 5704 20150226224544
+60-234-141-209.bitstream.orcon.net.nz 3 16 314374 20150209105637
+180.76.4.159 1 1 21976 20150209162014
+122.58.135.122 2 21 349530 20150223212813
+5.175.177.236 1 1 5173 20150220123340
+124.123.252.27.dyn.cust.vf.net.nz 3 43 3241824 20150210210647
+180.76.4.38 2 2 43952 20150215100420
+geri.talklink.com.br 1 30 1197789 20150201004938
+124-170-135-65.dyn.iinet.net.au 0 1 98600 
+118-93-190-37.dsl.dyn.ihug.co.nz 0 1 302664 
+103-224-130-16.flip.co.nz 3 20 809372 20150214123551
+222-152-8-222.jetstream.xtra.co.nz 2 14 213948 20150228073930
+101.174.187.71 0 1 98600 
+222-152-203-57.jetstream.xtra.co.nz 3 40 3266911 20150220170824
+122.56.201.82 0 2 197200 
+222-155-200-110.jetstream.xtra.co.nz 0 1 98600 
+121-99-245-4.bng1.nct.orcon.net.nz 5 27 1161600 20150209233346
+38.129.194.248 0 1 98600 
+103-224-128-4.flip.co.nz 1 13 301519 20150224065821
+193.156.58.59.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150213225210
+175.44.24.162 1 1 7280 20150207165949
+255.198.159.27.broad.xm.fj.dynamic.163data.com.cn 13 13 50686 20150221120228
+251.20.119.188.dynamic.turk.net 0 1 98600 
+93-50-220-243.ip154.fastwebnet.it 1 30 1197792 20150215045239
+203.116.33.71 1 14 203861 20150204102229
+122.58.86.232 12 55 3782162 20150207153917
+180.76.4.225 1 1 21976 20150215220210
+180.76.4.155 4 4 87904 20150214161859
+22-217-148-118.nzcomms.co.nz 0 2 32576 
+124-169-209-54.dyn.iinet.net.au 0 1 98600 
+117.206.143.37 2 31 1203495 20150212202134
+downloads.enternet.co.nz 11 44 1263295 20150203134102
+180.76.4.64 1 1 21976 20150207041041
+ec2-52-1-91-108.compute-1.amazonaws.com 1 1 5705 20150221015623
+104.145.252.27.dyn.cust.vf.net.nz 1 11 202229 20150226230150
+121-98-55-170.bng1.nct.orcon.net.nz 1 15 434433 20150227200122
+121-99-245-235.bng1.nct.orcon.net.nz 1 14 203680 20150223173530
+100.60.252.27.dyn.cust.vf.net.nz 1 1 5704 20150214153859
+122.58.52.146 3 29 534448 20150212214701
+125-237-195-192.jetstream.xtra.co.nz 1 14 303671 20150222202355
+121-98-153-144.bng1.mdr.orcon.net.nz 1 14 203679 20150212224342
+122.56.202.196 0 2 496282 
+219-89-214-32.jetstream.xtra.co.nz 4 36 1585890 20150203195750
+202.50.145.175 6 44 1744593 20150205095007
+baiduspider-220-181-108-76.crawl.baidu.com 3 3 33388 20150227224234
+180.76.4.103 1 1 21976 20150228162014
+202-150-99-135.bng1.avl.orcon.net.nz 1 17 1804953 20150215173742
+203-173-144-54.dsl.dyn.ihug.co.nz 1 12 450961 20150204220641
+121-99-179-124.bng1.nct.orcon.net.nz 3 24 472459 20150221175948
+cpe-124-184-77-234.lns13.cht.bigpond.net.au 0 1 98600 
+47.156.58.59.broad.pt.fj.dynamic.163data.com.cn 2 2 5685 20150211144438
+227.100.69.111.dynamic.snap.net.nz 1 15 304360 20150216211213
+49.203.224.49.dyn.cust.vf.net.nz 0 2 496282 
+61.135.190.100 1 1 5704 20150208070010
+baiduspider-220-181-108-82.crawl.baidu.com 5 5 93606 20150227224233
+71-10-208-80.static.stls.mo.charter.com 0 1 64934 
+122-62-70-107.jetstream.xtra.co.nz 4 6 773430 20150203063458
+121-75-24-95.dyn.vf.net.nz 1 1 5471 20150208112111
+169-224-149-118.nzcomms.co.nz 0 1 16288 
+61.135.190.219 0 3 76597 
+125-237-219-96.jetstream.xtra.co.nz 2 14 213059 20150228210603
+180.76.4.44 1 1 21976 20150220141906
+180.76.4.162 1 1 21976 20150209140052
+115-188-13-91.jetstream.xtra.co.nz 0 1 98600 
+175.44.6.220 2 2 7941 20150201132536
+180.76.4.144 2 2 43952 20150209062244
+host721710024924.direcway.com 0 1 98600 
+baiduspider-123-125-71-99.crawl.baidu.com 1 1 21976 20150219234420
+41.223.73.99 0 1 253100 
+200-161-47-97.dsl.telesp.net.br 1 30 1197789 20150201162510
+219-89-41-177.dialup.xtra.co.nz 0 1 98600 
+121-99-65-29.bng1.nct.orcon.net.nz 1 12 202916 20150204221019
+122-61-239-75.jetstream.xtra.co.nz 1 14 203681 20150225162040
+122-61-181-5.jetstream.xtra.co.nz 8 33 3801545 20150210133924
+122-62-11-141.jetstream.xtra.co.nz 1 13 303597 20150216203935
+122-59-58-64.jetstream.xtra.co.nz 1 13 199502 20150212132341
+248-242-148-118.nzcomms.co.nz 0 1 16288 
+180.76.4.91 2 2 43952 20150223002302
+180.76.4.84 1 1 21976 20150202221301
+122-61-239-201.jetstream.xtra.co.nz 1 14 203681 20150226192002
+27.47.158.204 2 2 43952 20150210163343
+host86-136-127-174.range86-136.btcentralplus.com 1 15 304540 20150217035027
+baiduspider-123-125-71-103.crawl.baidu.com 1 2 5884 20150219234418
+199.60.89.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5685 20150212121536
+122-62-198-233.jetstream.xtra.co.nz 2 18 1810563 20150213160358
+msnbot-199-30-25-92.search.msn.com 0 6 167569 
+122-60-137-43.jetstream.xtra.co.nz 1 15 304361 20150209093006
+117.218.3.207 1 1 5705 20150218181232
+egress110.cws.sco.cisco.com 0 1 22519 
+180.76.4.83 1 1 21976 20150202161913
+32.200.178.107.gae.googleusercontent.com 0 2 11929 
+205.146.40.120.broad.pt.fj.dynamic.163data.com.cn 8 8 28233 20150202112515
+dsystemip6.vhoster.org 6 6 117876 20150217123617
+ec2-54-242-57-85.compute-1.amazonaws.com 1 5 93447 20150216185122
+www.insolink.co.nz 1 30 1197608 20150204132633
+191-054-038-164.xd-dynamic.ctbcnetsuper.com.br 1 29 1196996 20150205110422
+s204-191-116-181.ab.hsia.telus.net 0 1 89954 
+239.pichincha.andinanet.net 1 29 1179533 20150221031001
+cpe-68-174-82-36.nyc.res.rr.com 0 1 98600 
+118-93-43-23.dsl.dyn.ihug.co.nz 7 25 2847860 20150202093620
+192.3.180.234 1 1 5429 20150209205959
+37.203.210.184 1 1 5173 20150203085822
+rt87bb0-37-55.routit.net 0 1 98600 
+219-89-55-194.dialup.xtra.co.nz 1 14 303669 20150203155851
+168.185.153.27.broad.pt.fj.dynamic.163data.com.cn 2 2 5688 20150211204824
+ks305436.kimsufi.com 3 3 17057 20150227073037
+baiduspider-123-125-71-52.crawl.baidu.com 3 3 33386 20150226104850
+125-238-153-168.jetstream.xtra.co.nz 0 1 186539 
+140.237.37.74 5 5 22449 20150228002919
+203.97.93.222 2 19 1931234 20150202154143
+122.56.199.203 0 1 248141 
+175.44.6.81 4 4 15879 20150228091306
+210.246.9.134 0 1 302664 
+222-152-15-21.jetstream.xtra.co.nz 0 1 16288 
+ec2-54-224-38-167.compute-1.amazonaws.com 1 5 92531 20150223145907
+ec2-54-161-26-160.compute-1.amazonaws.com 1 1 4480 20150204084356
+83.143.242.104 1 1 5172 20150222091021
+180.76.4.237 2 2 43952 20150211080717
+118.146.40.120.broad.pt.fj.dynamic.163data.com.cn 9 9 33825 20150211080827
+166.241.37.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150202142010
+125-239-36-191.jetstream.xtra.co.nz 1 14 203680 20150228100647
+202.76.159.76.static.rev.eftel.com 0 1 98600 
+125-239-3-38.jetstream.xtra.co.nz 1 14 556670 20150207144642
+63.200.178.107.gae.googleusercontent.com 1 1 5695 20150201074339
+60-234-92-18.bitstream.orcon.net.nz 7 34 999933 20150228162234
+222-152-71-143.jetstream.xtra.co.nz 1 14 441855 20150215164532
+36.248.167.109 4 4 15880 20150228104318
+baiduspider-220-181-108-151.crawl.baidu.com 1 1 21976 20150226234408
+ec2-184-73-16-88.compute-1.amazonaws.com 1 1 919 20150209204227
+122-59-31-207.jetstream.xtra.co.nz 2 31 1203315 20150206095948
+103.3.234.133 2 13 447193 20150222114117
+egress105.cws.sco.cisco.com 2 28 407358 20150227121226
+122-57-172-127.jetstream.xtra.co.nz 1 15 304360 20150222102553
+67.207.37.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5683 20150213193550
+157.55.235.57 0 9 146592 
+180.76.4.70 2 2 43952 20150216221446
+cpc2-stkp10-2-0-cust157.10-2.cable.virginm.net 1 13 832588 20150211212246
+29.192.159.27.broad.xm.fj.dynamic.163data.com.cn 6 6 22547 20150213114212
+203-173-205-58.dialup.ihug.co.nz 11 46 3139149 20150225155113
+host109-151-219-179.range109-151.btcentralplus.com 1 13 441168 20150201021643
+0.204.226.49.dyn.cust.vf.net.nz 0 1 302664 
+235.104.252.27.dyn.cust.vf.net.nz 9 50 1380461 20150225111003
+ec2-54-159-87-104.compute-1.amazonaws.com 1 5 93444 20150224005907
+121-74-216-125.telstraclear.net 0 2 373078 
+197.1.106.102 2 37 1264339 20150210050557
+180.76.4.183 4 4 87904 20150219161958
+ak-kindy-comb.tkcr4.global-gateway.net.nz 1 14 203681 20150212132920
+ec2-54-145-202-151.compute-1.amazonaws.com 4 4 64675 20150214180419
+183.215.224.49.dyn.cust.vf.net.nz 0 2 90775 
+180.76.4.35 2 2 43952 20150206080623
+210-86-99-194.jetstream.xtra.co.nz 1 17 435196 20150204183639
+180.76.4.14 1 1 21976 20150224102540
+222-154-59-252.jetstream.xtra.co.nz 17 44 5545732 20150215095707
+46.237.69.111.dynamic.snap.net.nz 1 5 417598 20150201104502
+121-99-141-245.bng1.tvc.orcon.net.nz 3 39 1407032 20150221234045
+78.129.218.96 1 1 5173 20150227121144
+baiduspider-220-181-108-83.crawl.baidu.com 1 1 5705 20150226174025
+180.76.4.142 3 3 65928 20150224080238
+202.7.39.58 6 30 532570 20150205123234
+122-60-0-193.jetstream.xtra.co.nz 4 40 3055231 20150202212528
+baiduspider-123-125-71-57.crawl.baidu.com 1 2 38264 20150225094407
+118-93-208-241.dsl.dyn.ihug.co.nz 5 24 2671085 20150206074519
+122-59-67-244.jetstream.xtra.co.nz 2 15 209153 20150227161915
+175.82.168.125.sta.wbroadband.net.au 0 1 98600 
+193.201.224.41 3 3 59983 20150203214732
+baiduspider-220-181-108-107.crawl.baidu.com 1 1 21976 20150222224220
+170.85.224.49.dyn.cust.vf.net.nz 1 11 202229 20150209141622
+118-93-51-140.dsl.dyn.ihug.co.nz 1 14 203681 20150223095656
+118-93-218-126.dsl.dyn.ihug.co.nz 1 14 441856 20150220171105
+116-93-129-97.ue.woosh.co.nz 1 14 455873 20150209165133
+cpe-121-211-232-53.hhui7.cht.bigpond.net.au 1 12 203098 20150219193025
+193.201.224.162 3 3 59983 20150205230036
+5.153.235.146 2 2 10345 20150216062708
+142.4.200.151 2 2 0 20150210100859
+122-59-117-38.jetstream.xtra.co.nz 2 14 206470 20150215180127
+203-109-161-56.dial.dyn.ihug.co.nz 3 4 266197 20150206182326
+ec2-54-161-183-94.compute-1.amazonaws.com 1 5 92217 20150204085114
+baiduspider-220-181-108-89.crawl.baidu.com 1 1 5706 20150226134803
+162.112.18.15 15 67 7150960 20150219180441
+122-60-8-194.jetstream.xtra.co.nz 0 1 7444 
+35.200.178.107.gae.googleusercontent.com 0 1 208 
+ec2-54-90-161-1.compute-1.amazonaws.com 1 1 21976 20150212084845
+b3d23570.virtua.com.br 1 30 1197791 20150201162233
+180.76.4.59 2 2 43952 20150220120726
+139.192.183.192 1 30 1197789 20150206055319
+host23-85-dynamic.40-79-r.retail.telecomitalia.it 1 30 1197787 20150214022123
+187.113.175.253.static.host.gvt.net.br 0 6 155522 
+114.30.76.175 2 14 202276 20150211201108
+121-98-136-188.bng1.nct.orcon.net.nz 0 1 253100 
+122-61-85-139.jetstream.xtra.co.nz 1 14 441856 20150206084437
+baiduspider-220-181-108-80.crawl.baidu.com 1 1 5703 20150224043837
+115-188-82-247.jetstream.xtra.co.nz 1 12 202918 20150228115159
+222-152-213-72.jetstream.xtra.co.nz 3 44 5817049 20150208152830
+122-56-27-49.cid.global-gateway.net.nz 1 14 203680 20150220082400
+abts-north-dynamic-001.138.64.182.airtelbroadband.in 0 1 98600 
+122-60-225-214.jetstream.xtra.co.nz 1 16 209135 20150225184559
+222-153-53-237.jetstream.xtra.co.nz 0 1 238155 
+m83-184-252-89.cust.tele2.se 1 14 441856 20150216115031
+60-242-73-50.tpgi.com.au 0 1 98600 
+101.98.45.230 2 2 8954 20150204194847
+180.76.4.48 1 1 21976 20150223102635
+baiduspider-220-181-108-173.crawl.baidu.com 2 2 43952 20150225134147
+82.211.23.138 1 1 5174 20150221085912
+121-75-246-28.dyn.vf.net.nz 1 14 203683 20150228193857
+rt86bb0-37-4.routit.net 0 1 64934 
+173.208.177.59 1 1 5706 20150201154443
+unassigned.core.vf.net.nz 4 32 522655 20150224205823
+203.97.95.85 0 1 16288 
+ec2-54-159-199-174.compute-1.amazonaws.com 1 1 5704 20150223131125
+175.44.7.106 4 4 15881 20150210094828
+180.76.4.100 2 2 43952 20150221180334
+175.44.5.109 4 4 15875 20150205012212
+baiduspider-220-181-108-146.crawl.baidu.com 1 1 21976 20150225174004
+31.132.79.24.serverel.net 1 1 14198 20150207100049
+199.119.139.3 1 1 21976 20150210020301
+101-98-136-85-dynamic.callplus.net.nz 0 1 98600 
+baiduspider-220-181-108-165.crawl.baidu.com 1 1 21976 20150226104850
+180.76.4.7 1 1 21976 20150226083036
+36.248.167.79 4 4 15877 20150210000138
+baiduspider-123-125-71-50.crawl.baidu.com 2 2 27682 20150226174028
+200.229.224.49.dyn.cust.vf.net.nz 0 1 0 
+47-72-17-147.dsl.dyn.ihug.co.nz 1 12 202916 20150222205602
+121.90.37.225 3 20 2055304 20150208225513
+122.56.197.118 14 35 695546 20150221140151
+122.56.210.62 1 12 202917 20150202153143
+121-73-120-249.cable.telstraclear.net 1 17 1804954 20150209122851
+175.44.7.50 2 2 7939 20150201171500
+122-57-197-114.jetstream.xtra.co.nz 0 1 302664 
+180.76.4.153 3 3 65928 20150219001449
+154.21.252.27.dyn.cust.vf.net.nz 0 1 16288 
+180.76.4.67 3 3 65928 20150219082357
+baiduspider-123-125-71-20.crawl.baidu.com 1 1 5704 20150224144315
+37.59.73.96 1 1 5174 20150214042708
+121-99-60-25.bng1.tvc.orcon.net.nz 8 26 2333337 20150215224913
+cpe-58-174-74-132.aecz2.woo.bigpond.net.au 0 1 98600 
+122-61-249-136.jetstream.xtra.co.nz 2 19 2049206 20150208160014
+bb250966.virtua.com.br 1 30 1197789 20150227023304
+180.76.4.169 1 1 21976 20150202102056
+121-72-45-133.dsl.telstraclear.net 1 15 294315 20150207221446
+121-74-110-34.telstraclear.net 6 23 279621 20150222154732
+203-79-97-163.cable.telstraclear.net 5 34 3787475 20150222162801
+121-72-232-134.cable.telstraclear.net 3 17 749430 20150219210653
+122.58.86.18 1 12 202917 20150208221645
+23.80.166.167.rdns.as15003.net 1 1 5608 20150208125751
+baiduspider-123-125-71-45.crawl.baidu.com 1 1 21976 20150226104851
+180.76.4.121 2 2 43952 20150214041114
+180.76.4.55 1 1 21976 20150214202154
+bb02d4d4.virtua.com.br 1 30 1197792 20150226015041
+122-59-0-71.jetstream.xtra.co.nz 1 12 202919 20150208043028
+36.248.167.120 4 4 15876 20150206023940
+199.119.250.178 0 1 86875 
+host-203-94-55-68.xdsl.kinect.net.nz 0 1 514841 
+sitel-comb.aksw7.global-gateway.net.nz 1 14 452631 20150205134652
+202-180-105-81.callplus.net.nz 1 14 441857 20150207200209
+180.76.4.94 2 2 43952 20150220162727
+117.239.150.27.broad.pt.fj.dynamic.163data.com.cn 9 9 33821 20150208132440
+45.193.159.27.broad.xm.fj.dynamic.163data.com.cn 10 10 28429 20150204210919
+180.76.4.164 1 1 21976 20150208160909
+121-74-40-127.telstraclear.net 0 1 302664 
+24.187.86.110.broad.pt.fj.dynamic.163data.com.cn 2 2 5686 20150228220531
+125-239-204-39.jetstream.xtra.co.nz 1 13 303596 20150211134709
+121-99-249-88.bng1.nct.orcon.net.nz 1 14 203680 20150223210409
+cpe-101-176-81-223.vb02.dyn.asp.telstra.net 0 1 98600 
+60.234.88.37 2 13 447189 20150201191014
+118-93-63-67.dsl.dyn.ihug.co.nz 3 32 1198075 20150224142606
+122-60-159-136.jetstream.xtra.co.nz 1 13 199500 20150209165418
+baiduspider-123-125-71-22.crawl.baidu.com 2 2 43952 20150227034250
+125-237-240-133.jetstream.xtra.co.nz 0 1 98600 
+121-75-47-4.dyn.vf.net.nz 0 1 98600 
+94.11.43.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5683 20150204112110
+cpe-121-208-91-184.cqhm1.cha.bigpond.net.au 0 1 98600 
+d122-109-141-202.adl801.sa.optusnet.com.au 1 16 443775 20150226231644
+173.208.69.196.rdns.ubiquityservers.com 1 1 5705 20150225034234
+101-100-0-39.vectorcommunications.net.nz 1 30 1197609 20150217150609
+118-93-198-208.dsl.dyn.ihug.co.nz 11 35 860743 20150211210022
+208.206.37.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5687 20150211132134
+210-86-26-110.adsl.xtra.co.nz 6 51 1026592 20150211110913
+122-62-84-250.jetstream.xtra.co.nz 1 15 504207 20150221150843
+122-59-140-243.jetstream.xtra.co.nz 2 15 209151 20150219211622
+222-152-16-245.jetstream.xtra.co.nz 1 12 441093 20150215152255
+baiduspider-220-181-108-180.crawl.baidu.com 2 2 43952 20150226030448
+168.27.252.27.dyn.cust.vf.net.nz 2 17 214608 20150221172149
+122-59-167-242.jetstream.xtra.co.nz 1 14 203681 20150219141506
+nat-aluminium-com.aksw7.global-gateway.net.nz 0 4 65152 
+211.162.34.203 3 32 593337 20150202204018
+122-60-143-193.jetstream.xtra.co.nz 0 1 98600 
+243.195.69.111.dynamic.snap.net.nz 1 14 441858 20150206121302
+122-56-42-109.gis.global-gateway.net.nz 1 30 1448759 20150220094709
+203-79-123-30.cable.telstraclear.net 1 30 1197608 20150225143200
+baiduspider-123-125-71-36.crawl.baidu.com 2 2 43952 20150227174153
+118-93-51-6.dsl.dyn.ihug.co.nz 4 91 3598533 20150223090940
+203-167-192-141.dsl.clear.net.nz 1 17 435195 20150216091716
+222-152-129-93.jetstream.xtra.co.nz 1 14 203681 20150215160801
+115-188-86-243.jetstream.xtra.co.nz 1 12 202918 20150208194738
+175.44.4.194 6 6 23821 20150218235545
+ec2-52-1-239-79.compute-1.amazonaws.com 1 1 5705 20150221061952
+180.76.4.22 1 1 21976 20150201220633
+203.96.136.229 1 14 205093 20150221110546
+62-210-138-75.rev.poneytelecom.eu 1 3 81515 20150205195116
+180.76.4.231 1 1 21976 20150204101348
+baiduspider-123-125-71-47.crawl.baidu.com 1 1 5705 20150225094406
+197-86-189-220.cpt.mweb.co.za 0 1 98600 
+121-72-252-230.cable.telstraclear.net 8 23 1179765 20150201214915
+41-218-212-128-adsl-dyn.4u.com.gh 20 20 369930 20150208224807
+google-proxy-66-249-93-219.google.com 1 1 18480 20150211172558
+71.136.69.111.dynamic.snap.net.nz 0 1 252938 
+191-98-131-254-dynamic.callplus.net.nz 4 5 26558 20150221202213
+118-92-27-45.dsl.dyn.ihug.co.nz 4 17 460148 20150223211201
+36.248.167.197 8 8 31761 20150218080440
+remote.jadepromotions.co.nz 0 3 32576 
+114-198-36-9.dyn.iinet.net.au 0 1 98600 
+ec2-54-174-21-242.compute-1.amazonaws.com 1 1 14303 20150212104750
+proxy1.phetch.su.ac.th 1 15 434615 20150203215902
+181-243-148-118.nzcomms.co.nz 0 1 16288 
+122-62-43-26.jetstream.xtra.co.nz 3 21 312703 20150220151843
+103.206.159.27.broad.pt.fj.dynamic.163data.com.cn 3 3 11274 20150226135616
+180.76.4.115 1 1 21976 20150215060005
+115-188-134-88.jetstream.xtra.co.nz 6 19 1955851 20150206103524
+179.119.37.188.rev.vodafone.pt 1 30 1197793 20150228122630
+20.241.37.120.broad.pt.fj.dynamic.163data.com.cn 2 2 5685 20150202030808
+175.44.5.47 2 2 7939 20150207153246
+google-proxy-66-249-84-173.google.com 2 15 423535 20150218185216
+203-118-183-34.dsl.dyn.ihug.co.nz 0 1 302664 
+199.67.16.60 0 1 98600 
+125-237-160-229.jetstream.xtra.co.nz 0 2 108524 
+crawl-77.66.121.238.findxbot.com 14 14 65572 20150210111734
+157.248.224.49.dyn.cust.vf.net.nz 0 1 16288 
+baiduspider-123-125-71-83.crawl.baidu.com 1 1 21976 20150228204311
+121-72-220-158.dsl.telstraclear.net 1 30 1197608 20150205211732
+baiduspider-220-181-108-111.crawl.baidu.com 1 1 5706 20150226081239
+122-59-245-153.jetstream.xtra.co.nz 1 12 202918 20150224083123
+122-60-54-122.jetstream.xtra.co.nz 1 13 301517 20150204175253
+baiduspider-123-125-71-96.crawl.baidu.com 1 1 21976 20150227224233
+203-184-35-58-dynamic.callplus.net.nz 1 14 203679 20150213130902
+baiduspider-220-181-108-163.crawl.baidu.com 2 2 11409 20150228204321
+baiduspider-220-181-108-116.crawl.baidu.com 1 1 21976 20150221083627
+114-198-148-118.nzcomms.co.nz 1 1 5704 20150221131242
+210-55-180-44.netgate.net.nz 18 54 7523204 20150210094740
+122.56.203.70 1 11 202226 20150227101218
+180.153.100.242 1 1 6154 20150209102820
+57.host-203-96-37.compassnet.co.nz 1 15 304360 20150203083500
+222-154-96-21.jetstream.xtra.co.nz 1 15 304359 20150217142037
+180.76.4.243 1 1 21976 20150215180130
+180.76.4.16 1 1 21976 20150215080506
+114.23.249.140 1 12 202917 20150224131910
+32.208.224.49.dyn.cust.vf.net.nz 1 1 5705 20150221072052
+121-72-174-140.dsl.telstraclear.net 2 15 457707 20150217193301
+c-98-201-247-64.hsd1.tx.comcast.net 0 1 252938 
+121-72-227-193.cable.telstraclear.net 23 69 3429263 20150222150539
+180.76.4.176 1 1 21976 20150222215946
+231.119.252.27.dyn.cust.vf.net.nz 2 16 213822 20150213090607
+122.58.61.197 1 13 290205 20150204132549
+101.172.127.230 0 1 238155 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 28
+20150201 128 596 26033514 57
+20150202 108 548 22960715 52
+20150203 198 736 36696163 54
+20150204 181 668 15865575 71
+20150205 204 684 18746619 59
+20150206 155 691 33679394 60
+20150207 122 558 25240549 52
+20150208 129 543 28930031 53
+20150209 104 507 17182103 63
+20150210 175 705 31319250 68
+20150211 236 811 32874364 71
+20150212 120 585 23321379 46
+20150213 160 455 17695199 40
+20150214 139 691 35080727 53
+20150215 142 476 25134681 43
+20150216 115 710 31855301 57
+20150217 68 360 14839125 38
+20150218 72 390 15513426 38
+20150219 107 609 26170961 54
+20150220 93 631 29174464 41
+20150221 87 365 11271562 52
+20150222 144 627 33388724 63
+20150223 86 440 16852081 38
+20150224 187 566 16308496 54
+20150225 162 662 28251741 65
+20150226 201 785 41016963 82
+20150227 93 441 15389161 54
+20150228 91 358 14037031 44
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 3
+5mn-15mn 42
+0s-30s 1286
+15mn-30mn 14
+2mn-5mn 66
+30s-2mn 89
+30mn-1h 22
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 115
+/ 756 10068694 630 567
+/contact-us/franchise-opportunities/ 418 2387102 259 171
+/forms/contact-business.php 230 22540 0 93
+/outdoor-rooms/project-management/ 228 1528177 80 69
+/landscaping-ideas/titoki-tree-planting-and-care-instructions 218 1249386 179 164
+/what-is-zones/landscape-design-and-garden-maintenance/ 136 835320 9 6
+/pergola-decks-patios/project-management/ 130 855342 31 30
+/admin.php 123 1402256 2 3
+/outdoor-kitchen/project-management/ 100 705066 15 17
+/contact-us/enquire-about-landscaping-services/ 98 624464 23 28
+/renovate-magazine/ 5 23101 0 1
+/grass-lawns-and-lawn-mowing-services/landscaping-ideas/ 5 27479 0 0
+/landscape-designers/team/matt-steele 6 26573 1 2
+/landscaping-ideas/reviving-the-exterior-of-a-cedar-home 51 332508 48 45
+/stats/ 21 101656 1 1
+/landscape-designers/team/ 36 229420 2 7
+/landscape-designers/new-zealand/ 5 41394 1 1
+/landscape-design/project-management/ 91 650760 10 17
+/site/NoSearchResults/9654415ec9dcca7a1c344cbf5be59ec0/ 1 3964 0 0
+/swimming-pools/landscaping-ideas/ 3 16083 0 0
+/garden-plants/project-management/ 91 543845 32 38
+/swimming-pools/project-management/ 40 288185 2 7
+/special-offer/ 2 17613 0 1
+/fencing/landscaping-ideas/ 8 60043 1 2
+/landscape-designers/history/ 10 52842 1 0
+/pergola-decks-patios/landscaping-ideas/ 20 113222 1 2
+/adwords/right-getintouch.html 2 878 0 0
+/forms/voucher.php 1 30 0 1
+/landscape-designers/overview/ 9 50575 0 0
+/what-is-zones/landscape-design-and-garden-maintenance 13 114675 1 1
+/site/NoSearchResults/83dd3382e8b090e52aa8440b3b05d4e1/ 1 3961 0 0
+/all/landscaping-ideas/ 12 76196 2 5
+/gardening-and-gardening-maintenance/project-management/ 22 159461 3 8
+/landscape-design-cost/ 5 40305 3 2
+/all/landscaping-ideas/sort/landscaping-advice/ 2 11591 1 1
+/site/SearchResults/e41fa286a6858db1f01237c105a4d878/ 2 8918 0 0
+/forms/getintouch-part2.php 2 60 0 1
+/landscape-design-brochure/ 5 28450 0 0
+/landscaping-ideas/helpful-advice-for-timber-decking-finish-options 9 76465 4 3
+/landscape-design/landscaping-ideas/ 13 72990 1 0
+/landscape-designers/landscape-supplies/ 6 33646 1 1
+/landscape-designers/team/sort/south-island/ 1 4267 0 0
+/landscape-designers/team/sort/north-island/ 1 14021 1 1
+/landscaping-ideas/a-zen-and-subtropical-outdoor-landscape 96 748051 90 28
+/all/project-management/ 41 314811 2 4
+/garden-plants/landscaping-ideas/ 17 97631 0 2
+/all/landscaping-ideas/P8 1 5344 0 0
+/landscaping-ideas/ 23 159000 3 6
+/forms/contact-enquiry.php 1 99 0 1
+/forms/newsletter.php 1 30 0 0
+/site/NoSearchResults/5923799e3a48b79b10937e532076ec26/ 1 3963 0 1
+/rain-water-tanks/landscaping-ideas/ 3 42683 0 3
+/gardening-and-gardening-maintenance/landscaping-ideas/ 1 5709 1 1
+/landscaping-ideas/small-garden-landscape-design 8 49827 2 5
+/enquiry.html 1 918 0 0
+/forms/getintouch-extra/ 2 4932 0 0
+/adwords/enquire-picture.html 1 450 0 1
+/contact-us/enquire-about-landscaping-services 2 28606 0 0
+/landscape-designers/team/jules-moore/ 1 4559 0 0
+/outdoor-lighting-and-power/landscaping-ideas/ 6 32005 0 0
+/landscaping-ideas/top-10-new-zealand-gardening-trends 13 76627 6 4
+/site/NoSearchResults/646fc6c5cac1aaee7938922d8a0b43de/ 1 3967 0 0
+/outdoor-lighting-and-power/project-management/ 31 201846 2 6
+/adwords/news-subscribe.html 1 436 0 1
+/landscape-designers/team/jules-moore 15 68385 3 2
+/landscaping-ideas/a-natural-way-to-protect-wood 3 16691 0 1
+/landscaping-ideas/maximise-your-view-with-deck-balustrades 8 49230 8 7
+/site/NoSearchResults/68d5be8d5000f2c7f2fa24736da967eb/ 1 3960 0 0
+/landscaping-ideas/titoki-tree-planting-and-care-instructions/ 1 5473 1 1
+/landscaping-ideas/sort/mostviewed 1 6178 0 0
+/forms/getintouch-part1.php 2 60 0 0
+/site/SearchResults/ceb2410b8b307137fcac59ae9e037681/ 1 4303 0 0
+/fencing/project-management/ 40 272318 5 8
+/concrete-asphalt-paving-stones-driveways/project-management/ 32 224960 4 6
+/landscaping-ideas/sort/pergola-decks-patios/ 1 5427 1 1
+/landscaping-ideas/P8 2 10396 0 0
+/landscaping-ideas 3 18590 1 0
+/site/NoSearchResults/8935661084430cec428c30242558d8d6/ 1 3958 0 0
+/site/NoSearchResults/437f790c69fec25359232e1d15428ef2/ 1 3957 0 1
+/landscaping-ideas/sort/outdoor-lighting-and-power/ 1 5122 1 1
+/pergola-decks-patios/project-management 2 11217 0 0
+/what-is-zones/project-management/ 41 346582 5 11
+/enquirenow.html 45 60981 2 4
+/site/NoSearchResults/458b93337e1e200536948972243953a3/ 1 3961 0 0
+/competitions/ 5 33462 0 1
+/outdoor-kitchen/landscaping-ideas/ 6 45181 1 1
+/landscape-design-faq/ 3 22373 0 0
+/contact-us/designer-jobs/ 22 129528 3 2
+/landscaping-ideas/winter-gardening-projects 2 13066 1 1
+/rain-water-tanks/project-management/ 16 94431 2 3
+/landscape-designers/team/matt-steele/ 1 4429 0 0
+/concrete-asphalt-paving-stones-driveways/landscaping-ideas/ 6 33088 1 1
+/landscaping-ideas/a-zen-and-subtropical-outdoor-landscape/trackback/ 59 38999 0 57
+/site/browser 2 7731 0 1
+/landscape-design-brochure/zones-brochure 2 1518 0 0
+/privacy-statement/ 8 87508 0 1
+/clippings/community/ 3 29749 0 0
+/site/NoSearchResults/276308d5170cb6ad7d65a232b4d30e31/ 1 3962 0 0
+/landscaping-ideas/decorative-fencing-to-complement-your-home 14 82549 5 4
+/site/NoSearchResults/0aa6b0a510a68a342766a81174e109ec/ 1 3958 0 0
+/site/NoSearchResults/9487f68dc7f6939f41684de684243287/ 1 3962 0 0
+/landscaping-ideas/a-natural-way-to-protect-wood/ 3 16615 0 1
+/landscaping-ideas/showall 2 12669 0 0
+/what-is-zones/landscape-design/ 70 467214 6 8
+/landscape-design/landscaping-ideas/sort/landscaping-ideas-expert/ 1 5300 0 0
+/outdoor-rooms/landscaping-ideas/ 17 93348 0 3
+/what-is-zones/landscape-cost-and-services/ 67 477926 2 8
+/landscaping-ideas/landscape-design-insurance/ 4 17055 1 4
+/index.php 2 43952 0 2
+/retaining-wall/landscaping-ideas/ 1 5364 0 1
+/grass-lawns-and-lawn-mowing-services/project-management/ 55 378682 5 9
+/all/project-management 3 15463 0 0
+/landscape-designers/team/sort/auckland/ 1 4472 0 1
+/retaining-wall/project-management/ 25 158306 4 5
+/landscaping-ideas/landscape-design-plans/ 12 80437 9 6
+END_SIDER

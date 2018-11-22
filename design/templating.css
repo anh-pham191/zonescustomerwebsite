@@ -1,0 +1,15 @@
+
+/* Temp for templating */
+li.current a, li.parent-current a {
+font-weight: bold;
+}
+li.current li a, li.parent-current li a {
+font-weight: normal;
+}
+li.current li.current a, li.parent-current li.parent-current a, li.parent-current li.current a {
+font-weight: bold;
+}
+
+img {
+display: block;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Landscaping Specialists | Zones",
+  "short_name": "Zones",
+  "icons": [{
+    "src": "/design/launcher-icon-2x.png",
+    "sizes": "96x96"
+  }, {
+    "src": "/design/launcher-icon-4x.png",
+    "sizes": "192x192"
+  }, {
+    "src": "/design/launcher-icon-8x.png",
+    "sizes": "512x512"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#077b3a",
+  "description": "Premier landscaping specialists providing a complete design and build service in all aspects of outdoor landscaping. Contact us today for a no obligation consultation.",
+  "orientation": "portrait"
+}
