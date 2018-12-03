@@ -101,98 +101,62 @@ var navlevels = "single";
 </ul>
 <div class="sep"></div>
 </nav></div>
+    <div id="wideslideshow" class="overlay">
+        <img src="/design/builders-near-you.jpg" alt="Home Renovation Builder Locations"/>
+        <div class="overlay-container">
+            <h2 id="top">1,000+ Landscaping Projects Completed All Over New Zealand</h2>
+            <h1>Landscaping Specialists Locations</h1>
+            <h2 id="bottom">Zones have landscaping specialists working all around the world - <b>view the list below to contact a specialist near you today.</b></h2>
+
+        </div>
+    </div>
 <div class="inner">
-	
-<section id="content" role="main">
-<div class="intro clearfix">
-{snippet-enquirenow-picture}
-<h1>{page_h1_heading_misc}</h1>
-{page_introduction_misc} 
-</div>
-{/exp:channel:entries}
 
-<div class="clearfix list-tools top bottom"><span class="fleft"><span>Layout:</span> <a href="#" class="switch-layout" rel="{site_url}design/switch-gallery.css"><img src="{site_url}design/image.png" class="gallery-icon" width="21" height="20" alt="Gallery view" /></a> <a href="#" class="switch-layout" rel="{site_url}design/switch-list.css"><img src="{site_url}design/image.png" class="list-icon" width="20" height="20" alt="List view" /></a></span>
-  <form method="post" action="#" class="regionright">
-      <fieldset>
-      <legend></legend>
-      <select id="dynamic-select" class="uniform-styles" onchange="s_click(this)">
-              <option value="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}/">Select...</option>
-              {exp:channel:categories category_group="8" style="linear" show_empty="no" channel="service_area" show="25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|77|79|80|81|85|86|87|47|48|49|50|51|52|53|54|55|84|83|82"}
-          {if "{freebie_5}" == "{category_url_title}"}
-          <option value="{site_url}landscape-designers/service-areas/{category_url_title}" selected="selected">{category_name}</option>
-          {if:else}
-          <option value="{site_url}landscape-designers/service-areas/{category_url_title}">{category_name}</option>
-          {/if}
-          {/exp:channel:categories}
-          
-          </select>
-          </fieldset>
-          </form>
-  </div>
-  <div class="justmobile">
-      <p id="open-filter"><a href="#"><span>Filter</span></a></p> 
-      <nav id="listfilter">
-      <h2>Filter</h2><a class="close" href="#"></a>
-      <ul>
+    <div class="inner" id="builders">
+        <div class="region-filter row">
+            <div class="col-md-9 col-sm-9 col-xs-12 current-region">
+                Landscaping Specialists<span class="notmobile">, New Zealand</span>
+            </div>
 
-      {exp:channel:categories category_group="8" style="linear" show_empty="no" channel="service_area" show="25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|77|79|80|81|85|86|87|47|48|49|50|51|52|53|54|55|84|83|82"}
-      {if "{freebie_5}" == "{category_url_title}"}
-      <li class="current"><a href="{site_url}landscape-designers/service-areas/{category_url_title}">{category_name}</a></li>
-      {if:else}
-      <li><a href="{site_url}landscape-designers/service-areas/{category_url_title}">{category_name}</a></li>
-      {/if}
-      {/exp:channel:categories}
-      </ul>
-      </nav>
-</div>
-    <div id="list" class="listview switchable clearfix service-area-list">
-    {exp:ifelse parse="inward"}
-    <!-- {if "{segment_4}" == ""}
-    {exp:channel:entries channel="seraon" dynamic="no" orderby="title" sort="asc" parse="inward" limit="8" paginate="bottom" disable="member_data" cache="yes" refresh="1500"}
-    {if:else}
-    {exp:channel:entries channel="seraon" dynamic="no" category_group="1" orderby="title" sort="asc" limit="8" paginate="bottom" disable="member_data" category="{exp:freebie:category_id segment='2'}" parse="inward"}
-    {/if}
-    {/exp:ifelse} -->
-    {exp:channel:entries channel="service_area" dynamic="no" orderby="title" sort="asc" parse="inward" paginate="bottom" disable="member_data" cache="yes" refresh="1500" status="open|closed"}
-    
-<div class="item clearfix">
-    {if no_results}<div class="notfoundmsg">Sorry, no record is found at this moment.</div>{/if}  
-{if "{status}" == "open"}  
-<a class="fleft" href="{site_url}landscape-designers/service-areas/{url_title}"><img class="lazy-load" data-src="{thumbnail_image_sera}" alt="{title}" /></a>
-{if:else}
-<a class="fleft"><img src="{thumbnail_image_sera}" alt="{title}" /></a>
-{/if}
-<div class="fleft">
-<h2>{page_h1_heading_sera}</h2>
-{summary_text_sera} 
-{if "{status}" == "open"}
-<p class="more"><a href="{site_url}landscape-designers/service-areas/{url_title}">Find out more about landscaping designers in {categories}{category_name}{/categories}</a></p>
-{/if}
-</div>
-</div>
-{if "{status}" == "open"}
-<a href="{site_url}landscape-designers/service-areas/{url_title}" class="item-m justmobile"><span class="link">Find out more about landscaping designers in {categories}{category_name}{/categories}</span><span class="bg" style="background-image: url({thumbnail_image_sera});"></span></a>
-{if:else}
-<a href="#" class="item-m justmobile"><span class="link">{page_h1_heading_sera} (Coming Soon)</span><span class="bg" style="background-image: url({thumbnail_image_sera});"></span></a>
-{/if}
+        </div>
+        <div class="region-name">New Zealand</div>
+        <ul class="region-list">
+            <li class="region-item">
+                <div class="main">AUCKLAND</div>
+                <div class="sub"><a href="/landscape-designers/service-areas/auckland-central">Auckland Central</a></div>
+                <div class="sub"><a href="#">Franklin / Pukekohe</a></div>
+                <div class="sub"><a href="#/">Manukau</a></div>
+                <div class="sub"><a href="#">North Shore</a></div>
+                <div class="sub"><a href="/landscape-designers/service-areas/rodney">Rodney</a></div>
+            </li>
+            <li class="region-item">
+                <div class="main">WEST AUCKLAND</div>
+                <div class="sub"><a href="#">Waitakere</a></div>
+            </li>
 
-{paginate}
-<div class="paginate-bottom">
-<p class="fright">Showing {abp_entry_from} - {abp_entry_to} of {abp_total_entries}</p>
-<nav class="pagination clearfix">
-<span>Page:</span>
-<ul>
-{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
-{abp_pages padding="no"}
-{if abp_is_current}
-<li>{abp_num}</li>
-{if:else}
-<li><a href="{abp_link}">{abp_num}</a></li>
-{/if}
-{/abp_pages}
-{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
-</ul>
-</nav></div>{/paginate}
+            <li class="region-item">
+                <div class="main">BAY OF PLENTY</div>
+                <div class="sub"><a href="/landscape-designers/service-areas/tauranga">Tauranga</a></div>
+            </li>
+            <li class="region-item">
+                <div class="main">WAIKATO</div>
+                <div class="sub"><a href="/landscape-designers/service-areas/waikato">Waikato</a></div>
+            </li>
+            <li class="region-item">
+                <div class="main">CANTERBURY</div>
+                <div class="sub"><a href="#">Chirstchurch</a></div>
+            </li>
+            <li class="region-item">
+                <div class="main">OTAGO</div>
+                <div class="sub"><a href="/landscape-designers/service-areas/queenstown-wanaka">Queenstown and Wanaka</a></div>
+            </li>
+            <li class="region-item">
+                <div class="main">WELLINGTON</div>
+                <div class="sub"><a href="/landscape-designers/service-areas/wellington/">Wellington</a></div>
+            </li>
+        </ul>
+    </div>
+
 {/exp:channel:entries}
 </div>
 </section>
