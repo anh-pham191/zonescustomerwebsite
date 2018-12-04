@@ -199,7 +199,7 @@
                             <!--at the moment every region is dependant but all are understood to be within NZ-->
                             <!--need to update the code to check the freebie value to see which region are selected first, and then use the group ID to loop through-->
                             <!--at the moment not sure if exp:channel:categories can specify the id of each category to specify NZ (US, UK, AU) -->
-                            <!--if yes then please run loop through category ID to get all the children category ( get Australia and loop through Sydney, Melborne...)-->
+                            <!--if yes then please run loop through category ID to get all the children category ( get Australia and loop through Sydney, Melborne...)https://docs.expressionengine.com/v2/add-ons/channel/category_heading.html -->
                             <!--if this doesn't work please check the work on refresh with gwcode_categories library-->
                             {exp:channel:categories category_group="8" orderby="category_name" sort="asc" style="linear" show_empty="no" status="Open"}
                                 {exp:ifelse parse="inward"}
