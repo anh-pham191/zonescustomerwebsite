@@ -215,13 +215,12 @@
             {if ("{freebie_4}" != "all") AND ("{freebie_4}" != "")}
             {exp:channel:entries channel="testimonial|video_testimonial" limit="99" dynamic="no" category_group="8" parse="inward" paginate="bottom" disable="category_fields|member_data|trackbacks" category="{exp:freebie:category_id segment='4'}"}
             {if:else}
-            {exp:channel:entries channel="testimonial|video_testimonial" dynamic="no" orderby="date" sort="desc" disable="member_data|pagination" cache="yes" refresh="1500" limit="9s99"}
-
-                {if no_results}
-                <div class="notfoundmsg">Sorry, no result found.</div>
-                {/if}
+            {exp:channel:entries channel="testimonial|video_testimonial" dynamic="no" orderby="date" sort="desc" disable="member_data|pagination" cache="yes" refresh="1500" limit="999"}
             {/if}
+
             {/exp:ifelse}
+
+            {if no_results}<div class="notfoundmsg">Sorry, no result found.</div>{/if}
             <div class="testimonial-box">
                 <div class="box-icon" id="testimonial"></div>
                 {if "{channel_short_name}" == "testimonial"}
