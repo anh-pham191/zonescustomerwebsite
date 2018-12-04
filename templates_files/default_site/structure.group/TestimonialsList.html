@@ -184,6 +184,7 @@
                     <div class="select">
                         <select class="region-select" onchange="s_click(this)">
                             <!--to add more country by using freebie_3 - at the moment we just put new zealand -->
+                            <!--therefore need to updated the selected logic as well based on freebie value -->
                             <option selected value="/customer-testimonials/sort/new-zealand">New Zealand</option>
                         </select>
                     </div>
@@ -193,16 +194,24 @@
                     <div class="select">
                         <select class="region-select" onchange="s_click(this)">
                             <option value="{site_url}customer-testimonials/" >All</option>
+                            <!--for now category group 8 indicates the region which is New Zealand by default-->
+                            <!--in the future need to create hierachy to indicate New Zealand -> Auckland-->
+                            <!--at the moment every region is dependant but all are understood to be within NZ-->
+                            <!--need to update the code to check the freebie value to see which region are selected first, and then use the group ID to loop through-->
+                            <!--at the moment not sure if exp:channel:categories can specify the id of each category to specify NZ (US, UK, AU) -->
+                            <!--if yes then please run loop through category ID to get all the children category ( get Australia and loop through Sydney, Melborne...)-->
+                            <!--if this doesn't work please check the work on refresh with gwcode_categories library-->
                             {exp:channel:categories category_group="8" orderby="category_name" sort="asc" style="linear" show_empty="no" status="Open"}
                                 {exp:ifelse parse="inward"}
-                                    {if "{freebie_4}" == "{category_url_title}"}
+                                    {if "{freebie_4}" == "{category_url_title}"} <!--logic to check if the selected category is selected-->
                                         <option selected="selected" value="{site_url}customer-testimonials/sort/new-zealand/{category_url_title}/">{category_name}</option>
                                     {if:else}
                                         <option value="{site_url}customer-testimonials/sort/new-zealand/{category_url_title}/">{category_name}</option>
                                     {/if}
                                 {/exp:ifelse}
                             {/exp:channel:categories}
-                            <option value=""> - </option>
+                            <!--to be add this option when more countries are added and no region is displayed please-->
+                            <!--<option value=""> - </option>-->
 
                         </select>
                     </div>
