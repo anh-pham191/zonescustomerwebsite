@@ -202,13 +202,13 @@
                             <!--if yes then please run loop through category ID to get all the children category ( get Australia and loop through Sydney, Melborne...)https://docs.expressionengine.com/v2/add-ons/channel/category_heading.html -->
                             <!--if this doesn't work please check the work on refresh with gwcode_categories library-->
                             {exp:channel:categories category_group="8" orderby="category_name" sort="asc" style="linear" show_empty="no" status="Open"}
-                                {exp:ifelse parse="inward"}
-                                    {if "{freebie_4}" == "{category_url_title}"} <!--logic to check if the selected category is selected-->
-                                        <option selected="selected" value="{site_url}customer-testimonials/sort/new-zealand/{category_url_title}/">{category_name}</option>
-                                    {if:else}
-                                        <option value="{site_url}customer-testimonials/sort/new-zealand/{category_url_title}/">{category_name}</option>
-                                    {/if}
-                                {/exp:ifelse}
+                            {exp:ifelse parse="inward"}
+                            {if "{freebie_4}" == "{category_url_title}"} <!--logic to check if the selected category is selected-->
+                            <option selected="selected" value="{site_url}customer-testimonials/sort/new-zealand/{category_url_title}/">{category_name}</option>
+                            {if:else}
+                            <option value="{site_url}customer-testimonials/sort/new-zealand/{category_url_title}/">{category_name}</option>
+                            {/if}
+                            {/exp:ifelse}
                             {/exp:channel:categories}
                             <!--to be add this option when more countries are added and no region is displayed please-->
                             <!--<option value=""> - </option>-->
@@ -263,14 +263,12 @@
 
 
 </div>
-<div class="services-image-block clearfix">
-    <img data-src="/design/Matt-besides-form.jpg" alt="Let's discuss your project"
-         class="lazy-load fright notmobile"/>
+<div class="services-image-block clearfix" style="display: flex">
+
     <div class="fleft">
         <div class="content-box" id="enquiry-form">
             <div class="title">Let's discuss your project</div>
-            <div class="description">Arrange a free one hour consultation to discuss options and ideas or your home
-                renovation project
+            <div class="description">Arrange a free one hour consultation to discuss options and ideas or your landscaping project
             </div>
             <div class="theformarea-c formholder">
                 <p class="instructions"></p>
@@ -369,6 +367,8 @@
             <div class="adwordstracking"></div>
         </div>
     </div>
+    <img data-src="/design/Matt-besides-form.jpg" alt="Let's discuss your project"
+         class="lazy-load fright notmobile"/>
 </div>
 
 
