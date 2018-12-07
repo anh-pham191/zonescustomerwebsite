@@ -515,6 +515,8 @@
             window.location.href = url;
         }
     }
+    // must be updated in common script file
+    $(window).scroll(function(){var p=$(window).scrollTop();if(p>20&&$layoutStyle=="desktop"){$("#sitebanner").addClass("scroll");$("#breadcrumb-wrapper").addClass("scroll");}else{$("#sitebanner").removeClass("scroll");$("#breadcrumb-wrapper").removeClass("scroll");}});
 </script>
 </body>
 </html>

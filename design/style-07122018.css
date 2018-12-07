@@ -10,7 +10,7 @@
         margin: 0 auto
     }
 
-    .svg #topnav p img {
+    #topnav p img {
         margin: 0 auto 10px auto;
         background-position: -132px -65px !important;
         width: 170px !important;
@@ -161,7 +161,7 @@
         float: left
     }
 
-    .svg #topnav div#sitebanner.scroll p img {
+    #topnav div#sitebanner.scroll p img {
         margin: 0;
         background-position: -19px -191px !important;
         width: 240px !important;
@@ -243,7 +243,7 @@
         float: left
     }
 
-    .svg #topnav p img {
+    #topnav p img {
         margin: 0;
         background-position: -11px -191px !important;
         width: 240px !important;
@@ -461,7 +461,7 @@
         margin: 0 auto
     }
 
-    .svg #topnav p img {
+    #topnav p img {
         margin: 0 auto 10px auto;
         background-position: -403px -58px !important;
         width: 170px !important;
@@ -487,6 +487,7 @@
 }
 
 #topnav form {
+    display: none;
     position: absolute;
     right: 10px;
     top: 55px;
