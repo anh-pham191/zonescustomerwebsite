@@ -67,6 +67,8 @@
 
         {snippet-topnav}
         {snippet-bannersearch}
+        {snippet-mobilemenu-work}
+
     </div>
 </nav>
 <div id="wrapper" class="clearfix">
@@ -137,22 +139,7 @@
     </div>
     <!-- end mobile nav -->
 
-    <div id="breadcrumb-wrapper" style="display: none;">
-        <nav id="breadcrumbline" role="navigation">
-            <ul>
-                <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home"
-                                                           class="sprite-bread-home" width="47" height="38"/></a></li>
-                <li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our
-                    services</a></li>
-                {exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
-                {if is_selected}
-                <li><a href="{link}">{text}</a></li>
-                {/if}
-                {/exp:navee:custom}
-            </ul>
-            <div class="sep"></div>
-        </nav>
-    </div>
+
 
     <!--    end heading wrapper  -->
     <!--    start body-->
@@ -515,8 +502,7 @@
             window.location.href = url;
         }
     }
-    // must be updated in common script file
-    $(window).scroll(function(){var p=$(window).scrollTop();if(p>20&&$layoutStyle=="desktop"){$("#sitebanner").addClass("scroll");$("#breadcrumb-wrapper").addClass("scroll");}else{$("#sitebanner").removeClass("scroll");$("#breadcrumb-wrapper").removeClass("scroll");}});
+
 </script>
 </body>
 </html>
