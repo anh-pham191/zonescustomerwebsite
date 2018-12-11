@@ -17194,8 +17194,9 @@ ul li.enquiry-button:hover {
         top: 0;
         left: 0;
         z-index: 999;
-        background: rgba(51, 51, 51, 0.9);
-        overflow: auto
+        background: rgba(0, 102, 51, 1);
+        overflow: auto;
+        opacity: 0.97;
     }
 
     #menu-mobile #mobile-menu-close {
@@ -17222,7 +17223,7 @@ ul li.enquiry-button:hover {
     }
 
     #menu-mobile ul#menu-main {
-        background-color: rgba(0, 48, 91, 0.7)
+        background-color: rgba(75, 180, 115, 1)
     }
 
     #menu-mobile ul#menu-main {
