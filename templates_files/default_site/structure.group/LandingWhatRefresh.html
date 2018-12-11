@@ -1,0 +1,154 @@
+{exp:channel:entries disable="member_data|pagination|categories" limit="1" channel="level_1_landing_page"}
+{snippet-doctype}
+<title>{seo_page_header_title_l1} | Zones</title>
+<script type="text/javascript" language="javascript">
+var navlevels = "single";
+</script>
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_l1}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+	"url": "http://www.zones.co.nz",
+	"telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_l1}"
+}
+</script>
+<meta name="description" content="{seo_meta_description_l1}">
+<meta name="keywords" content="{seo_meta_keywords_l1}">
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+<div id="sitebanner" class="clearfix">
+<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none" selected_class="current"}
+<li class="{class}"><a href="{link}" class="button">{text}</a></li>
+{/exp:navee:custom}
+</ul>	
+
+{snippet-bannersearch}
+</div>
+<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+<div class="inner">
+<ul id="section-sub" class="textnav clearfix">
+{exp:navee:custom nav_title="WhatIsRefreshL2" wrap_type="none"}
+<li><a href="{link}">{text}</a></li>
+{/exp:navee:custom}
+</ul>
+<div class="sep"></div>
+</div><!-- end .inner -->
+<!-- mobile nav start -->
+<div class="contextnav-wrapper top justmobile">
+	<nav class="contextnav justmobile">
+	<ul class="clearfix">
+{exp:navee:custom nav_title="WhatIsRefreshL2" wrap_type="none"}
+<li><a href="{link}">{text}</a></li>
+{/exp:navee:custom}	
+	</ul>
+	</nav>
+</div>
+
+<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+<div class="contextnav-breadcrumb withtoggle justmobile">
+	<nav>
+	<ul class="clearfix">
+	<li><a href="{site_url}what-is-zones/">Our services</a></li>
+	</ul>
+	</nav>
+</div>
+<!-- end mobile nav -->
+<div id="breadcrumb-wrapper" style="display: none;">
+<nav id="breadcrumbline" role="navigation">
+<ul class="clearfix">
+<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+<li><a href="{site_url}what-is-zones/">Our services</a></li>
+</ul>
+<div class="sep"></div>
+</nav></div>
+<div class="inner">
+
+<div id="landingcontent">
+
+{content_blocks_land}
+{exp:switchee variable = "{block-type-land}" parse="inward"}
+{case value="Services"}
+<div class="landingblock services">
+<div class="intro clearfix">
+{if "{block-landing-h1}" == "yes"}<h1>Landscaping Services</h1>{if:else}<h2>Landscaping Services</h2>{/if}
+<span class="view">Click to read more</span>
+</div>
+
+<ul class="serviceslist clearfix">
+{exp:channel:categories category_group="1" style="linear"}
+<li><a class="thumblink" href="{site_url}{category_url_title}/"><img class="lazy-load" data-src="{category_image}" alt="{category_name}" /></a>
+<a class="textlink" href="{site_url}{category_url_title}/">{category_name}</a></li>
+{/exp:channel:categories}
+</ul>
+</div>
+<div class="sep"></div>
+{/case}
+{case default="Yes"}
+	{switchee variable = "{image-leftright-land}" parse="inward"}
+	{case value="left"}
+	<div class="landingblock clearfix imageleft">
+	<div class="image fleft" style="margin-top: {image-overhang-land};"><a href="{site_url}{button-url-land}"><img class="lazy-load" data-src="{block-image-land}" alt="{image-alt-land}" /></a></div>
+	<div class="text fleft" style="padding-top: {land-padd};">{if "{block-landing-h1}" == "yes"}<h1>{block-heading-land}</h1>{if:else}<h2>{block-heading-land}</h2>{/if}
+	<p>{block-para-land}</p>
+	<ul class="buttons clearfix">
+	<li><a href="{site_url}{button-url-land}" class="button">{button-text-land}</a></li>
+	<li>{snippet-enquirenow-buttonlink}Enquire now</a></li>
+	</ul>
+	</div>
+	</div>
+	<div class="sep"></div>
+	{/case}
+
+	{case default="Yes"}
+	<div class="landingblock clearfix imageright">
+	<div class="image fright" style="margin-top: {image-overhang-land};"><a href="{site_url}{button-url-land}"><img class="lazy-load" data-src="{block-image-land}" alt="{image-alt-land}" /></a></div>
+	<div class="text fleft" style="padding-top: {land-padd};">{if "{block-landing-h1}" == "yes"}<h1>{block-heading-land}</h1>{if:else}<h2>{block-heading-land}</h2>{/if}
+	<p>{block-para-land}</p>
+	<ul class="buttons clearfix">
+	<li><a href="{site_url}{button-url-land}" class="button">{button-text-land}</a></li>
+	<li>{snippet-enquirenow-buttonlink}Enquire now</a></li>
+	</ul>
+	</div>
+	</div>
+	<div class="sep"></div>
+	{/case}
+	{/switchee}
+{/case}
+{/exp:switchee}
+{/content_blocks_land}
+</div>
+{/exp:channel:entries}
+
+{snippet-partners}
+</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+{snippet-sidey}
+{embed="includes/footer-new"}

@@ -4238,7 +4238,10 @@ table * {
 
 .textnav li {
     float: left;
-    padding: 18px 32px
+    padding-top: 32px;
+    padding-bottom: 18px;
+    padding-right: 28px;
+    padding-left: 28px;
 }
 
 .textnav li a {

@@ -1,0 +1,175 @@
+{exp:channel:entries disable="member_data|pagination|categories" channel="news" limit="1" url_title="{last_segment}"}
+{snippet-doctype}
+<title>{seo_page_header_title_news} | Zones</title>
+<script type="text/javascript" language="javascript">
+var navlevels = "single";
+</script>
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_news}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+	"url": "http://www.zones.co.nz",
+	"telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_news}"
+}
+</script>
+<meta name="description" content="{seo_meta_description_news}">
+<meta name="keywords" content="{seo_meta_keywords_news}">
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+<div id="sitebanner" class="clearfix">
+<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+<li><a href="{link}" class="button">{text}</a></li>
+{/exp:navee:custom}
+</ul>	
+
+{snippet-bannersearch}
+</div>
+<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+<div class="inner">
+<ul id="section-sub" class="textnav clearfix">
+{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+   {if text == 'Newsletters'}
+      <li class="current"><a href="{link}">{text}</a></li>
+   {if:elseif link != '/clippings/community/'}
+      <li><a href="{link}">{text}</a></li>
+   {/if}
+{/exp:navee:custom}
+</ul>
+<div class="sep"></div>
+</div><!-- end .inner -->
+<!-- mobile nav start -->
+<div class="contextnav-wrapper top justmobile">
+	<nav class="contextnav justmobile">
+	<ul class="clearfix">
+{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+   {if text == 'Newsletters'}
+      <li class="current"><a href="{link}">{text}</a></li>
+   {if:elseif link != '/clippings/community/'}
+      <li><a href="{link}">{text}</a></li>
+   {/if}
+{/exp:navee:custom}		
+	</ul>
+	</nav>
+</div>
+
+<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+<div class="contextnav-breadcrumb withtoggle justmobile">
+	<nav>
+	<ul class="clearfix">
+	<li><a href="{site_url}clippings/">Clippings</a></li>
+    <li><a href="{site_url}newsletter/">Newsletters</a></li>
+	</ul>
+	</nav>
+</div>
+<!-- end mobile nav -->
+<div id="breadcrumb-wrapper" style="display: none;">
+<nav id="breadcrumbline" role="navigation">
+<ul class="clearfix">
+<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+<li class="parent"><a href="{site_url}clippings/">Clippings</a></li>
+<li><a href="{site_url}newsletter/">Newsletters</a></li>
+</ul>
+<div class="sep"></div>
+</nav></div>
+<div class="inner">
+
+<section id="content" class="panorama" role="main">
+<div class="intro clearfix">
+{snippet-enquirenow-picture}
+<h1>{page_header_h1_news}</h1>
+{page_header_introduction_news}
+</div>
+{/exp:channel:entries}
+
+<div class="news-display clearfix">
+<ul id="news-nav">
+{exp:channel:entries channel="news" dynamic="no" disable="member_data|pagination|categories" year="2014"}
+{if no_results}<?php $news2014 = "none"; ?>{/if}
+{/exp:channel:entries}
+<?php
+if (isset($news2014) == FALSE) {
+	$thisIssue = "{last_segment}";
+	if (strpos($thisIssue,'2014') !== false) {
+		echo '<li class="open"><h2 class="openclose">2014</h2>';
+		}
+	else {
+		echo '<li><h2 class="openclose">2014</h2>';
+		}
+?>
+<ul>
+{exp:channel:entries channel="news" dynamic="no" disable="member_data|pagination|categories" orderby="date" sort="desc" year="2014"}
+{if "{last_segment}" == "{url_title}"}
+<li>{title}</li>
+{if:else}
+<li><a href="{site_url}newsletter/{url_title}">{title}</a></li>
+{/if}
+{/exp:channel:entries}
+</ul>
+</li><?php };?>
+{exp:channel:entries channel="news" dynamic="no" disable="member_data|pagination|categories" year="2013"}
+{if no_results}<?php $news2013 = "none"; ?>{/if}
+{/exp:channel:entries}
+<?php
+if (isset($news2013) == FALSE) {
+	$thisIssue = "{last_segment}";
+	if (strpos($thisIssue,'2013') !== false) {
+		echo '<li class="open"><h2 class="openclose">2013</h2>';
+		}
+	else {
+		echo '<li><h2 class="openclose">2013</h2>';
+		}
+?>
+<ul>
+{exp:channel:entries channel="news" dynamic="no" disable="member_data|pagination|categories" orderby="date" sort="desc" year="2013"}
+{if "{last_segment}" == "{url_title}"}
+<li>{title}</li>
+{if:else}
+<li><a href="{site_url}newsletter/{url_title}">{title}</a></li>
+{/if}
+{/exp:channel:entries}
+</ul>
+</li><?php };?>
+</ul>
+<div id="news-body">
+{exp:channel:entries disable="member_data|pagination|categories" channel="news" limit="1" url_title="{last_segment}"}
+{newsletter_content}
+{/exp:channel:entries}
+</div>
+</div>
+</section>
+
+<div class="sep footersep"></div>	
+
+{snippet-partners}
+</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+{embed="includes/footer-new"}

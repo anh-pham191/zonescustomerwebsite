@@ -1,0 +1,166 @@
+{exp:channel:entries disable="member_data|pagination" limit="1" channel="estimate" show_future_entries="yes" status="open|closed"}
+{if no_results}{redirect="404"}{/if}
+{snippet-doctype}
+<title>{seo_page_header_title_est} | Zones</title>
+<script type="text/javascript" language="javascript">
+var navlevels = "double";
+</script>
+{snippet-callfiles-new}
+<meta name="description" content="{seo_meta_description_est}">
+<meta name="keywords" content="{seo_meta_keywords_est}">
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+<div id="sitebanner" class="clearfix">
+<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+   {if text == 'Our services'}
+      <li class="current"><a href="{link}" class="button">{text}</a></li>
+   {if:else}
+      <li><a href="{link}" class="button">{text}</a></li>
+   {/if}
+{/exp:navee:custom}
+</ul>	
+
+{snippet-bannersearch}
+</div>
+<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+<div class="inner">
+<ul id="section-sub" class="textnav clearfix">
+{exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+   {if link == '/what-is-zones/landscape-design-and-garden-maintenance/'}
+      <li class="current"><a href="{link}">{text}</a></li>
+   {if:else}
+      <li><a href="{link}">{text}</a></li>
+   {/if}
+{/exp:navee:custom}
+</ul>
+<div class="sep"></div>
+
+<ul id="area-icons" class="clearfix">
+<li class="current"><a href="{site_url}all/landscape-design-cost/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+<li><a href="{site_url}{category_url_title}/landscape-design-cost/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+{/exp:channel:categories}
+</ul>
+
+{!--- Level 3 links --}
+<div class="sep"></div>
+<ul id="section-detail" class="textnav clearfix">
+{exp:navee:custom nav_title="What-L3-all" wrap_type="none"}
+   {if link == '/all/landscape-design-cost/'}
+      <li class="current"><a href="{link}">{text}</a></li>
+   {if:else}
+      <li><a href="{link}">{text}</a></li>
+   {/if}
+{/exp:navee:custom}
+</ul>
+<div class="sep"></div>	
+</div><!-- end .inner -->
+
+<div id="breadcrumb-wrapper" style="display: none;">
+<nav id="breadcrumbline" role="navigation">
+<ul class="clearfix">
+<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+<li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></li>
+<li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping</a></li>
+<li><a href="{site_url}all/landscape-design-cost/">Project estimates</a></li>
+</ul>
+<div class="sep"></div>
+</nav></div>
+<div class="inner">
+{exp:ifelse parse="inward"}
+{if "{panorama_slideshow_images_est:total_rows}" > 1 AND "{panorama_slide_order_est}" == "SetOrder"}
+<div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
+    data-cycle-pause-on-hover="true"
+    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-pager="#pager1">
+{panorama_slideshow_images_est}
+<img src="{est-pano-image}" alt="{est-pano-alt}"/>
+{/panorama_slideshow_images_est}
+</div>
+<div class="cycle-pager" id="pager1"></div>
+{if:elseif "{panorama_slideshow_images_est:total_rows}" > 1 AND "{panorama_slide_order_est}" != "SetOrder"}
+<div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
+    data-cycle-pause-on-hover="true"
+    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="true" data-cycle-pager="#pager1">
+{panorama_slideshow_images_est}
+<img src="{est-pano-image}" alt="{est-pano-alt}"/>
+{/panorama_slideshow_images_est}
+</div>
+<div class="cycle-pager" id="pager1"></div>
+{if:elseif "{panorama_slideshow_images_est:total_rows}" == 1}
+<div id="wideslideshow">
+{panorama_slideshow_images_est}
+<img src="{est-pano-image}" alt="{est-pano-alt}"/>
+{/panorama_slideshow_images_est}
+</div>
+{/if}
+{/exp:ifelse}
+
+<section id="content" class="panorama" role="main">
+<div class="clearfix">
+<div id="content-body">
+<div class="intro clearfix">
+<h1>{page_h1_heading_est}</h1>
+<a href="{site_url}all/landscape-design-cost/" class="view">back to estimates list</a>
+</div>
+<div class="pagecopy">{page_content_est}</div>
+{/exp:channel:entries}
+
+{exp:structure:siblings}
+<p class="prev">
+   {prev}
+      <a href="{url}">previous article</a>
+   {/prev}
+{/exp:structure:siblings}
+{if "{exp:structure:siblings}{prev}{title}{/prev}{/exp:structure:siblings}" != "" && "{exp:structure:siblings}{next}{title}{/next}{/exp:structure:siblings}" != ""}|{/if}
+{exp:structure:siblings}
+   {next}
+      <a href="{url}">next article</a>
+   {/next}
+</p>
+{/exp:structure:siblings}
+
+</div>
+
+<div id="content-right">
+{exp:channel:entries disable="member_data|pagination" limit="1" channel="estimate" show_future_entries="yes" status="open|closed"}
+<div class="sidebar">
+{if "{rightbar_getintouch_est}" == "Yes"}
+{snippet-getintouch-rightbar}
+{/if}
+
+{if "{personalisation_banner_ad_est:total_children}" == 1}
+<div id="personalisation-banner">
+{personalisation_banner_ad_est}
+<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+{/personalisation_banner_ad_est}
+</div>
+{if:elseif "{personalisation_banner_ad_est:total_children}" > 1}
+<div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
+    data-cycle-pause-on-hover="true"
+    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
+{personalisation_banner_ad_est}
+<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+{/personalisation_banner_ad_est}
+</div>
+{/if}
+
+{snippet-banner-rotatable}
+
+</div>
+{/exp:channel:entries}
+
+</div>
+</div>
+</section>
+<div class="sep footersep"></div>	
+
+{snippet-partners}
+</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+{embed="includes/footer-new"}

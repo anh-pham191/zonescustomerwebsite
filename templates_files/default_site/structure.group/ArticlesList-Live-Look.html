@@ -1,0 +1,130 @@
+{exp:channel:entries disable="member_data|pagination|categories" limit="1" channel="articles_list" show_future_entries="yes" status="open|closed"}
+{snippet-doctype}
+<title>{seo_page_header_title_artlist} | Zones</title>
+<script type="text/javascript" language="javascript">
+var navlevels = "single";
+</script>
+{snippet-callfiles-new}
+<meta name="description" content="{seo_meta_description_artlist}">
+<meta name="keywords" content="{seo_meta_keywords_artlist}">
+<script type="text/javascript" language="javascript">
+if($.cookie("css")) {
+	$("link.switcher").attr("href",$.cookie("css"));
+}
+$(document).ready(function() { 
+	
+$("a.switch-layout").click(function() { 
+		$("link.switcher").attr("href",$(this).attr('rel'));
+		$.cookie("css",$(this).attr('rel'), {expires: 365, path: '/'});
+		return false;
+	});	
+});
+</script>
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+<div id="sitebanner" class="clearfix">
+<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+<li><a href="{link}" class="button">{text}</a></li>
+{/exp:navee:custom}
+</ul>	
+
+{snippet-bannersearch}
+</div>
+<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+<div class="inner">
+<ul id="section-sub" class="textnav clearfix">
+{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+{if text == 'Articles'}
+<li class="current"><a href="{link}">{text}</a></li>
+{if:else}
+<li><a href="{link}">{text}</a></li>
+{/if}
+{/exp:navee:custom}
+</ul>
+<div class="sep"></div>	
+</div><!-- end .inner -->
+<div id="breadcrumb-wrapper" style="display: none;">
+<nav id="breadcrumbline" role="navigation">
+<ul class="clearfix">
+<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+<li class="parent"><a href="{site_url}landscaping-ideas/">Advice</a></li>
+<li><a href="{site_url}landscaping-ideas/">Articles</a></li>
+</ul>
+<div class="sep"></div>
+</nav></div>
+<div class="inner">
+<section id="content" role="main">
+<div class="intro clearfix">
+{snippet-enquirenow-picture}
+<h1>{page_h1_heading_artlist}</h1>
+{page_introduction} 
+</div>
+{/exp:channel:entries}
+
+<div class="clearfix list-tools top">
+<p>Sort by: <strong><a href="{site_url}landscaping-ideas/">Landscaping type</a></strong> | <a href="{site_url}landscaping-ideas-product/">Product advice</a> |
+<a href="{site_url}{segment_1}/sort/mostviewed">Most viewed</a></p>
+</div>
+
+<div class="clearfix list-tools">
+<p class="catlist">Show advice for: {exp:channel:categories category_group="1" style="linear" show_empty="no" channel="article" cache="yes" refresh="1500" show="not 13"}
+<span><a href="{site_url}landscaping-ideas/sort/{category_url_title}/">{category_name}</a> <span class="seperator">|</span></span>
+{/exp:channel:categories}</p>
+</div>
+
+<div class="clearfix list-tools bottom"><span class="fleft"><span>Layout:</span> <a href="#" class="switch-layout" rel="{site_url}design/switch-gallery.css"><img src="{site_url}design/image.png" class="gallery-icon" width="21" height="20" alt="Gallery view" /></a> <a href="#" class="switch-layout" rel="{site_url}design/switch-list.css"><img src="{site_url}design/image.png" class="list-icon" width="20" height="20" alt="List view" /></a></span>
+{exp:search:simple_form result_page="site/ArticlesSearch" no_result_page="site/ArticlesSearchNoResults" search_in="entries" status="open" form_class="fright" results="8" channel="article" where="word"}
+<fieldset class="clearfix">
+	<legend></legend>
+	<input type="text" id="list-search" name="keywords" maxlength="100" />
+	<button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /></button>
+	</fieldset>
+{/exp:search:simple_form}
+</div>
+
+<div id="list" class="listview switchable clearfix">
+{exp:channel:entries channel="article" dynamic="no" orderby="date" sort="desc" limit="300" paginate="both" disable="member_data" cache="yes" refresh="1500" show_future_entries="yes" status="open|closed"}
+
+
+<div class="item clearfix"><a class="fleft" href="{site_url}landscaping-ideas/{url_title}"><img src="{thumbnail_image_art}" alt="{title}" /></a>
+<div class="fleft">
+<h2>{page_h1_heading_art}</h2>
+{summary_text_art} 
+<p class="more"><a href="{site_url}landscaping-ideas/{url_title}">Read full article</a></p>
+</div>
+</div>
+
+{paginate}
+<nav class="paginate-bottom">
+<p class="fright">Showing {abp_entry_from} - {abp_entry_to} of {abp_total_entries} &nbsp;<a href="{if "{freebie_2}" == "sort"}{site_url}landscaping-ideas/sort/{freebie_3}/showall{if:else}{site_url}landscaping-ideas/showall{/if}"><strong>Show all</strong></a></p>
+<nav class="pagination clearfix">
+<span>Page:</span>
+<ul> 
+{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
+{abp_pages padding="no"}
+{if abp_is_current}
+<li>{abp_num}</li>
+{if:else}
+<li><a href="{abp_link}">{abp_num}</a></li>
+{/if}
+{/abp_pages}
+{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
+</ul>
+</nav></nav>{/paginate}
+{/exp:channel:entries}
+</div>
+</section>
+
+<div class="sep footersep"></div>	
+
+{snippet-partners}
+</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+{embed="includes/footer-new"}

@@ -1,0 +1,245 @@
+{exp:channel:entries disable="member_data|pagination|categories" channel="case_studies_list" limit="1" cache="yes" refresh="1500"}
+{snippet-doctype}
+{if "{exp:freebie:category_name segment='5' group_id='8'}" == ""}{redirect="404"}{/if}
+{preload_replace:region="{exp:freebie:category_name segment='5' group_id='8'}"}
+<title>{region} {seo_page_header_title_cslist} | Zones </title>
+
+<script type="text/javascript" language="javascript">
+var navlevels = "double";
+</script>
+
+
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_cslist}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+    "url": "https://www.zones.co.nz",
+    "telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_cslist}"
+}
+</script>
+<meta name="description" content="{seo_meta_description_cslist}">
+<meta name="keywords" content="{seo_meta_keywords_cslist}">
+{/exp:channel:entries}
+
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+<div id="sitebanner" class="clearfix">
+<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+      <li><a href="{link}" class="button">{text}</a></li>
+{/exp:navee:custom}
+</ul>
+
+{snippet-bannersearch}
+</div>
+<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+<div class="inner">
+    <ul id="section-sub" class="textnav clearfix">
+      <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_5}">{region} Landscape Designers</a></li>
+      <li><a href="{site_url}landscape-designers/service-areas/">View Other Locations</a></li>
+    </ul>
+    <div class="sep"></div>
+    {exp:channel:entries channel="service_area" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_5}" limit="1" disable="member_data"}
+    <div class="flexnav-outerwrap">
+    <div class="flexnav-innerwrap">
+    <ul id="section-detail" class="textnav clearfix">
+      <li><a href="{site_url}landscape-designers/service-areas/{freebie_5}">Landscaping in {region}</a></li>
+        {if services_or_whatwedo:label == "What We Do"}
+        <li><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_5}">What We Do</a></li>
+        {if:else}
+        <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_5}">Our Services</a></li>
+        {/if}
+      <li class="current"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}">Case Studies</a></li>
+      <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_5}">Gallery</a></li>
+      <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_5}">Our People in {region}</a></li>
+      <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_5}">News</a></li>
+      <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_5}">Advice</a></li>
+      </ul>
+    </div></div>
+    <div class="sep"></div>
+</div><!-- end .inner -->
+<!-- mobile nav start -->
+<div class="contextnav-wrapper top justmobile">
+	<nav class="contextnav justmobile">
+	<ul class="clearfix">
+        <li><a href="{site_url}landscape-designers/service-areas/{freebie_5}">Landscaping in {region}</a></li>
+        {if services_or_whatwedo:label == "What We Do"}
+        <li><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_5}">What We Do</a></li>
+        {if:else}
+        <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_5}">Our Services</a></li>
+        {/if}
+        <li class="current"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}">Case Studies</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_5}">Gallery</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_5}">Our People in {region}</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_5}">News</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_5}">Advice</a></li>
+	</ul>
+	</nav>
+</div>
+<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+<div class="contextnav-breadcrumb withtoggle justmobile">
+	<nav>
+	<ul class="clearfix">
+        <li><a href="{site_url}landscape-designers/">About us</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/{freebie_5}">{region} Landscape Designers</a></li>
+        <li class="current"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}">Case Studies</a></li>
+	</ul>
+	</nav>
+</div>
+<!-- end mobile nav -->
+<div id="breadcrumb-wrapper" style="display: none;">
+<nav id="breadcrumbline" role="navigation">
+<ul>
+    <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+    <li class="parent"><a href="{site_url}landscape-designers/">About us</a></li>
+    <li class="parent"><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
+    <li class="parent"><a href="{site_url}landscape-designers/service-areas/{freebie_5}">{region} Landscape Designers</a></li>
+    <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}">Case Studies</a></li>
+</ul>
+<div class="sep"></div>
+</nav></div>
+{/exp:channel:entries}
+<div class="inner">
+<section id="content" role="main">
+{exp:channel:entries disable="member_data|pagination|categories" channel="case_studies_list" limit="1" cache="yes" refresh="1500"}
+<div class="intro clearfix">
+{snippet-enquirenow-picture}
+<h1>{region} {page_h1_heading_cs}</h1>
+
+{page_introduction_cslist}
+</div>
+{/exp:channel:entries}
+
+<div class="clearfix list-tools top bottom"><span class="fleft"><span>Layout:</span> <a href="#" class="switch-layout" rel="{site_url}design/switch-gallery.css"><img src="{site_url}design/image.png" class="gallery-icon" width="21" height="20" alt="Gallery view" /></a> <a href="#" class="switch-layout" rel="{site_url}design/switch-list.css"><img src="{site_url}design/image.png" class="list-icon" width="20" height="20" alt="List view" /></a></span>
+  <form method="post" action="#" class="regionright">
+      <fieldset>
+      <legend></legend>
+      <select id="dynamic-select" class="uniform-styles" onchange="s_click(this)">
+              <option value="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}/">Select...</option>
+              {if "{freebie_6}" == "all"}
+              <option value="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}/all" selected="selected">All</option>
+              {if:else}
+              <option value="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}/all">All</option>
+              {/if}
+          {exp:channel:categories category_group="8" style="linear" show_empty="no" channel="service_area" show="25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|77|79|80|81|85|86|87|47|48|49|50|51|52|53|54|55|84|83|82"}
+          {if "{freebie_5}" == "{category_url_title}" AND "{freebie_6}" != "all"}
+          <option value="{site_url}landscape-designers/service-areas/case-studies/sort/{category_url_title}/" selected="selected">{category_name}</option>
+          {if:else}
+          <option value="{site_url}landscape-designers/service-areas/case-studies/sort/{category_url_title}/">{category_name}</option>
+          {/if}
+          {/exp:channel:categories}
+
+          </select>
+          </fieldset>
+          </form>
+  </div>
+  <div class="justmobile">
+      <p id="open-filter"><a href="#"><span>Filter</span></a></p>
+      <nav id="listfilter">
+      <h2>Filter</h2><a class="close" href="#"></a>
+      <ul>
+        {if "{freebie_6}" == "all"}
+        <li class="current"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}/all">All</a></li>
+        {if:else}
+        <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}/all">All</a></li>
+        {/if}
+      {exp:channel:categories category_group="8" style="linear" show_empty="no" channel="service_area" show="25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|77|79|80|81|85|86|87|47|48|49|50|51|52|53|54|55|84|83|82"}
+      {if "{freebie_5}" == "{category_url_title}" AND "{freebie_6}" != "all"}
+      <li class="current"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{category_url_title}/">{category_name}</a></li>
+      {if:else}
+      <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{category_url_title}/">{category_name}</a></li>
+      {/if}
+      {/exp:channel:categories}
+      </ul>
+      </nav>
+</div>
+<div id="list" class="listview switchable clearfix">
+  {exp:ifelse parse="inward"}
+  {if "{freebie_6}" == "all"}
+  {exp:channel:entries channel="case_study" dynamic="no" orderby="date" sort="desc" limit="8" paginate="bottom" disable="member_data" parse="inward"}
+  {if:else}
+  {exp:channel:entries channel="case_study" dynamic="no" category_group="8" orderby="date" sort="desc" limit="8" paginate="bottom" disable="member_data" category="{exp:freebie:category_id segment='5'}" parse="inward"}
+  {/if}
+  {/exp:ifelse}
+
+<div class="item clearfix">
+    {if no_results}<div class="notfoundmsg"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}/all">Load All Zones Case Studies</a></div>{/if}
+  <a class="fleft" href="{site_url}landscape-designers/service-areas/case-study/sort/{freebie_5}/{url_title}"><img class="lazy-load" data-src="{thumbnail_image_cs}" alt="{title}" /></a>
+<div class="fleft">
+<h2>{page_h1_heading_casestudy}</h2>
+{summary_text_cs}
+<p class="more"><a href="{site_url}landscape-designers/service-areas/case-study/sort/{freebie_5}/{url_title}">Read Full Case Study</a></p>
+</div>
+</div>
+<a href="{site_url}landscape-designers/service-areas/case-study/sort/{freebie_5}/{url_title}" class="item-m justmobile"><span class="link">{page_h1_heading_casestudy}</span><span class="bg" style="background-image: url({thumbnail_image_cs});"></span></a>
+
+{paginate}
+<div class="paginate-bottom">
+<p class="fright">Showing {abp_entry_from} - {abp_entry_to} of {abp_total_entries}</p>
+<nav class="pagination clearfix">
+<span>Page:</span>
+<ul>
+{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
+{abp_pages padding="no"}
+{if abp_is_current}
+<li>{abp_num}</li>
+{if:else}
+<li><a href="{abp_link}">{abp_num}</a></li>
+{/if}
+{/abp_pages}
+{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
+</ul>
+</nav></div>{/paginate}
+{/exp:channel:entries}
+</div>
+</section>
+
+<div class="sep footersep"></div>
+
+{snippet-partners}
+</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+{snippet-sidey}
+<script type="text/javascript">
+  function s_click(obj) {
+      var num = 0;
+      for (var i = 0; i < obj.options.length; i++) {
+          if (obj.options[i].selected == true) {
+              num++;
+          }
+      }
+      if (num == 1) {
+          var url = obj.options[obj.selectedIndex].value;
+          window.location.href = url;
+      }
+  }
+</script>
+{embed="includes/footer-switcher"}

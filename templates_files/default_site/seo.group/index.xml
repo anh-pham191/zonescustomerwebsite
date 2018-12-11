@@ -1,0 +1,50 @@
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="homepage"}{entry_id}	{channel}	{title}	{seo_page_header_title_home}	{seo_meta_description_home}	{seo_meta_keywords_home}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="article"}{entry_id}	{channel}	{title}	{seo_page_header_title_art}	{seo_meta_description_art}	{seo_meta_keywords_art}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="articles_list"}{entry_id}	{channel}	{title}	{seo_page_header_title_artlist}	{seo_meta_description_artlist}	{seo_meta_keywords_artlist}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="misc_list"}{entry_id}	{channel}	{title}	{seo_page_header_title_misc}	{seo_meta_description_misc}	{seo_meta_keywords_misc}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="case_studies_list"}{entry_id}	{channel}	{title}	{seo_page_header_title_cslist}	{seo_meta_description_cslist}	{seo_meta_keywords_cslist}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="case_study"}{entry_id}	{channel}	{title}	{seo_page_header_title}	{seo_meta_description_cs}	{seo_meta_keywords}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="community_article"}{entry_id}	{channel}	{title}	{seo_page_header_title_cart}	{seo_meta_description_cart}	{seo_meta_keywords_cart}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="competition"}{entry_id}	{channel}	{title}	{seo_page_header_title_comp}	{seo_meta_description_comp}	{seo_meta_keywords_comp}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="competitions_list"}{entry_id}	{channel}	{title}	{seo_page_header_title_cplist}	{seo_meta_desc_cplist}	{seo_meta_keywords_cplist}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="contact_business_opportunity"}{entry_id}	{channel}	{title}	{seo_page_header_title_c_bus}	{seo_meta_description_c_bus}	{seo_meta_keywords_c_bus}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="contact_career_opportunities"}{entry_id}	{channel}	{title}	{seo_page_header_title_c_car}	{seo_meta_description_c_car}	{seo_meta_keywords_c_car}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="contact_enquiry"}{entry_id}	{channel}	{title}	{seo_page_header_title_c_enq}	{seo_meta_description_c_enq}	{seo_meta_keywords_c_enq}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="content_page"}{entry_id}	{channel}	{title}	{seo_page_header_title_page}	{seo_meta_description_page}	{seo_meta_keywords_page}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="content_page_with_intro"}{entry_id}	{channel}	{title}	{seo_page_header_title_cint}	{seo_meta_description_cint}	{seo_meta_keywords_cint}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="designideas"}{entry_id}	{channel}	{title}	{seo_page_header_title_dg}	{seo_meta_description_dg}	{seo_meta_keywords_dg}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="estimate"}{entry_id}	{channel}	{title}	{seo_page_header_title_est}	{seo_meta_description_est}	{seo_meta_keywords_est}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="estimates_list"}{entry_id}	{channel}	{title}	{seo_page_header_title_estlist}	{seo_meta_description_estlist}	{seo_meta_keywords_estlist}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="faq_list"}{entry_id}	{channel}	{title}	{seo_page_header_title_fqlist}	{seo_meta_description_fqlist}	{seo_meta_keywords_fqlist}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="gallery"}{entry_id}	{channel}	{title}	{seo_page_header_title_g}	{seo_meta_description_gallery}	{seo_meta_keywords_gallery}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="level_1_landing_page"}{entry_id}	{channel}	{title}	{seo_page_header_title_l1}	{seo_meta_description_l1}	{seo_meta_keywords_l1}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="news"}{entry_id}	{channel}	{title}	{seo_page_header_title_news}	{seo_meta_description_news}	{seo_meta_keywords_news}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="person"}{entry_id}	{channel}	{title}	{seo_page_header_title_pers}	{seo_meta_description_pers}	{seo_meta_keywords_pers}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="services_page"}{entry_id}	{channel}	{title}	{seo_page_header_title_serv}	{seo_meta_description_serv}	{seo_meta_keywords_serv}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="testimonials_list"}{entry_id}	{channel}	{title}	{seo_page_header_title_tlist}	{seo_meta_description_tlist}	{seo_meta_keywords_tlist}
+{/exp:channel:entries}
+{exp:channel:entries disable="member_data|pagination|categories" dynamic="no" channel="video_testimonials_gallery"}{entry_id}	{channel}	{title}	{seo_page_header_title_vtg}	{seo_meta_description_vtg}	{seo_meta_keywords_vtg}
+{/exp:channel:entries}

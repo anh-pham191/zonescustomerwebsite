@@ -1,0 +1,224 @@
+<?php
+$urltitle = "{freebie_7}";
+if($urltitle  == "all"){
+   $seturl = "project-management-all";
+}else if($urltitle == "landscape-design"){
+   $seturl = "project-management-design";
+}else if($urltitle == "outdoor-rooms"){
+  $seturl = "project-management-outdoor-room";
+}else if($urltitle == "outdoor-kitchen"){
+  $seturl = "project-management-outdoor-kitchen";
+}else if($urltitle == "garden-plants"){
+  $seturl = "project-management-gardens";
+}else if($urltitle == "grass-lawns-and-lawn-mowing-services"){
+  $seturl = "project-management-lawn";
+}else if($urltitle == "swimming-pools"){
+  $seturl = "project-management-swimming-pool";
+}else if($urltitle == "pergola-decks-patios"){
+  $seturl = "project-management-decks-patios";
+}else if($urltitle == "outdoor-lighting-and-power"){
+  $seturl = "project-management-lighting";
+}else if($urltitle == "concrete-asphalt-paving-stones-driveways"){
+  $seturl = "project-management-driveway";
+}else if($urltitle == "rain-water-tanks"){
+  $seturl = "project-management-rainwater-system";
+}else if($urltitle == "retaining-wall"){
+  $seturl = "project-management-retaining";
+}else if($urltitle == "fencing"){
+  $seturl = "project-management-fencing";
+}else if($urltitle == "gardening-and-gardening-maintenance"){
+  $seturl = "project-management-maintain";
+}
+
+?>
+{exp:channel:entries channel="content_page" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="<?php echo $seturl; ?>" limit="1" disable="member_data"}
+
+{snippet-doctype}
+{if "{exp:freebie:category_name segment='6' group_id='8'}" == ""}{redirect="404"}{/if}
+{preload_replace:region="{exp:freebie:category_name segment='6' group_id='8'}"}
+<title>{seo_page_header_title_page} - {region} | Zones</title>
+
+<script type="text/javascript" language="javascript">
+var navlevels = "double";
+</script>
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_page} - {region}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+	"url": "https://www.zones.co.nz",
+	"telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_page}"
+}
+</script>
+<meta name="description" content="{seo_meta_description_page}">
+<meta name="keywords" content="{seo_meta_keywords_page}">
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+<div id="sitebanner" class="clearfix">
+<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+      <li><a href="{link}" class="button">{text}</a></li>
+{/exp:navee:custom}
+</ul>	
+{snippet-bannersearch}
+</div>
+<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+<div class="inner">
+    <ul id="section-sub" class="textnav clearfix">
+        <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/">View Other Locations</a></li>
+      </ul>
+      <div class="sep"></div>
+      <div class="flexnav-outerwrap">
+      <div class="flexnav-innerwrap">
+      <ul id="section-detail" class="textnav clearfix">
+        <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
+        <li class="current"><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+        </ul>
+      </div></div>
+      <div class="sep"></div>
+<ul id="area-icons" class="clearfix">
+{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+{if "{freebie_7}" == "{category_url_title}"}
+<li class="current"><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+{if:else}
+<li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+{/if}
+{/exp:channel:categories}
+</ul>
+
+</div><!-- end .inner -->
+<!-- mobile nav start -->
+<div class="contextnav-wrapper top justmobile">
+	<nav class="contextnav justmobile">
+	<ul class="clearfix">
+        <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
+        <li class="current"><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+	</ul>
+	</nav>
+</div>
+<div class="contextnav-wrapper icons areas justmobile">
+	<nav class="contextnav icons justmobile">
+	<ul class="clearfix"  id="area-icons">
+{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+{if "{freebie_7}" == "{category_url_title}"}
+<li class="current"><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+{if:else}
+<li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+{/if}
+{/exp:channel:categories}
+	</ul>
+	</nav>
+</div>
+
+<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+<div class="contextnav-breadcrumb withtoggle justmobile">
+	<nav>
+	<ul class="clearfix">
+        <li><a href="{site_url}landscape-designers/">About us</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
+{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+{if "{freebie_7}" == "{category_url_title}"}
+<li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/">{category_name}</a></li>
+{/if}
+{/exp:channel:categories} 
+	</ul>
+	</nav>
+</div>
+<!-- end mobile nav -->
+<div id="breadcrumb-wrapper" style="display: none;">
+  {snippet-socialsharing-breadcrumb}
+</div>
+
+
+<div class="inner">
+
+<div id="wideslideshow">
+{panorama_slideshow_images_page}
+<img src="{pano-image-page}" alt="{alt-pano-image-page}"/>
+{/panorama_slideshow_images_page}
+</div>
+
+
+<section id="content" class="panorama" role="main">
+<div class="clearfix">
+<div id="content-body">
+<div class="intro clearfix">
+<h1>{page_h1_heading_c}</h1>
+</div>
+
+{snippet-socialsharing-body}
+
+<div class="pagecopy">{page_content_page}</div>
+{exp:channel:form channel="content_page" entry_id="{entry_id}" return="contentPage/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
+{exp:ifelse parse="inward"}
+{if "{sharing_count_con}" == "" }
+<input type="hidden" id="count" name="sharing_count_con" value="0" />
+{if:else}
+<input type="hidden" id="count" name="sharing_count_con" value="{sharing_count_con}" />
+{/if}
+{/exp:ifelse}
+{/exp:channel:form}
+</div>
+
+{/exp:channel:entries}
+
+
+
+<div id="content-right">
+
+<div class="sidebar">
+
+{snippet-getintouch-rightbar}
+
+
+{snippet-banner-rotatable}
+</div>
+
+</div>
+</div>
+</section>
+<div class="sep footersep"></div>	
+
+{snippet-partners}
+</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+{snippet-sidey}
+{embed="includes/footer-new"}

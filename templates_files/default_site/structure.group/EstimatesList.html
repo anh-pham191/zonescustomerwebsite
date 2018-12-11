@@ -1,0 +1,389 @@
+{exp:channel:entries disable="member_data|pagination|categories" channel="estimates_list" limit="1" cache="yes" refresh="1500"}
+{snippet-doctype}
+<title>{seo_page_header_title_estlist} | Zones</title>
+{exp:switchee variable = "{segment_1}" parse="inward"}
+{case value="landscape-design-cost"}
+{!-- FROM FOOTER STYLE DISPLAY --}
+<script type="text/javascript" language="javascript">
+var navlevels = "single";
+</script>
+{exp:channel:categories category_group="1" style="linear"}
+{if "{freebie_3}" == "{category_url_title}"}
+<link rel="canonical" href="{site_url}{freebie_3}/{segment_1}/" />
+{/if}
+{/exp:channel:categories}
+{/case}
+	
+{case default="Yes"}
+{!-- WHAT IS ZONES STYLE DISPLAY --}
+<script type="text/javascript" language="javascript">
+var navlevels = "double";
+</script>
+{/case}
+{/exp:switchee}
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_estlist}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+	"url": "http://www.zones.co.nz",
+	"telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_estlist}"
+}
+</script>
+<meta name="description" content="{seo_meta_description_estlist}">
+<meta name="keywords" content="{seo_meta_keywords_estlist}">
+
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+<div id="sitebanner" class="clearfix">
+<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+
+{exp:switchee variable = "{segment_1}" parse="inward"}
+{case value="landscape-design-cost"}
+{!-- FROM FOOTER STYLE DISPLAY --}
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+<li><a href="{link}" class="button">{text}</a></li>
+{/exp:navee:custom}
+</ul>	
+
+{snippet-bannersearch}
+</div>
+<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+<div class="inner">
+<ul id="section-sub" class="textnav clearfix">
+{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+{if text == 'Project estimates'}
+<li class="current"><a href="{link}">{text}</a></li>
+{if:else}
+<li><a href="{link}">{text}</a></li>
+{/if}
+{/exp:navee:custom}
+</ul>
+<div class="sep"></div>	
+</div><!-- end .inner -->
+<!-- mobile nav start -->
+<div class="contextnav-wrapper top justmobile">
+	<nav class="contextnav justmobile">
+	<ul class="clearfix">
+{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+{if text == 'Project estimates'}
+<li class="current"><a href="{link}">{text}</a></li>
+{if:else}
+<li><a href="{link}">{text}</a></li>
+{/if}
+{/exp:navee:custom}		
+	</ul>
+	</nav>
+</div>
+
+<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+<div class="contextnav-breadcrumb withtoggle justmobile">
+	<nav>
+	<ul class="clearfix">
+<li><a href="{site_url}landscaping-ideas/">Advice</a></li>
+<li><a href="{site_url}landscape-design-cost/">Project estimates</a></li>
+	</ul>
+	</nav>
+</div>
+<!-- end mobile nav -->
+<div id="breadcrumb-wrapper" style="display: none;">
+<nav id="breadcrumbline" role="navigation">
+<ul class="clearfix">
+<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+<li class="parent"><a href="{site_url}landscaping-ideas/">Advice</a></li>
+<li><a href="{site_url}landscape-design-cost/">Project estimates</a></li>
+</ul>
+<div class="sep"></div>
+</nav></div>
+<div class="inner">
+<section id="content" role="main">
+<div class="intro clearfix">
+{snippet-enquirenow-picture}
+<h1>{page_h1_heading_estlist}</h1>
+{page_introduction_est_list} 
+</div>
+{/exp:channel:entries}
+
+<div class="clearfix list-tools top">
+<p class="catlist">Sort by: {exp:channel:categories category_group="1" style="linear" show_empty="no" channel="estimate" cache="yes" refresh="1500" show="not 13"}
+{if "{freebie_3}" == "{category_url_title}"}
+<span><strong><a href="{site_url}{segment_1}/sort/{category_url_title}/">{category_name}</a></strong> <span class="seperator">|</span></span>
+{if:else}
+<span><a href="{site_url}{segment_1}/sort/{category_url_title}/">{category_name}</a> <span class="seperator">|</span></span>
+{/if}
+{/exp:channel:categories}
+{if "{freebie_2}" == "sort"}
+<a href="{site_url}{segment_1}/">View all</a>
+{/if}
+</p>
+</div>
+
+<div class="clearfix list-tools bottom"><span class="fleft"><span>Layout:</span> <a href="#" class="switch-layout" rel="{site_url}design/switch-gallery.css"><img src="{site_url}design/image.png" class="gallery-icon" width="21" height="20" alt="Gallery view" /></a> <a href="#" class="switch-layout" rel="{site_url}design/switch-list.css"><img src="{site_url}design/image.png" class="list-icon" width="20" height="20" alt="List view" /></a></span>
+{exp:search:simple_form result_page="site/EstimatesSearch" no_result_page="site/EstimatesSearchNoResults" search_in="entries" status="open" form_class="fright" results="8" channel="estimate" where="word"}
+<fieldset class="clearfix">
+	<legend></legend>
+	<input type="text" id="list-search" name="keywords" maxlength="100" />
+	<button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /></button>
+	</fieldset>
+{/exp:search:simple_form}
+</div>
+<div class="justmobile">
+                    <p id="open-filter"><a href="#"><span>Filter</span></a></p> 
+                    <nav id="listfilter">
+                        <h2>Filter</h2><a class="close" href="#"></a>
+                        <ul>
+                            {exp:channel:categories category_group="1" style="linear" show_empty="no" channel="estimate" cache="yes" refresh="1500" show="not 13"}
+                            {if "{freebie_3}" == "{category_url_title}"}
+                            <li class="current"><a href="{site_url}{segment_1}/sort/{category_url_title}/">{category_name}</a></li>
+                            {if:else}
+                            <li><a href="{site_url}{segment_1}/sort/{category_url_title}/">{category_name}</a></li>
+                            {/if}
+                            {/exp:channel:categories}
+                        </ul>
+                    </nav>
+</div>
+<div id="list" class="listview switchable clearfix">
+{exp:ifelse parse="inward"}
+{if "{freebie_3}" != ""}
+{exp:channel:entries channel="estimate" dynamic="no" orderby="date" sort="desc" category="{exp:freebie:category_id segment='3'}" parse="inward" limit="8" paginate="bottom" disable="member_data"}
+{if:else}
+{exp:channel:entries channel="estimate" dynamic="no" orderby="date" sort="desc" parse="inward" limit="8" paginate="bottom" disable="member_data" cache="yes" refresh="1500"}
+{/if}
+{/exp:ifelse}
+
+<div class="item clearfix"><a class="fleft" href="{site_url}landscape-design-cost/{url_title}"><img class="lazy-load" data-src="{thumbnail_image_est}" alt="{title}" /></a>
+<div class="fleft">
+<h2>{page_h1_heading_est}</h2>
+{summary_text_est} 
+<p class="more"><a href="{site_url}landscape-design-cost/{url_title}">Read full project estimate</a></p>
+</div>
+</div>
+<a href="{site_url}landscape-design-cost/{url_title}" class="item-m justmobile"><span class="link">{page_h1_heading_est}</span><span class="bg" style="background-image: url({thumbnail_image_est});"></span></a>
+
+{paginate}
+<div class="paginate-bottom">
+<p class="fright">Showing {abp_entry_from} - {abp_entry_to} of {abp_total_entries}</p>
+<nav class="pagination clearfix">
+<span>Page:</span>
+<ul>
+{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
+{abp_pages padding="no"}
+{if abp_is_current}
+<li>{abp_num}</li>
+{if:else}
+<li><a href="{abp_link}">{abp_num}</a></li>
+{/if}
+{/abp_pages}
+{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
+</ul>
+</nav></div>{/paginate}
+{/exp:channel:entries}
+</div>
+</section>
+{/case}
+	
+{case default="Yes"}
+{!-- WHAT IS ZONES STYLE DISPLAY --}
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+   {if text == 'Our services'}
+      <li class="current"><a href="{link}" class="button">{text}</a></li>
+   {if:else}
+      <li><a href="{link}" class="button">{text}</a></li>
+   {/if}
+{/exp:navee:custom}
+</ul>	
+
+{snippet-bannersearch}
+</div>
+<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+<div class="inner">
+<ul id="section-sub" class="textnav clearfix">
+{exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+   {if link == '/what-is-zones/landscape-design-and-garden-maintenance/'}
+      <li class="current"><a href="{link}">{text}</a></li>
+   {if:else}
+      <li><a href="{link}">{text}</a></li>
+   {/if}
+{/exp:navee:custom}
+</ul>
+<div class="sep"></div>
+
+<ul id="area-icons" class="clearfix">
+{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+{if "{segment_1}" == "{category_url_title}"}
+	<li class="current"><a href="{site_url}{category_url_title}/landscape-design-cost/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+{if:else}
+	<li><a href="{site_url}{category_url_title}/landscape-design-cost/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+{/if}
+{/exp:channel:categories}
+</ul>
+
+{!--- Level 3 links --}
+<div class="sep"></div>
+<ul id="section-detail" class="textnav clearfix">
+{exp:navee:custom nav_title="What-L3-{segment_1}" wrap_type="none"}
+{if text == 'Project estimates'}
+<li class="current"><a href="{link}">{text}</a></li>
+{if:elseif link != '/{segment_1}/design-ideas/'}
+<li><a href="{link}">{text}</a></li>
+{/if}
+{/exp:navee:custom}
+</ul>
+<div class="sep"></div>	
+</div><!-- end .inner -->
+<!-- mobile nav start -->
+<div class="contextnav-wrapper top justmobile">
+	<nav class="contextnav justmobile">
+	<ul class="clearfix">
+{exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+   {if link == '/what-is-zones/landscape-design-and-garden-maintenance/'}
+      <li class="current"><a href="{link}">{text}</a></li>
+   {if:else}
+      <li><a href="{link}">{text}</a></li>
+   {/if}
+{/exp:navee:custom}		
+	</ul>
+	</nav>
+</div>
+<div class="contextnav-wrapper icons areas justmobile">
+	<nav class="contextnav icons justmobile">
+	<ul class="clearfix"  id="area-icons">
+{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+{if "{segment_1}" == "{category_url_title}"}
+	<li class="current"><a href="{site_url}{category_url_title}/landscape-design-cost/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+{if:else}
+	<li><a href="{site_url}{category_url_title}/landscape-design-cost/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+{/if}
+{/exp:channel:categories}
+	</ul>
+	</nav>
+</div>
+<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+<div class="contextnav-breadcrumb withtoggle justmobile">
+	<nav>
+	<ul class="clearfix">
+<li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></li>
+<li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping</a></li>
+{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+{if "{segment_1}" == "{category_url_title}"}
+<li><a href="{site_url}{category_url_title}/">{category_name}</a></li>
+{/if}
+{/exp:channel:categories} 
+<li><a href="{site_url}{segment_1}/landscape-design-cost/">Project estimates</a></li>
+	</ul>
+	</nav>
+</div>
+<!-- end mobile nav -->
+<div id="breadcrumb-wrapper" style="display: none;">
+<nav id="breadcrumbline" role="navigation">
+<ul>
+<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+<li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></li>
+<li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping</a></li>
+{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+{if "{segment_1}" == "{category_url_title}"}
+<li class="parent"><a href="{site_url}{category_url_title}/">{category_name}</a></li>
+{/if}
+{/exp:channel:categories} 
+<li><a href="{site_url}{segment_1}/landscape-design-cost/">Project estimates</a></li>
+</ul>
+<div class="sep"></div>
+</nav></div>
+<div class="inner">
+<section id="content" role="main">
+{exp:channel:entries disable="member_data|pagination|categories" channel="estimates_list" limit="1" cache="yes" refresh="1500"}
+<div class="intro clearfix">
+{snippet-enquirenow-picture}
+<h1>{page_h1_heading_estlist}</h1>
+{if "{segment_1}" != "all"}
+<a href="{site_url}all/landscape-design-cost/" class="view">View all types of landscaping</a>
+{/if}
+{page_introduction_est_list} 
+</div>
+{/exp:channel:entries}
+
+<div class="clearfix list-tools top bottom"><span class="fleft"><span>Layout:</span> <a href="#" class="switch-layout" rel="{site_url}design/switch-gallery.css"><img src="{site_url}design/image.png" class="gallery-icon" width="21" height="20" alt="Gallery view" /></a> <a href="#" class="switch-layout" rel="{site_url}design/switch-list.css"><img src="{site_url}design/image.png" class="list-icon" width="20" height="20" alt="List view" /></a></span>
+{exp:search:simple_form result_page="site/EstimatesSiteSearch" no_result_page="site/EstimatesSiteSearchNoResults" search_in="entries" status="open" form_class="fright" results="8" channel="estimate" where="word"}
+<fieldset class="clearfix">
+	<legend></legend>
+	<input type="text" id="list-search" name="keywords" maxlength="100" />
+	<button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /></button>
+	</fieldset>
+{/exp:search:simple_form}
+</div>
+
+<div id="list" class="listview switchable clearfix">
+{exp:ifelse parse="inward"}
+{if "{segment_1}" == "all"}
+{exp:channel:entries channel="estimate" dynamic="no" orderby="date" sort="desc" limit="8" paginate="bottom" disable="member_data"}
+{if:else}
+{exp:channel:entries channel="estimate" dynamic="no" orderby="date" sort="desc" category="{exp:freebie:category_id segment='1'}" parse="inward" limit="8" paginate="bottom" disable="member_data"}
+{/if}
+{/exp:ifelse}
+<div class="item clearfix"><a class="fleft" href="{site_url}landscape-design-cost/{url_title}"><img class="lazy-load" data-src="{thumbnail_image_est}" alt="{title}" /></a>
+<div class="fleft">
+<h2>{page_h1_heading_est}</h2>
+{summary_text_est} 
+<p class="more"><a href="{site_url}landscape-design-cost/{url_title}">Read full project estimate</a></p>
+</div>
+</div>
+<a href="{site_url}landscape-design-cost/{url_title}" class="item-m justmobile"><span class="link">{page_h1_heading_est}</span><span class="bg" style="background-image: url({thumbnail_image_est});"></span></a>
+
+{paginate}
+<div class="paginate-bottom">
+<p class="fright">Showing {abp_entry_from} - {abp_entry_to} of {abp_total_entries}</p>
+<nav class="pagination clearfix">
+<span>Page:</span>
+<ul>
+{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
+{abp_pages padding="no"}
+{if abp_is_current}
+<li>{abp_num}</li>
+{if:else}
+<li><a href="{abp_link}">{abp_num}</a></li>
+{/if}
+{/abp_pages}
+{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
+</ul>
+</nav></div>{/paginate}
+{/exp:channel:entries}
+</div>
+</section>
+{/case}
+{/exp:switchee}
+
+<div class="sep footersep"></div>	
+
+{snippet-partners}
+</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+{snippet-sidey}
+{embed="includes/footer-switcher"}

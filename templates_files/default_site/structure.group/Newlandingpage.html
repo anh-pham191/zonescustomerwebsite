@@ -1,0 +1,701 @@
+{exp:channel:entries disable="member_data" track_views="one" url_title="{last_segment}" limit="1" channel="new_landing_page" cache="yes" refresh="1500"}
+{if no_results}{redirect="404"}{/if}
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+	<title>{seo_page_header_title_landing} | Zones</title>
+	<meta name="description" content="{exp:mah_eencode}{seo_meta_description_landing}{/exp:mah_eencode}">
+	<meta name="keywords" content="{exp:mah_eencode}{seo_meta_keywords_landing}{/exp:mah_eencode}">
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "{seo_page_header_title_landing}",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Zones Landscaping Specialists",
+            "url": "http://www.zones.co.nz",
+            "telephone": "+64 0800301020",
+              "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Level 1, 287-289 Parnell Road",
+            "addressLocality": "Parnell",
+            "addressRegion": "Auckland",
+            "postalCode": "1052",
+            "addressCountry": "NZ"
+            },
+            "logo": {
+              "@type": "ImageObject",
+              "url": "http://www.zones.co.nz/design/logo-zones.png",
+              "width": 155,
+              "height": 60
+            }
+          },
+          "description": "{seo_meta_description_misc}"
+        }
+        </script>
+        <meta name="description" content="{seo_meta_description_misc}">
+        <meta name="keywords" content="{seo_meta_keywords_misc}">
+
+<link href="{site_url}favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="{site_url}favicon.png" rel="apple-touch-icon" type="image/png" />
+<link rel="stylesheet" href="{site_url}design/font-awesome.min.css">
+<link rel="stylesheet" href="{site_url}design/landingpage.css" media="all">
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" href="{site_url}landing/design/ie9.css" media="all">
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="{site_url}design/style-landing-ie.css" media="all">
+    <![endif]-->
+    <script src="{site_url}landing/scripts/modernizr.js"></script>
+    <!-- Global site tag (gtag.js) - Google Ads: 882019083 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-882019083"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-882019083'); </script>
+    <style>
+    {if "{theme_color_landing}" != ""}.theme-color{color:{theme_color_landing}} hr{border:{theme_color_landing} 0.5px solid}
+    {if:else}.theme-color{color:#077b3a}hr{border:#077b3a 0.5px solid}{/if}
+    #top{background-image:url({background_image_landing})}</style>
+</head>
+<body>
+  <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+  <div id="top">
+      <div class="container">
+           <div id="logo"><a href="/"><img src="{site_url}design/leadpages/logo.png" alt="Zones Landscape Design and Maintenance"></a></div>
+           <a href="#" type="tel" class="phonenumber"><span>0800 30 10 20</span></a>
+           <hr/>
+           <h1 class="theme-color">{page_h1_heading_landing}</h1>
+           <a class="nearyou-link" href="#nearyou"><em>{near_you_link_text_landing}</em></a>
+           {if "{page_sub_heading_landing}" != ""}
+           <div id="sub-heading">{page_sub_heading_landing}</div>
+           {/if}
+           <div class="theme-color">LET'S DISCUSS OPTIONS AND IDEAS FOR YOUR {page_keyword_landing} PROJECT</div>
+           <a class="btn btn-orange" role="button" href="#popup-modal" data-toggle="modal">ENQUIRE NOW TO GET STARTED</a>
+           <div class="small"><em>Scroll down to find out more</em></div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <img src="{site_url}design/leadpages/users-icon.png" alt="users"/>
+          <div class="title">BETTER VALUE, BETTER EXPERIENCE</div>
+          <div class="content">Most landscapers and tradespeople focus on one or two specialist areas, such as concreting, paving or planting. At Zones we provide a total solution across all trades to deliver a better experience that is faster, more efficient and better value for money.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <img src="{site_url}design/leadpages/mail.png" alt="users"/>
+          <div class="title">COMMUNICATION</div>
+          <div class="content">Even the simplest landscaping project involves managing information, costs, people, and timetables. With Zones, this project management is part-and-parcel of our service. You will be aware of all the aspects of your landscaping project at every step of the way.</div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <img src="{site_url}design/leadpages/management.png" alt="users"/>
+            <div class="title">COMPETITIVE PRICES</div>
+            <div class="content">Zones negotiates the best rates from key suppliers in the landscaping industry. We select and work with a large team of passionate landscapers and tradespeople. Because we offer ongoing work for them, we are able to secure labour at rates far better than a home owner with a one-off project.</div>
+          </div>
+      </div>
+  </div>
+  <div class="gray">
+      <div class="quote">
+        <div class="title">WHAT PEOPLE ARE SAYING...</div>
+        <div class="content"><em>"Zones Landscaping Specialists were very easy to deal with, they listened to our needs and were able to accommodate to those needs within budget. Good communication was experienced at all times. We have no hesitation in recommending."
+          </em><br/><br/>
+            - Cath Boughtwood</div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="form-heading">Arrange a free one-hour consultation to discuss options and ideas for your {page_keyword_landing} project</div>
+      <div class="formholder">
+        <form action="/forms/enquiry-stage1.php" method="post" id="enquiry-getintouch-rightbar" class="clearfix">
+            <p class="instructions-rh"></p>
+            <!--first+last name-->
+            <div class="formrow">
+              <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                <label class="labelname">First name</label>
+                <input type="text" class="form-control" placeholder="Enter first name" name="firstName" id="firstName-rh" data-prefix="rh">
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                <label class="labelname">Last name</label>
+                <input type="text" class="form-control" placeholder="Enter last name"  name="lastName" id="lastName-rh" data-prefix="rh" >
+              </div>
+            </div>
+            <!--/first+last name-->
+        
+            <!--email #-->
+            <div class="formrow">
+              <div class="col-md-12 input-label-wrapper">
+                <label class="labelname">Email address</label>
+                <input type="text" class="form-control" placeholder="Enter email address" name="email" id="email-rh" data-prefix="rh">
+              </div>
+            </div>
+            <!--/email #-->
+        
+            <!--phone # + Preferred time #-->
+            <div class="formrow">
+              <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper phone-number-stage1">
+                <label class="labelname">Phone number</label>
+                <input type="text" class="form-control" placeholder="Enter phone number" name="mobile" id="mobile-rh" data-prefix="rh">
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                <label class="labelname">Preferred time to be contacted</label>
+              <select id="select-preftime" name="preftime" class="apply-fancy form-control">
+                <option value="Don't mind">Don't mind</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+              </select>
+              </div>
+            </div>
+            <!--/phone # + Preferred time # #-->
+        
+            <!--enquiry-->
+            <div class="formrow">
+                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                  <label class="labelname">Enquiry</label>
+                  <textarea rows=5 class="form-control col-xs-12" name="enquiry" id="enquiry-rh" placeholder="Enter message / enquiry"></textarea>
+                </div>         
+            </div>
+            <!--/enquiry-->
+        
+            <div class="formrow">
+                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                  
+                  <input type="checkbox" name="privacy" id="privacy-rh" data-prefix="rh" checked>
+                    <label for="privacy-rh"> I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy</a></label>
+                </div>        
+            </div>
+            <div class="formrow">
+                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                  <input type="checkbox" name="subscribe"  id="subscribe-rh" checked>
+                    <label for="subscribe-rh"> I consent to receiving advice and information relating to home improvements.</label>
+                </div>      
+            </div>
+            <div class="formrow">
+              <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                <div class="g-recaptcha"></div>
+                </div>
+            </div>
+            <fieldset class="clearfix form-website">
+            <legend></legend>
+            <label id="c-enq-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" autocomplete="off" /></label>
+            </fieldset>
+
+            <input type="hidden" name="formpage" id="formpage-rh"/>
+            <!-- Country -->
+             <input type="hidden" name="country" value="New Zealand" id="country-rh"/>
+        
+            <!--submit buttons-->
+            <div class="formrow">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-primary btn-block" id="submit" onclick="submitLandingEnquire('Contact Enquiry One');">Submit Enquiry</button>
+              </div>
+            </div>
+            <!--submit buttons--> 
+        
+          </form>
+          <div id="prog1" class="progress" style="display: none;"></div>
+        </div>
+  </div>
+  <div class="gray">
+      <div class="intro">
+        <div class="title">{intro_title_landing}</div>
+        <div class="content"><em>{intro_content_landing}</em></div>
+      </div>
+  </div>    
+
+      {image_block_landing}
+      <div class="container" id="image-block">
+			   <img data-src="{image}" alt="{title}"{if "{align}" == "Left"} class="fleft lazy-load" {if:else} class="fright lazy-load" {/if} />
+		       <div class="fleft">		
+			     <h1>{title}</h1>
+           {if "{sub-title}" != ""}<div class="sub-heading">{sub-title}</div>{/if}
+           {content}
+           <a class="btn btn-blue" role="button" href="#popup-modal" data-toggle="modal">{button-text}</a>
+           </div>
+      </div>
+      {/image_block_landing}
+    <div class="gray">
+      <div class="container" id="nearyou">
+        <div class="form-heading">Zones have landscaping specialists in your area</div>
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="region col-2 nz-north">
+                  <div class="region-cat">North Island</div>
+                  <ul class="region-list">
+                    <li>Auckland</li><li>Tauranga</li><li>Franklin</li><li>Waikato</li><li>Whangarei</li><li>North Shore</li><li>Waitakere</li><li>Rodney</li><li>Wellington</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="region col-2">
+                      <div class="region-cat">South Island</div>
+                      <ul class="region-list">
+                        <li>Queenstown</li><li>Christchurch</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+        <a class="btn btn-blue btn-fullwidth" role="button" href="#popup-modal" data-toggle="modal">ENQUIRE NOW TO ARRANGE A FREE {page_keyword_landing} CONSULTATION</a>
+         
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- <div id="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EImv2-dp4NE" frameborder="0" allowfullscreen></iframe>
+      </div> -->
+        <div class="video-intro">Zones are a one stop shop. Our services start with a no obligation on site consultation. If both parties agree, then we will provide a design to fit your budget. When the design is complete Zones will then organize and project manage the entire landscape process, from turning the first sod to hosing down the driveway. When your new outdoor project is complete our maintenance team can keep it in great shape for you. 
+        </div>
+     </div>
+     <div class="gray">
+        <div class="intro">
+          <div class="title">TRUST THE PROFESSIONALS</div>
+        </div>
+    </div>  
+    <div class="container">
+        <div class="form-heading">Arrange a free one-hour consultation to discuss options and ideas for your {page_keyword_landing} project</div>
+        <div class="formholder">
+          <form action="/forms/enquiry-stage1.php" method="post" id="contact-enquiry" class="clearfix">
+              <p class="instructions-ce"></p>
+              <!--first+last name-->
+              <div class="formrow">
+                <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                  <label class="labelname">First name</label>
+                  <input type="text" class="form-control" placeholder="Enter first name" name="firstName" id="firstName-ce" data-prefix="ce">
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                  <label class="labelname">Last name</label>
+                  <input type="text" class="form-control" placeholder="Enter last name"  name="lastName" id="lastName-ce" data-prefix="ce" >
+                </div>
+              </div>
+              <!--/first+last name-->
+          
+              <!--email #-->
+              <div class="formrow">
+                <div class="col-md-12 input-label-wrapper">
+                  <label class="labelname">Email address</label>
+                  <input type="text" class="form-control" placeholder="Enter email address" name="email" id="email-ce" data-prefix="ce">
+                </div>
+              </div>
+              <!--/email #-->
+          
+              <!--phone # + Preferred time #-->
+              <div class="formrow">
+                <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper phone-number-stage1">
+                  <label class="labelname">Phone number</label>
+                  <input type="text" class="form-control" placeholder="Enter phone number" name="mobile" id="mobile-ce" data-prefix="ce">
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                  <label class="labelname">Preferred time to be contacted</label>
+                <select id="select-preftime" name="preftime" class="apply-fancy form-control">
+                  <option value="Don't mind">Don't mind</option>
+                  <option value="Morning">Morning</option>
+                  <option value="Afternoon">Afternoon</option>
+                  <option value="Evening">Evening</option>
+                </select>
+                </div>
+              </div>
+              <!--/phone # + Preferred time # #-->
+          
+              <!--enquiry-->
+              <div class="formrow">
+                  <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                    <label class="labelname">Enquiry</label>
+                    <textarea rows=5 class="form-control col-xs-12" name="enquiry" id="enquiry-ce" placeholder="Enter message / enquiry"></textarea>
+                  </div>         
+              </div>
+              <!--/enquiry-->
+          
+              <div class="formrow">
+                  <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                    
+                    <input type="checkbox" name="privacy" id="privacy-ce" data-prefix="ce" checked>
+                      <label for="privacy-ce"> I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy</a></label>
+                  </div>        
+              </div>
+              <div class="formrow">
+                  <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                    <input type="checkbox" name="subscribe"  id="subscribe-ce" checked>
+                      <label for="subscribe-ce"> I consent to receiving advice and information relating to home improvements.</label>
+                  </div>      
+              </div>
+              <div class="formrow">
+                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                  <div class="g-recaptcha"></div>
+                  </div>
+              </div>
+              <fieldset class="clearfix form-website">
+              <legend></legend>
+              <label id="c-enq-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" autocomplete="off" /></label>
+              </fieldset>
+            
+              <input type="hidden" name="formpage" id="formpage-ce"/>
+              <!-- Country -->
+               <input type="hidden" name="country" value="New Zealand" id="country-ce"/>
+          
+              <!--submit buttons-->
+              <div class="formrow">
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-primary btn-block" id="submit" onclick="submitLandingEnquire('Contact Enquiry');">Submit Enquiry</button>
+                </div>
+              </div>
+              <!--submit buttons--> 
+          
+            </form>
+            <div id="prog" class="progress" style="display: none;"></div>
+          </div>
+    </div>  
+
+    {if "{bullet_point_block:total_rows}" > 0}
+    <div class="gray">
+        <div class="container" id="bullet-point-block">
+            <div class="block-heading">{bullet_point_block_heading}</div>
+            <ul>
+                {bullet_point_block}<li>{bullet-point}</li>{/bullet_point_block}
+            </ul>
+            <a class="btn btn-blue btn-fullwidth" role="button" href="#popup-modal" data-toggle="modal">REQUEST A FREE NO-OBLIGATION ONE HOUR CONSULTATION</a>
+        </div>
+    </div>
+    {/if}
+
+    <div class="footer">
+        © Copyright Zones Landscaping Specialists. All Rights Reserved. 
+        <ul class="clearfix"><li><a class="facebook" href="javascript:sharePage('facebook')"><i class="fa fa-facebook-official"></i></a></li><li><a class="google-plus" href="javascript:sharePage('googleplus')"><i class="fa fa-google-plus"></i></a></li><li><a class="pinterest" href="javascript:sharePage('pinterest')"><i class="fa fa-pinterest"></i></a></li><li><a class="twitter" href="javascript:sharePage('twitter')"><i class="fa fa-twitter"></i></a></li><li><a class="linkedin" href="javascript:sharePage('linkedin')"><i class="fa fa-linkedin"></i></a></li></ul>
+    </div>
+
+
+
+<!-- pop-up form -->
+<div id="popup-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Get In Touch Today</h3><h4>Let's discuss options and ideas for your {page_keyword_landing} project</h4>
+            </div>
+            <div class="modal-body">
+                <form action="/forms/enquiry-stage1.php" method="post" id="enquiryform-pop" class="clearfix">
+                    <p class="instructions-pop"></p>
+                    <!--first+last name-->
+                    <div class="formrow">
+                      <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                        <label class="labelname">First name</label>
+                        <input type="text" class="form-control" placeholder="Enter first name" name="firstName" id="firstName-pop" data-prefix="pop">
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                        <label class="labelname">Last name</label>
+                        <input type="text" class="form-control" placeholder="Enter last name"  name="lastName" id="lastName-pop" data-prefix="pop">
+                      </div>
+                    </div>
+                    <!--/first+last name-->
+                  
+                    <!--email #-->
+                    <div class="formrow">
+                      <div class="col-md-12 input-label-wrapper">
+                        <label class="labelname">Email address</label>
+                        <input type="text" class="form-control" placeholder="Enter email address" name="email" id="email-pop" data-prefix="pop">
+                      </div>
+                    </div>
+                    <!--/email #-->
+                  
+                    <!--phone # + Preferred time #-->
+                    <div class="formrow">
+                      <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper phone-number-stage1">
+                        <label class="labelname">Phone number</label>
+                        <input type="text" class="form-control" placeholder="Enter phone number" name="mobile" id="mobile-pop" data-prefix="pop">
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                        <label class="labelname">Preferred time to be contacted</label>
+                      <select id="select-preftime" name="preftime" class="apply-fancy form-control">
+                        <option value="Don't mind">Don't mind</option>
+                        <option value="Morning">Morning</option>
+                        <option value="Afternoon">Afternoon</option>
+                        <option value="Evening">Evening</option>
+                      </select>
+                      </div>
+                    </div>
+                    <!--/phone # + Preferred time # #-->
+                  
+                    <!--enquiry-->
+                    <div class="formrow">
+                        <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                          <label class="labelname">Enquiry</label>
+                          <textarea rows=5 class="form-control col-xs-12" name="enquiry" id="enquiry-pop" placeholder="Enter message / enquiry"></textarea>
+                        </div>         
+                    </div>
+                    <!--/enquiry-->
+                  
+                    <div class="formrow">
+                        <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                          
+                          <input type="checkbox" name="privacy" id="privacy-pop" data-prefix="pop" checked>
+                            <label for="privacy-pop"> I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy</a></label>
+                        </div>        
+                    </div>
+                    <div class="formrow">
+                        <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                          <input type="checkbox" name="subscribe" id="subscribe-pop" checked>
+                            <label for="subscribe-pop"> I consent to receiving advice and information relating to home improvements.</label>
+                        </div>      
+                    </div>
+                    <div class="formrow">
+                      <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                        <div class="g-recaptcha"></div>
+                        </div>
+                    </div>
+                    <fieldset class="clearfix form-website">
+                    <legend></legend>
+                    <label id="c-enq-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" autocomplete="off" /></label>
+                    </fieldset>
+        
+                    <input type="hidden" name="formpage" id="formpage-pop"/>
+                    <!-- Country -->
+                     <input type="hidden" name="country" value="New Zealand" id="country-pop" />
+                   
+                    <!--submit buttons-->
+                    <div class="formrow">
+                      <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-block" id="submit" onclick="submitLandingEnquire('Enquiry Pop');">Submit Enquiry</button>
+                      </div>
+                    </div>
+                    <!--submit buttons--> 
+                  </form>
+                  <div id="prog-pop" class="progress" style="display: none;"></div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/exp:channel:entries}
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1934778773457234'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1934778773457234&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- DO NOT MODIFY -->
+  <!-- End Facebook Pixel Code -->
+  <!-- Delacon Call Tracking Code -->
+  <script src="//vxml4.plavxml.com/sited/ref/ctrk/1004-53460" async></script>
+  <!-- End Delacon Call Tracking Code -->
+<!--[if lt IE 9]>
+<script src="{site_url}landing/scripts/respond.min.js"></script>
+<![endif]-->
+<script src="{site_url}landing/scripts/main.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-10321903-7', 'auto');
+    ga('require', 'GTM-TKQT9N7');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  
+  </script>
+  <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5625535"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5625535&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+  
+  <script type="text/javascript">
+    var CaptchaCallback = function() {
+      $('.g-recaptcha').each(function(index, el) {
+        grecaptcha.render(el, {'sitekey' : '6Le4MFwUAAAAAC_xQ5nTR3GC8S6e4qKds-C4Yfkr'});
+      });
+    };
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script> 
+<script type='text/javascript'>
+  function sharePage(socialMedia){   
+   if(socialMedia === "facebook"){
+     var url = "http://www.facebook.com/sharer.php?u=";
+   }else if(socialMedia === "twitter"){
+     var url = "https://twitter.com/share?url=";
+   }else if(socialMedia === "googleplus"){
+     var url = "https://plus.google.com/share?url=";
+   }else if(socialMedia === "linkedin"){
+     var url = "http://www.linkedin.com/shareArticle?mini=true&amp;url=";
+   }else if(socialMedia === "pinterest"){
+     var e=document.createElement('script');
+     e.setAttribute('type','text/javascript');
+     e.setAttribute('charset','UTF-8');
+     e.setAttribute('src','https://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+     document.body.appendChild(e);
+   }
+      if(socialMedia != "pinterest"){
+       window.open(url+window.location.href, '_blank', 'toolbar=0,location=0,menubar=0');
+       }
+}
+
+$(window).load(function(){if(typeof jQuery==='undefined'){throw new Error('Bootstrap\'s JavaScript requires jQuery')}+function($){'use strict';var version=$.fn.jquery.split(' ')[0].split('.')
+if((version[0]<2&&version[1]<9)||(version[0]==1&&version[1]==9&&version[2]<1)){throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')}}(jQuery);+function($){'use strict';var Modal=function(element,options){this.options=options
+this.$body=$(document.body)
+this.$element=$(element)
+this.$dialog=this.$element.find('.modal-dialog')
+this.$backdrop=null
+this.isShown=null
+this.originalBodyPad=null
+this.scrollbarWidth=0
+this.ignoreBackdropClick=!1
+if(this.options.remote){this.$element.find('.modal-content').load(this.options.remote,$.proxy(function(){this.$element.trigger('loaded.bs.modal')},this))}}
+Modal.VERSION='3.3.4'
+Modal.TRANSITION_DURATION=300
+Modal.BACKDROP_TRANSITION_DURATION=150
+Modal.DEFAULTS={backdrop:!0,keyboard:!0,show:!0}
+Modal.prototype.toggle=function(_relatedTarget){return this.isShown?this.hide():this.show(_relatedTarget)}
+Modal.prototype.show=function(_relatedTarget){var that=this
+var e=$.Event('show.bs.modal',{relatedTarget:_relatedTarget})
+this.$element.trigger(e)
+if(this.isShown||e.isDefaultPrevented())return
+this.isShown=!0
+this.checkScrollbar()
+this.setScrollbar()
+this.$body.addClass('modal-open')
+this.escape()
+this.resize()
+this.$element.on('click.dismiss.bs.modal','[data-dismiss="modal"]',$.proxy(this.hide,this))
+this.$dialog.on('mousedown.dismiss.bs.modal',function(){that.$element.one('mouseup.dismiss.bs.modal',function(e){if($(e.target).is(that.$element))that.ignoreBackdropClick=!0})})
+this.backdrop(function(){var transition=$.support.transition&&that.$element.hasClass('fade')
+if(!that.$element.parent().length){that.$element.appendTo(that.$body)}
+that.$element.show().scrollTop(0)
+that.adjustDialog()
+if(transition){that.$element[0].offsetWidth}
+that.$element.addClass('in').attr('aria-hidden',!1)
+that.enforceFocus()
+var e=$.Event('shown.bs.modal',{relatedTarget:_relatedTarget})
+transition?that.$dialog.one('bsTransitionEnd',function(){that.$element.trigger('focus').trigger(e)}).emulateTransitionEnd(Modal.TRANSITION_DURATION):that.$element.trigger('focus').trigger(e)})}
+Modal.prototype.hide=function(e){if(e)e.preventDefault()
+e=$.Event('hide.bs.modal')
+this.$element.trigger(e)
+if(!this.isShown||e.isDefaultPrevented())return
+this.isShown=!1
+this.escape()
+this.resize()
+$(document).off('focusin.bs.modal')
+this.$element.removeClass('in').attr('aria-hidden',!0).off('click.dismiss.bs.modal').off('mouseup.dismiss.bs.modal')
+this.$dialog.off('mousedown.dismiss.bs.modal')
+$.support.transition&&this.$element.hasClass('fade')?this.$element.one('bsTransitionEnd',$.proxy(this.hideModal,this)).emulateTransitionEnd(Modal.TRANSITION_DURATION):this.hideModal()}
+Modal.prototype.enforceFocus=function(){$(document).off('focusin.bs.modal').on('focusin.bs.modal',$.proxy(function(e){if(this.$element[0]!==e.target&&!this.$element.has(e.target).length){this.$element.trigger('focus')}},this))}
+Modal.prototype.escape=function(){if(this.isShown&&this.options.keyboard){this.$element.on('keydown.dismiss.bs.modal',$.proxy(function(e){e.which==27&&this.hide()},this))}else if(!this.isShown){this.$element.off('keydown.dismiss.bs.modal')}}
+Modal.prototype.resize=function(){if(this.isShown){$(window).on('resize.bs.modal',$.proxy(this.handleUpdate,this))}else{$(window).off('resize.bs.modal')}}
+Modal.prototype.hideModal=function(){var that=this
+this.$element.hide()
+this.backdrop(function(){that.$body.removeClass('modal-open')
+that.resetAdjustments()
+that.resetScrollbar()
+that.$element.trigger('hidden.bs.modal')})}
+Modal.prototype.removeBackdrop=function(){this.$backdrop&&this.$backdrop.remove()
+this.$backdrop=null}
+Modal.prototype.backdrop=function(callback){var that=this
+var animate=this.$element.hasClass('fade')?'fade':''
+if(this.isShown&&this.options.backdrop){var doAnimate=$.support.transition&&animate
+this.$backdrop=$('<div class="modal-backdrop '+animate+'" />').appendTo(this.$body)
+this.$element.on('click.dismiss.bs.modal',$.proxy(function(e){if(this.ignoreBackdropClick){this.ignoreBackdropClick=!1
+return}
+if(e.target!==e.currentTarget)return
+this.options.backdrop=='static'?this.$element[0].focus():this.hide()},this))
+if(doAnimate)this.$backdrop[0].offsetWidth
+this.$backdrop.addClass('in')
+if(!callback)return
+doAnimate?this.$backdrop.one('bsTransitionEnd',callback).emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION):callback()}else if(!this.isShown&&this.$backdrop){this.$backdrop.removeClass('in')
+var callbackRemove=function(){that.removeBackdrop()
+callback&&callback()}
+$.support.transition&&this.$element.hasClass('fade')?this.$backdrop.one('bsTransitionEnd',callbackRemove).emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION):callbackRemove()}else if(callback){callback()}}
+Modal.prototype.handleUpdate=function(){this.adjustDialog()}
+Modal.prototype.adjustDialog=function(){var modalIsOverflowing=this.$element[0].scrollHeight>document.documentElement.clientHeight
+this.$element.css({paddingLeft:!this.bodyIsOverflowing&&modalIsOverflowing?this.scrollbarWidth:'',paddingRight:this.bodyIsOverflowing&&!modalIsOverflowing?this.scrollbarWidth:''})}
+Modal.prototype.resetAdjustments=function(){this.$element.css({paddingLeft:'',paddingRight:''})}
+Modal.prototype.checkScrollbar=function(){var fullWindowWidth=window.innerWidth
+if(!fullWindowWidth){var documentElementRect=document.documentElement.getBoundingClientRect()
+fullWindowWidth=documentElementRect.right-Math.abs(documentElementRect.left)}
+this.bodyIsOverflowing=document.body.clientWidth<fullWindowWidth
+this.scrollbarWidth=this.measureScrollbar()}
+Modal.prototype.setScrollbar=function(){var bodyPad=parseInt((this.$body.css('padding-right')||0),10)
+this.originalBodyPad=document.body.style.paddingRight||''
+if(this.bodyIsOverflowing)this.$body.css('padding-right',bodyPad+this.scrollbarWidth)}
+Modal.prototype.resetScrollbar=function(){this.$body.css('padding-right',this.originalBodyPad)}
+Modal.prototype.measureScrollbar=function(){var scrollDiv=document.createElement('div')
+scrollDiv.className='modal-scrollbar-measure'
+this.$body.append(scrollDiv)
+var scrollbarWidth=scrollDiv.offsetWidth-scrollDiv.clientWidth
+this.$body[0].removeChild(scrollDiv)
+return scrollbarWidth}
+function Plugin(option,_relatedTarget){return this.each(function(){var $this=$(this)
+var data=$this.data('bs.modal')
+var options=$.extend({},Modal.DEFAULTS,$this.data(),typeof option=='object'&&option)
+if(!data)$this.data('bs.modal',(data=new Modal(this,options)))
+if(typeof option=='string')data[option](_relatedTarget)
+else if(options.show)data.show(_relatedTarget)})}
+var old=$.fn.modal
+$.fn.modal=Plugin
+$.fn.modal.Constructor=Modal
+$.fn.modal.noConflict=function(){$.fn.modal=old
+return this}
+$(document).on('click.bs.modal.data-api','[data-toggle="modal"]',function(e){var $this=$(this)
+var href=$this.attr('href')
+var $target=$($this.attr('data-target')||(href&&href.replace(/.*(?=#[^\s]+$)/,'')))
+var option=$target.data('bs.modal')?'toggle':$.extend({remote:!/#/.test(href)&&href},$target.data(),$this.data())
+if($this.is('a'))e.preventDefault()
+$target.one('show.bs.modal',function(showEvent){if(showEvent.isDefaultPrevented())return
+$target.one('hidden.bs.modal',function(){$this.is(':visible')&&$this.trigger('focus')})})
+Plugin.call($target,option,this)})}(jQuery)})
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+    var imgs = document.querySelectorAll('img');
+    var lazyload = function(){
+      var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+      var winTop = window.innerHeight;
+      for(var i=0;i < imgs.length;i++){
+        if(imgs[i].offsetTop < scrollTop + winTop && imgs[i].src == "" ){
+          imgs[i].src = imgs[i].getAttribute('data-src');
+          imgs[i].classList.remove("lazy-load");
+        }
+      }
+    }
+    function throttle(method,delay){
+      var timer = null;
+      return function(){
+        var context = this, args=arguments;
+        clearTimeout(timer);
+        timer=setTimeout(function(){
+          method.apply(context,args);
+        },delay);
+      }
+    }
+    window.onscroll = throttle(lazyload,200);
+  </script>
+</body>
+</html>
+

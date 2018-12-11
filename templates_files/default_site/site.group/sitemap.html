@@ -1,0 +1,95 @@
+{snippet-doctype}
+<title>Sitemap | Zones</title>
+<script type="text/javascript" language="javascript">
+var navlevels = "none";
+</script>
+{snippet-callfiles-new}
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+<div id="sitebanner" class="clearfix">
+<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+
+<ul id="site-main" class="fleft">
+{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+<li><a href="{link}" class="button">{text}</a></li>
+{/exp:navee:custom}
+</ul>	
+
+{snippet-bannersearch}
+</div>
+<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+<div class="inner">	
+<section id="content" role="main">
+<h1>Sitemap</h1>
+
+<div class="clearfix list-tools top"></div>
+
+<div id="sitemaplinks" class="clearfix">
+<div class="clearfix">
+<section>
+<h2><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></h2>
+<h3>What we do</h3>
+<ul>
+{exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+<li><a href="{link}">{text}</a></li>
+{/exp:navee:custom}
+</ul>
+<h3><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Landscaping services</a></h3>
+<ul>
+{exp:channel:categories category_group="1" style="linear" show="not 13"}
+<li><a href="{site_url}{category_url_title}/">{category_name}</a></li>
+{/exp:channel:categories}
+</ul>
+</section>
+
+<section>
+<h2 class="nosub"><a href="{site_url}landscaping-ideas/">Advice</a></h2>
+<ul>
+{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+<li><a href="{link}">{text}</a></li>
+{/exp:navee:custom}
+</ul>
+<h2 class="nosub">Clippings</h2>
+<ul>
+{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+<li><a href="{link}">{text}</a></li>
+{/exp:navee:custom}
+</ul>
+</section>
+
+<section>
+<h2 class="nosub"><a href="{site_url}landscape-designers/">About us</a></h2>
+<ul>
+{exp:navee:custom nav_title="AboutL2" wrap_type="none"}
+<li><a href="{link}">{text}</a></li>
+{/exp:navee:custom}
+</ul>
+<h2 class="nosub"><a href="{site_url}contact-us/">Make an enquiry</a></h2>
+<ul>
+{exp:navee:custom nav_title="GetInTouchL2" wrap_type="none"}
+{if "{link}" != "/contact-us/job-opportunities/"}
+<li><a href="{link}">{text}</a></li>
+{/if}
+{/exp:navee:custom}
+</ul>
+</section>
+</div>
+</div>
+</section>
+
+<div class="sep footersep"></div>	
+
+<aside role="complementary" id="associations" class="clearfix">
+<ul id="partner-logos">
+{exp:channel:entries channel="partner_logo" dynamic="no" disable="member_data|pagination|categories"}
+<li>{if "{logo_link}" != ""}<a href="{logo_link}" target="_blank">{/if}<img src="{logo_image}" alt="{title}" />{if "{logo_link}" != ""}</a>{/if}</li>
+{/exp:channel:entries}
+</ul>
+</aside>
+</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+{embed="includes/footer-new"}

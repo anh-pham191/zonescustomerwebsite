@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" language="javascript">
+$("input.uniform-stylespop").uniform();
+$('.apply-fancy').fancySelect();
+$('.apply-fancywide').fancySelect({includeBlank: true});
+$(function() {
+// Rightbar Get in touch form part 2
+$("#right-getintouch-2").validate({	
+    submitHandler: function(form) {
+	  $('#prog2').fadeIn(100);
+      $.ajax({
+        url: $(form).attr("action"),
+        type: "POST",
+        data: $(form).serialize(),
+        success: function(response) {
+          if (response.match(/Invalid/i)) {
+              //Display try again message above form
+            $('#prog2').fadeOut(200);
+			$('.instructions').html('There was an error, please try again.').css({'color':'red'});
+          } else if (response.match(/Unsuccessful/i)) {
+			//Display failure message in place of form
+            $('#prog2').fadeOut(200);
+			$('#theformarea-rh-extended').html('<h2>Your form could not be submitted. Please try again later.</h2><p><a href="#" onclick="$(\'#form2\').fadeOut(1500);return false;">Close</a></p>');
+          } else {
+            $('#form2').css('display','none');
+			$('#form1').css('display','block');
+			ga('send', 'event', 'Enquiry submitted', 'Submit additional info', '0002 Zones Contact - Landing page Right hand side get in touch stage 2');			
+          }
+        },
+        error: function() {
+          //Display failure message in place of form
+          $('#prog2').fadeOut(200);
+		  $('#theformarea-rh-extended').html('<h2>Your form could not be submitted. Please try again later.</h2><p><a href="#" onclick="$(\'#form2\').fadeOut(1500);return false;">Close</a></p>');
+        }
+      });
+    }
+  });
+
+});
+
+</script>
+<title>Get in touch | Zones Landscaping Specialists</title>
+</head>
+<body>
+<div id="theformarea-rh-extended">
+<div class="clearfix">
+<h2 class="fleft">Would you like to provide more information?</h2>
+<form class="fleft notmobile" style="width: 200px;">
+<label class="radiostyle" style="margin-right: 16px;"><input type="radio" class="uniform-stylespop" id="part2-yes" name="part2-complete" value="Yes" checked="checked" /> Yes</label> 
+<label class="radiostyle" onclick="$('#form2').css('display','none');$('#form1').css('display','block');"><input type="radio" class="uniform-stylespop" id="part2-no" name="part2-complete" value="No" /> No</label> 
+</form>
+</div>
+<p class="instructions">Thank-you for your enquiry, to enable us to process your enquiry more efficiently, <br />would you like to provide more details about your landscaping project?</p>
+<form class="fleft justmobile" style="width: 200px;">
+<label class="radiostyle" style="margin-right: 16px;"><input type="radio" class="uniform-stylespop" id="part2m-yes" name="part2m-complete" value="Yes" checked="checked" /> Yes</label> 
+<label class="radiostyle" onclick="$('#form2').css('display','none');$('#form1').css('display','block');"><input type="radio" class="uniform-stylespop" id="part2m-no" name="part2m-complete" value="No" /> No</label> 
+</form> 
+<form action="/forms/getintouch-part2.php" method="post" id="right-getintouch-2" class="clearfix">
+<fieldset class="fleft col1">
+<legend></legend>
+<fieldset class="clearfix">
+<label id="e-enq-firstname" class="input halfwidth firstname"><span class="hide">First name</span> <input type="text" name="ep-enq-firstname" class="required" value="<?php if(isset($_COOKIE['gfirstnamestored'])){echo $_COOKIE['gfirstnamestored'];} ?>" placeholder="First name" /></label>
+<label id="e-enq-lastname" class="input halfwidth lastname"><span class="hide">Last name</span> <input type="text" name="ep-enq-lastname" value="<?php if(isset($_COOKIE['glastnamestored'])){echo $_COOKIE['glastnamestored'];} ?>" placeholder="Last name" /></label>
+</fieldset>
+<label id="e-enq-email" class="input"><span class="hide">Email address</span> <input type="email" name="ep-enq-email" class="email required" value="<?php if(isset($_COOKIE['gemailstored'])){echo $_COOKIE['gemailstored'];} ?>" placeholder="Email address" /></label>
+<label id="e-enq-tel" class="input"><span class="hide">Phone number</span> <input type="text" name="ep-enq-tel" value="<?php if(isset($_COOKIE['gphonestored'])){echo $_COOKIE['gphonestored'];} ?>" placeholder="Phone number" /></label>
+<label id="e-enq-enquiry" class="input"><span class="hide">Enquiry</span> <textarea rows="2" name="ep-enq-enquiry" placeholder="Enquiry"></textarea></label>
+</fieldset>
+<fieldset class="fleft col2">
+<legend></legend>
+<label id="e-enq-address" class="input"><span class="hide">Street address</span> <input type="text" name="ep-enq-address" placeholder="Street address" /></label>
+<label id="e-enq-suburb" class="input"><span class="hide">Suburb</span> <input type="text" name="ep-enq-suburb" placeholder="Suburb" /></label>
+<label id="e-enq-city" class="input"><span class="hide">City</span> <input type="text" name="ep-enq-city" placeholder="City" /></label>
+<label id="e-enq-code" class="input"><span class="hide">Code</span> <input type="text" name="ep-enq-postcode" placeholder="Code" /></label>
+<label id="e-enq-budget" class="input"><span class="hide">Budget (optional)</span> <input type="text" name="ep-enq-budget" placeholder="Budget (optional)" /></label>
+</fieldset>
+<fieldset class="fleft col3">
+<legend></legend>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-lanscapedesign" name="ep-enq-reno[]" value="Landscape design" /> Landscape design</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-outdoorroom" name="ep-enq-reno[]" value="Outdoor room" /> Outdoor room</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-outdoorkitchen" name="ep-enq-reno[]" value="Outdoor kitchen" /> Outdoor kitchen</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-garden" name="ep-enq-reno[]" value="Gardens and planting" /> Gardens and planting</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-lawn" name="ep-enq-reno[]" value="Lawns and grass" /> Lawns</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-pool" name="ep-enq-reno[]" value="Swimming pool" /> Swimming pool</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-decks" name="ep-enq-reno[]" value="Pergolas and decks" /> Pergolas and decks</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-lighting" name="ep-enq-reno[]" value="Lighting and power" /> Lighting and power</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-driveway" name="ep-enq-reno[]" value="Driveways and paths" /> Driveways and paths</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-rain" name="ep-enq-reno[]" value="Rainwater system" /> Rainwater system</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-retaining" name="ep-enq-reno[]" value="Retaining wall" /> Retaining wall</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-fences" name="ep-enq-reno[]" value="Fencing and gates" /> Fencing and gates</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="p-enq-reno-maintain" name="ep-enq-reno[]" value="Maintenance and cleaning" /> Maintenance and cleaning</label> 
+</fieldset>
+<input type="submit" value="Update" name="send" id="c-enq-submit" class="submitbutton" />
+</form>
+<a id="closelinkleft" href="#" onclick="$('#form2').css('display','none');$('#form1').css('display','block');return false;"><img src="/design/getintouch2-close.png" alt="Close" /></a>
+<a id="closelinkright" href="#" onclick="$('#form2').css('display','none');$('#form1').css('display','block');return false;">close</a>
+<div id="prog2" class="progress" style="display: none;"></div>
+<!-- end #theformarea-rh-extended --></div>
+</body>
+</html>

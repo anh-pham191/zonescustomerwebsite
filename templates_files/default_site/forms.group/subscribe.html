@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-nz">
+<head>
+<meta charset="utf-8">
+<title>Subscribe to Zones's Newsletter | Zones</title>
+</head>
+<body id="top">
+<div id="content-body" class="form enquiry subscribe">
+<div class="theformarea-sub formholder">
+<h1>Subscribe to Zones's Newsletter</h1>
+<p class="instructions-sub">Subscribe to our newsletter to receive inspirational ideas and advice for your home renovations.</p> 
+<form action="/forms/newsletter.php" method="post" id="myform-sub" class="clearfix">
+<div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+          <label class="labelname">First name</label>
+          <input type="text" class="form-control" placeholder="Enter first name" name="n-enq-firstname" id="p-sub-firstname" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)" data-prefix="p-sub" /> 
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+          <label class="labelname">Last name</label>
+          <input type="text" class="form-control" placeholder="Enter last name" name="n-enq-lastname" id="p-sub-lastname" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)" data-prefix="p-sub" />
+        </div>
+</div>
+<div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+          <label class="labelname">Email Address</label>
+          <input type="text" name="n-enq-email" class="form-control" placeholder="Enter email address" id="p-sub-email" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)" data-prefix="p-sub" /> 
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+          <label class="labelname">Phone Number (Optional)</label>
+          <input  type="tel" name="n-enq-tel" class="form-control" placeholder="Enter phone number" id="p-sub-tel" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)" data-prefix="p-sub" />
+        </div>
+</div>
+<div class="row">
+	<div class="col-sm-12 col-xs-12 input-label-wrapper">
+		  <label><input type="checkbox" class="uniform-stylespop" name="p-sub-privacy" id="p-sub-privacy" data-prefix="p-sub" oninput="formValidation(this.dataset.prefix)" onfocus="formValidation(this.dataset.prefix)" checked="checked" /> I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy.</a></label>   
+	 </div>      
+  </div>
+<div class="row">
+	<div class="col-sm-12 col-xs-12 input-label-wrapper">
+		  <label><input type="checkbox" class="uniform-stylespop" name="p-sub-subscribe" checked="checked" /> I consent to receiving advice and information relating to home improvements.</label>
+	</div>      
+</div>
+<div class="row">
+<!--div class="col-md-4">
+<select id="select-country" name="p-sub-country" class="apply-fancy form-control">
+<option value="New Zealand" selected="selected">New Zealand</option>
+<option value="Australia">Australia</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Global">Global</option>
+</select>
+</div-->
+<div class="col-md-12">
+  <button type="button" class="btn btn-primary btn-block" id="c-sub-submit" onclick="submitSubscribe();">Join Mailing List</button>
+
+</div>
+</div>
+</form>
+
+<div class="clearfix formdetails">
+
+</div>
+
+<div id="progbutton" class="progress" style="display: none;"></div>
+</div><div class="adwordstracking"></div>
+</div>
+</body>
+</html>
