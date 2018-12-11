@@ -57,34 +57,18 @@
     </div>
 </nav>
 <div id="wrapper" class="clearfix">
-    <div class="breadcrumbspacer">
+
         <div class="inner">
-            <div class="contextnav-breadcrumb withtoggle notmobile">
-                <nav>
-
-                    <ul class="clearfix">
-                        <li><a href="/what-is-zones/landscape-design-and-garden-maintenance/">Our Services</a></li>
-                        <li><a href="/what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping Services</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <ul id="section-sub" class="textnav clearfix">
+                {exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+                {if text == 'Types of Landscaping Services'}
+                <li class="current"><a href="{link}">{text}</a></li>
+                {if:else}
+                <li><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
         </div>
-    </div>
-    <div class="inner">
-        <ul id="area-icons" class="clearfix new-area-icons">
-            {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
-            {if "{segment_1}" == "{category_url_title}"}
-            <li class="current" style="font-weight: bold;"><a style=" color: #0085c4;" href="{site_url}{category_url_title}/project-management/">{category_description}</a>
-            </li>
-            {if:else}
-            <li style="font-family: Arial;"><a href="{site_url}{category_url_title}/project-management/">{category_description}</a>
-            </li>
-            {/if}
-            {/exp:channel:categories}
-        </ul>
-        <div class="sep"></div>
-    </div><!-- end .inner -->
-
     <!-- mobile nav start -->
     <div class="contextnav-wrapper top justmobile">
         <nav class="contextnav justmobile">
