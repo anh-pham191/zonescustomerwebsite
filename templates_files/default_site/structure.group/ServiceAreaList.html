@@ -2,7 +2,7 @@
 {snippet-doctype}
 <title>{seo_page_header_title_misc} | Zones</title>
 <script type="text/javascript" language="javascript">
-var navlevels = "single";
+    var navlevels = "single";
 </script>
 {snippet-callfiles-new}
 {FirstTimeVisitorEnable}
@@ -33,6 +33,7 @@ var navlevels = "single";
   },
   "description": "{seo_meta_description_misc}"
 }
+
 </script>
 <meta name="description" content="{seo_meta_description_misc}">
 <meta name="keywords" content="{seo_meta_keywords_misc}">
@@ -40,151 +41,154 @@ var navlevels = "single";
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
-
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-<li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>	
-
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+    <div id="sitebanner" class="clearfix">
+        {snippet-topnav-locations}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-work}
+    </div>
+    <div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
-<ul id="section-sub" class="textnav clearfix">
-{exp:navee:custom nav_title="AboutL2" wrap_type="none"}
-{if text == 'Locations'}
-<li class="current"><a href="{link}">{text}</a></li>
-{if:else}
-<li><a href="{link}">{text}</a></li>
-{/if}
-{/exp:navee:custom}
-</ul>
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="AboutL2" wrap_type="none"}
+            {if text == 'Locations'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:else}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
 
-<div class="sep"></div>	
+        <div class="sep"></div>
 
 
-</div>
+    </div>
 
-<!-- end .inner -->
-<div class="contextnav-wrapper top justmobile">
-		<nav class="contextnav justmobile">
-		<ul class="clearfix">
-		{exp:navee:custom nav_title="AboutL2" wrap_type="none"}
-		{if text == 'Locations'}
-		<li class="current"><a href="{link}">Locations</a></li>
-		{if:else}
-		<li><a href="{link}">{text}</a></li>
-		{/if}
-		{/exp:navee:custom}
-		</ul>
-		</nav>
-</div>
-<div class="contextnav-breadcrumb justmobile">
-		<nav>
-		<ul class="clearfix">
-<li><a href="{site_url}landscape-designers/">About us</a></li>
-<li><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
-		</ul>
-		</nav>
-</div>
-<div id="breadcrumb-wrapper" style="display: none;">
-<nav id="breadcrumbline" role="navigation">
-<ul class="clearfix">
-<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
-<li class="parent"><a href="{site_url}landscape-designers/">About us</a></li>
-<li><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
-</ul>
-<div class="sep"></div>
-</nav></div>
+    <!-- end .inner -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
+                {exp:navee:custom nav_title="AboutL2" wrap_type="none"}
+                {if text == 'Locations'}
+                <li class="current"><a href="{link}">Locations</a></li>
+                {if:else}
+                <li><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+    <div class="contextnav-breadcrumb justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="{site_url}landscape-designers/">About us</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="breadcrumb-wrapper" style="display: none;">
+        <nav id="breadcrumbline" role="navigation">
+            <ul class="clearfix">
+                <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home"
+                                                           class="sprite-bread-home" width="47" height="38"/></a></li>
+                <li class="parent"><a href="{site_url}landscape-designers/">About us</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
+            </ul>
+            <div class="sep"></div>
+        </nav>
+    </div>
     <div id="wideslideshow" class="overlay">
         <img src="/design/builders-near-you.jpg" alt="Home Renovation Builder Locations"/>
         <div class="overlay-container">
             <h2 id="top">1,000+ Landscaping Projects Completed All Over New Zealand</h2>
             <h1>Landscaping Specialists Locations</h1>
-            <h2 id="bottom">Zones have landscaping specialists working all around the world - <b>view the list below to contact a specialist near you today.</b></h2>
+            <h2 id="bottom">Zones have landscaping specialists working all around the world - <b>view the list below to
+                contact a specialist near you today.</b></h2>
 
         </div>
     </div>
-<div class="inner">
+    <div class="inner">
 
-    <div class="inner" id="builders">
-        <div class="region-filter row">
-            <div class="col-md-9 col-sm-9 col-xs-12 current-region">
-                Landscaping Specialists<span class="notmobile">, New Zealand</span>
+        <div class="inner" id="builders">
+            <div class="region-filter row">
+                <div class="col-md-9 col-sm-9 col-xs-12 current-region">
+                    Landscaping Specialists<span class="notmobile">, New Zealand</span>
+                </div>
+
             </div>
+            <div class="region-name">New Zealand</div>
+            <ul class="region-list">
+                <li class="region-item">
+                    <div class="main">AUCKLAND</div>
+                    <div class="sub"><a href="/landscape-designers/service-areas/auckland-central">Auckland Central</a>
+                    </div>
+                    <div class="sub"><a href="#">Franklin / Pukekohe</a></div>
+                    <div class="sub"><a href="#/">Manukau</a></div>
+                    <div class="sub"><a href="#">North Shore</a></div>
+                    <div class="sub"><a href="/landscape-designers/service-areas/rodney">Rodney</a></div>
+                </li>
+                <li class="region-item">
+                    <div class="main">WEST AUCKLAND</div>
+                    <div class="sub"><a href="#">Waitakere</a></div>
+                </li>
 
+                <li class="region-item">
+                    <div class="main">BAY OF PLENTY</div>
+                    <div class="sub"><a href="/landscape-designers/service-areas/tauranga">Tauranga</a></div>
+                </li>
+                <li class="region-item">
+                    <div class="main">WAIKATO</div>
+                    <div class="sub"><a href="/landscape-designers/service-areas/waikato">Waikato</a></div>
+                </li>
+                <li class="region-item">
+                    <div class="main">CANTERBURY</div>
+                    <div class="sub"><a href="#">Chirstchurch</a></div>
+                </li>
+                <li class="region-item">
+                    <div class="main">OTAGO</div>
+                    <div class="sub"><a href="/landscape-designers/service-areas/queenstown-wanaka">Queenstown and
+                        Wanaka</a></div>
+                </li>
+                <li class="region-item">
+                    <div class="main">WELLINGTON</div>
+                    <div class="sub"><a href="/landscape-designers/service-areas/wellington/">Wellington</a></div>
+                </li>
+            </ul>
         </div>
-        <div class="region-name">New Zealand</div>
-        <ul class="region-list">
-            <li class="region-item">
-                <div class="main">AUCKLAND</div>
-                <div class="sub"><a href="/landscape-designers/service-areas/auckland-central">Auckland Central</a></div>
-                <div class="sub"><a href="#">Franklin / Pukekohe</a></div>
-                <div class="sub"><a href="#/">Manukau</a></div>
-                <div class="sub"><a href="#">North Shore</a></div>
-                <div class="sub"><a href="/landscape-designers/service-areas/rodney">Rodney</a></div>
-            </li>
-            <li class="region-item">
-                <div class="main">WEST AUCKLAND</div>
-                <div class="sub"><a href="#">Waitakere</a></div>
-            </li>
 
-            <li class="region-item">
-                <div class="main">BAY OF PLENTY</div>
-                <div class="sub"><a href="/landscape-designers/service-areas/tauranga">Tauranga</a></div>
-            </li>
-            <li class="region-item">
-                <div class="main">WAIKATO</div>
-                <div class="sub"><a href="/landscape-designers/service-areas/waikato">Waikato</a></div>
-            </li>
-            <li class="region-item">
-                <div class="main">CANTERBURY</div>
-                <div class="sub"><a href="#">Chirstchurch</a></div>
-            </li>
-            <li class="region-item">
-                <div class="main">OTAGO</div>
-                <div class="sub"><a href="/landscape-designers/service-areas/queenstown-wanaka">Queenstown and Wanaka</a></div>
-            </li>
-            <li class="region-item">
-                <div class="main">WELLINGTON</div>
-                <div class="sub"><a href="/landscape-designers/service-areas/wellington/">Wellington</a></div>
-            </li>
-        </ul>
+        {/exp:channel:entries}
     </div>
+    </section>
 
-{/exp:channel:entries}
-</div>
-</section>
+    <div class="sep footersep"></div>
 
-<div class="sep footersep"></div>	
-
-<aside role="complementary" id="associations" class="clearfix">
-<ul id="partner-logos">
-{exp:channel:entries channel="partner_logo" dynamic="no" disable="member_data|pagination|categories"}
-<li>{if "{logo_link}" != ""}<a href="{logo_link}" target="_blank">{/if}<img class="lazy-load" data-src="{logo_image}" alt="{title}" />{if "{logo_link}" != ""}</a>{/if}</li>
-{/exp:channel:entries}
-</ul>
-</aside>
+    <aside role="complementary" id="associations" class="clearfix">
+        <ul id="partner-logos">
+            {exp:channel:entries channel="partner_logo" dynamic="no" disable="member_data|pagination|categories"}
+            <li>{if "{logo_link}" != ""}<a href="{logo_link}" target="_blank">{/if}<img class="lazy-load"
+                                                                                        data-src="{logo_image}"
+                                                                                        alt="{title}"/>{if "{logo_link}"
+                != ""}</a>{/if}
+            </li>
+            {/exp:channel:entries}
+        </ul>
+    </aside>
 </div><!-- end .inner -->
 </div><!-- end #wrapper -->
 {snippet-sidey}
 <script type="text/javascript">
-  function s_click(obj) {
-      var num = 0;
-      for (var i = 0; i < obj.options.length; i++) {
-          if (obj.options[i].selected == true) {
-              num++;
-          }
-      }
-      if (num == 1) {
-          var url = obj.options[obj.selectedIndex].value;
-          window.location.href = url; 
-      }
-  }
+    function s_click(obj) {
+        var num = 0;
+        for (var i = 0; i < obj.options.length; i++) {
+            if (obj.options[i].selected == true) {
+                num++;
+            }
+        }
+        if (num == 1) {
+            var url = obj.options[obj.selectedIndex].value;
+            window.location.href = url;
+        }
+    }
 </script>
 {embed="includes/footer-peoplelist"}
