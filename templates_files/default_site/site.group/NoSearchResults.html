@@ -1,57 +1,52 @@
 {snippet-doctype}
 <title>No search results | Zones</title>
 <script type="text/javascript" language="javascript">
-var navlevels = "none";
+    var navlevels = "none";
 </script>
 {snippet-callfiles-new}
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+    <div id="sitebanner" class="clearfix">
 
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-<li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>	
-
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+        {snippet-topnav}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-home}
+    </div>
+    <div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">	
-<section id="content" role="main">
-<div class="intro clearfix">
-{snippet-enquirenow-picture}
-<h1>No Search results</h1>
-<div class="search-results">
-{exp:search:simple_form result_page="site/SearchResults" no_result_page="site/NoSearchResults" search_in="entries" status="open" results="8" channel="article|contact_business_opportunity|contact_enquiry|estimate|content_page|community_article" where="word"}
-<fieldset class="clearfix">
-<legend></legend>
-<input type="text" id="list-search" name="keywords" maxlength="100" />
-<button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /></button>
-</fieldset>
-{/exp:search:simple_form}
-</div>
-</div>
+    <div class="inner">
+        <section id="content" role="main">
+            <div class="intro clearfix">
+                {snippet-enquirenow-picture}
+                <h1>No Search results</h1>
+                <div class="search-results">
+                    {exp:search:simple_form result_page="site/SearchResults" no_result_page="site/NoSearchResults" search_in="entries" status="open" results="8" channel="article|contact_business_opportunity|contact_enquiry|estimate|content_page|community_article" where="word"}
+                    <fieldset class="clearfix">
+                        <legend></legend>
+                        <input type="text" id="list-search" name="keywords" maxlength="100" />
+                        <button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /></button>
+                    </fieldset>
+                    {/exp:search:simple_form}
+                </div>
+            </div>
 
-<div class="clearfix list-tools top"><p>Your search for <strong class="highlight">{exp:search:keywords}</strong> found no results.</p></div>
+            <div class="clearfix list-tools top"><p>Your search for <strong class="highlight">{exp:search:keywords}</strong> found no results.</p></div>
 
 
-</section>
+        </section>
 
-<div class="sep footersep"></div>	
+        <div class="sep footersep"></div>
 
-<aside role="complementary" id="associations" class="clearfix">
-<ul id="partner-logos">
-{exp:channel:entries channel="partner_logo" dynamic="no" disable="member_data|pagination|categories"}
-<li>{if "{logo_link}" != ""}<a href="{logo_link}" target="_blank">{/if}<img src="{logo_image}" alt="{title}" />{if "{logo_link}" != ""}</a>{/if}</li>
-{/exp:channel:entries}
-</ul>
-</aside>
-</div><!-- end .inner -->
+        <aside role="complementary" id="associations" class="clearfix">
+            <ul id="partner-logos">
+                {exp:channel:entries channel="partner_logo" dynamic="no" disable="member_data|pagination|categories"}
+                <li>{if "{logo_link}" != ""}<a href="{logo_link}" target="_blank">{/if}<img src="{logo_image}" alt="{title}" />{if "{logo_link}" != ""}</a>{/if}</li>
+                {/exp:channel:entries}
+            </ul>
+        </aside>
+    </div><!-- end .inner -->
 </div><!-- end #wrapper -->
 
 {embed="includes/footer-new"}

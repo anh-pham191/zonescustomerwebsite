@@ -16,7 +16,7 @@ $setCat = $cameFrom;
 ?>
 
 <script type="text/javascript" language="javascript">
-var navlevels = "double";
+    var navlevels = "double";
 </script>
 
 {snippet-callfiles-new}
@@ -73,49 +73,25 @@ var navlevels = "double";
 {/exp:channel:entries}
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+    <div id="sitebanner" class="clearfix">
 
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-      <li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>
-
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+        {snippet-topnav}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-home}
+    </div>
+    <div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
-   <ul id="section-sub" class="textnav clearfix">
-        <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_5}">{region} Landscape Designers</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/">View Other Locations</a></li>
-      </ul>
-      <div class="sep"></div>
-      {exp:channel:entries channel="service_area" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_5}" limit="1" disable="member_data"}
-      <div class="flexnav-outerwrap">
-      <div class="flexnav-innerwrap">
-      <ul id="section-detail" class="textnav clearfix">
-        <li><a href="{site_url}landscape-designers/service-areas/{freebie_5}">Landscaping in {region}</a></li>
-        {if services_or_whatwedo:label == "What We Do"}
-        <li><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_5}">What We Do</a></li>
-        {if:else}
-        <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_5}">Our Services</a></li>
-        {/if}
-        <li class="current"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}">Case Studies</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_5}">Gallery</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_5}">Our People in {region}</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_5}">News</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_5}">Advice</a></li>
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_5}">{region} Landscape Designers</a></li>
+            <li><a href="{site_url}landscape-designers/service-areas/">View Other Service Areas</a></li>
         </ul>
-      </div></div>
-      <div class="sep"></div>
-</div><!-- end .inner -->
-<!-- mobile nav start -->
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
+        <div class="sep"></div>
+        {exp:channel:entries channel="service_area" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_5}" limit="1" disable="member_data"}
+        <div class="flexnav-outerwrap">
+            <div class="flexnav-innerwrap">
+                <ul id="section-detail" class="textnav clearfix">
                     <li><a href="{site_url}landscape-designers/service-areas/{freebie_5}">Landscaping in {region}</a></li>
                     {if services_or_whatwedo:label == "What We Do"}
                     <li><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_5}">What We Do</a></li>
@@ -127,154 +103,173 @@ var navlevels = "double";
                     <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_5}">Our People in {region}</a></li>
                     <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_5}">News</a></li>
                     <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_5}">Advice</a></li>
-	</ul>
-	</nav>
-</div>
-{/exp:channel:entries}
-<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
-<div class="contextnav-breadcrumb withtoggle justmobile">
-	<nav>
-	<ul class="clearfix">
-            <li><a href="{site_url}landscape-designers/">About us</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/{freebie_5}">{region} Landscape Designers</a></li>
-            <li class="current"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}">Case Studies</a></li>
-	</ul>
-	</nav>
-</div>
-<!-- end mobile nav -->
-<div id="breadcrumb-wrapper" style="display: none;">
-  {snippet-socialsharing-breadcrumb}
-</div>
-{exp:channel:entries channel="case_study" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_6}" limit="1" disable="member_data"}
-<div class="inner">
-{exp:ifelse parse="inward"}
-{if "{panorama_slideshow_images:total_rows}" > 1 AND "{panorama_slide_order_cs}" == "SetOrder"}
-<div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fade"
-    data-cycle-pause-on-hover="true"
-    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-pager="#pager1">
-{panorama_slideshow_images}
-<img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
-{/panorama_slideshow_images}
-</div>
-<div class="cycle-pager" id="pager1"></div>
-{if:elseif "{panorama_slideshow_images:total_rows}" > 1 AND "{panorama_slide_order_cs}" != "SetOrder"}
-<div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fade"
-    data-cycle-pause-on-hover="true"
-    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="true" data-cycle-pager="#pager1">
-{panorama_slideshow_images}
-<img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
-{/panorama_slideshow_images}
-</div>
-<div class="cycle-pager" id="pager1"></div>
-{if:elseif "{panorama_slideshow_images:total_rows}" == 1}
-<div id="wideslideshow">
-{panorama_slideshow_images}
-<img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
-{/panorama_slideshow_images}
-</div>
-{/if}
-{/exp:ifelse}
-
-<section id="content" class="panorama" role="main">
-<div class="clearfix">
-<div id="content-body">
-<div class="intro clearfix">
-<h1>{page_h1_heading_casestudy}</h1>
-
-<a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}" onclick="history.back();return false;" class="view">back to case study list</a>
-
-</div>
-
-{snippet-socialsharing-body}
-
-<div class="pagecopy">
-{if '{before_and_after_slider_cs:total_rows}' > 0}		
-    {before_and_after_slider_cs}
-    <div class="slider-title">{title}</div>
-    <div class="twentytwenty-container">
-    <img src="{before}" />
-    <img src="{after}" />
+                </ul>
+            </div></div>
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <!-- mobile nav start -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
+                <li><a href="{site_url}landscape-designers/service-areas/{freebie_5}">Landscaping in {region}</a></li>
+                {if services_or_whatwedo:label == "What We Do"}
+                <li><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_5}">What We Do</a></li>
+                {if:else}
+                <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_5}">Our Services</a></li>
+                {/if}
+                <li class="current"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}">Case Studies</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_5}">Gallery</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_5}">Our People in {region}</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_5}">News</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_5}">Advice</a></li>
+            </ul>
+        </nav>
     </div>
-    {/before_and_after_slider_cs}			
-{/if}
-  {page_content_cs}</div>
-{exp:channel:form channel="case_study" entry_id="{entry_id}" return="casestudy/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
-{exp:ifelse parse="inward"}
-{if "{sharing_count_cs}" == "" }
-<input type="hidden" id="count" name="sharing_count_cs" value="0" />
-{if:else}
-<input type="hidden" id="count" name="sharing_count_cs" value="{sharing_count_cs}" />
-{/if}
-{/exp:ifelse}
-{/exp:channel:form}
+    {/exp:channel:entries}
+    <div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+    <div class="contextnav-breadcrumb withtoggle justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="{site_url}landscape-designers/">About us</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/">Service Areas</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/{freebie_5}">{region} Landscape Designers</a></li>
+                <li class="current"><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}">Case Studies</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- end mobile nav -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        {snippet-socialsharing-breadcrumb}
+    </div>
+    {exp:channel:entries channel="case_study" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_6}" limit="1" disable="member_data"}
+    <div class="inner">
+        {exp:ifelse parse="inward"}
+        {if "{panorama_slideshow_images:total_rows}" > 1 AND "{panorama_slide_order_cs}" == "SetOrder"}
+        <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fade"
+             data-cycle-pause-on-hover="true"
+             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-pager="#pager1">
+            {panorama_slideshow_images}
+            <img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
+            {/panorama_slideshow_images}
+        </div>
+        <div class="cycle-pager" id="pager1"></div>
+        {if:elseif "{panorama_slideshow_images:total_rows}" > 1 AND "{panorama_slide_order_cs}" != "SetOrder"}
+        <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fade"
+             data-cycle-pause-on-hover="true"
+             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="true" data-cycle-pager="#pager1">
+            {panorama_slideshow_images}
+            <img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
+            {/panorama_slideshow_images}
+        </div>
+        <div class="cycle-pager" id="pager1"></div>
+        {if:elseif "{panorama_slideshow_images:total_rows}" == 1}
+        <div id="wideslideshow">
+            {panorama_slideshow_images}
+            <img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
+            {/panorama_slideshow_images}
+        </div>
+        {/if}
+        {/exp:ifelse}
 
-<!-- {exp:structure:siblings}
-<p class="prev">
-   {prev}
-      <a href="{url}">previous article</a>
-   {/prev}
-{/exp:structure:siblings}
-{if "{exp:structure:siblings}{prev}{title}{/prev}{/exp:structure:siblings}" != "" && "{exp:structure:siblings}{next}{title}{/next}{/exp:structure:siblings}" != ""}|{/if}
-{exp:structure:siblings}
-   {next}
-      <a href="{url}">next article</a>
-   {/next}
-</p>
-{/exp:structure:siblings} -->
-</div>
+        <section id="content" class="panorama" role="main">
+            <div class="clearfix">
+                <div id="content-body">
+                    <div class="intro clearfix">
+                        <h1>{page_h1_heading_casestudy}</h1>
 
-<div id="content-right">
-{if "{before_images_mini_slideshow:total_rows}" > 1}
-<div id="beforeslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
-    data-cycle-pause-on-hover="true"
-    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait">
-{before_images_mini_slideshow}
-<img src="{before-slideshow}" alt="{before-slideshow-alt}"/>
-{/before_images_mini_slideshow}
-</div>
-{if:elseif "{before_images_mini_slideshow:total_rows}" == 1}
-<div id="beforeslideshow">
-{before_images_mini_slideshow}
-<img src="{before-slideshow}" alt="{before-slideshow-alt}"/>
-{/before_images_mini_slideshow}
-</div>
-{/if}
+                        <a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_5}" onclick="history.back();return false;" class="view">back to case study list</a>
 
-<div class="sidebar">
-{if "{rightbar_getintouch}" == "Yes"}
-{snippet-getintouch-rightbar}
-{/if}
+                    </div>
+
+                    {snippet-socialsharing-body}
+
+                    <div class="pagecopy">
+                        {if '{before_and_after_slider_cs:total_rows}' > 0}
+                        {before_and_after_slider_cs}
+                        <div class="slider-title">{title}</div>
+                        <div class="twentytwenty-container">
+                            <img src="{before}" />
+                            <img src="{after}" />
+                        </div>
+                        {/before_and_after_slider_cs}
+                        {/if}
+                        {page_content_cs}</div>
+                    {exp:channel:form channel="case_study" entry_id="{entry_id}" return="casestudy/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
+                    {exp:ifelse parse="inward"}
+                    {if "{sharing_count_cs}" == "" }
+                    <input type="hidden" id="count" name="sharing_count_cs" value="0" />
+                    {if:else}
+                    <input type="hidden" id="count" name="sharing_count_cs" value="{sharing_count_cs}" />
+                    {/if}
+                    {/exp:ifelse}
+                    {/exp:channel:form}
+
+                    <!-- {exp:structure:siblings}
+                    <p class="prev">
+                       {prev}
+                          <a href="{url}">previous article</a>
+                       {/prev}
+                    {/exp:structure:siblings}
+                    {if "{exp:structure:siblings}{prev}{title}{/prev}{/exp:structure:siblings}" != "" && "{exp:structure:siblings}{next}{title}{/next}{/exp:structure:siblings}" != ""}|{/if}
+                    {exp:structure:siblings}
+                       {next}
+                          <a href="{url}">next article</a>
+                       {/next}
+                    </p>
+                    {/exp:structure:siblings} -->
+                </div>
+
+                <div id="content-right">
+                    {if "{before_images_mini_slideshow:total_rows}" > 1}
+                    <div id="beforeslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
+                         data-cycle-pause-on-hover="true"
+                         data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait">
+                        {before_images_mini_slideshow}
+                        <img src="{before-slideshow}" alt="{before-slideshow-alt}"/>
+                        {/before_images_mini_slideshow}
+                    </div>
+                    {if:elseif "{before_images_mini_slideshow:total_rows}" == 1}
+                    <div id="beforeslideshow">
+                        {before_images_mini_slideshow}
+                        <img src="{before-slideshow}" alt="{before-slideshow-alt}"/>
+                        {/before_images_mini_slideshow}
+                    </div>
+                    {/if}
+
+                    <div class="sidebar">
+                        {if "{rightbar_getintouch}" == "Yes"}
+                        {snippet-getintouch-rightbar}
+                        {/if}
 
 
-{if "{personalisation_banner_ad:total_children}" == 1}
-<div id="personalisation-banner">
-{personalisation_banner_ad}
-<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
-{/personalisation_banner_ad}
-</div>
-{if:elseif "{personalisation_banner_ad:total_children}" > 1}
-<div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
-    data-cycle-pause-on-hover="true"
-    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
-{personalisation_banner_ad}
-<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
-{/personalisation_banner_ad}
-</div>
-{/if}
+                        {if "{personalisation_banner_ad:total_children}" == 1}
+                        <div id="personalisation-banner">
+                            {personalisation_banner_ad}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad}
+                        </div>
+                        {if:elseif "{personalisation_banner_ad:total_children}" > 1}
+                        <div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
+                             data-cycle-pause-on-hover="true"
+                             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
+                            {personalisation_banner_ad}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad}
+                        </div>
+                        {/if}
 
-{snippet-banner-rotatable}
+                        {snippet-banner-rotatable}
 
-</div>
+                    </div>
 
-</div>
-</div>
-</section>
-{/exp:channel:entries}
-<div class="sep footersep"></div>
+                </div>
+            </div>
+        </section>
+        {/exp:channel:entries}
+        <div class="sep footersep"></div>
 
-{snippet-partners}
-</div><!-- end .inner -->
+        {snippet-partners}
+    </div><!-- end .inner -->
 </div><!-- end #wrapper -->
 {snippet-sidey}
 {embed="includes/footer-with-slider"}

@@ -2,7 +2,7 @@
 {snippet-doctype}
 <title>{seo_page_header_title_misc} | Zones</title>
 <script type="text/javascript" language="javascript">
-var navlevels = "single";
+    var navlevels = "single";
 </script>
 {snippet-callfiles-new}
 {FirstTimeVisitorEnable}
@@ -37,105 +37,99 @@ var navlevels = "single";
 <meta name="description" content="{seo_meta_description_misc}">
 <meta name="keywords" content="{seo_meta_keywords_misc}">
 <script type="text/javascript" language="javascript">
-$(document).ready(function(){	  
-$("a[rel^='prettyPhoto']").prettyPhoto({theme: 'facebook'});			
-});
+    $(document).ready(function(){
+        $("a[rel^='prettyPhoto']").prettyPhoto({theme: 'facebook'});
+    });
 </script>
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
-
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-<li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>	
-
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+	<div id="sitebanner" class="clearfix">
+		{snippet-topnav}
+		{snippet-bannersearch}
+		{snippet-mobilemenu-home}
+	</div>
+	<div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
-<ul id="section-sub" class="textnav clearfix">
-{exp:navee:custom nav_title="AdviceL2" wrap_type="none" selected_class="current"}
-<li class="{class}"><a href="{link}">{text}</a></li>
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>	
-</div><!-- end .inner -->
-<!-- mobile nav start -->
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
-{exp:navee:custom nav_title="AdviceL2" wrap_type="none" selected_class="current"}
-<li class="{class}"><a href="{link}">{text}</a></li>
-{/exp:navee:custom}		
-	</ul>
-	</nav>
-</div>
+	<div class="inner">
+		<ul id="section-sub" class="textnav clearfix">
+			{exp:navee:custom nav_title="AdviceL2" wrap_type="none" selected_class="current"}
+			<li class="{class}"><a href="{link}">{text}</a></li>
+			{/exp:navee:custom}
+		</ul>
+		<div class="sep"></div>
+	</div><!-- end .inner -->
+	<!-- mobile nav start -->
+	<div class="contextnav-wrapper top justmobile">
+		<nav class="contextnav justmobile">
+			<ul class="clearfix">
+				{exp:navee:custom nav_title="AdviceL2" wrap_type="none" selected_class="current"}
+				<li class="{class}"><a href="{link}">{text}</a></li>
+				{/exp:navee:custom}
+			</ul>
+		</nav>
+	</div>
 
-<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
-<div class="contextnav-breadcrumb withtoggle justmobile">
-	<nav>
-	<ul class="clearfix">
-<li><a href="{site_url}landscaping-ideas/">Advice</a></li>
-{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
-{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
-{/exp:navee:custom}
-	</ul>
-	</nav>
-</div>
-<!-- end mobile nav -->
-<div id="breadcrumb-wrapper" style="display: none;">
-<nav id="breadcrumbline" role="navigation">
-<ul class="clearfix">
-<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
-<li class="parent"><a href="{site_url}landscaping-ideas/">Advice</a></li>
-{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
-{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>
-</nav></div>
-<div class="inner">	
-<section id="content" role="main">
-<div class="intro clearfix">
-{snippet-enquirenow-picture}
-<h1>{page_h1_heading_misc}</h1>
-{page_introduction_misc} 
-</div>
-{/exp:channel:entries}
+	<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+	<div class="contextnav-breadcrumb withtoggle justmobile">
+		<nav>
+			<ul class="clearfix">
+				<li><a href="{site_url}landscaping-ideas/">Advice</a></li>
+				{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+				{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
+				{/exp:navee:custom}
+			</ul>
+		</nav>
+	</div>
+	<!-- end mobile nav -->
+	<div id="breadcrumb-wrapper" style="display: none;">
+		<nav id="breadcrumbline" role="navigation">
+			<ul class="clearfix">
+				<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+				<li class="parent"><a href="{site_url}landscaping-ideas/">Advice</a></li>
+				{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+				{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
+				{/exp:navee:custom}
+			</ul>
+			<div class="sep"></div>
+		</nav></div>
+	<div class="inner">
+		<section id="content" role="main">
+			<div class="intro clearfix">
+				{snippet-enquirenow-picture}
+				<h1>{page_h1_heading_misc}</h1>
+				{page_introduction_misc}
+			</div>
+			{/exp:channel:entries}
 
 
-<div id="list" class="listview">
-{exp:channel:entries channel="brochure" dynamic="no" orderby="date" sort="desc" parse="inward" disable="member_data|pagination|categories"}
+			<div id="list" class="listview">
+				{exp:channel:entries channel="brochure" dynamic="no" orderby="date" sort="desc" parse="inward" disable="member_data|pagination|categories"}
 
-<div class="item clearfix"><a class="fleft" rel="prettyPhoto[ajax] nofollow" href="/landscape-design-brochure/{url_title}?ajax=true&width=330&height=500"><img src="{thumbnail_image_bro}" alt="{title}" /></a>
-<div class="fleft">
-<h2>{title}</h2>
-{summary_text_bro} 
-<p class="more"><a rel="prettyPhoto[ajax] nofollow" href="/landscape-design-brochure/{url_title}?ajax=true&width=330&height=500">Download</a>{if '{more_info_popup}' != ""}
- | <a rel="prettyPhoto[inline]" href="#info-{url_title}" class="contentpop">More info</a>
-{/if}</p>
-</div>
-</div>
-<a rel="prettyPhoto[ajax] nofollow" href="/landscape-design-brochure/{url_title}?ajax=true&width=330&height=500"" class="item-m justmobile"><span class="link">{title}</span><span class="bg" style="background-image: url({thumbnail_image_bro});"></span></a>
+				<div class="item clearfix"><a class="fleft" rel="prettyPhoto[ajax] nofollow" href="/landscape-design-brochure/{url_title}?ajax=true&width=330&height=500"><img src="{thumbnail_image_bro}" alt="{title}" /></a>
+					<div class="fleft">
+						<h2>{title}</h2>
+						{summary_text_bro}
+						<p class="more"><a rel="prettyPhoto[ajax] nofollow" href="/landscape-design-brochure/{url_title}?ajax=true&width=330&height=500">Download</a>{if '{more_info_popup}' != ""}
+							| <a rel="prettyPhoto[inline]" href="#info-{url_title}" class="contentpop">More info</a>
+							{/if}</p>
+					</div>
+				</div>
+				<a rel="prettyPhoto[ajax] nofollow" href="/landscape-design-brochure/{url_title}?ajax=true&width=330&height=500"" class="item-m justmobile"><span class="link">{title}</span><span class="bg" style="background-image: url({thumbnail_image_bro});"></span></a>
 
-{if '{more_info_popup}' != ""}
-<div id="info-{url_title}" style="display:none;"><div class="scroll">{more_info_popup}</div></div>
-{/if}
+				{if '{more_info_popup}' != ""}
+				<div id="info-{url_title}" style="display:none;"><div class="scroll">{more_info_popup}</div></div>
+				{/if}
 
-{/exp:channel:entries}
-</div>
-</section>
+				{/exp:channel:entries}
+			</div>
+		</section>
 
-<div class="sep footersep"></div>	
+		<div class="sep footersep"></div>
 
-{snippet-partners}
-</div><!-- end .inner -->
+		{snippet-partners}
+	</div><!-- end .inner -->
 </div><!-- end #wrapper -->
 {snippet-sidey}
 {embed="includes/footer-new"}

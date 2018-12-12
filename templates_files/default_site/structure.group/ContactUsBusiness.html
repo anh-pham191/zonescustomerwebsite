@@ -2,7 +2,7 @@
 {snippet-doctype}
 <title>{seo_page_header_title_c_bus} | Zones</title>
 <script type="text/javascript" language="javascript">
-var navlevels = "single";
+    var navlevels = "single";
 </script>
 {snippet-callfiles-new}
 {FirstTimeVisitorEnable}
@@ -39,186 +39,178 @@ var navlevels = "single";
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-   {if text == 'Get in touch'}
-      <li class="current"><a href="{link}" class="button">{text}</a></li>
-   {if:else}
-      <li><a href="{link}" class="button">{text}</a></li>
-   {/if}
-{/exp:navee:custom}
-</ul>	
+    <div id="sitebanner" class="clearfix">
+        {snippet-topnav-contact}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-work}
 
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+    </div>
+    <div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
-<ul id="section-sub" class="textnav clearfix">
-{exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="current"}
-{if "{link}" != "/contact-us/job-opportunities/"}
-<li class="{class}"><a href="{link}">{text}</a></li>
-{/if}
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>
-</div><!-- end .inner -->
-<!-- start mobile nav -->
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="current"}
+            {if "{link}" != "/contact-us/job-opportunities/"}
+            <li class="{class}"><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <!-- start mobile nav -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
 
-	{exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="current" cache="yes" refresh="1500"}
-	{if "{link}" != "/contact-us/job-opportunities/"}
-<li class="{class}"><a href="{link}">{text}</a></li>
-{/if}
-	{/exp:navee:custom}
-	</ul>
-	</nav>
-</div>
-<div class="contextnav-breadcrumb justmobile">
-		<nav>
-		<ul class="clearfix">
-		<li><a href="/contact-us/">Get in touch</a></li>
-		{exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" cache="yes" refresh="1500"}
-		{if is_selected}<li><span>{text}</span></li>{/if}
-		{/exp:navee:custom}
-		</ul>
-		</nav>
-</div>
-<!-- end mobile nav -->
-<div id="breadcrumb-wrapper" style="display: none;">
-<nav id="breadcrumbline" role="navigation">
-<ul class="clearfix">
-<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
-<li class="parent"><a href="{site_url}contact-us/">Get in touch</a></li>
-{exp:navee:custom nav_title="GetInTouchL2" wrap_type="none"}
-{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>
-</nav></div>
-<div class="inner">
-<section id="content" class="panorama" role="main">
-<div class="clearfix">
-<div id="content-body" class="form">
-<div class="intro clearfix">
-<h1>{contactus_bus_h1_heading}</h1>
-</div>
-<div class="pagecopy">{contactus_bus_pageintro}</div>
-
-<div class="theformarea-c formholder">
-<p class="instructions-c" style="display: none;"></p>
-
-<form action="{site_url}forms/contact-business.php" method="post" id="myform-contact-business">
-<fieldset class="clearfix">
-<legend></legend>
-<div class="row">
-<div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
-<input type="text" class="form-control" placeholder="Enter first name" name="p-bus-firstname" id="p-bus-firstname" data-prefix="p-bus">
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12 padding-left input-label-wrapper">
-<input type="text" class="form-control" placeholder="Enter last name" name="p-bus-lastname" id="p-bus-lastname" data-prefix="p-bus">
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
-<input type="email" class="form-control" placeholder="Enter email address" name="p-bus-email" id="p-bus-email" data-prefix="p-bus">
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12 padding-left input-label-wrapper">
-<input type="tel" class="form-control" placeholder="Enter phone number" name="p-bus-tel" id="p-bus-tel" data-prefix="p-bus">
-</div></div>
-<div class="row">
-<div class="col-sm-12 col-xs-12 input-label-wrapper">
-<input type="text" class="form-control" placeholder="Enter Message Subject" name="p-bus-subject" id="p-bus-subject">
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12 col-xs-12 input-label-wrapper">
-<textarea rows=5 class="form-control col-xs-12" name="p-bus-enquiry" id="p-bus-enquiry" placeholder="Enter message / enquiry"></textarea>
-</div>
-</div>
-<div class="row">
-    <div class="col-sm-12 col-xs-12 input-label-wrapper"> 
-      <label><input type="checkbox" class="uniform-styles" name="p-bus-privacy" id="p-bus-privacy" data-prefix="p-bus" checked="checked" /> I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy.</a></label>
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="current" cache="yes" refresh="1500"}
+                {if "{link}" != "/contact-us/job-opportunities/"}
+                <li class="{class}"><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
     </div>
-  </div>
-<div class="row">
-    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-      <label><input type="checkbox" class="uniform-styles" name="p-bus-subscribe" id="p-bus-subscribe" checked="checked" /> I consent to receiving advice and information relating to home improvements.</label>
+    <div class="contextnav-breadcrumb justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="/contact-us/">Get in touch</a></li>
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" cache="yes" refresh="1500"}
+                {if is_selected}<li><span>{text}</span></li>{/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-      <div class="g-recaptcha"></div>
-      </div>
-  </div>
+    <!-- end mobile nav -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        <nav id="breadcrumbline" role="navigation">
+            <ul class="clearfix">
+                <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+                <li class="parent"><a href="{site_url}contact-us/">Get in touch</a></li>
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none"}
+                {if is_selected}<li><a href="{link}">{text}</a></li>{/if}
+                {/exp:navee:custom}
+            </ul>
+            <div class="sep"></div>
+        </nav></div>
+    <div class="inner">
+        <section id="content" class="panorama" role="main">
+            <div class="clearfix">
+                <div id="content-body" class="form">
+                    <div class="intro clearfix">
+                        <h1>{contactus_bus_h1_heading}</h1>
+                    </div>
+                    <div class="pagecopy">{contactus_bus_pageintro}</div>
 
-      <fieldset class="clearfix form-website">
-          <legend></legend>
-          <label id="c-bus-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" autocomplete="off" /></label>
-          </fieldset>    
- <!--submit buttons-->
- <div class="row">
-    <div class="col-md-12">
-      <button type="submit" class="btn btn-primary btn-block" id="c-bus-submit">Submit Enquiry</button>
-    </div>
-  </div>
-  <!--submit buttons--> 
-</form>
-<div id="prog1" class="progress" style="display: none;"></div>
-</div>
-<div class="adwordstracking"></div>
+                    <div class="theformarea-c formholder">
+                        <p class="instructions-c" style="display: none;"></p>
 
-<div class="pagecopy">{copy_below_form_bus}</div>
-</div>
+                        <form action="{site_url}forms/contact-business.php" method="post" id="myform-contact-business">
+                            <fieldset class="clearfix">
+                                <legend></legend>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                                        <input type="text" class="form-control" placeholder="Enter first name" name="p-bus-firstname" id="p-bus-firstname" data-prefix="p-bus">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 padding-left input-label-wrapper">
+                                        <input type="text" class="form-control" placeholder="Enter last name" name="p-bus-lastname" id="p-bus-lastname" data-prefix="p-bus">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                                        <input type="email" class="form-control" placeholder="Enter email address" name="p-bus-email" id="p-bus-email" data-prefix="p-bus">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 padding-left input-label-wrapper">
+                                        <input type="tel" class="form-control" placeholder="Enter phone number" name="p-bus-tel" id="p-bus-tel" data-prefix="p-bus">
+                                    </div></div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                        <input type="text" class="form-control" placeholder="Enter Message Subject" name="p-bus-subject" id="p-bus-subject">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                        <textarea rows=5 class="form-control col-xs-12" name="p-bus-enquiry" id="p-bus-enquiry" placeholder="Enter message / enquiry"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                        <label><input type="checkbox" class="uniform-styles" name="p-bus-privacy" id="p-bus-privacy" data-prefix="p-bus" checked="checked" /> I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy.</a></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                        <label><input type="checkbox" class="uniform-styles" name="p-bus-subscribe" id="p-bus-subscribe" checked="checked" /> I consent to receiving advice and information relating to home improvements.</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                        <div class="g-recaptcha"></div>
+                                    </div>
+                                </div>
 
-<div id="content-right" class="form">
-{contactus_bus_rhs_details}
-<h2>Other enquiries</h2>
-<ul>
-{exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="hide"}
-{if "{link}" != "/contact-us/job-opportunities/"}
-<li class="{class}"><a href="{link}">{text}</a></li>
-{/if}
-{/exp:navee:custom}
-</ul>
+                                <fieldset class="clearfix form-website">
+                                    <legend></legend>
+                                    <label id="c-bus-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" autocomplete="off" /></label>
+                                </fieldset>
+                                <!--submit buttons-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-primary btn-block" id="c-bus-submit">Submit Enquiry</button>
+                                    </div>
+                                </div>
+                                <!--submit buttons-->
+                        </form>
+                        <div id="prog1" class="progress" style="display: none;"></div>
+                    </div>
+                    <div class="adwordstracking"></div>
 
-<div class="sidebar">
-{if "{personalisation_banner_ad_cbus:total_children}" == 1}
-<div id="personalisation-banner">
-{personalisation_banner_ad_cbus}
-<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
-{/personalisation_banner_ad_cbus}
-</div>
-{if:elseif "{personalisation_banner_ad_cbus:total_children}" > 1}
-<div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
-    data-cycle-pause-on-hover="true"
-    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
-{personalisation_banner_ad_cbus}
-<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
-{/personalisation_banner_ad_cbus}
-{/if}
-{exp:ifelse parse="inward"} 
-{if "{sidebar_modules_c_bus}" != ""}
-<div class="sidebarvid"><iframe width="316" height="178" src="http://www.youtube.com/embed/{sidebar_modules_c_bus}?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-<p><a href="{site_url}franchisee-testimonial-videos/">Watch more franchisee testimonials</a></p>
-{/if}
-{/exp:ifelse}
-{snippet-banner-rotatable}
-</div>
-</div>
-</div>
-</section>
-{/exp:channel:entries}
-<div class="sep footersep"></div>	
+                    <div class="pagecopy">{copy_below_form_bus}</div>
+                </div>
 
-{snippet-partners}
-</div><!-- end .inner -->
+                <div id="content-right" class="form">
+                    {contactus_bus_rhs_details}
+                    <h2>Other enquiries</h2>
+                    <ul>
+                        {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="hide"}
+                        {if "{link}" != "/contact-us/job-opportunities/"}
+                        <li class="{class}"><a href="{link}">{text}</a></li>
+                        {/if}
+                        {/exp:navee:custom}
+                    </ul>
+
+                    <div class="sidebar">
+                        {if "{personalisation_banner_ad_cbus:total_children}" == 1}
+                        <div id="personalisation-banner">
+                            {personalisation_banner_ad_cbus}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad_cbus}
+                        </div>
+                        {if:elseif "{personalisation_banner_ad_cbus:total_children}" > 1}
+                        <div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
+                             data-cycle-pause-on-hover="true"
+                             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
+                            {personalisation_banner_ad_cbus}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad_cbus}
+                            {/if}
+                            {exp:ifelse parse="inward"}
+                            {if "{sidebar_modules_c_bus}" != ""}
+                            <div class="sidebarvid"><iframe width="316" height="178" src="http://www.youtube.com/embed/{sidebar_modules_c_bus}?rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <p><a href="{site_url}franchisee-testimonial-videos/">Watch more franchisee testimonials</a></p>
+                            {/if}
+                            {/exp:ifelse}
+                            {snippet-banner-rotatable}
+                        </div>
+                    </div>
+                </div>
+        </section>
+        {/exp:channel:entries}
+        <div class="sep footersep"></div>
+
+        {snippet-partners}
+    </div><!-- end .inner -->
 </div><!-- end #wrapper -->
 
 {embed="includes/footer-new"}

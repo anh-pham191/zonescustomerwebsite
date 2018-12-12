@@ -4,13 +4,13 @@
 {exp:switchee variable = "{segment_1}" parse="inward"}
 {case value="design-ideas"}{!-- WORK WEVE DONE --}
 <script type="text/javascript" language="javascript">
-var navlevels = "singleicons";
+    var navlevels = "singleicons";
 </script>
 {/case}
 {case default="Yes"}
 {!-- WHAT IS ZONES --}
 <script type="text/javascript" language="javascript">
-var navlevels = "double";
+    var navlevels = "double";
 </script>
 {/case}
 {/exp:switchee}
@@ -50,513 +50,506 @@ var navlevels = "double";
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
-<ul id="site-main" class="fleft">
-{exp:switchee variable = "{segment_1}" parse="inward"}
-{case value="design-ideas"}
-{!-- WORK WEVE DONE STYLE DISPLAY --}
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-   {if text == "Our work"}
-      <li class="current"><a href="{link}" class="button">{text}</a></li>
-   {if:else}
-      <li><a href="{link}" class="button">{text}</a></li>
-   {/if}
-{/exp:navee:custom}
-{/case}
-{case default="Yes"}
-{!-- WHAT IS ZONES STYLE DISPLAY --}
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-   {if text == 'Our services'}
-      <li class="current"><a href="{link}" class="button">{text}</a></li>
-   {if:else}
-      <li><a href="{link}" class="button">{text}</a></li>
-   {/if}
-{/exp:navee:custom}
-{/case}
-{/exp:switchee}
-</ul>	
+	<div id="sitebanner" class="clearfix">
+		<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+		<ul id="site-main" class="fleft">
+			{exp:switchee variable = "{segment_1}" parse="inward"}
+			{case value="design-ideas"}
+			{!-- WORK WEVE DONE STYLE DISPLAY --}
 
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+			{snippet-topnav-work}
+			{snippet-bannersearch}
+			{snippet-mobilemenu-work}
+
+			{case default="Yes"}
+
+			{snippet-topnav-services}
+			{snippet-bannersearch}
+			{snippet-mobilemenu-work}
+			{/case}
+			{/exp:switchee}
+		</ul>
+
+		{snippet-bannersearch}
+	</div>
+	<div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
-{exp:switchee variable = "{segment_1}" parse="inward"}
-{case value="design-ideas"}
-{!-- WORK WEVE DONE STYLE DISPLAY --}
-<ul id="section-sub" class="textnav clearfix">
-{exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
-   {if text == 'Design Ideas'}
-      <li class="current"><a href="{link}">{text}</a></li>
-   {if:else}
-      <li><a href="{link}">{text}</a></li>
-   {/if}
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>
-<ul id="area-icons" class="clearfix">
-{if "{last_segment_absolute}" != "design-ideas"}
-<li><a href="{site_url}design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
-{if:else}
-<li class="current"><a href="{site_url}design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
-{/if}
-{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
-{if "{segment_2}" == "{category_url_title}"}
-<li class="current"><a href="{site_url}design-ideas/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{if:else}
-<li><a href="{site_url}design-ideas/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{/if}
-{/exp:channel:categories}
-</ul>
+	<div class="inner">
+		{exp:switchee variable = "{segment_1}" parse="inward"}
+		{case value="design-ideas"}
+		{!-- WORK WEVE DONE STYLE DISPLAY --}
+		<ul id="section-sub" class="textnav clearfix">
+			{exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
+			{if text == 'Design Ideas'}
+			<li class="current"><a href="{link}">{text}</a></li>
+			{if:else}
+			<li><a href="{link}">{text}</a></li>
+			{/if}
+			{/exp:navee:custom}
+		</ul>
+		<div class="sep"></div>
+		<ul id="area-icons" class="clearfix">
+			{if "{last_segment_absolute}" != "design-ideas"}
+			<li><a href="{site_url}design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+			{if:else}
+			<li class="current"><a href="{site_url}design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+			{/if}
+			{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+			{if "{segment_2}" == "{category_url_title}"}
+			<li class="current"><a href="{site_url}design-ideas/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+			{if:else}
+			<li><a href="{site_url}design-ideas/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+			{/if}
+			{/exp:channel:categories}
+		</ul>
 
-{/case}
-{case default="Yes"}
-{!-- WHAT IS ZONES STYLE DISPLAY --}
-<ul id="section-sub" class="textnav clearfix">
-{exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
-   {if link == '/what-is-zones/landscape-design-and-garden-maintenance/'}
-      <li class="current"><a href="{link}">{text}</a></li>
-   {if:else}
-      <li><a href="{link}">{text}</a></li>
-   {/if}
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>
-<ul id="area-icons" class="clearfix">
-{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
-{if "{segment_1}" == "{category_url_title}"}
-<li class="current"><a href="{site_url}{category_url_title}/design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{if:else}
-<li><a href="{site_url}{category_url_title}/design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{/if}
-{/exp:channel:categories}
-</ul>
-{/case}
-{/exp:switchee}
+		{/case}
+		{case default="Yes"}
+		{!-- WHAT IS ZONES STYLE DISPLAY --}
+		<ul id="section-sub" class="textnav clearfix">
+			{exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+			{if link == '/what-is-zones/landscape-design-and-garden-maintenance/'}
+			<li class="current"><a href="{link}">{text}</a></li>
+			{if:else}
+			<li><a href="{link}">{text}</a></li>
+			{/if}
+			{/exp:navee:custom}
+		</ul>
+		<div class="sep"></div>
+		<ul id="area-icons" class="clearfix">
+			{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+			{if "{segment_1}" == "{category_url_title}"}
+			<li class="current"><a href="{site_url}{category_url_title}/design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+			{if:else}
+			<li><a href="{site_url}{category_url_title}/design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+			{/if}
+			{/exp:channel:categories}
+		</ul>
+		{/case}
+		{/exp:switchee}
 
-{exp:switchee variable = "{segment_1}" parse="inward"}
-{case value="design-ideas"}
-{!-- WORK WEVE DONE STYLE DISPLAY --}
-<div class="sep"></div>	
-</div><!-- end .inner -->
-<!-- mobile nav start -->
-{exp:switchee variable = "{segment_1}" parse="inward"}
-{case value="design-ideas"}
-{!-- WORK WEVE DONE STYLE DISPLAY --}
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
-	{exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
-   {if text == 'Design Ideas'}
-      <li class="current"><a href="{link}">{text}</a></li>
-   {if:else}
-      <li><a href="{link}">{text}</a></li>
-   {/if}
-{/exp:navee:custom}
-	</ul>
-	</nav>
-</div>
-<div class="contextnav-wrapper icons areas justmobile">
-	<nav class="contextnav icons justmobile">
-	<ul class="clearfix"  id="area-icons">
-{if "{last_segment_absolute}" != "design-ideas"}
-<li><a href="{site_url}design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
-{if:else}
-<li class="current"><a href="{site_url}design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
-{/if}
-{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
-{if "{segment_2}" == "{category_url_title}"}
-<li class="current"><a href="{site_url}design-ideas/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{if:else}
-<li><a href="{site_url}design-ideas/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{/if}
-{/exp:channel:categories}
-	</ul>
-	</nav>
-</div>
-<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
-<div class="contextnav-breadcrumb withtoggle justmobile">
-	<nav>
-	<ul class="clearfix">
-<li><a href="{site_url}photo-gallery/">Our work</a></li>
-{if "{last_segment_absolute}" != "design-ideas"}
-<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
-{exp:navee:custom nav_title="Work-L3-{segment_2}" wrap_type="none"}
-{if link == '/design-ideas/{segment_2}/'}<li><a href="{link}">{text}</a></li>{/if}
-{/exp:navee:custom}
-{if:else}
-<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
-{/if}
-	</nav>
-</div>
-{/case}
-{case default="Yes"}
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
-	{exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
-   {if link == '/what-is-zones/landscape-design-and-garden-maintenance/'}
-      <li class="current"><a href="{link}">{text}</a></li>
-   {if:else}
-      <li><a href="{link}">{text}</a></li>
-   {/if}
-{/exp:navee:custom}
-	</ul>
-	</nav>
-</div>
-<div class="contextnav-wrapper icons areas justmobile">
-	<nav class="contextnav icons justmobile">
-	<ul class="clearfix"  id="area-icons">
-{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
-{if "{segment_1}" == "{category_url_title}"}
-<li class="current"><a href="{site_url}{category_url_title}/design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{if:else}
-<li><a href="{site_url}{category_url_title}/design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{/if}
-{/exp:channel:categories}
-	</ul>
-	</nav>
-</div>
-<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
-<div class="contextnav-breadcrumb withtoggle justmobile">
-	<nav>
-	<ul class="clearfix">
-<li><a href="{site_url}photo-gallery/">Our work</a></li>
-{if "{last_segment_absolute}" != "design-ideas"}
-<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
-{exp:navee:custom nav_title="Work-L3-{segment_2}" wrap_type="none"}
-{if link == '/design-ideas/{segment_2}/'}<li><a href="{link}">{text}</a></li>{/if}
-{/exp:navee:custom}
-{if:else}
-<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
-{/if}
-	</ul>
-	</nav>
-</div>
-{/case}
-{/exp:switchee}	
-<!-- end mobile nav -->
-<div id="breadcrumb-wrapper" style="display: none;">
-<nav id="breadcrumbline" role="navigation">
-<ul>
-<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
-<li class="parent"><a href="{site_url}photo-gallery/">Our work</a></li>
-{if "{last_segment_absolute}" != "design-ideas"}
-<li class="parent"><a href="{site_url}design-ideas/">Design Ideas</a></li>
-{exp:navee:custom nav_title="Work-L3-{segment_2}" wrap_type="none"}
-{if link == '/design-ideas/{segment_2}/'}<li><a href="{link}">{text}</a></li>{/if}
-{/exp:navee:custom}
-{if:else}
-<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
-{/if}
-</ul>
-<div class="sep"></div>
-</nav></div>
-<div class="inner">
-
-<section id="content" role="main">
-<div class="intro clearfix">
-{snippet-enquirenow-picture}
-<h1>{page_h1_heading_desgal}</h1>
-{if "{last_segment_absolute}" != "design-ideas"}
-<a href="{site_url}design-ideas/" class="view">View all types of design ideas</a>
-{/if}
-{page_introduction_desgal}
-</div>
-{/case}
-{case default="Yes"}
-{!-- WHAT IS ZONES STYLE DISPLAY --}
-{!--- Level 3 links --}
-<div class="sep"></div>
-<ul id="section-detail" class="textnav clearfix">
-{exp:navee:custom nav_title="What-L3-{segment_1}" wrap_type="none"}
-{if text == "Design ideas"}
-<li class="current"><a href="{link}">{text}</a></li>
-{if:elseif link != "/{segment_1}/case-studies/"}
-<li><a href="{link}">{text}</a></li>
-{/if}
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>	
-</div><!-- end .inner -->
-<!-- mobile nav start -->
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
-{exp:navee:custom nav_title="What-L3-{segment_1}" wrap_type="none"}
-{if text == "Design ideas"}
-<li class="current"><a href="{link}">{text}</a></li>
-{if:elseif link != "/{segment_1}/case-studies/"}
-<li><a href="{link}">{text}</a></li>
-{/if}
-{/exp:navee:custom}		
-	</ul>
-	</nav>
-</div>
-
-<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
-<div class="contextnav-breadcrumb withtoggle justmobile">
-	<nav>
-	<ul class="clearfix">
-<li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></li>
-<li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping</a></li>
-{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
-{if "{segment_1}" == "{category_url_title}"}
-<li><a href="{site_url}{category_url_title}/">{category_name}</a></li>
-{/if}
-{/exp:channel:categories} 
-<li><a href="{site_url}{segment_1}/design-ideas/">Design ideas</a></li>
-	</ul>
-	</nav>
-</div>
-<!-- end mobile nav -->
-<div id="breadcrumb-wrapper" style="display: none;">
-<nav id="breadcrumbline" role="navigation">
-<ul>
-<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
-<li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></li>
-<li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping</a></li>
-{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
-{if "{segment_1}" == "{category_url_title}"}
-<li class="parent"><a href="{site_url}{category_url_title}/">{category_name}</a></li>
-{/if}
-{/exp:channel:categories} 
-<li><a href="{site_url}{segment_1}/design-ideas/">Design ideas</a></li>
-</ul>
-<div class="sep"></div>
-</nav></div>
-<div class="inner">
-
-<section id="content" role="main">
-<div class="intro clearfix">
-{snippet-enquirenow-picture}
-<h1>{page_h1_heading_desgal}</h1>
-{if "{segment_1}" != "all"}
-<a href="{site_url}all/design-ideas/" class="view">View all types of design ideas</a>
-{/if}
-{page_introduction_desgal}
-</div>
-{/case}
-{/exp:switchee}
-
-{/exp:channel:entries}
-
-<div id="gallery" class="app-folders-container clearfix">	
-{exp:switchee variable = "{segment_1}" parse="inward"}
-{case value="design-ideas"}{!-- WORK WEVE DONE --}
-	{switchee variable = "{last_segment_absolute}" parse="inward"}
+		{exp:switchee variable = "{segment_1}" parse="inward"}
+		{case value="design-ideas"}
+		{!-- WORK WEVE DONE STYLE DISPLAY --}
+		<div class="sep"></div>
+	</div><!-- end .inner -->
+	<!-- mobile nav start -->
+	{exp:switchee variable = "{segment_1}" parse="inward"}
 	{case value="design-ideas"}
-	{exp:channel:entries channel="designidea" limit="12" dynamic="no" parse="inward" paginate="bottom" disable="member_data|categories"}
+	{!-- WORK WEVE DONE STYLE DISPLAY --}
+	<div class="contextnav-wrapper top justmobile">
+		<nav class="contextnav justmobile">
+			<ul class="clearfix">
+				{exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
+				{if text == 'Design Ideas'}
+				<li class="current"><a href="{link}">{text}</a></li>
+				{if:else}
+				<li><a href="{link}">{text}</a></li>
+				{/if}
+				{/exp:navee:custom}
+			</ul>
+		</nav>
+	</div>
+	<div class="contextnav-wrapper icons areas justmobile">
+		<nav class="contextnav icons justmobile">
+			<ul class="clearfix"  id="area-icons">
+				{if "{last_segment_absolute}" != "design-ideas"}
+				<li><a href="{site_url}design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+				{if:else}
+				<li class="current"><a href="{site_url}design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+				{/if}
+				{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+				{if "{segment_2}" == "{category_url_title}"}
+				<li class="current"><a href="{site_url}design-ideas/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+				{if:else}
+				<li><a href="{site_url}design-ideas/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+				{/if}
+				{/exp:channel:categories}
+			</ul>
+		</nav>
+	</div>
+	<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+	<div class="contextnav-breadcrumb withtoggle justmobile">
+		<nav>
+			<ul class="clearfix">
+				<li><a href="{site_url}photo-gallery/">Our work</a></li>
+				{if "{last_segment_absolute}" != "design-ideas"}
+				<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
+				{exp:navee:custom nav_title="Work-L3-{segment_2}" wrap_type="none"}
+				{if link == '/design-ideas/{segment_2}/'}<li><a href="{link}">{text}</a></li>{/if}
+				{/exp:navee:custom}
+				{if:else}
+				<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
+				{/if}
+		</nav>
+	</div>
 	{/case}
 	{case default="Yes"}
-	{exp:channel:entries channel="designidea" limit="12" dynamic="no" category_group="1" category="{exp:freebie:category_id segment='2'}" parse="inward" paginate="bottom" disable="member_data"}
-	{/case}
-	{/switchee}
-{/case}
-{case default="Yes"}{!-- WHAT IS ZONES --}
-{exp:ifelse parse="inward"}
-{if "{segment_1}" == "all"}
-{exp:channel:entries channel="designidea" limit="12" dynamic="no" parse="inward" paginate="bottom" disable="member_data"}
-{if:else}
-{exp:channel:entries channel="designidea" limit="12" dynamic="no" category_group="1" category="{exp:freebie:category_id segment='1'}" parse="inward" paginate="bottom" disable="member_data"}
-{/if}
-{/exp:ifelse}
-{/case}
-{/exp:switchee}			
-{if count == 1 OR count == 5 OR count ==9}
-				<div class="jaf-row jaf-container clearfix">
+	<div class="contextnav-wrapper top justmobile">
+		<nav class="contextnav justmobile">
+			<ul class="clearfix">
+				{exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+				{if link == '/what-is-zones/landscape-design-and-garden-maintenance/'}
+				<li class="current"><a href="{link}">{text}</a></li>
+				{if:else}
+				<li><a href="{link}">{text}</a></li>
 				{/if}
+				{/exp:navee:custom}
+			</ul>
+		</nav>
+	</div>
+	<div class="contextnav-wrapper icons areas justmobile">
+		<nav class="contextnav icons justmobile">
+			<ul class="clearfix"  id="area-icons">
+				{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+				{if "{segment_1}" == "{category_url_title}"}
+				<li class="current"><a href="{site_url}{category_url_title}/design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+				{if:else}
+				<li><a href="{site_url}{category_url_title}/design-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+				{/if}
+				{/exp:channel:categories}
+			</ul>
+		</nav>
+	</div>
+	<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+	<div class="contextnav-breadcrumb withtoggle justmobile">
+		<nav>
+			<ul class="clearfix">
+				<li><a href="{site_url}photo-gallery/">Our work</a></li>
+				{if "{last_segment_absolute}" != "design-ideas"}
+				<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
+				{exp:navee:custom nav_title="Work-L3-{segment_2}" wrap_type="none"}
+				{if link == '/design-ideas/{segment_2}/'}<li><a href="{link}">{text}</a></li>{/if}
+				{/exp:navee:custom}
+				{if:else}
+				<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
+				{/if}
+			</ul>
+		</nav>
+	</div>
+	{/case}
+	{/exp:switchee}
+	<!-- end mobile nav -->
+	<div id="breadcrumb-wrapper" style="display: none;">
+		<nav id="breadcrumbline" role="navigation">
+			<ul>
+				<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+				<li class="parent"><a href="{site_url}photo-gallery/">Our work</a></li>
+				{if "{last_segment_absolute}" != "design-ideas"}
+				<li class="parent"><a href="{site_url}design-ideas/">Design Ideas</a></li>
+				{exp:navee:custom nav_title="Work-L3-{segment_2}" wrap_type="none"}
+				{if link == '/design-ideas/{segment_2}/'}<li><a href="{link}">{text}</a></li>{/if}
+				{/exp:navee:custom}
+				{if:else}
+				<li><a href="{site_url}design-ideas/">Design Ideas</a></li>
+				{/if}
+			</ul>
+			<div class="sep"></div>
+		</nav></div>
+	<div class="inner">
+
+		<section id="content" role="main">
+			<div class="intro clearfix">
+				{snippet-enquirenow-picture}
+				<h1>{page_h1_heading_desgal}</h1>
+				{if "{last_segment_absolute}" != "design-ideas"}
+				<a href="{site_url}design-ideas/" class="view">View all types of design ideas</a>
+				{/if}
+				{page_introduction_desgal}
+			</div>
+			{/case}
+			{case default="Yes"}
+			{!-- WHAT IS ZONES STYLE DISPLAY --}
+			{!--- Level 3 links --}
+			<div class="sep"></div>
+			<ul id="section-detail" class="textnav clearfix">
+				{exp:navee:custom nav_title="What-L3-{segment_1}" wrap_type="none"}
+				{if text == "Design ideas"}
+				<li class="current"><a href="{link}">{text}</a></li>
+				{if:elseif link != "/{segment_1}/case-studies/"}
+				<li><a href="{link}">{text}</a></li>
+				{/if}
+				{/exp:navee:custom}
+			</ul>
+			<div class="sep"></div>
+	</div><!-- end .inner -->
+	<!-- mobile nav start -->
+	<div class="contextnav-wrapper top justmobile">
+		<nav class="contextnav justmobile">
+			<ul class="clearfix">
+				{exp:navee:custom nav_title="What-L3-{segment_1}" wrap_type="none"}
+				{if text == "Design ideas"}
+				<li class="current"><a href="{link}">{text}</a></li>
+				{if:elseif link != "/{segment_1}/case-studies/"}
+				<li><a href="{link}">{text}</a></li>
+				{/if}
+				{/exp:navee:custom}
+			</ul>
+		</nav>
+	</div>
+
+	<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+	<div class="contextnav-breadcrumb withtoggle justmobile">
+		<nav>
+			<ul class="clearfix">
+				<li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></li>
+				<li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping</a></li>
+				{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+				{if "{segment_1}" == "{category_url_title}"}
+				<li><a href="{site_url}{category_url_title}/">{category_name}</a></li>
+				{/if}
+				{/exp:channel:categories}
+				<li><a href="{site_url}{segment_1}/design-ideas/">Design ideas</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- end mobile nav -->
+	<div id="breadcrumb-wrapper" style="display: none;">
+		<nav id="breadcrumbline" role="navigation">
+			<ul>
+				<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+				<li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></li>
+				<li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping</a></li>
+				{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+				{if "{segment_1}" == "{category_url_title}"}
+				<li class="parent"><a href="{site_url}{category_url_title}/">{category_name}</a></li>
+				{/if}
+				{/exp:channel:categories}
+				<li><a href="{site_url}{segment_1}/design-ideas/">Design ideas</a></li>
+			</ul>
+			<div class="sep"></div>
+		</nav></div>
+	<div class="inner">
+
+		<section id="content" role="main">
+			<div class="intro clearfix">
+				{snippet-enquirenow-picture}
+				<h1>{page_h1_heading_desgal}</h1>
+				{if "{segment_1}" != "all"}
+				<a href="{site_url}all/design-ideas/" class="view">View all types of design ideas</a>
+				{/if}
+				{page_introduction_desgal}
+			</div>
+			{/case}
+			{/exp:switchee}
+
+			{/exp:channel:entries}
+
+			<div id="gallery" class="app-folders-container clearfix">
+				{exp:switchee variable = "{segment_1}" parse="inward"}
+				{case value="design-ideas"}{!-- WORK WEVE DONE --}
+				{switchee variable = "{last_segment_absolute}" parse="inward"}
+				{case value="design-ideas"}
+				{exp:channel:entries channel="designidea" limit="12" dynamic="no" parse="inward" paginate="bottom" disable="member_data|categories"}
+				{/case}
+				{case default="Yes"}
+				{exp:channel:entries channel="designidea" limit="12" dynamic="no" category_group="1" category="{exp:freebie:category_id segment='2'}" parse="inward" paginate="bottom" disable="member_data"}
+				{/case}
+				{/switchee}
+				{/case}
+				{case default="Yes"}{!-- WHAT IS ZONES --}
+				{exp:ifelse parse="inward"}
+				{if "{segment_1}" == "all"}
+				{exp:channel:entries channel="designidea" limit="12" dynamic="no" parse="inward" paginate="bottom" disable="member_data"}
+				{if:else}
+				{exp:channel:entries channel="designidea" limit="12" dynamic="no" category_group="1" category="{exp:freebie:category_id segment='1'}" parse="inward" paginate="bottom" disable="member_data"}
+				{/if}
+				{/exp:ifelse}
+				{/case}
+				{/exp:switchee}
+				{if count == 1 OR count == 5 OR count ==9}
+				<div class="jaf-row jaf-container clearfix">
+					{/if}
 					{if count == 1}
 					<div style="opacity: 1;" class="folder" id="item-1">
-					{if:elseif count == 2}
-					<div style="opacity: 1;" class="folder" id="item-2">
-					{if:elseif count == 3}
-					<div style="opacity: 1;" class="folder" id="item-3">
-					{if:elseif count == 4}
-					<div style="opacity: 1;" class="folder endrow" id="item-4">
-					{if:elseif count == 5}
-					<div style="opacity: 1;" class="folder" id="item-5">
-					{if:elseif count == 6}
-					<div style="opacity: 1;" class="folder" id="item-6">
-					{if:elseif count == 7}
-					<div style="opacity: 1;" class="folder" id="item-7">
-					{if:elseif count == 8}
-					<div style="opacity: 1;" class="folder endrow" id="item-8">
-					{if:elseif count == 9}
-					<div style="opacity: 1;" class="folder" id="item-9">
-					{if:elseif count == 10}
-					<div style="opacity: 1;" class="folder" id="item-10">
-					{if:elseif count == 11}
-					<div style="opacity: 1;" class="folder" id="item-11">
+						{if:elseif count == 2}
+						<div style="opacity: 1;" class="folder" id="item-2">
+							{if:elseif count == 3}
+							<div style="opacity: 1;" class="folder" id="item-3">
+								{if:elseif count == 4}
+								<div style="opacity: 1;" class="folder endrow" id="item-4">
+									{if:elseif count == 5}
+									<div style="opacity: 1;" class="folder" id="item-5">
+										{if:elseif count == 6}
+										<div style="opacity: 1;" class="folder" id="item-6">
+											{if:elseif count == 7}
+											<div style="opacity: 1;" class="folder" id="item-7">
+												{if:elseif count == 8}
+												<div style="opacity: 1;" class="folder endrow" id="item-8">
+													{if:elseif count == 9}
+													<div style="opacity: 1;" class="folder" id="item-9">
+														{if:elseif count == 10}
+														<div style="opacity: 1;" class="folder" id="item-10">
+															{if:elseif count == 11}
+															<div style="opacity: 1;" class="folder" id="item-11">
+																{if:elseif count == 12}
+																<div style="opacity: 1;" class="folder endrow" id="item-12">
+																	{/if}
+																	<a href="#" onClick="ga('send', 'event', 'Design Ideas', 'Click Design Idea item thumbnail', '{exp:mah_eencode}{title}{/exp:mah_eencode}');">
+																		<span><img class="lazy-load" data-src="{thumbnail_image_di}" alt="" /></span>{title}
+																	</a>
+																</div>
+																{if count == 1 && {total_results} == 1}
+																<!-- end jaf-row --></div>
+															{if:elseif count == 2 && {total_results} == 2}
+															<!-- end jaf-row --></div>
+														{if:elseif count == 3 && {total_results} == 3}
+														<!-- end jaf-row --></div>
+													{if:elseif count == 4}
+													<!-- end jaf-row --></div>
+												{if:elseif count == 5 && {total_results} == 5}
+												<!-- end jaf-row --></div>
+											{if:elseif count == 6 && {total_results} == 6}
+											<!-- end jaf-row --></div>
+										{if:elseif count == 7 && {total_results} == 7}
+										<!-- end jaf-row --></div>
+									{if:elseif count == 8}
+									<!-- end jaf-row --></div>
+								{if:elseif count == 9 && {total_results} == 9}
+								<!-- end jaf-row --></div>
+							{if:elseif count == 10 && {total_results} == 10}
+							<!-- end jaf-row --></div>
+						{if:elseif count == 11 && {total_results} == 11}
+						<!-- end jaf-row --></div>
 					{if:elseif count == 12}
-					<div style="opacity: 1;" class="folder endrow" id="item-12">
-					{/if}
-						<a href="#" onClick="ga('send', 'event', 'Design Ideas', 'Click Design Idea item thumbnail', '{exp:mah_eencode}{title}{/exp:mah_eencode}');">
-							<span><img class="lazy-load" data-src="{thumbnail_image_di}" alt="" /></span>{title}
-						</a>
-					</div>
-		{if count == 1 && {total_results} == 1}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 2 && {total_results} == 2}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 3 && {total_results} == 3}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 4}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 5 && {total_results} == 5}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 6 && {total_results} == 6}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 7 && {total_results} == 7}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 8}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 9 && {total_results} == 9}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 10 && {total_results} == 10}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 11 && {total_results} == 11}
-		<!-- end jaf-row --></div>
-		{if:elseif count == 12}
-		<!-- end jaf-row --></div>
-		{/if}
+					<!-- end jaf-row --></div>
+				{/if}
 
 
-					{if count == 1}
-					<div style="display: none;" class="folderContent item-1 col1">
+				{if count == 1}
+				<div style="display: none;" class="folderContent item-1 col1">
 					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides1">
-					{if:elseif count == 2}
-					<div style="display: none;" class="folderContent item-2 col2">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides2">
-					{if:elseif count == 3}
-					<div style="display: none;" class="folderContent item-3 col3">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides3">
-					{if:elseif count == 4}
-					<div style="display: none;" class="folderContent item-4 col4">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides4">
-					{if:elseif count == 5}
-					<div style="display: none;" class="folderContent item-5 col1">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides5">
-					{if:elseif count == 6}
-					<div style="display: none;" class="folderContent item-6 col2">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides6">
-					{if:elseif count == 7}
-					<div style="display: none;" class="folderContent item-7 col3">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides7">
-					{if:elseif count == 8}
-					<div style="display: none;" class="folderContent item-8 col4">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides8">
-					{if:elseif count == 9}
-					<div style="display: none;" class="folderContent item-9 col1">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides9">
-					{if:elseif count == 10}
-					<div style="display: none;" class="folderContent item-10 col2">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides10">
-					{if:elseif count == 11}
-					<div style="display: none;" class="folderContent item-11 col3">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides11">
-					{if:elseif count == 12}
-					<div style="display: none;" class="folderContent item-12 col4">
-					<div class="jaf-container clearfix">
-					<div class="summarypic fleft">
-					<ul id="slides12">
-					{/if}    
-	{slideshow_items_di}
-	{if slideshowd-video-url == ""}
-	<li><a rel="prettyPhoto[{entry_id}]" href="{slideshowd-image-fullsize}" onClick="ga('send', 'event', 'Design Ideas', 'Click to enlarge', '{exp:mah_eencode}{title}{/exp:mah_eencode}');"><img src="{slideshowd-image-summary:click}" alt="{slideshowd-image-alt}" /></a></li>
-	{if:else}
-	<li><a rel="prettyPhoto[{entry_id}]" href="http://youtu.be/{slideshowd-video-url}?&rel=0&width=853&height=480" onClick="ga('send', 'event', 'Design Ideas', 'Click to watch', '{exp:mah_eencode}{title}{/exp:mah_eencode}');"><img src="{slideshowd-video-thumb:click}" alt="{slideshowd-video-thumb-alt}" /></a></li>
-	{/if}
-	{/slideshow_items_di}
-	</ul>
-	{if count == 1}
-	<div id="pagination1" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 2}
-	<div id="pagination2" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 3}
-	<div id="pagination3" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 4}
-	<div id="pagination4" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 5}
-	<div id="pagination5" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 6}
-	<div id="pagination6" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 7}
-	<div id="pagination7" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 8}
-	<div id="pagination8" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 9}
-	<div id="pagination9" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 10}
-	<div id="pagination10" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 11}
-	<div id="pagination11" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{if:elseif count == 12}
-	<div id="pagination12" class="slidespagination number{slideshow_items_di:total_rows}"></div>
-	{/if}
-	</div>
-	<div class="summarytext fleft"><h2>{title}</h2>
-	{summary_text_di}
-	<ul class="clearfix">
-	{if "{related_case_study_di:url_title}" != ""}
-	{related_case_study_di}
-	<li><a href="{site_url}case-studies/{related_case_study_di:url_title}">Read full case study</a></li>
-	{/related_case_study_di}
-	{/if}
-	<li>{snippet-enquirenow-textlink}Enquire now</a></li>
-	</ul>
-	</div><img src="{site_url}design/summary-pointer.png" alt="" class="summary-pointer" />
-	</div>
-    </div>
-{paginate}
-<div class="paginate-bottom">
-<nav class="pagination clearfix">
-<span>Page:</span>
-<ul>
-{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
-{abp_pages padding="no"}
-{if abp_is_current}
-<li>{abp_num}</li>
-{if:else}
-<li><a href="{abp_link}">{abp_num}</a></li>
-{/if}
-{/abp_pages}
-{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
-</ul>
-</nav></div>{/paginate}
-{/exp:channel:entries}	
-</div><!-- end .app-folders-container -->
+						<div class="summarypic fleft">
+							<ul id="slides1">
+								{if:elseif count == 2}
+								<div style="display: none;" class="folderContent item-2 col2">
+									<div class="jaf-container clearfix">
+										<div class="summarypic fleft">
+											<ul id="slides2">
+												{if:elseif count == 3}
+												<div style="display: none;" class="folderContent item-3 col3">
+													<div class="jaf-container clearfix">
+														<div class="summarypic fleft">
+															<ul id="slides3">
+																{if:elseif count == 4}
+																<div style="display: none;" class="folderContent item-4 col4">
+																	<div class="jaf-container clearfix">
+																		<div class="summarypic fleft">
+																			<ul id="slides4">
+																				{if:elseif count == 5}
+																				<div style="display: none;" class="folderContent item-5 col1">
+																					<div class="jaf-container clearfix">
+																						<div class="summarypic fleft">
+																							<ul id="slides5">
+																								{if:elseif count == 6}
+																								<div style="display: none;" class="folderContent item-6 col2">
+																									<div class="jaf-container clearfix">
+																										<div class="summarypic fleft">
+																											<ul id="slides6">
+																												{if:elseif count == 7}
+																												<div style="display: none;" class="folderContent item-7 col3">
+																													<div class="jaf-container clearfix">
+																														<div class="summarypic fleft">
+																															<ul id="slides7">
+																																{if:elseif count == 8}
+																																<div style="display: none;" class="folderContent item-8 col4">
+																																	<div class="jaf-container clearfix">
+																																		<div class="summarypic fleft">
+																																			<ul id="slides8">
+																																				{if:elseif count == 9}
+																																				<div style="display: none;" class="folderContent item-9 col1">
+																																					<div class="jaf-container clearfix">
+																																						<div class="summarypic fleft">
+																																							<ul id="slides9">
+																																								{if:elseif count == 10}
+																																								<div style="display: none;" class="folderContent item-10 col2">
+																																									<div class="jaf-container clearfix">
+																																										<div class="summarypic fleft">
+																																											<ul id="slides10">
+																																												{if:elseif count == 11}
+																																												<div style="display: none;" class="folderContent item-11 col3">
+																																													<div class="jaf-container clearfix">
+																																														<div class="summarypic fleft">
+																																															<ul id="slides11">
+																																																{if:elseif count == 12}
+																																																<div style="display: none;" class="folderContent item-12 col4">
+																																																	<div class="jaf-container clearfix">
+																																																		<div class="summarypic fleft">
+																																																			<ul id="slides12">
+																																																				{/if}
+																																																				{slideshow_items_di}
+																																																				{if slideshowd-video-url == ""}
+																																																				<li><a rel="prettyPhoto[{entry_id}]" href="{slideshowd-image-fullsize}" onClick="ga('send', 'event', 'Design Ideas', 'Click to enlarge', '{exp:mah_eencode}{title}{/exp:mah_eencode}');"><img src="{slideshowd-image-summary:click}" alt="{slideshowd-image-alt}" /></a></li>
+																																																				{if:else}
+																																																				<li><a rel="prettyPhoto[{entry_id}]" href="http://youtu.be/{slideshowd-video-url}?&rel=0&width=853&height=480" onClick="ga('send', 'event', 'Design Ideas', 'Click to watch', '{exp:mah_eencode}{title}{/exp:mah_eencode}');"><img src="{slideshowd-video-thumb:click}" alt="{slideshowd-video-thumb-alt}" /></a></li>
+																																																				{/if}
+																																																				{/slideshow_items_di}
+																																																			</ul>
+																																																			{if count == 1}
+																																																			<div id="pagination1" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 2}
+																																																			<div id="pagination2" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 3}
+																																																			<div id="pagination3" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 4}
+																																																			<div id="pagination4" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 5}
+																																																			<div id="pagination5" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 6}
+																																																			<div id="pagination6" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 7}
+																																																			<div id="pagination7" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 8}
+																																																			<div id="pagination8" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 9}
+																																																			<div id="pagination9" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 10}
+																																																			<div id="pagination10" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 11}
+																																																			<div id="pagination11" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{if:elseif count == 12}
+																																																			<div id="pagination12" class="slidespagination number{slideshow_items_di:total_rows}"></div>
+																																																			{/if}
+																																																		</div>
+																																																		<div class="summarytext fleft"><h2>{title}</h2>
+																																																			{summary_text_di}
+																																																			<ul class="clearfix">
+																																																				{if "{related_case_study_di:url_title}" != ""}
+																																																				{related_case_study_di}
+																																																				<li><a href="{site_url}case-studies/{related_case_study_di:url_title}">Read full case study</a></li>
+																																																				{/related_case_study_di}
+																																																				{/if}
+																																																				<li>{snippet-enquirenow-textlink}Enquire now</a></li>
+																																																			</ul>
+																																																		</div><img src="{site_url}design/summary-pointer.png" alt="" class="summary-pointer" />
+																																																	</div>
+																																																</div>
+																																																{paginate}
+																																																<div class="paginate-bottom">
+																																																	<nav class="pagination clearfix">
+																																																		<span>Page:</span>
+																																																		<ul>
+																																																			{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
+																																																			{abp_pages padding="no"}
+																																																			{if abp_is_current}
+																																																			<li>{abp_num}</li>
+																																																			{if:else}
+																																																			<li><a href="{abp_link}">{abp_num}</a></li>
+																																																			{/if}
+																																																			{/abp_pages}
+																																																			{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
+																																																		</ul>
+																																																	</nav></div>{/paginate}
+																																																{/exp:channel:entries}
+																																														</div><!-- end .app-folders-container -->
 
-</section>
+		</section>
 
-<div class="sep footersep"></div>	
+		<div class="sep footersep"></div>
 
-{snippet-partners}
-</div><!-- end .inner -->
+		{snippet-partners}
+	</div><!-- end .inner -->
 </div><!-- end #wrapper -->
 
 {embed="includes/footer-new-gallery"}

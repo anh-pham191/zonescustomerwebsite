@@ -2,7 +2,7 @@
 {snippet-doctype}
 <title>{seo_page_header_title_misc} | Zones</title>
 <script type="text/javascript" language="javascript">
-var navlevels = "single";
+    var navlevels = "single";
 </script>
 {snippet-callfiles-new}
 {FirstTimeVisitorEnable}
@@ -37,124 +37,119 @@ var navlevels = "single";
 <meta name="description" content="{seo_meta_description_misc}">
 <meta name="keywords" content="{seo_meta_keywords_misc}">
 <script type="text/javascript" language="javascript">
-$(document).ready(function(){	  
-$("a[rel^='prettyPhoto']").prettyPhoto({theme: 'facebook'});			
-});
+    $(document).ready(function(){
+        $("a[rel^='prettyPhoto']").prettyPhoto({theme: 'facebook'});
+    });
 </script>
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+	<div id="sitebanner" class="clearfix">
 
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-<li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>	
-
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+		{snippet-topnav}
+		{snippet-bannersearch}
+		{snippet-mobilemenu-home}
+	</div>
+	<div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
-<ul id="section-sub" class="textnav clearfix">
-{exp:navee:custom nav_title="OffcutsL2" wrap_type="none" selected_class="current"}
-<li class="{class}"><a href="{link}">{text}</a></li>
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>	
-</div><!-- end .inner -->
-<!-- mobile nav start -->
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
-{exp:navee:custom nav_title="OffcutsL2" wrap_type="none" selected_class="current"}
-<li class="{class}"><a href="{link}">{text}</a></li>
-{/exp:navee:custom}
-	</ul>
-	</nav>
-</div>
+	<div class="inner">
+		<ul id="section-sub" class="textnav clearfix">
+			{exp:navee:custom nav_title="OffcutsL2" wrap_type="none" selected_class="current"}
+			<li class="{class}"><a href="{link}">{text}</a></li>
+			{/exp:navee:custom}
+		</ul>
+		<div class="sep"></div>
+	</div><!-- end .inner -->
+	<!-- mobile nav start -->
+	<div class="contextnav-wrapper top justmobile">
+		<nav class="contextnav justmobile">
+			<ul class="clearfix">
+				{exp:navee:custom nav_title="OffcutsL2" wrap_type="none" selected_class="current"}
+				<li class="{class}"><a href="{link}">{text}</a></li>
+				{/exp:navee:custom}
+			</ul>
+		</nav>
+	</div>
 
-<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
-<div class="contextnav-breadcrumb withtoggle justmobile">
-	<nav>
-	<ul class="clearfix">
-{!--<li><a href="{site_url}clippings/">Clippings</a></li>--}
-{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
-{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
-{/exp:navee:custom}
-	</ul>
-	</nav>
-</div>
-<!-- end mobile nav -->
-<div id="breadcrumb-wrapper" style="display: none;">
-<nav id="breadcrumbline" role="navigation">
-<ul class="clearfix">
-<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
-{!--<li class="parent"><a href="{site_url}clippings/">Clippings</a></li>--}
-{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
-{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>
-</nav></div>
-<div class="inner">
-
-	
-<section id="content" role="main">
-<div class="intro clearfix">
-{snippet-enquirenow-picture}
-<h1>{page_h1_heading_misc}</h1>
-{page_introduction_misc} 
-</div>
-{/exp:channel:entries}
+	<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+	<div class="contextnav-breadcrumb withtoggle justmobile">
+		<nav>
+			<ul class="clearfix">
+				{!--<li><a href="{site_url}clippings/">Clippings</a></li>--}
+				{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+				{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
+				{/exp:navee:custom}
+			</ul>
+		</nav>
+	</div>
+	<!-- end mobile nav -->
+	<div id="breadcrumb-wrapper" style="display: none;">
+		<nav id="breadcrumbline" role="navigation">
+			<ul class="clearfix">
+				<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+				{!--<li class="parent"><a href="{site_url}clippings/">Clippings</a></li>--}
+				{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+				{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
+				{/exp:navee:custom}
+			</ul>
+			<div class="sep"></div>
+		</nav></div>
+	<div class="inner">
 
 
-<div id="list" class="listview">
-{exp:channel:entries channel="offer" dynamic="no" orderby="date" sort="desc" parse="inward" disable="member_data|pagination|categories"}
-
-<div class="item clearfix">
-{if '{entry_id}' == "1076"}
-<a class="fleft" target="_blank" href="http://engage.ubiquity.co.nz/surveys/5kOH-9d7GUKTFwjUrN7FVQ"><img src="{thumbnail_image_off}" alt="{title}" /></a>
-{ if:else }
-<a class="fleft" rel="prettyPhoto[ajax]" href="{site_url}special-offer/{url_title}?ajax=true&width=330&height=500"><img src="{thumbnail_image_off}" alt="{title}" /></a>
-{/if}
-<div class="fleft">
-<h2>{title}</h2>
-{summary_text_off} 
-<p class="more">
-{if '{entry_id}' == "1076"}
-<a target="_blank" href="http://engage.ubiquity.co.nz/surveys/5kOH-9d7GUKTFwjUrN7FVQ">Refer a friend</a>
-{ if:else }
-<a rel="prettyPhoto[ajax]" href="{site_url}special-offer/{url_title}?ajax=true&width=330&height=500">Download</a>
-{/if}
-{if '{popup_off}' != ""}
- | <a rel="prettyPhoto[inline]" href="#info-{url_title}" class="contentpop">More info</a>
-{/if}</p></p>
-</div>
-</div>
-{if '{entry_id}' == "1076"}
-<a target="_blank" href="http://engage.ubiquity.co.nz/surveys/5kOH-9d7GUKTFwjUrN7FVQ" class="item-m justmobile"><span class="link">{title}</span><span class="bg" style="background-image: url({thumbnail_image_off});"></span></a>
-{ if:else }
-<a  rel="prettyPhoto[ajax]" href="{site_url}special-offer/{url_title}?ajax=true&width=330&height=500" class="item-m justmobile"><span class="link">{title}</span><span class="bg" style="background-image: url({thumbnail_image_off});"></span></a>
-
-{/if}
+		<section id="content" role="main">
+			<div class="intro clearfix">
+				{snippet-enquirenow-picture}
+				<h1>{page_h1_heading_misc}</h1>
+				{page_introduction_misc}
+			</div>
+			{/exp:channel:entries}
 
 
-{if '{popup_off}' != ""}
-<div id="info-{url_title}" style="display:none;"><div class="scroll">{popup_off}</div></div>
-{/if}
+			<div id="list" class="listview">
+				{exp:channel:entries channel="offer" dynamic="no" orderby="date" sort="desc" parse="inward" disable="member_data|pagination|categories"}
 
-{/exp:channel:entries}
-</div>
-</section>
+				<div class="item clearfix">
+					{if '{entry_id}' == "1076"}
+					<a class="fleft" target="_blank" href="http://engage.ubiquity.co.nz/surveys/5kOH-9d7GUKTFwjUrN7FVQ"><img src="{thumbnail_image_off}" alt="{title}" /></a>
+					{ if:else }
+					<a class="fleft" rel="prettyPhoto[ajax]" href="{site_url}special-offer/{url_title}?ajax=true&width=330&height=500"><img src="{thumbnail_image_off}" alt="{title}" /></a>
+					{/if}
+					<div class="fleft">
+						<h2>{title}</h2>
+						{summary_text_off}
+						<p class="more">
+							{if '{entry_id}' == "1076"}
+							<a target="_blank" href="http://engage.ubiquity.co.nz/surveys/5kOH-9d7GUKTFwjUrN7FVQ">Refer a friend</a>
+							{ if:else }
+							<a rel="prettyPhoto[ajax]" href="{site_url}special-offer/{url_title}?ajax=true&width=330&height=500">Download</a>
+							{/if}
+							{if '{popup_off}' != ""}
+							| <a rel="prettyPhoto[inline]" href="#info-{url_title}" class="contentpop">More info</a>
+							{/if}</p></p>
+					</div>
+				</div>
+				{if '{entry_id}' == "1076"}
+				<a target="_blank" href="http://engage.ubiquity.co.nz/surveys/5kOH-9d7GUKTFwjUrN7FVQ" class="item-m justmobile"><span class="link">{title}</span><span class="bg" style="background-image: url({thumbnail_image_off});"></span></a>
+				{ if:else }
+				<a  rel="prettyPhoto[ajax]" href="{site_url}special-offer/{url_title}?ajax=true&width=330&height=500" class="item-m justmobile"><span class="link">{title}</span><span class="bg" style="background-image: url({thumbnail_image_off});"></span></a>
 
-<div class="sep footersep"></div>	
+				{/if}
 
-{snippet-partners}
-</div><!-- end .inner -->
+
+				{if '{popup_off}' != ""}
+				<div id="info-{url_title}" style="display:none;"><div class="scroll">{popup_off}</div></div>
+				{/if}
+
+				{/exp:channel:entries}
+			</div>
+		</section>
+
+		<div class="sep footersep"></div>
+
+		{snippet-partners}
+	</div><!-- end .inner -->
 </div><!-- end #wrapper -->
 {snippet-sidey}
 {embed="includes/footer-new"}

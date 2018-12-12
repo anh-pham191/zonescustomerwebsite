@@ -4,12 +4,12 @@
 {exp:switchee variable = "{referrer:segment_1}" parse="inward"}
 {case value="the-kiwi-dream|about-the-kiwi-dream|the-kiwi-dream-video-gallery"}{!-- KIWI DREAM --}
 <script type="text/javascript" language="javascript">
-var navlevels = "doubletextonly";
+    var navlevels = "doubletextonly";
 </script>
 {/case}
 {case default="Yes"}
 <script type="text/javascript" language="javascript">
-var navlevels = "single";
+    var navlevels = "single";
 </script>
 {/case}
 {/exp:switchee}
@@ -49,179 +49,174 @@ var navlevels = "single";
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
-
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-<li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>	
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+	<div id="sitebanner" class="clearfix">
+		{snippet-topnav}
+		{snippet-bannersearch}
+		{snippet-mobilemenu-home}
+	</div>
+	<div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
-<ul id="section-sub" class="textnav clearfix">
-{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
-{if text == 'Competitions'}
-<li class="current"><a href="{link}">{text}</a></li>
-{if:elseif link != '/clippings/community/'}
-<li><a href="{link}">{text}</a></li>
-{/if}
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>
-</div><!-- end .inner -->
-<!-- mobile nav start -->
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
-{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
-{if text == 'Competitions'}
-<li class="current"><a href="{link}">{text}</a></li>
-{if:elseif link != '/clippings/community/'}
-<li><a href="{link}">{text}</a></li>
-{/if}
-{/exp:navee:custom}
-		
-	</ul>
-	</nav>
-</div>
+	<div class="inner">
+		<ul id="section-sub" class="textnav clearfix">
+			{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+			{if text == 'Competitions'}
+			<li class="current"><a href="{link}">{text}</a></li>
+			{if:elseif link != '/clippings/community/'}
+			<li><a href="{link}">{text}</a></li>
+			{/if}
+			{/exp:navee:custom}
+		</ul>
+		<div class="sep"></div>
+	</div><!-- end .inner -->
+	<!-- mobile nav start -->
+	<div class="contextnav-wrapper top justmobile">
+		<nav class="contextnav justmobile">
+			<ul class="clearfix">
+				{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+				{if text == 'Competitions'}
+				<li class="current"><a href="{link}">{text}</a></li>
+				{if:elseif link != '/clippings/community/'}
+				<li><a href="{link}">{text}</a></li>
+				{/if}
+				{/exp:navee:custom}
 
-<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
-<div class="contextnav-breadcrumb withtoggle justmobile">
-	<nav>
-	<ul class="clearfix">
-<li><a href="{site_url}clippings/">Clippings</a></li>
-<li><a href="{site_url}competitions/">Competitions</a></li>
-	</ul>
-	</nav>
-</div>
-<!-- end mobile nav -->
-<div id="breadcrumb-wrapper" style="display: none;">
-<nav id="breadcrumbline" role="navigation">
-<ul class="clearfix">
-<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
-<li class="parent"><a href="{site_url}clippings/">Clippings</a></li>
-<li><a href="{site_url}competitions/">Competitions</a></li>
-</ul>
-<div class="sep"></div>
-</nav></div>
+			</ul>
+		</nav>
+	</div>
 
-{exp:switchee variable = "{last_segment}" parse="inward"}
-{case value="competitions"}
-{!-- DISPLAY CURRENT AND PAST COMPETITIONS --}
-{exp:channel:entries disable="member_data|pagination|categories" channel="competitions_list" limit="1"}
-<div class="inner">
-<section id="content" role="main">
-<div class="intro clearfix">
-{snippet-enquirenow-picture}
-<h1>{page_h1_head_complist}</h1>
-{intro_comp_current} 
-</div>
-{/exp:channel:entries}
-<div id="list" class="listview topborder">
-{exp:channel:entries channel="competition" dynamic="no" orderby="date" sort="desc" disable="member_data|pagination" category="21" show_expired="no"}
-<div class="item clearfix"><a class="fleft" href="JavaScript:newPopup('{entry_form_url}');"><img src="{thumbnail_image_comp}" alt="{title}" /></a>
-<div class="fleft">
-<h2>{page_h1_heading_comp}</h2>
-{summary_text_comp} 
-<p class="more"><a href="JavaScript:newPopup('{entry_form_url}');">Enter now</a></p>
-</div>
-</div>
-<a href="{entry_form_url}" target="_blank" class="item-m justmobile"><span class="link">{page_h1_heading_comp}</span><span class="bg" style="background-image: url({thumbnail_image_comp});"></span></a>
+	<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+	<div class="contextnav-breadcrumb withtoggle justmobile">
+		<nav>
+			<ul class="clearfix">
+				<li><a href="{site_url}clippings/">Clippings</a></li>
+				<li><a href="{site_url}competitions/">Competitions</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- end mobile nav -->
+	<div id="breadcrumb-wrapper" style="display: none;">
+		<nav id="breadcrumbline" role="navigation">
+			<ul class="clearfix">
+				<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+				<li class="parent"><a href="{site_url}clippings/">Clippings</a></li>
+				<li><a href="{site_url}competitions/">Competitions</a></li>
+			</ul>
+			<div class="sep"></div>
+		</nav></div>
 
-{/exp:channel:entries}
-</div>
-{exp:channel:entries disable="member_data|pagination|categories" channel="competitions_list" limit="1"}
-<div class="pastintro">
-<h2>{past_comps_heading}</h2>
-{intro_para_past}
-</div>
-{/exp:channel:entries}
+	{exp:switchee variable = "{last_segment}" parse="inward"}
+	{case value="competitions"}
+	{!-- DISPLAY CURRENT AND PAST COMPETITIONS --}
+	{exp:channel:entries disable="member_data|pagination|categories" channel="competitions_list" limit="1"}
+	<div class="inner">
+		<section id="content" role="main">
+			<div class="intro clearfix">
+				{snippet-enquirenow-picture}
+				<h1>{page_h1_head_complist}</h1>
+				{intro_comp_current}
+			</div>
+			{/exp:channel:entries}
+			<div id="list" class="listview topborder">
+				{exp:channel:entries channel="competition" dynamic="no" orderby="date" sort="desc" disable="member_data|pagination" category="21" show_expired="no"}
+				<div class="item clearfix"><a class="fleft" href="JavaScript:newPopup('{entry_form_url}');"><img src="{thumbnail_image_comp}" alt="{title}" /></a>
+					<div class="fleft">
+						<h2>{page_h1_heading_comp}</h2>
+						{summary_text_comp}
+						<p class="more"><a href="JavaScript:newPopup('{entry_form_url}');">Enter now</a></p>
+					</div>
+				</div>
+				<a href="{entry_form_url}" target="_blank" class="item-m justmobile"><span class="link">{page_h1_heading_comp}</span><span class="bg" style="background-image: url({thumbnail_image_comp});"></span></a>
 
-<div id="list" class="listview">
-{exp:channel:entries channel="competition" dynamic="no" orderby="date" sort="desc" paginate="bottom" limit="12" disable="member_data" category="22" show_expired="yes"}
-<div class="item clearfix"><a class="fleft" href="{site_url}{segment_1}/{segment_2}/{url_title}"><img src="{thumbnail_image_comp}" alt="{title}" /></a>
-<div class="fleft">
-<h2>{page_h1_heading_comp}</h2>
-{summary_text_comp} 
-<p class="more"><a href="{site_url}{segment_1}/{segment_2}/{url_title}">Read more and find out who won</a></p>
-</div>
-</div>
-<a href="{site_url}{segment_1}/{segment_2}/{url_title}" class="item-m justmobile"><span class="link">{page_h1_heading_comp}</span><span class="bg" style="background-image: url({thumbnail_image_comp});"></span></a>
+				{/exp:channel:entries}
+			</div>
+			{exp:channel:entries disable="member_data|pagination|categories" channel="competitions_list" limit="1"}
+			<div class="pastintro">
+				<h2>{past_comps_heading}</h2>
+				{intro_para_past}
+			</div>
+			{/exp:channel:entries}
 
-{paginate}
-<div class="paginate-bottom">
-<nav class="pagination clearfix">
-<span>Page:</span>
-<ul>
-{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
-{abp_pages padding="no"}
-{if abp_is_current}
-<li>{abp_num}</li>
-{if:else}
-<li><a href="{abp_link}">{abp_num}</a></li>
-{/if}
-{/abp_pages}
-{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
-</ul>
-</nav></div>{/paginate}
-{/exp:channel:entries}
+			<div id="list" class="listview">
+				{exp:channel:entries channel="competition" dynamic="no" orderby="date" sort="desc" paginate="bottom" limit="12" disable="member_data" category="22" show_expired="yes"}
+				<div class="item clearfix"><a class="fleft" href="{site_url}{segment_1}/{segment_2}/{url_title}"><img src="{thumbnail_image_comp}" alt="{title}" /></a>
+					<div class="fleft">
+						<h2>{page_h1_heading_comp}</h2>
+						{summary_text_comp}
+						<p class="more"><a href="{site_url}{segment_1}/{segment_2}/{url_title}">Read more and find out who won</a></p>
+					</div>
+				</div>
+				<a href="{site_url}{segment_1}/{segment_2}/{url_title}" class="item-m justmobile"><span class="link">{page_h1_heading_comp}</span><span class="bg" style="background-image: url({thumbnail_image_comp});"></span></a>
 
-</div>
-</section>
-{/case}
-	
-{case default="Yes"}
-{!-- DISPLAY PAST COMPETITIONS ONLY --}
-{exp:channel:entries disable="member_data|pagination|categories" channel="competitions_list" limit="1"}
-<div class="inner">
-<section id="content" role="main">
-<div class="intro clearfix">
-{snippet-enquirenow-picture}
-<h1>{past_comps_heading}</h1>
-{intro_para_past} 
-</div>
-{/exp:channel:entries}
+				{paginate}
+				<div class="paginate-bottom">
+					<nav class="pagination clearfix">
+						<span>Page:</span>
+						<ul>
+							{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
+							{abp_pages padding="no"}
+							{if abp_is_current}
+							<li>{abp_num}</li>
+							{if:else}
+							<li><a href="{abp_link}">{abp_num}</a></li>
+							{/if}
+							{/abp_pages}
+							{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
+						</ul>
+					</nav></div>{/paginate}
+				{/exp:channel:entries}
 
-<div id="list" class="listview">
-{exp:channel:entries channel="competition" dynamic="no" orderby="date" sort="desc" paginate="bottom" limit="12" disable="member_data" category="22" show_expired="yes"}
-<div class="item clearfix"><a class="fleft" href="{site_url}{segment_1}/{segment_2}/{url_title}"><img src="{thumbnail_image_comp}" alt="{title}" /></a>
-<div class="fleft">
-<h2>{page_h1_heading_comp}</h2>
-{summary_text_comp} 
-<p class="more"><a href="{site_url}{segment_1}/{segment_2}/{url_title}">Read more and find out who won</a></p>
-</div>
-</div>
-{paginate}
-<div class="paginate-bottom">
-<nav class="pagination clearfix">
-<span>Page:</span>
-<ul>
-{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
-{abp_pages padding="no"}
-{if abp_is_current}
-<li>{abp_num}</li>
-{if:else}
-<li><a href="{abp_link}">{abp_num}</a></li>
-{/if}
-{/abp_pages}
-{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
-</ul>
-</nav></div>{/paginate}
-{/exp:channel:entries}
+			</div>
+		</section>
+		{/case}
 
-</div>
-</section>
-{/case}
-{/exp:switchee}
+		{case default="Yes"}
+		{!-- DISPLAY PAST COMPETITIONS ONLY --}
+		{exp:channel:entries disable="member_data|pagination|categories" channel="competitions_list" limit="1"}
+		<div class="inner">
+			<section id="content" role="main">
+				<div class="intro clearfix">
+					{snippet-enquirenow-picture}
+					<h1>{past_comps_heading}</h1>
+					{intro_para_past}
+				</div>
+				{/exp:channel:entries}
 
-<div class="sep footersep"></div>	
-{snippet-partners}
-</div><!-- end .inner -->
-</div><!-- end #wrapper -->
-{snippet-sidey}
-{embed="includes/footer-new"}
+				<div id="list" class="listview">
+					{exp:channel:entries channel="competition" dynamic="no" orderby="date" sort="desc" paginate="bottom" limit="12" disable="member_data" category="22" show_expired="yes"}
+					<div class="item clearfix"><a class="fleft" href="{site_url}{segment_1}/{segment_2}/{url_title}"><img src="{thumbnail_image_comp}" alt="{title}" /></a>
+						<div class="fleft">
+							<h2>{page_h1_heading_comp}</h2>
+							{summary_text_comp}
+							<p class="more"><a href="{site_url}{segment_1}/{segment_2}/{url_title}">Read more and find out who won</a></p>
+						</div>
+					</div>
+					{paginate}
+					<div class="paginate-bottom">
+						<nav class="pagination clearfix">
+							<span>Page:</span>
+							<ul>
+								{if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
+								{abp_pages padding="no"}
+								{if abp_is_current}
+								<li>{abp_num}</li>
+								{if:else}
+								<li><a href="{abp_link}">{abp_num}</a></li>
+								{/if}
+								{/abp_pages}
+								{if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
+							</ul>
+						</nav></div>{/paginate}
+					{/exp:channel:entries}
+
+				</div>
+			</section>
+			{/case}
+			{/exp:switchee}
+
+			<div class="sep footersep"></div>
+			{snippet-partners}
+		</div><!-- end .inner -->
+	</div><!-- end #wrapper -->
+	{snippet-sidey}
+	{embed="includes/footer-new"}

@@ -2,124 +2,119 @@
 {snippet-doctype}
 <title>{exp:search:keywords} | Project Estimates Search Results | Zones</title>
 <script type="text/javascript" language="javascript">
-var navlevels = "single";
+    var navlevels = "single";
 </script>
 {snippet-callfiles-new}
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
+	<div id="sitebanner" class="clearfix">
 
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-<li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>	
-
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+		{snippet-topnav}
+		{snippet-bannersearch}
+		{snippet-mobilemenu-home}
+	</div>
+	<div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
-<ul id="section-sub" class="textnav clearfix">
-{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
-{if "{text}" == "Project estimates"}
-<li class="current"><a href="{link}">{text}</a></li>
-{if:else}
-<li><a href="{link}">{text}</a></li>
-{/if}
-{/exp:navee:custom}
-</ul>
-<div class="sep"></div>	
-</div><!-- end .inner -->
-<div id="breadcrumb-wrapper" style="display: none;">
-<nav id="breadcrumbline" role="navigation">
-<ul class="clearfix">
-<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
-<li class="parent"><a href="{site_url}landscaping-ideas/">Advice</a></li>
-<li class="parent"><a href="{site_url}landscape-design-cost/">Project estimates</a></li>
-<li><span>Search results</span></li>
-</ul>
-<div class="sep"></div>
-</nav></div>
-<div class="inner">	
-	
-<section id="content" role="main">
-<div class="intro clearfix">
-{snippet-enquirenow-picture}
-<h1>Project Estimates Search Results</h1>
-{page_introduction_est_list} 
-</div>
-{/exp:channel:entries}
+	<div class="inner">
+		<ul id="section-sub" class="textnav clearfix">
+			{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+			{if "{text}" == "Project estimates"}
+			<li class="current"><a href="{link}">{text}</a></li>
+			{if:else}
+			<li><a href="{link}">{text}</a></li>
+			{/if}
+			{/exp:navee:custom}
+		</ul>
+		<div class="sep"></div>
+	</div><!-- end .inner -->
+	<div id="breadcrumb-wrapper" style="display: none;">
+		<nav id="breadcrumbline" role="navigation">
+			<ul class="clearfix">
+				<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+				<li class="parent"><a href="{site_url}landscaping-ideas/">Advice</a></li>
+				<li class="parent"><a href="{site_url}landscape-design-cost/">Project estimates</a></li>
+				<li><span>Search results</span></li>
+			</ul>
+			<div class="sep"></div>
+		</nav></div>
+	<div class="inner">
 
-<div class="clearfix list-tools top">
-<p class="fleft">Your search for <strong class="highlight">{exp:search:keywords}</strong> found <strong>{exp:search:total_results}</strong> 
-{if "{exp:search:total_results}" > 1}
-Project estimates.
-{if:else}
-Project estimate.
-{/if}</p>
-{exp:search:simple_form result_page="site/EstimatesSearch" no_result_page="site/EstimatesSearchNoResults" search_in="entries" status="open" form_class="fright" results="8" channel="estimate" where="word"}
-<fieldset class="clearfix">
-	<legend></legend>
-	<input type="text" id="list-search" name="keywords" maxlength="100" value="{exp:search:keywords parse="inward"}" />
-	<button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /></button>
-	</fieldset>
-{/exp:search:simple_form}
-</div>
+		<section id="content" role="main">
+			<div class="intro clearfix">
+				{snippet-enquirenow-picture}
+				<h1>Project Estimates Search Results</h1>
+				{page_introduction_est_list}
+			</div>
+			{/exp:channel:entries}
 
-<div id="list" class="listview searchresults">
-{exp:search:search_results paginate="bottom"}
+			<div class="clearfix list-tools top">
+				<p class="fleft">Your search for <strong class="highlight">{exp:search:keywords}</strong> found <strong>{exp:search:total_results}</strong>
+					{if "{exp:search:total_results}" > 1}
+					Project estimates.
+					{if:else}
+					Project estimate.
+					{/if}</p>
+				{exp:search:simple_form result_page="site/EstimatesSearch" no_result_page="site/EstimatesSearchNoResults" search_in="entries" status="open" form_class="fright" results="8" channel="estimate" where="word"}
+				<fieldset class="clearfix">
+					<legend></legend>
+					<input type="text" id="list-search" name="keywords" maxlength="100" value="{exp:search:keywords parse="inward"}" />
+					<button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /></button>
+				</fieldset>
+				{/exp:search:simple_form}
+			</div>
 
-<div class="item clearfix"><a class="fleft" href="{site_url}landscape-design-cost/{url_title}"><img src="{thumbnail_image_est}" alt="{title}" /></a>
-<div class="fleft">
-<h2>{page_h1_heading_est}</h2>
-<p>{exp:zm_excerpt}{full_text}{/exp:zm_excerpt}</p>
-<p class="more"><a href="{site_url}landscape-design-cost/{url_title}">Read full project estimate</a></p>
-</div>
-</div>
+			<div id="list" class="listview searchresults">
+				{exp:search:search_results paginate="bottom"}
 
-{paginate}
-{pagination_links}
-<div class="paginate-bottom">
-<nav class="pagination clearfix">
-<span>Page:</span>
-<ul>
-{previous_page}
-<li><a href="{pagination_url}">«Previous</a></li>
-{/previous_page}
-{page}
-{if current_page}
-<li>{pagination_page_number}</li>
-{if:else}
-<li><a href="{pagination_url}">{pagination_page_number}</a></li>
-{/if}
-{/page}
-{next_page}
-<li><a href="{pagination_url}">Next»</a></li>
-{/next_page}
-</ul>
-</nav></div>
-{/pagination_links}
-{/paginate}
+				<div class="item clearfix"><a class="fleft" href="{site_url}landscape-design-cost/{url_title}"><img src="{thumbnail_image_est}" alt="{title}" /></a>
+					<div class="fleft">
+						<h2>{page_h1_heading_est}</h2>
+						<p>{exp:zm_excerpt}{full_text}{/exp:zm_excerpt}</p>
+						<p class="more"><a href="{site_url}landscape-design-cost/{url_title}">Read full project estimate</a></p>
+					</div>
+				</div>
 
-{/exp:search:search_results}
-</div>
-</section>
+				{paginate}
+				{pagination_links}
+				<div class="paginate-bottom">
+					<nav class="pagination clearfix">
+						<span>Page:</span>
+						<ul>
+							{previous_page}
+							<li><a href="{pagination_url}">«Previous</a></li>
+							{/previous_page}
+							{page}
+							{if current_page}
+							<li>{pagination_page_number}</li>
+							{if:else}
+							<li><a href="{pagination_url}">{pagination_page_number}</a></li>
+							{/if}
+							{/page}
+							{next_page}
+							<li><a href="{pagination_url}">Next»</a></li>
+							{/next_page}
+						</ul>
+					</nav></div>
+				{/pagination_links}
+				{/paginate}
+
+				{/exp:search:search_results}
+			</div>
+		</section>
 
 
-<div class="sep footersep"></div>	
+		<div class="sep footersep"></div>
 
-<aside role="complementary" id="associations" class="clearfix">
-<ul id="partner-logos">
-{exp:channel:entries channel="partner_logo" dynamic="no" disable="member_data|pagination|categories"}
-<li>{if "{logo_link}" != ""}<a href="{logo_link}" target="_blank">{/if}<img src="{logo_image}" alt="{title}" />{if "{logo_link}" != ""}</a>{/if}</li>
-{/exp:channel:entries}
-</ul>
-</aside>
-</div><!-- end .inner -->
+		<aside role="complementary" id="associations" class="clearfix">
+			<ul id="partner-logos">
+				{exp:channel:entries channel="partner_logo" dynamic="no" disable="member_data|pagination|categories"}
+				<li>{if "{logo_link}" != ""}<a href="{logo_link}" target="_blank">{/if}<img src="{logo_image}" alt="{title}" />{if "{logo_link}" != ""}</a>{/if}</li>
+				{/exp:channel:entries}
+			</ul>
+		</aside>
+	</div><!-- end .inner -->
 </div><!-- end #wrapper -->
 
 {embed="includes/footer-new"}

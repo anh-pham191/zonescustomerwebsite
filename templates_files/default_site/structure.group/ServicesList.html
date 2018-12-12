@@ -49,17 +49,17 @@
 </nav>
 <div id="wrapper" class="clearfix">
 
-        <div class="inner">
-            <ul id="section-sub" class="textnav clearfix">
-                {exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
-                {if text == 'Types of Landscaping Services'}
-                <li class="current"><a href="{link}">{text}</a></li>
-                {if:else}
-                <li><a href="{link}">{text}</a></li>
-                {/if}
-                {/exp:navee:custom}
-            </ul>
-        </div>
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+            {if text == 'Types of Landscaping Services'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:else}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+    </div>
     <!-- mobile nav start -->
     <div class="contextnav-wrapper top justmobile">
         <nav class="contextnav justmobile">
@@ -88,7 +88,7 @@
         </nav>
     </div>
     <div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span
-                    class="showlink">Show navigation</span></a></div>
+            class="showlink">Show navigation</span></a></div>
     <div class="contextnav-breadcrumb withtoggle justmobile">
         <nav>
             <ul class="clearfix">
@@ -110,7 +110,7 @@
                 <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home"
                                                            class="sprite-bread-home" width="47" height="38"/></a></li>
                 <li class="parent"><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our
-                        services</a></li>
+                    services</a></li>
                 {exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
                 {if is_selected}
                 <li><a href="{link}">{text}</a></li>

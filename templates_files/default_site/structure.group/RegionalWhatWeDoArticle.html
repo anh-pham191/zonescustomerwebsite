@@ -5,7 +5,7 @@
 {preload_replace:region="{exp:freebie:category_name segment='6' group_id='8'}"}
 <title>{seo_page_header_title_cart} | Zones</title>
 <script type="text/javascript" language="javascript">
-var navlevels = "single";
+    var navlevels = "single";
 </script>
 {snippet-callfiles-new}
 {FirstTimeVisitorEnable}
@@ -39,36 +39,42 @@ var navlevels = "single";
 </script>
 <meta name="description" content="{seo_meta_description_cart}">
 <meta name="keywords" content="{seo_meta_keywords_cart}">
-<style>
-  @media only all and (min-width: 64em) {
-    .map-double:nth-child(even) {margin-left: 10px;margin-right: 0;}
-}
-</style>
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-<li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>
+    <div id="sitebanner" class="clearfix">
 
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+        {snippet-topnav}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-home}
+    </div>
+    <div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
+    <div class="inner">
         <ul id="section-sub" class="textnav clearfix">
-                <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/">View Other Locations</a></li>
-              </ul>
-              <div class="sep"></div>
-              <div class="flexnav-outerwrap">
-              <div class="flexnav-innerwrap">
-              <ul id="section-detail" class="textnav clearfix">
+            <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
+            <li><a href="{site_url}landscape-designers/service-areas/">View Other Service Areas</a></li>
+        </ul>
+        <div class="sep"></div>
+        <div class="flexnav-outerwrap">
+            <div class="flexnav-innerwrap">
+                <ul id="section-detail" class="textnav clearfix">
+                    <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
+                    <li class="current"><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}">What We Do</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+                </ul>
+            </div></div>
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <!-- mobile nav start -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
                 <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
                 <li class="current"><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}">What We Do</a></li>
                 <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
@@ -76,211 +82,149 @@ var navlevels = "single";
                 <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
                 <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
                 <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
-                </ul>
-              </div></div>
-              <div class="sep"></div>
-</div><!-- end .inner -->
-<!-- mobile nav start -->
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
-            <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
-            <li class="current"><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}">What We Do</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
 
-	</ul>
-	</nav>
-</div>
+            </ul>
+        </nav>
+    </div>
 
-<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
-<div class="contextnav-breadcrumb withtoggle justmobile">
-	<nav>
-	<ul class="clearfix">
-            <li><a href="{site_url}landscape-designers/">About us</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
-            <li class="current"><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}">What We Do</a></li>
-	</ul>
-	</nav>
-</div>
-<!-- end mobile nav -->
-<div id="breadcrumb-wrapper" style="display: none;">
-<!-- <nav id="breadcrumbline" role="navigation">
-<ul class="clearfix">
-<li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
-<li class="parent"><a href="{site_url}landscape-designers/">About us</a></li>
-<li class="parent"><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
-<li><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}">What We Do</a></li>
-</ul>
-<div class="sep"></div>
-</nav> -->
-{snippet-socialsharing-breadcrumb}
-</div>
+    <div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+    <div class="contextnav-breadcrumb withtoggle justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="{site_url}landscape-designers/">About us</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/">Service Areas</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
+                <li class="current"><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}">What We Do</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- end mobile nav -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        <!-- <nav id="breadcrumbline" role="navigation">
+        <ul class="clearfix">
+        <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+        <li class="parent"><a href="{site_url}landscape-designers/">About us</a></li>
+        <li class="parent"><a href="{site_url}landscape-designers/service-areas/">Service Areas</a></li>
+        <li><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}">What We Do</a></li>
+        </ul>
+        <div class="sep"></div>
+        </nav> -->
+        {snippet-socialsharing-breadcrumb}
+    </div>
 
-<div class="inner">
+    <div class="inner">
 
-{exp:ifelse parse="inward"}
-{if "{panorama_slideshow_images_cart:total_rows}" > 1 AND "{panorama_slide_order_cart}" == "SetOrder"}
-<div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
-    data-cycle-pause-on-hover="true"
-    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-pager="#pager1">
-{panorama_slideshow_images_cart}
-<img src="{cart-panorama-image}" alt="{cart-panorama-image-alt}"/>
-{/panorama_slideshow_images_cart}
-</div>
-<div class="cycle-pager" id="pager1"></div>
-{if:elseif "{panorama_slideshow_images_cart:total_rows}" > 1 AND "{panorama_slide_order_cart}" != "SetOrder"}
-<div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
-    data-cycle-pause-on-hover="true"
-    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="true" data-cycle-pager="#pager1">
-{panorama_slideshow_images_cart}
-<img src="{cart-panorama-image}" alt="{cart-panorama-image-alt}"/>
-{/panorama_slideshow_images_cart}
-</div>
-<div class="cycle-pager" id="pager1"></div>
-{if:elseif "{panorama_slideshow_images_cart:total_rows}" == 1}
-<div id="wideslideshow">
-{panorama_slideshow_images_cart}
-<img src="{cart-panorama-image}" alt="{cart-panorama-image-alt}"/>
-{/panorama_slideshow_images_cart}
-</div>
-{/if}
-{/exp:ifelse}
+        {exp:ifelse parse="inward"}
+        {if "{panorama_slideshow_images_cart:total_rows}" > 1 AND "{panorama_slide_order_cart}" == "SetOrder"}
+        <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
+             data-cycle-pause-on-hover="true"
+             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-pager="#pager1">
+            {panorama_slideshow_images_cart}
+            <img src="{cart-panorama-image}" alt="{cart-panorama-image-alt}"/>
+            {/panorama_slideshow_images_cart}
+        </div>
+        <div class="cycle-pager" id="pager1"></div>
+        {if:elseif "{panorama_slideshow_images_cart:total_rows}" > 1 AND "{panorama_slide_order_cart}" != "SetOrder"}
+        <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
+             data-cycle-pause-on-hover="true"
+             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="true" data-cycle-pager="#pager1">
+            {panorama_slideshow_images_cart}
+            <img src="{cart-panorama-image}" alt="{cart-panorama-image-alt}"/>
+            {/panorama_slideshow_images_cart}
+        </div>
+        <div class="cycle-pager" id="pager1"></div>
+        {if:elseif "{panorama_slideshow_images_cart:total_rows}" == 1}
+        <div id="wideslideshow">
+            {panorama_slideshow_images_cart}
+            <img src="{cart-panorama-image}" alt="{cart-panorama-image-alt}"/>
+            {/panorama_slideshow_images_cart}
+        </div>
+        {/if}
+        {/exp:ifelse}
 
-<section id="content" class="panorama" role="main">
-<div class="clearfix">
-<div id="content-body">
-<div class="intro clearfix">
-<h1>{page_h1_heading_cart}</h1>
-<a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}" onclick="history.back();return false;" class="view">back to list</a>
-</div>
+        <section id="content" class="panorama" role="main">
+            <div class="clearfix">
+                <div id="content-body">
+                    <div class="intro clearfix">
+                        <h1>{page_h1_heading_cart}</h1>
+                        <a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}" onclick="history.back();return false;" class="view">back to list</a>
+                    </div>
 
-{snippet-socialsharing-body}
+                    {snippet-socialsharing-body}
 
-<div class="pagecopy">{page_content_cart}</div>
-{exp:channel:form channel="what_we_do" entry_id="{entry_id}" return="what_we_do/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
-{exp:ifelse parse="inward"}
-{if "{sharing_count_cart}" == "" }
-<input type="hidden" id="count" name="sharing_count_cart" value="0" />
-{if:else}
-<input type="hidden" id="count" name="sharing_count_cart" value="{sharing_count_cart}" />
-{/if}
-{/exp:ifelse}
-{/exp:channel:form}
-{/exp:channel:entries}
-{exp:channel:entries channel="service_area" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_6}" limit="1" disable="member_data"}
+                    <div class="pagecopy">{page_content_cart}</div>
+                    {exp:channel:form channel="what_we_do" entry_id="{entry_id}" return="what_we_do/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
+                    {exp:ifelse parse="inward"}
+                    {if "{sharing_count_cart}" == "" }
+                    <input type="hidden" id="count" name="sharing_count_cart" value="0" />
+                    {if:else}
+                    <input type="hidden" id="count" name="sharing_count_cart" value="{sharing_count_cart}" />
+                    {/if}
+                    {/exp:ifelse}
+                    {/exp:channel:form}
+                    {/exp:channel:entries}
+                    {exp:channel:entries disable="member_data|pagination" url_title="{freebie_6}" limit="1" channel="service_area" cache="yes" refresh="1500"}
+                    <input type="hidden" id="contact-address-rows" value="{contact_address_sera:total_rows}"/>
+                    {exp:ifelse parse="inward"}
+                    {if "{contact_address_sera:total_rows}" > 0 }
+                    {if "{contact_address_sera:total_rows}" == 1 }
+                    <h1>Location</h1>
+                    {contact_address_sera}
+                    <div class="map-single">
+                        <div class="map-address"><i class="fa fa-map-marker"></i><span id="address-{row_index}">{address}</span></div>
+                        <div id="googlemap-{row_index}" class="map-container"></div>
+                    </div>
+                    {/contact_address_sera}
+                    {if:else}
+                    <h1>Locations</h1>
+                    {contact_address_sera}
+                    <div class="map-double">
+                        <div class="map-address"><i class="fa fa-map-marker"></i><span id="address-{row_index}">{address}</span></div>
+                        <div id="googlemap-{row_index}" class="map-container"></div>
+                    </div>
+                    {/contact_address_sera}
+                    {/if}
+                    {/if}
+                    {/exp:ifelse}
+                    <div class="map-clear"></div>
+                    {/exp:channel:entries}
 
-<input type="hidden" id="contact-address-rows" value="{contact_address_sera:total_rows}"/>
-{exp:ifelse parse="inward"}
-{if "{contact_address_sera:total_rows}" > 0 }
-{if "{contact_address_sera:total_rows}" == 1 }
-<h1>Location</h1>
-{contact_address_sera}
-<div class="map-single">
-<div class="map-address"><i class="fa fa-map-marker"></i><span id="address-{row_index}">{address}</span></div>
-<div id="googlemap-{row_index}" class="map-container"></div>
-</div>
-{/contact_address_sera} 
-{if:else}
-<h1>Locations</h1>
-{contact_address_sera}
-<div class="map-double">
-<div class="map-address"><i class="fa fa-map-marker"></i><span id="address-{row_index}">{address}</span></div>
-<div id="googlemap-{row_index}" class="map-container"></div>
-</div>
-{/contact_address_sera} 
-{/if}
-{/if}
-{/exp:ifelse}
-<div class="map-clear"></div>
-{/exp:channel:entries}
+                </div>
 
-</div>
-
-<div id="content-right">
-        {exp:channel:entries channel="what_we_do" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_7}" limit="1" disable="member_data"}
-<div class="sidebar">
-{if "{rightbar_getintouch_cart}" == "Yes"}
-{snippet-getintouch-rightbar}
-{/if}
+                <div id="content-right">
+                    {exp:channel:entries channel="what_we_do" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_7}" limit="1" disable="member_data"}
+                    <div class="sidebar">
+                        {if "{rightbar_getintouch_cart}" == "Yes"}
+                        {snippet-getintouch-rightbar}
+                        {/if}
 
 
-{if "{personalisation_banner_ad_cart:total_children}" == 1}
-<div id="personalisation-banner">
-{personalisation_banner_ad_cart}
-<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
-{/personalisation_banner_ad_cart}
-</div>
-{if:elseif "{personalisation_banner_ad_cart:total_children}" > 1}
-<div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
-    data-cycle-pause-on-hover="true"
-    data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
-{personalisation_banner_ad_cart}
-<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
-{/personalisation_banner_ad_cart}
-</div>
-{/if}
-{snippet-banner-rotatable}
-</div>
-{/exp:channel:entries}
+                        {if "{personalisation_banner_ad_cart:total_children}" == 1}
+                        <div id="personalisation-banner">
+                            {personalisation_banner_ad_cart}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad_cart}
+                        </div>
+                        {if:elseif "{personalisation_banner_ad_cart:total_children}" > 1}
+                        <div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
+                             data-cycle-pause-on-hover="true"
+                             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
+                            {personalisation_banner_ad_cart}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad_cart}
+                        </div>
+                        {/if}
+                        {snippet-banner-rotatable}
+                    </div>
+                    {/exp:channel:entries}
 
-</div>
-</div>
-</section>
-<div class="sep footersep"></div>
+                </div>
+            </div>
+        </section>
+        <div class="sep footersep"></div>
 
-{snippet-partners}
-</div><!-- end .inner -->
+        {snippet-partners}
+    </div><!-- end .inner -->
 </div><!-- end #wrapper -->
 {snippet-sidey}
-<script>
-  function initMap() {
-     var address_rows = document.getElementById("contact-address-rows").value;
- 
-     for (i = 0; i < address_rows; i++) { 
-       var address = document.getElementById('address-'+i).innerHTML;
-       mapAddress("googlemap-"+i, address);   
-     }
-  }
- 
-  function mapAddress(mapElement, address) {
-     var geocoder = new google.maps.Geocoder();
- 
-     geocoder.geocode({ 'address': address }, function (results, status) {
-       if (status == google.maps.GeocoderStatus.OK) {
-         var mapOptions = {
-             zoom: 15,
-             center: results[0].geometry.location,
-             zoomControl: false,
-             scaleControl: true
-         };
-         var infowindow = new google.maps.InfoWindow();
-         var contentString = "Contact Zones: "+address;
-         var map = new google.maps.Map(document.getElementById(mapElement), mapOptions);
-         var marker = new google.maps.Marker({
-             map: map,
-             position: results[0].geometry.location
-         });
-         marker.addListener('click', function() {
-            map.setZoom(15);
-            map.setCenter(marker.getPosition());
-            infowindow.setContent(contentString);
-            infowindow.open(map, marker);
-         });
-       } else {
-         alert("Geocode was not successful for the following reason: " + status);
-       }
-     });
-   }
- 
- 
-                  
- 
- 
- </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg29UmrclswAOYDBkWeztNZbR45gLlz1w&callback=initMap"></script> 
 {embed="includes/footer-new"}

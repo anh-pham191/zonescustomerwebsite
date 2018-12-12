@@ -39,7 +39,7 @@ if($urltitle  == "all"){
 <title>{seo_page_header_title_page} - {region} | Zones</title>
 
 <script type="text/javascript" language="javascript">
-var navlevels = "double";
+    var navlevels = "double";
 </script>
 {snippet-callfiles-new}
 {FirstTimeVisitorEnable}
@@ -76,149 +76,143 @@ var navlevels = "double";
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-      <li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>	
-{snippet-bannersearch}
-</div>
-<div class="sep"></div>
+    <div id="sitebanner" class="clearfix">
+
+        {snippet-topnav}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-home}
+    </div>
+    <div class="sep"></div>
 </nav>
 <div id="wrapper" class="clearfix">
-<div class="inner">
-    <ul id="section-sub" class="textnav clearfix">
-        <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/">View Other Locations</a></li>
-      </ul>
-      <div class="sep"></div>
-      <div class="flexnav-outerwrap">
-      <div class="flexnav-innerwrap">
-      <ul id="section-detail" class="textnav clearfix">
-        <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
-        <li class="current"><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
+            <li><a href="{site_url}landscape-designers/service-areas/">View Other Service Areas</a></li>
         </ul>
-      </div></div>
-      <div class="sep"></div>
-<ul id="area-icons" class="clearfix">
-{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
-{if "{freebie_7}" == "{category_url_title}"}
-<li class="current"><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{if:else}
-<li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{/if}
-{/exp:channel:categories}
-</ul>
+        <div class="sep"></div>
+        <div class="flexnav-outerwrap">
+            <div class="flexnav-innerwrap">
+                <ul id="section-detail" class="textnav clearfix">
+                    <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
+                    <li class="current"><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
+                    <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+                </ul>
+            </div></div>
+        <div class="sep"></div>
+        <ul id="area-icons" class="clearfix">
+            {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+            {if "{freebie_7}" == "{category_url_title}"}
+            <li class="current"><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {if:else}
+            <li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {/if}
+            {/exp:channel:categories}
+        </ul>
 
-</div><!-- end .inner -->
-<!-- mobile nav start -->
-<div class="contextnav-wrapper top justmobile">
-	<nav class="contextnav justmobile">
-	<ul class="clearfix">
-        <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
-        <li class="current"><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
-	</ul>
-	</nav>
-</div>
-<div class="contextnav-wrapper icons areas justmobile">
-	<nav class="contextnav icons justmobile">
-	<ul class="clearfix"  id="area-icons">
-{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
-{if "{freebie_7}" == "{category_url_title}"}
-<li class="current"><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{if:else}
-<li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
-{/if}
-{/exp:channel:categories}
-	</ul>
-	</nav>
-</div>
+    </div><!-- end .inner -->
+    <!-- mobile nav start -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
+                <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
+                <li class="current"><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contextnav-wrapper icons areas justmobile">
+        <nav class="contextnav icons justmobile">
+            <ul class="clearfix"  id="area-icons">
+                {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+                {if "{freebie_7}" == "{category_url_title}"}
+                <li class="current"><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+                {if:else}
+                <li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+                {/if}
+                {/exp:channel:categories}
+            </ul>
+        </nav>
+    </div>
 
-<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
-<div class="contextnav-breadcrumb withtoggle justmobile">
-	<nav>
-	<ul class="clearfix">
-        <li><a href="{site_url}landscape-designers/">About us</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/">Locations</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
-{exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
-{if "{freebie_7}" == "{category_url_title}"}
-<li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/">{category_name}</a></li>
-{/if}
-{/exp:channel:categories} 
-	</ul>
-	</nav>
-</div>
-<!-- end mobile nav -->
-<div id="breadcrumb-wrapper" style="display: none;">
-  {snippet-socialsharing-breadcrumb}
-</div>
-
-
-<div class="inner">
-
-<div id="wideslideshow">
-{panorama_slideshow_images_page}
-<img src="{pano-image-page}" alt="{alt-pano-image-page}"/>
-{/panorama_slideshow_images_page}
-</div>
-
-
-<section id="content" class="panorama" role="main">
-<div class="clearfix">
-<div id="content-body">
-<div class="intro clearfix">
-<h1>{page_h1_heading_c}</h1>
-</div>
-
-{snippet-socialsharing-body}
-
-<div class="pagecopy">{page_content_page}</div>
-{exp:channel:form channel="content_page" entry_id="{entry_id}" return="contentPage/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
-{exp:ifelse parse="inward"}
-{if "{sharing_count_con}" == "" }
-<input type="hidden" id="count" name="sharing_count_con" value="0" />
-{if:else}
-<input type="hidden" id="count" name="sharing_count_con" value="{sharing_count_con}" />
-{/if}
-{/exp:ifelse}
-{/exp:channel:form}
-</div>
-
-{/exp:channel:entries}
+    <div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+    <div class="contextnav-breadcrumb withtoggle justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="{site_url}landscape-designers/">About us</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/">Service Areas</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
+                <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
+                {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+                {if "{freebie_7}" == "{category_url_title}"}
+                <li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/">{category_name}</a></li>
+                {/if}
+                {/exp:channel:categories}
+            </ul>
+        </nav>
+    </div>
+    <!-- end mobile nav -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        {snippet-socialsharing-breadcrumb}
+    </div>
 
 
+    <div class="inner">
 
-<div id="content-right">
+        <div id="wideslideshow">
+            {panorama_slideshow_images_page}
+            <img src="{pano-image-page}" alt="{alt-pano-image-page}"/>
+            {/panorama_slideshow_images_page}
+        </div>
 
-<div class="sidebar">
 
-{snippet-getintouch-rightbar}
+        <section id="content" class="panorama" role="main">
+            <div class="clearfix">
+                <div id="content-body">
+                    <div class="intro clearfix">
+                        <h1>{page_h1_heading_c}</h1>
+                    </div>
 
+                    {snippet-socialsharing-body}
 
-{snippet-banner-rotatable}
-</div>
+                    <div class="pagecopy">{page_content_page}</div>
+                    {exp:channel:form channel="content_page" entry_id="{entry_id}" return="contentPage/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
+                    {exp:ifelse parse="inward"}
+                    {if "{sharing_count_con}" == "" }
+                    <input type="hidden" id="count" name="sharing_count_con" value="0" />
+                    {if:else}
+                    <input type="hidden" id="count" name="sharing_count_con" value="{sharing_count_con}" />
+                    {/if}
+                    {/exp:ifelse}
+                    {/exp:channel:form}
+                </div>
 
-</div>
-</div>
-</section>
-<div class="sep footersep"></div>	
+                {/exp:channel:entries}
 
-{snippet-partners}
-</div><!-- end .inner -->
+                <div id="content-right">
+
+                    <div class="sidebar">
+
+                        {snippet-getintouch-rightbar}
+
+                        {snippet-banner-rotatable}
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="sep footersep"></div>
+
+        {snippet-partners}
+    </div><!-- end .inner -->
 </div><!-- end #wrapper -->
 {snippet-sidey}
 {embed="includes/footer-new"}
