@@ -11516,7 +11516,7 @@ body.mobile-contact #mobile-contact-chooser a.close.closetext {
 }
 
 body.mobile-search #mobile-search {
-    z-index: 2;
+    z-index: 1000;
     height: 100%;
     visibility: visible
 }
@@ -15534,7 +15534,8 @@ div.services-image-block div.fleft {
 #builders ul li.region-item .main {
     font-size: 1.2em;
     margin-bottom: 20px;
-    font-weight: 700
+    font-weight: 700;
+    color: #999;
 }
 
 #builders ul li.region-item .sub a {
@@ -16548,7 +16549,7 @@ ul li.enquiry-button:hover {
     }
 
     #topnav p img {
-        margin: 0 auto 10px auto;
+        margin: 10px auto 10px auto;
         background-position: -132px -65px !important;
         width: 170px !important;
         height: 65px !important;
@@ -16581,7 +16582,7 @@ ul li.enquiry-button:hover {
         display: block;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
-        margin-top: 30px
+        margin-top: 40px
     }
 
     #sitebanner .phone-top a span, #sitebanner ul.links-top li#login-link {
