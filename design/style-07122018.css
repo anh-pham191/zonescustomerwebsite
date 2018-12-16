@@ -6802,6 +6802,11 @@ div.person-upper h1, div.person-upper span.picture {
     height: auto !important
 }
 
+#wrapper #pagecontent .fullwidth{
+    width: 100% !important;
+    height: auto !important;
+}
+
 @media only all and (max-width: 47.937em) {
     #content-body img.fleft {
         max-width: 100%;
