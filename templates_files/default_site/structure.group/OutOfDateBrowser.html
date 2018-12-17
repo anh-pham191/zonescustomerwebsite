@@ -1,11 +1,10 @@
 {exp:channel:entries disable="member_data|pagination" limit="1" channel="content_page" cache="yes" refresh="1500"}
 {if no_results}{redirect="404"}{/if}
 {snippet-doctype}
-<meta name="robots" content="noindex" />
-<title>{seo_page_header_title_page} | Zones</title>    
+<title>{seo_page_header_title_page} | Zones</title>
 
-<script type="text/javascript" language="javascript"> 
-var navlevels = "single";
+<script type="text/javascript" language="javascript">
+    var navlevels = "single";
 </script>
 {snippet-callfiles-new}
 {FirstTimeVisitorEnable}
@@ -59,74 +58,68 @@ var navlevels = "single";
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
-<div id="sitebanner" class="clearfix">
-<p class="fleft"><a href="{site_url}"><img src="{site_url}design/logo-zones.png" alt="Zones Landscape Design and Maintenance" /></a></p>
-<ul id="site-main" class="fleft">
-{exp:navee:custom nav_title="TopLevel" wrap_type="none"}
-      <li><a href="{link}" class="button">{text}</a></li>
-{/exp:navee:custom}
-</ul>	
+    <div id="sitebanner" class="clearfix">
 
-{snippet-bannersearch}
-
-</div>
-<div class="sep"></div>
+        {snippet-topnav}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-home}
+    </div>
+    <div class="sep"></div>
 </nav>
 
 <div id="wrapper" class="clearfix">
-<!-- end mobile nav -->
+    <!-- end mobile nav -->
 
-<div id="wideslideshow"  class="overlay">
-    <h1>1231546456</h1>
-    {panorama_slideshow_images_page}
-    <img src="{pano-image-page}" alt="{alt-pano-image-page}"/>
-    {/panorama_slideshow_images_page}
-    <div class="overlay-container">
-        <h2 id="top">Important Security Update</h2>
-        <h1>{page_h1_heading_c}</h1>
-        <h2 id="bottom"><b>Keeping your browser up to date keeps you protected from a variety of threats and ensures that your personal information is protected.</b></h2>
-        <h2 id="arrow"><b class="link-builders">Check below for latest versions.</b></h2>
+    <div id="wideslideshow"  class="overlay">
+        {panorama_slideshow_images_page}
+        <img src="{pano-image-page}" alt="{alt-pano-image-page}"/>
+        {/panorama_slideshow_images_page}
+        <div class="overlay-container">
+            <h2 id="top">Important Security Update</h2>
+            <h1>{page_h1_heading_c}</h1>
+            <h2 id="bottom"><b>Keeping your browser up to date keeps you protected from a variety of threats and ensures that your personal information is protected.</b></h2>
+            <h2 id="arrow"><b class="link-builders">Check below for latest versions.</b></h2>
+        </div>
     </div>
-    </div>
-   
-<div class="row">
-    <div class="col-md-5ths col-sm-5ths">
-        <div class="browser-icon"><img data-src="/design/chrome-icon.png" alt="Chrome" class="lazy-load" /></div>
-        <div class="box-title">GOOGLE CHROME<br/><span>AVAILABLE FOR</span></div>
-        <ul class="platforms clearfix"><li><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li><li><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li><li><img data-src="/design/linux.png" alt="Linux" class="lazy-load" /></li></ul>
-        <a href="https://www.google.com/chrome/" target="_blank" class="download-button">Download</a>
-    </div>
-    <div class="col-md-5ths col-sm-5ths">
-        <div class="browser-icon"><img data-src="/design/firefox-icon.png" alt="Firefox" class="lazy-load" /></div>
-        <div class="box-title">MOZILLA FIREFOX<br/><span>AVAILABLE FOR</span></div>
-        <ul class="platforms clearfix"><li><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li><li><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li><li><img data-src="/design/linux.png" alt="Linux" class="lazy-load" /></li></ul>
-        <a href="https://www.mozilla.org/firefox/new/" target="_blank" class="download-button">Download</a>
-    </div>
-    <div class="col-md-5ths col-sm-5ths">
-        <div class="browser-icon"><img data-src="/design/safari-icon.png" alt="Safari" class="lazy-load" /></div>
-        <div class="box-title">APPLE SAFARI<br/><span>AVAILABLE FOR</span></div>
-        <ul class="platforms clearfix"><li class="full-width"><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li></ul>
-        <a href="https://support.apple.com/HT204416" target="_blank" class="download-button">Download</a>
-    </div>
-    <div class="col-md-5ths col-sm-5ths">
-        <div class="browser-icon"><img data-src="/design/opera-icon.png" alt="Opera" class="lazy-load" /></div>
-        <div class="box-title">OPERA<br/><span>AVAILABLE FOR</span></div>
-        <ul class="platforms clearfix"><li><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li><li><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li><li><img data-src="/design/linux.png" alt="Linux" class="lazy-load" /></li></ul>
-        <a href="https://www.opera.com/download" target="_blank" class="download-button">Download</a>
-    </div>
-    <div class="col-md-5ths col-sm-5ths">
-        <div class="browser-icon"><img data-src="/design/edge-icon.png" alt="Edge" class="lazy-load" /></div>
-        <div class="box-title">MICROSOFT EDGE<br/><span>AVAILABLE FOR</span></div>
-        <ul class="platforms clearfix"><li class="full-width"><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li></ul>
-        <a href="https://www.microsoft.com/windows/microsoft-edge" target="_blank" class="download-button">Download</a>
-    </div>
-</div>
 
-<div class="inner">
-  <div class="full-width-text">
-      <p><a href="javascript:history.back(-1)">Continue without updating</a>. Note: Unstable results can be expected if you do not update your browser.</p>
-  </div>
-</div>
+    <div class="row">
+        <div class="col-md-5ths col-sm-5ths">
+            <div class="browser-icon"><img data-src="/design/chrome-icon.png" alt="Chrome" class="lazy-load" /></div>
+            <div class="box-title">GOOGLE CHROME<br/><span>AVAILABLE FOR</span></div>
+            <ul class="platforms clearfix"><li><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li><li><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li><li><img data-src="/design/linux.png" alt="Linux" class="lazy-load" /></li></ul>
+            <a href="https://www.google.com/chrome/" target="_blank" class="download-button">Download</a>
+        </div>
+        <div class="col-md-5ths col-sm-5ths">
+            <div class="browser-icon"><img data-src="/design/firefox-icon.png" alt="Firefox" class="lazy-load" /></div>
+            <div class="box-title">MOZILLA FIREFOX<br/><span>AVAILABLE FOR</span></div>
+            <ul class="platforms clearfix"><li><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li><li><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li><li><img data-src="/design/linux.png" alt="Linux" class="lazy-load" /></li></ul>
+            <a href="https://www.mozilla.org/firefox/new/" target="_blank" class="download-button">Download</a>
+        </div>
+        <div class="col-md-5ths col-sm-5ths">
+            <div class="browser-icon"><img data-src="/design/safari-icon.png" alt="Safari" class="lazy-load" /></div>
+            <div class="box-title">APPLE SAFARI<br/><span>AVAILABLE FOR</span></div>
+            <ul class="platforms clearfix"><li class="full-width"><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li></ul>
+            <a href="https://support.apple.com/HT204416" target="_blank" class="download-button">Download</a>
+        </div>
+        <div class="col-md-5ths col-sm-5ths">
+            <div class="browser-icon"><img data-src="/design/opera-icon.png" alt="Opera" class="lazy-load" /></div>
+            <div class="box-title">OPERA<br/><span>AVAILABLE FOR</span></div>
+            <ul class="platforms clearfix"><li><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li><li><img data-src="/design/mac.png" alt="Mac" class="lazy-load" /></li><li><img data-src="/design/linux.png" alt="Linux" class="lazy-load" /></li></ul>
+            <a href="https://www.opera.com/download" target="_blank" class="download-button">Download</a>
+        </div>
+        <div class="col-md-5ths col-sm-5ths">
+            <div class="browser-icon"><img data-src="/design/edge-icon.png" alt="Edge" class="lazy-load" /></div>
+            <div class="box-title">MICROSOFT EDGE<br/><span>AVAILABLE FOR</span></div>
+            <ul class="platforms clearfix"><li class="full-width"><img data-src="/design/win.png" alt="Windows" class="lazy-load" /></li></ul>
+            <a href="https://www.microsoft.com/windows/microsoft-edge" target="_blank" class="download-button">Download</a>
+        </div>
+    </div>
+
+    <div class="inner">
+        <div class="full-width-text">
+            <p><a href="javascript:history.back(-1)">Continue without updating</a>. Note: Unstable results can be expected if you do not update your browser.</p>
+        </div>
+    </div>
     {exp:channel:form channel="content_page" entry_id="{entry_id}" return="contentPage/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
     {exp:ifelse parse="inward"}
     {if "{sharing_count_con}" == "" }
@@ -136,14 +129,14 @@ var navlevels = "single";
     {/if}
     {/exp:ifelse}
     {/exp:channel:form}
-    </div>
-    {/exp:channel:entries}
-    
-    
-    <div class="sep footersep"></div>	
-    
-    {snippet-partners}
-    </div><!-- end .inner -->
+</div>
+{/exp:channel:entries}
+
+
+<div class="sep footersep"></div>
+
+{snippet-partners}
+</div><!-- end .inner -->
 </div><!-- end #wrapper -->
 
 

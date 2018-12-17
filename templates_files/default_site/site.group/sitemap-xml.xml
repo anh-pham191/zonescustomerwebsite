@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>{site_url}</loc>
+</url>
+{!-- WHAT IS ZONES --}
+{!--
+<url>
+<loc>{site_url}what-is-zones/</loc>
+</url>
+--}
+{exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+<url>
+<loc>http://www.zones.co.nz{link}</loc>
+</url>
+{/exp:navee:custom}
+{exp:channel:categories category_group="1" style="linear" show="not 13"}
+<url>
+<loc>http://www.zones.co.nz/{category_url_title}/</loc>
+</url>
+{/exp:channel:categories}
+{!-- WORK WEVE DONE --} 
+<url>
+<loc>{site_url}photo-gallery/</loc>
+</url>
+<url>
+<loc>{site_url}case-studies/</loc>
+</url>
+{!--
+<url>
+<loc>{site_url}testimonials/</loc>
+</url>
+<url>
+<loc>{site_url}design-ideas/</loc>
+</url>
+--}
+{!-- GET IN TOUCH --}
+{exp:navee:custom nav_title="GetInTouchL2" wrap_type="none"}
+{if "{link}" != "/contact-us/job-opportunities/"}
+<url>
+<loc>http://www.zones.co.nz{link}</loc>
+</url>
+{/if}
+{/exp:navee:custom}
+{!-- ADVICE FROM FOOTER --}
+{exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+<url>
+<loc>http://www.zones.co.nz{link}</loc>
+</url>
+{/exp:navee:custom}
+{!-- ABOUT US --}
+<url>
+<loc>{site_url}landscape-designers/team/</loc>
+</url>
+{exp:channel:entries channel="person" dynamic="no"}
+<url>
+<loc>{site_url}landscape-designers/team/{url_title}</loc>
+</url>
+{exp:channel:categories category_group="8" show_empty="no" style="linear" channel="service_area" show="25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|77|79|80|81|85|86|87|47|48|49|50|51|52|53|54|55|84|83|82"}     
+<url>
+    <loc>{site_url}landscape-designers/service-areas/team/person/sort/{category_url_title}/{url_title}</loc>
+ </url>
+{/exp:channel:categories}
+{/exp:channel:entries}
+{!-- OFF CUTS --}
+{!--
+<url>
+<loc>{site_url}clippings/</loc>
+</url>
+--}
+{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+<url>
+<loc>http://www.zones.co.nz{link}</loc>
+</url>
+{/exp:navee:custom}
+{!-- ARTICLES, CASE STUDIES ETC --}
+{exp:channel:entries channel="article" dynamic="no"}
+<url>
+<loc>{site_url}landscaping-ideas/{url_title}</loc>
+</url>
+{exp:channel:categories category_group="8" show_empty="no"  style="linear" channel="service_area" show="25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|77|79|80|81|85|86|87|47|48|49|50|51|52|53|54|55|84|83|82"}     
+<url>
+    <loc>{site_url}landscape-designers/service-areas/advice/article/sort/{category_url_title}/{url_title}</loc>
+ </url>
+{/exp:channel:categories}
+{/exp:channel:entries}
+{exp:channel:entries channel="case_study" dynamic="no"}
+<url>
+<loc>{site_url}case-studies/{url_title}</loc>
+</url>
+{exp:channel:categories category_group="8" show_empty="no" style="linear" channel="service_area" show="25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|77|79|80|81|85|86|87|47|48|49|50|51|52|53|54|55|84|83|82"}     
+<url>
+    <loc>{site_url}landscape-designers/service-areas/case-study/sort/{category_url_title}/{url_title}</loc>
+ </url>
+{/exp:channel:categories}
+{/exp:channel:entries}
+{exp:channel:entries channel="estimate" dynamic="no"}
+<url>
+<loc>{site_url}landscape-design-cost/{url_title}</loc>
+</url>
+{/exp:channel:entries}
+{exp:channel:entries channel="community_article" dynamic="no"}
+<url>
+<loc>{site_url}clippings/news/{url_title}</loc>
+</url>
+{exp:channel:categories category_group="8" show_empty="no" style="linear" channel="service_area" show="25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|77|79|80|81|85|86|87|47|48|49|50|51|52|53|54|55|84|83|82"}     
+<url>
+    <loc>{site_url}landscape-designers/service-areas/news/article/sort/{category_url_title}/{url_title}</loc>
+ </url>
+{/exp:channel:categories}
+{/exp:channel:entries}
+{!--
+{exp:channel:entries channel="competition" dynamic="no"}
+<url>
+<loc>{site_url}clippings/competitions/{url_title}</loc>
+</url>
+{/exp:channel:entries}
+--}
+{exp:channel:entries channel="service_area" dynamic="no" }
+<url>
+    <loc>{site_url}landscape-designers/service-areas/{url_title}/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/services/sort/{url_title}/</loc>
+</url>
+{exp:channel:categories category_group="1" style="linear"}
+<url>
+    <loc>{site_url}landscape-designers/service-areas/services/type/sort/{url_title}/{category_url_title}/</loc>
+</url>
+{/exp:channel:categories}
+<url>
+    <loc>{site_url}landscape-designers/service-areas/case-studies/sort/{url_title}/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/gallery/sort/{url_title}/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/team/sort/{url_title}/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/news/sort/{url_title}/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/advice/sort/{url_title}/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/case-studies/sort/{url_title}/all/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/gallery/sort/{url_title}/all/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/team/sort/{url_title}/all/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/news/sort/{url_title}/all/</loc>
+</url>
+<url>
+    <loc>{site_url}landscape-designers/service-areas/advice/sort/{url_title}/all/</loc>
+</url>
+{/exp:channel:entries}
+</urlset>

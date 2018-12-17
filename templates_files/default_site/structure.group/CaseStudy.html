@@ -1,0 +1,445 @@
+{exp:channel:entries disable="member_data" url_title="{last_segment}" limit="1" channel="case_study" cache="yes" refresh="1500"}
+{if no_results}{redirect="404"}{/if}
+{snippet-doctype}
+<title>{seo_page_header_title} | Zones</title>
+<?php
+$setCat = "{primary_category_cs}";
+
+$isWorkDone = "{referrer:segment_1}";
+if ($isWorkDone == "case-studies") {
+	$inSection = "Work";	 
+	$testCameFrom = "{referrer:segment_2}";
+	if ($testCameFrom != "") {
+		$cameFrom = $testCameFrom;
+		if (($cameFrom == "outdoor-rooms") OR ($cameFrom == "outdoor-kitchen") OR ($cameFrom == "garden-plants") OR ($cameFrom == "grass-lawns-and-lawn-mowing-services") OR ($cameFrom == "landscape-design") OR ($cameFrom == "swimming-pools") OR ($cameFrom == "pergola-decks-patios") OR ($cameFrom == "outdoor-lighting-and-power") OR ($cameFrom == "concrete-asphalt-paving-stones-driveways") OR ($cameFrom == "rain-water-tanks") OR ($cameFrom == "retaining-wall") OR ($cameFrom == "fencing") OR ($cameFrom == "gardening-and-gardening-maintenance"))  {
+		$setCat = $cameFrom;
+	}
+}
+}
+elseif (("{referrer:segment_1}" == "") || ("{referrer:segment_2}" == "CSwSearch") || ("{referrer:segment_1}" == "client-testimonial-videos") || ("{referrer:segment_1}" == "franchisee-testimonial-videos") || ("{referrer:segment_1}" == "customer-testimonials") || ("{referrer:segment_1}" == "professional-testimonials") || ("{referrer:segment_1}" == "landscape-designers") || ("{referrer:segment_1}" == "photo-gallery") || ("{referrer:segment_1}" == "design-ideas")) {
+	$inSection = "Work";
+}
+else {
+$inSection = "What";
+$cameFrom = "{referrer:segment_1}";
+if (($cameFrom == "outdoor-rooms") OR ($cameFrom == "outdoor-kitchen") OR ($cameFrom == "garden-plants") OR ($cameFrom == "grass-lawns-and-lawn-mowing-services") OR ($cameFrom == "landscape-design") OR ($cameFrom == "swimming-pools") OR ($cameFrom == "pergola-decks-patios") OR ($cameFrom == "outdoor-lighting-and-power") OR ($cameFrom == "concrete-asphalt-paving-stones-driveways") OR ($cameFrom == "rain-water-tanks") OR ($cameFrom == "retaining-wall") OR ($cameFrom == "fencing") OR ($cameFrom == "gardening-and-gardening-maintenance"))  {
+$setCat = $cameFrom;
+}
+}
+
+?>
+<?php if ($inSection == "What") { ?>
+{!-- WHAT IS ZONES --}
+<script type="text/javascript" language="javascript">
+    var navlevels = "double";
+</script>
+<?php }
+else { ?>
+{!-- WORK WEVE DONE --}
+<script type="text/javascript" language="javascript">
+    var navlevels = "singleicons";
+</script>
+<?php } ?>
+{snippet-callfiles-new}
+<link href="/design/twentytwenty-no-compass.css" rel="stylesheet" type="text/css" />
+{FirstTimeVisitorEnable}
+
+<meta name="description" content="{seo_meta_description_cs}">
+<meta name="keywords" content="{seo_meta_keywords}">
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.zones.co.nz/case-studies/"
+  },
+  "headline": "{seo_page_header_title}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{panorama_slideshow_images}{cs-panorama-image}{/panorama_slideshow_images}",
+    "height": 404,
+    "width": 1200
+  },
+    "datePublished": "{entry_date format="%F %j, %Y"}",
+    "dateModified": "{edit_date format="%F %j, %Y"}",
+    "author": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists"
+  },
+    "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+    "url": "https://www.zones.co.nz",
+    "telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_cs}"
+}
+</script>
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+    <div id="sitebanner" class="clearfix">
+
+
+            {snippet-topnav-work}
+            {snippet-bannersearch}
+            {snippet-mobilemenu-services}
+
+    </div>
+    <div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+    <div class="inner">
+        {!--- Level 2 links --}
+        <?php if ($inSection == "Work") { ?>{!-- WORK WEVE DONE --}
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
+            {if text == 'Case Studies'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:elseif text == 'Photo Gallery'}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+
+        <ul id="area-icons" class="clearfix">
+            <li><a href="{site_url}{segment_1}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+            {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+            {if "<?php echo $setCat; ?>" == "{category_url_title}"}
+            <li class="current"><a href="{site_url}{segment_1}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {if:else}
+            <li><a href="{site_url}{segment_1}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {/if}
+            {/exp:channel:categories}
+        </ul>
+
+        <?php }
+else { ?>
+        {!-- WHAT IS ZONES --}
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+            {if link == '/what-is-zones/landscape-design-and-garden-maintenance/'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:else}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+        <ul id="area-icons" class="clearfix">
+            <li><a href="{site_url}all/case-studies/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+            {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+            {if "<?php echo $setCat; ?>" == "{category_url_title}"}
+            <li class="current"><a href="{site_url}{category_url_title}/case-studies/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {if:else}
+            <li><a href="{site_url}{category_url_title}/case-studies/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {/if}
+            {/exp:channel:categories}
+        </ul>
+        <?php } ?>
+
+        <?php if ($inSection == "Work") { ?>
+        {!-- WORK WEVE DONE STYLE DISPLAY --}
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <!-- mobile nav start -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
+                {exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
+                {if text == 'Case Studies'}
+                <li class="current"><a href="{link}">{text}</a></li>
+                {if:elseif text == 'Photo Gallery'}
+                <li><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+    <div class="contextnav-wrapper icons areas justmobile">
+        <nav class="contextnav icons justmobile">
+            <ul class="clearfix"  id="area-icons">
+                {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+                {if "<?php echo $setCat; ?>" == "{category_url_title}"}
+                <li class="current"><a href="{site_url}{segment_1}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+                {if:else}
+                <li><a href="{site_url}{segment_1}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+                {/if}
+                {/exp:channel:categories}
+            </ul>
+        </nav>
+    </div>
+    <div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+    <div class="contextnav-breadcrumb withtoggle justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="{site_url}photo-gallery/">Our work</a></li>
+                <li><a href="{site_url}case-studies/">Case Studies</a></li>
+                {exp:navee:custom nav_title="Work-L3-<?php echo $setCat; ?>" wrap_type="none"}
+                {if link == '/case-studies/<?php echo $setCat; ?>/'}<li><a href="{link}">{text}</a></li>{/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+    <!-- end mobile nav -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        {snippet-socialsharing-breadcrumb}
+    </div>
+
+    <div class="inner">
+        {exp:ifelse parse="inward"}
+        {if "{panorama_slideshow_images:total_rows}" > 1 AND "{panorama_slide_order_cs}" == "SetOrder"}
+        <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fade"
+             data-cycle-pause-on-hover="true"
+             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-pager="#pager1">
+            {panorama_slideshow_images}
+            <img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
+            {/panorama_slideshow_images}
+        </div>
+        <div class="cycle-pager" id="pager1"></div>
+        {if:elseif "{panorama_slideshow_images:total_rows}" > 1 AND "{panorama_slide_order_cs}" != "SetOrder"}
+        <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fade"
+             data-cycle-pause-on-hover="true"
+             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="true" data-cycle-pager="#pager1">
+            {panorama_slideshow_images}
+            <img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
+            {/panorama_slideshow_images}
+        </div>
+        <div class="cycle-pager" id="pager1"></div>
+        {if:elseif "{panorama_slideshow_images:total_rows}" == 1}
+        <div id="wideslideshow">
+            {panorama_slideshow_images}
+            <img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
+            {/panorama_slideshow_images}
+        </div>
+        {/if}
+        {/exp:ifelse}
+
+        <section id="content" class="panorama" role="main">
+            <div class="clearfix">
+                <div id="content-body">
+                    <div class="intro clearfix">
+                        <h1>{page_h1_heading_casestudy}</h1>
+                        {if "{referrer:segment_2}" != ""}
+                        <a href="{site_url}case-studies/<?php echo $setCat; ?>/" class="view">back to case study list</a>
+                        {if:else}
+                        <a href="{site_url}case-studies/" class="view">back to case study list</a>
+                        {/if}
+                    </div>
+
+                    {snippet-socialsharing-body}
+
+                    <div class="pagecopy">
+                        {if '{before_and_after_slider_cs:total_rows}' > 0}
+                        {before_and_after_slider_cs}
+                        <div class="slider-title">{title}</div>
+                        <div class="twentytwenty-container">
+                            <img src="{before}" />
+                            <img src="{after}" />
+                        </div>
+                        {/before_and_after_slider_cs}
+                        {/if}
+                        {page_content_cs}</div>
+                    <?php }
+else { ?>
+                    {!-- WHAT IS ZONES STYLE DISPLAY --}
+                    {!--- Level 3 links --}
+                    <div class="sep"></div>
+                    <ul id="section-detail" class="textnav clearfix">
+                        {exp:navee:custom nav_title="What-L3-<?php echo $setCat; ?>" wrap_type="none"}
+                        {if link == '/<?php echo $setCat; ?>/case-studies/'}
+                        <li class="current"><a href="{link}">{text}</a></li>
+                        {if:elseif text != 'Design ideas'}
+                        <li><a href="{link}">{text}</a></li>
+                        {/if}
+                        {/exp:navee:custom}
+                    </ul>
+                    <div class="sep"></div>
+                </div><!-- end .inner -->
+                <!-- mobile nav start -->
+                <div class="contextnav-wrapper top justmobile">
+                    <nav class="contextnav justmobile">
+                        <ul class="clearfix">
+                            {exp:navee:custom nav_title="What-L3-<?php echo $setCat; ?>" wrap_type="none"}
+                            {if link == '/<?php echo $setCat; ?>/case-studies/'}
+                            <li class="current"><a href="{link}">{text}</a></li>
+                            {if:elseif text != 'Design ideas'}
+                            <li><a href="{link}">{text}</a></li>
+                            {/if}
+                            {/exp:navee:custom}
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+                <div class="contextnav-breadcrumb withtoggle justmobile">
+                    <nav>
+                        <ul class="clearfix">
+                            <li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></li>
+                            <li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping</a></li>
+                            {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+                            {if "<?php echo $setCat; ?>" == "{category_url_title}"}
+                            <li><a href="{site_url}{category_url_title}/">{category_name}</a></li>
+                            {/if}
+                            {/exp:channel:categories}
+                            {exp:navee:custom nav_title="What-L3-<?php echo $setCat; ?>" wrap_type="none"}
+                            {if link == '/<?php echo $setCat; ?>/case-studies/'}<li><a href="{link}">{text}</a></li>{/if}
+                            {/exp:navee:custom}
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end mobile nav -->
+                <div id="breadcrumb-wrapper" style="display: none;">
+
+                    {snippet-socialsharing-breadcrumb}
+
+                </div>
+
+                <div class="inner">
+                    {exp:ifelse parse="inward"}
+                    {if "{panorama_slideshow_images:total_rows}" > 1 AND "{panorama_slide_order_cs}" == "SetOrder"}
+                    <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fade"
+                         data-cycle-pause-on-hover="true"
+                         data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-pager="#pager1">
+                        {panorama_slideshow_images}
+                        <img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
+                        {/panorama_slideshow_images}
+                    </div>
+                    <div class="cycle-pager" id="pager1"></div>
+                    {if:elseif "{panorama_slideshow_images:total_rows}" > 1 AND "{panorama_slide_order_cs}" != "SetOrder"}
+                    <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fade"
+                         data-cycle-pause-on-hover="true"
+                         data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="true" data-cycle-pager="#pager1">
+                        {panorama_slideshow_images}
+                        <img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
+                        {/panorama_slideshow_images}
+                    </div>
+                    <div class="cycle-pager" id="pager1"></div>
+                    {if:elseif "{panorama_slideshow_images:total_rows}" == 1}
+                    <div id="wideslideshow">
+                        {panorama_slideshow_images}
+                        <img src="{cs-panorama-image}" alt="{cs-panorama-image-alt}"/>
+                        {/panorama_slideshow_images}
+                    </div>
+                    {/if}
+                    {/exp:ifelse}
+
+                    <section id="content" class="panorama" role="main">
+                        <div class="clearfix">
+                            <div id="content-body">
+                                <div class="intro clearfix">
+                                    <h1>{page_h1_heading_casestudy}</h1>
+                                    <a href="{site_url}<?php echo $setCat; ?>/case-studies/" class="view">back to case study list</a>
+                                </div>
+
+                                {snippet-socialsharing-body}
+
+                                <div class="pagecopy">
+                                    {if '{before_and_after_slider_cs:total_rows}' > 0}
+                                    {before_and_after_slider_cs}
+                                    <div class="slider-title">{title}</div>
+                                    <div class="twentytwenty-container">
+                                        <img src="{before}" />
+                                        <img src="{after}" />
+                                    </div>
+                                    {/before_and_after_slider_cs}
+                                    {/if}
+                                    {page_content_cs}
+                                </div>
+
+
+                                <?php } ?>
+
+                                {exp:structure:siblings}
+                                <p class="prev">
+                                    {prev}
+                                    <a href="{url}">previous article</a>
+                                    {/prev}
+                                    {/exp:structure:siblings}
+                                    {if "{exp:structure:siblings}{prev}{title}{/prev}{/exp:structure:siblings}" != "" && "{exp:structure:siblings}{next}{title}{/next}{/exp:structure:siblings}" != ""}|{/if}
+                                    {exp:structure:siblings}
+                                    {next}
+                                    <a href="{url}">next article</a>
+                                    {/next}
+                                </p>
+                                {/exp:structure:siblings}
+                            </div>
+
+                            <div id="content-right">
+                                {if "{before_images_mini_slideshow:total_rows}" > 1}
+                                <div id="beforeslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
+                                     data-cycle-pause-on-hover="true"
+                                     data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait">
+                                    {before_images_mini_slideshow}
+                                    <img src="{before-slideshow}" alt="{before-slideshow-alt}"/>
+                                    {/before_images_mini_slideshow}
+                                </div>
+                                {if:elseif "{before_images_mini_slideshow:total_rows}" == 1}
+                                <div id="beforeslideshow">
+                                    {before_images_mini_slideshow}
+                                    <img src="{before-slideshow}" alt="{before-slideshow-alt}"/>
+                                    {/before_images_mini_slideshow}
+                                </div>
+                                {/if}
+
+                                <div class="sidebar">
+                                    {if "{rightbar_getintouch}" == "Yes"}
+                                    {snippet-getintouch-rightbar}
+                                    {/if}
+
+                                    {exp:channel:form channel="case_study" entry_id="{entry_id}" return="casestudy/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
+                                    {exp:ifelse parse="inward"}
+                                    {if "{sharing_count_cs}" == "" }
+                                    <input type="hidden" id="count" name="sharing_count_cs" value="0" />
+                                    {if:else}
+                                    <input type="hidden" id="count" name="sharing_count_cs" value="{sharing_count_cs}" />
+                                    {/if}
+                                    {/exp:ifelse}
+                                    {/exp:channel:form}
+                                    {if "{personalisation_banner_ad:total_children}" == 1}
+                                    <div id="personalisation-banner">
+                                        {personalisation_banner_ad}
+                                        <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                                        {/personalisation_banner_ad}
+                                    </div>
+                                    {if:elseif "{personalisation_banner_ad:total_children}" > 1}
+                                    <div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
+                                         data-cycle-pause-on-hover="true"
+                                         data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
+                                        {personalisation_banner_ad}
+                                        <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                                        {/personalisation_banner_ad}
+                                    </div>
+                                    {/if}
+
+                                    {snippet-banner-rotatable}
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    {/exp:channel:entries}
+                    <div class="sep footersep"></div>
+
+                    {snippet-partners}
+                </div><!-- end .inner -->
+            </div><!-- end #wrapper -->
+            {snippet-sidey}
+            {embed="includes/footer-with-slider"}

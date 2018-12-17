@@ -1,0 +1,51 @@
+{exp:rss:feed channel="article|person|content_page|community_article"}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Zones Landscape Design and Maintenance</title>
+	<id>{site_url}</id>
+	<author><name>Zones Landscape Design and Maintenance</name></author>
+	<link rel="self" href="{site_url}site/atom" />
+	{!--<link rel="hub" href="https://pubsubhubbub.appspot.com/" />--}
+	{exp:channel:entries disable="member_data|pagination|categories" channel="article|person|content_page|community_article" limit="1" status="open" dynamic="no" orderby="date"}<updated>{gmt_entry_date format='%Y-%m-%dT%H:%i:%sZ'}</updated>{/exp:channel:entries}
+	{exp:channel:entries disable="member_data|pagination|categories" channel="article|person|content_page|community_article" limit="15" status="open" dynamic="no" orderby="date"}
+			{exp:switchee variable = "{channel_short_name}" parse="inward"}
+			{case value="article"}
+			<entry>
+				<title><![CDATA[{page_h1_heading_art}]]></title>
+				<id>{site_url}landscaping-ideas/{url_title}</id>
+				<link href="{site_url}landscaping-ideas/{url_title}" />
+				<updated>{gmt_entry_date format='%Y-%m-%dT%H:%i:%sZ'}</updated>
+			</entry>
+			{/case}
+			{case value="community_article"}
+			<entry>
+				<title><![CDATA[{page_h1_heading_cart}]]></title>
+				<id>{site_url}clippings/community/{url_title}</id>
+				<link href="{site_url}clippings/community/{url_title}" />
+				<updated>{gmt_entry_date format='%Y-%m-%dT%H:%i:%sZ'}</updated>
+			</entry>
+			{/case}
+			{case value="person"}
+			<entry>
+				<title><![CDATA[{page_h1_heading_pers}]]></title>
+				<id>{site_url}landscape-designers/team/{url_title}</id>
+				<link href="{site_url}landscape-designers/team/{url_title}" />
+				<updated>{gmt_entry_date format='%Y-%m-%dT%H:%i:%sZ'}</updated>
+			</entry>
+			{/case}
+			{case value="content_page"}
+			{exp:ifelse parse="inward"}
+			{if seo_full_url_to_this_page != ""}
+			<entry>
+				<title><![CDATA[{page_h1_heading_c}]]></title>
+				<id>{seo_full_url_to_this_page}</id>
+				<link href="{seo_full_url_to_this_page}" />
+				<updated>{gmt_entry_date format='%Y-%m-%dT%H:%i:%sZ'}</updated>
+			</entry>
+			{/if}
+			{/exp:ifelse}
+			{/case}
+			{/exp:switchee}
+	{/exp:channel:entries}
+</feed>
+{/exp:rss:feed}

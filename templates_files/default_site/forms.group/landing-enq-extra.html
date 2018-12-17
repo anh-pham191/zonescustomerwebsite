@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" language="javascript">
+$("input.uniform-stylespop").uniform();
+$('.apply-fancy').fancySelect();
+$('.apply-fancywide').fancySelect({includeBlank: true});
+
+$(function() {
+// Popout form part 2
+$("#sidey-part2").validate({	
+    submitHandler: function(form) {
+	  $('#progs2').fadeIn(100);
+      $.ajax({
+        url: $(form).attr("action"),
+        type: "POST",
+        data: $(form).serialize(),
+        success: function(response) {
+          if (response.match(/Invalid/i)) {
+              //Display try again message above form
+            $('#progs2').fadeOut(200);
+			$('#contact .instructions').html('There was an error, please try again.').css({'color':'red'});
+          } else if (response.match(/Unsuccessful/i)) {
+			//Display failure message in place of form
+            $('#progs2').fadeOut(200);
+			$('#popout-extended').html('<h2>Your form could not be submitted. Please try again later.</h2>');
+          } else {
+			$('#progs2').fadeOut(200);
+			$('#popout-extended').html('<h2>Thank you for your enquiry</h2>');
+			ga('send', 'event', 'Enquiry submitted', 'Submit additional info', '0001 Refresh Contact - Landing Page Embedded Form Stage 2');			
+          }
+        },
+        error: function() {
+          //Display failure message in place of form
+          $('#progs2').fadeOut(200);
+		  $('#popout-extended').html('<h2>Your form could not be submitted. Please try again later.</h2>');
+        }
+      });
+    }
+  });
+
+});
+
+</script>
+<title>Can we help? | Zones Landscaping Specialists</title>
+</head>
+<body>
+<div id="popout-extended">
+<h2>Would you like to provide more information?</h2>
+<p class="instructions">Thank-you for your enquiry, to enable us to process your enquiry more efficiently, would you like to provide more details about your landscaping project?</p> 
+<form action="/forms/popout-part2.php" method="post" id="sidey-part2" class="clearfix">
+<fieldset class="fleft col1">
+<legend></legend>
+<fieldset class="clearfix">
+<label id="p-enq-firstname" class="halfwidth firstname"><input type="text" name="pp-enq-firstname" class="required" value="<?php if(isset($_COOKIE['pfirstnamestored'])){echo $_COOKIE['pfirstnamestored'];} ?>" placeholder="First name" /></label>
+<label id="p-enq-lastname" class="halfwidth lastname"><input type="text" name="pp-enq-lastname" placeholder="Last name" /></label>
+</fieldset>
+<label id="p-enq-email"><input type="email" name="pp-enq-email" class="email required" value="<?php if(isset($_COOKIE['pemailstored'])){echo $_COOKIE['pemailstored'];} ?>" placeholder="Email address" /></label>
+<label id="p-enq-tel"><input type="text" name="pp-enq-tel" value="<?php if(isset($_COOKIE['pphonestored'])){echo $_COOKIE['pphonestored'];} ?>" placeholder="Phone number" /></label>
+<label id="p-enq-enquiry"><textarea rows="2" name="pp-enq-enquiry" placeholder="Enquiry"></textarea></label>
+</fieldset>
+<fieldset class="fleft col2">
+<legend></legend>
+<label id="p-enq-address"><input type="text" name="pp-enq-address" placeholder="Street address" /></label>
+<label id="p-enq-suburb"><input type="text" name="pp-enq-suburb" placeholder="Suburb" /></label>
+<label id="p-enq-city"><input type="text" name="pp-enq-city" placeholder="City" /></label>
+<label id="p-enq-code"><input type="text" name="pp-enq-code" placeholder="Code" /></label>
+<label id="p-enq-budget"><input type="text" name="pp-enq-budget" placeholder="Budget (optional)" /></label>
+</fieldset>
+<fieldset class="fleft col3">
+<legend></legend>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-lanscapedesign" name="pp-enq-reno[]" value="Landscape design" /> Landscape design</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-outdoorroom" name="pp-enq-reno[]" value="Outdoor room" /> Outdoor room</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-outdoorkitchen" name="pp-enq-reno[]" value="Outdoor kitchen" /> Outdoor kitchen</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-garden" name="pp-enq-reno[]" value="Gardens and planting" /> Gardens and planting</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-lawn" name="pp-enq-reno[]" value="Lawns and grass" /> Lawns</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-pool" name="pp-enq-reno[]" value="Swimming pool" /> Swimming pool</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-decks" name="pp-enq-reno[]" value="Pergolas and decks" /> Pergolas and decks</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-lighting" name="pp-enq-reno[]" value="Lighting and power" /> Lighting and power</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-driveway" name="pp-enq-reno[]" value="Driveways and paths" /> Driveways and paths</label> 
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-rain" name="pp-enq-reno[]" value="Rainwater system" /> Rainwater system</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-retaining" name="pp-enq-reno[]" value="Retaining wall" /> Retaining wall</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-fences" name="pp-enq-reno[]" value="Fencing and gates" /> Fencing and gates</label>
+<label class="radiostyle"><input type="checkbox" class="uniform-stylespop" id="pp-enq-reno-maintain" name="pp-enq-reno[]" value="Maintenance and cleaning" /> Maintenance and cleaning</label> 
+</fieldset>
+<input type="submit" value="Update" name="send" id="pp-enq-submit" class="submitbutton" />
+</form>
+<div id="progs2" class="progress" style="display: none;"></div>
+<!-- end #popout-extended --></div>
+</body>
+</html>

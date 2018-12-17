@@ -1,0 +1,122 @@
+{exp:channel:entries disable="member_data|pagination|categories" limit="1" channel="case_studies_list" show_future_entries="yes" status="open|closed"}
+{snippet-doctype}
+<title>{seo_page_header_title_cslist} | Zones</title>
+<script type="text/javascript" language="javascript">
+    var navlevels = "singleicons";
+</script>
+{snippet-callfiles-new}
+<meta name="description" content="{seo_meta_description_cslist}">
+<meta name="keywords" content="{seo_meta_keywords_cslist}">
+{/exp:channel:entries}
+<script type="text/javascript" language="javascript">
+    if($.cookie("css")) {
+        $("link.switcher").attr("href",$.cookie("css"));
+    }
+    $(document).ready(function() {
+
+        $("a.switch-layout").click(function() {
+            $("link.switcher").attr("href",$(this).attr('rel'));
+            $.cookie("css",$(this).attr('rel'), {expires: 365, path: '/'});
+            return false;
+        });
+    });
+</script>
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+    <div id="sitebanner" class="clearfix">
+        {snippet-topnav-work}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-home}
+    </div>
+    <div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
+            {if text == 'Case Studies'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:else}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+
+        <ul id="area-icons" class="clearfix">
+            <li class="current"><a href="{site_url}case-studies/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+            {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+            <li><a href="{site_url}case-studies/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {/exp:channel:categories}
+        </ul>
+
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        <nav id="breadcrumbline" role="navigation">
+            <ul>
+                <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+                <li class="parent"><a href="{site_url}photo-gallery/">Work we've done</a></li>
+                <li><a href="{site_url}case-studies/">Case Studies</a></li>
+            </ul>
+            <div class="sep"></div>
+        </nav></div>
+    <div class="inner">
+        <section id="content" role="main">
+            {exp:channel:entries disable="member_data|pagination|categories" limit="1" channel="case_studies_list" show_future_entries="yes" status="open|closed"}
+            <div class="intro clearfix">
+                {snippet-enquirenow-picture}
+                <h1>{page_h1_heading_cs}</h1>
+                <a href="{site_url}case-studies/" class="view">View all types of landscaping</a>
+                {page_introduction_cslist}
+            </div>
+            {/exp:channel:entries}
+
+            <div class="clearfix list-tools top bottom"><span class="fleft"><span>Layout:</span> <a href="#" class="switch-layout" rel="{site_url}design/switch-gallery.css"><img src="{site_url}design/image.png" class="gallery-icon" width="21" height="20" alt="Gallery view" /></a> <a href="#" class="switch-layout" rel="{site_url}design/switch-list.css"><img src="{site_url}design/image.png" class="list-icon" width="20" height="20" alt="List view" /></a></span>
+                {exp:search:simple_form result_page="site/CSwSearch" no_result_page="site/CSwSearchNoResults" search_in="entries" status="open" form_class="fright" results="8" channel="case_study" where="word"}
+                <fieldset class="clearfix">
+                    <legend></legend>
+                    <input type="text" id="list-search" name="keywords" maxlength="100" />
+                    <button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /></button>
+                </fieldset>
+                {/exp:search:simple_form}
+            </div>
+            <div id="list" class="listview switchable clearfix">
+                {exp:channel:entries channel="case_study" dynamic="no" orderby="date" sort="desc" limit="300" paginate="bottom" disable="member_data" show_future_entries="yes" status="open|closed"}
+
+                <div class="item clearfix"><a class="fleft" href="{site_url}case-studies/{url_title}"><img src="{thumbnail_image_cs}" alt="{title}" /></a>
+                    <div class="fleft">
+                        <h2>{page_h1_heading_casestudy}</h2>
+                        {summary_text_cs}
+                        <p class="more"><a href="{site_url}case-studies/{url_title}">Read full case study</a></p>
+                    </div>
+                </div>
+                {paginate}
+                <div class="paginate-bottom">
+                    <p class="fright">Showing {abp_entry_from} - {abp_entry_to} of {abp_total_entries}</p>
+                    <nav class="pagination clearfix">
+                        <span>Page:</span>
+                        <ul>
+                            {if abp_has_previous}<li><a href="{abp_previous_link}">«Previous</a></li>{/if}
+                            {abp_pages padding="no"}
+                            {if abp_is_current}
+                            <li>{abp_num}</li>
+                            {if:else}
+                            <li><a href="{abp_link}">{abp_num}</a></li>
+                            {/if}
+                            {/abp_pages}
+                            {if abp_has_next}<li><a href="{abp_next_link}">Next»</a></li>{/if}
+                        </ul>
+                    </nav></div>{/paginate}
+                {/exp:channel:entries}
+            </div>
+        </section>
+
+        <div class="sep footersep"></div>
+
+        {snippet-partners}
+    </div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+{embed="includes/footer-new"}

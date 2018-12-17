@@ -1,0 +1,318 @@
+{exp:channel:entries disable="member_data" track_views="one" url_title="{last_segment}" limit="1" channel="article"}
+{if no_results}{redirect="404"}{/if}
+{snippet-doctype}
+<title>{seo_page_header_title_art} | Zones</title>
+<script type="text/javascript" language="javascript">
+    var navlevels = "double";
+</script>
+{snippet-callfiles-new}
+<link href="/design/twentytwenty-no-compass.css" rel="stylesheet" type="text/css" />
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.zones.co.nz/landscaping-ideas/"
+  },
+  "headline": "{seo_page_header_title_art}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{panorama_slideshow_images_art}{art-panorama-image}{/panorama_slideshow_images_art}",
+    "height": 404,
+    "width": 1200
+  },
+    "datePublished": "{entry_date format="%F %j, %Y"}",
+    "dateModified": "{edit_date format="%F %j, %Y"}",
+    "author": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists"
+  },
+    "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+    "url": "https://www.zones.co.nz",
+    "telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_art}"
+}
+</script>
+<meta name="description" content="{seo_meta_description_art}">
+<meta name="keywords" content="{seo_meta_keywords_art}">
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+    <div id="sitebanner" class="clearfix">
+
+        {snippet-topnav-services}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-advice}
+    </div>
+    <div class="sep"></div>
+</nav>
+
+<div id="wrapper" class="clearfix">
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+            {if link == '/what-is-zones/landscape-design-and-garden-maintenance/'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:else}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+
+        <?php
+$setCat = "{primary_category}";
+
+$testSort = "{referrer:segment_2}";
+if ($testSort == "sort") {
+$testCameFrom = "{referrer:segment_3}";
+	if ($testCameFrom != "") {
+		$cameFrom = $testCameFrom;
+		if (($cameFrom == "outdoor-rooms") OR ($cameFrom == "outdoor-kitchen") OR ($cameFrom == "garden-plants") OR ($cameFrom == "grass-lawns-and-lawn-mowing-services") OR ($cameFrom == "landscape-design") OR ($cameFrom == "swimming-pools") OR ($cameFrom == "pergola-decks-patios") OR ($cameFrom == "outdoor-lighting-and-power") OR ($cameFrom == "concrete-asphalt-paving-stones-driveways") OR ($cameFrom == "rain-water-tanks") OR ($cameFrom == "retaining-wall") OR ($cameFrom == "fencing") OR ($cameFrom == "gardening-and-gardening-maintenance"))  {
+		$setCat = $cameFrom;
+	}
+}
+}
+else {
+$cameFrom = "{referrer:segment_1}";
+if (($cameFrom == "outdoor-rooms") OR ($cameFrom == "outdoor-kitchen") OR ($cameFrom == "garden-plants") OR ($cameFrom == "grass-lawns-and-lawn-mowing-services") OR ($cameFrom == "landscape-design") OR ($cameFrom == "swimming-pools") OR ($cameFrom == "pergola-decks-patios") OR ($cameFrom == "outdoor-lighting-and-power") OR ($cameFrom == "concrete-asphalt-paving-stones-driveways") OR ($cameFrom == "rain-water-tanks") OR ($cameFrom == "retaining-wall") OR ($cameFrom == "fencing") OR ($cameFrom == "gardening-and-gardening-maintenance"))  {
+$setCat = $cameFrom;
+}
+}
+?>
+
+        <ul id="area-icons" class="clearfix">
+            <li><a href="{site_url}all/landscaping-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+            {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+            {if "<?php echo $setCat; ?>" == "{category_url_title}"}
+            <li class="current"><a href="{site_url}{category_url_title}/landscaping-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {if:else}
+            <li><a href="{site_url}{category_url_title}/landscaping-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {/if}
+            {/exp:channel:categories}
+        </ul>
+
+        {!--- Level 3 links --}
+        <div class="sep"></div>
+        <ul id="section-detail" class="textnav clearfix">
+            {exp:navee:custom nav_title="What-L3-<?php echo $setCat; ?>" wrap_type="none"}
+            {if link == '/<?php echo $setCat; ?>/landscaping-ideas/'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:elseif link != '/<?php echo $setCat; ?>/design-ideas/'}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <!-- mobile nav start -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
+                {exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+
+                <li><a href="{link}">{text}</a></li>
+
+                {/exp:navee:custom}
+                {exp:navee:custom nav_title="What-L3-<?php echo $setCat; ?>" wrap_type="none"}
+                {if link == '/<?php echo $setCat; ?>/landscaping-ideas/'}
+                <li class="current"><a href="{link}">{text}</a></li>
+                {if:elseif link != '/<?php echo $setCat; ?>/design-ideas/'}
+                <li><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+
+            </ul>
+        </nav>
+    </div>
+    <div class="contextnav-wrapper icons areas justmobile">
+        <nav class="contextnav icons justmobile">
+            <ul class="clearfix"  id="area-icons">
+
+                <li><a href="{site_url}all/landscaping-ideas/"><img src="{site_url}design/image.png" alt="See All" class="sprite-icon-all" width="48" height="48" />All</a></li>
+                {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+                {if "<?php echo $setCat; ?>" == "{category_url_title}"}
+                <li class="current"><a href="{site_url}{category_url_title}/landscaping-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+                {if:else}
+                <li><a href="{site_url}{category_url_title}/landscaping-ideas/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+                {/if}
+                {/exp:channel:categories}
+            </ul>
+        </nav>
+    </div>
+    <div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+    <div class="contextnav-breadcrumb withtoggle justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Our services</a></li>
+                <li><a href="{site_url}what-is-zones/landscape-design-and-garden-maintenance/">Types of Landscaping</a></li>
+                {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
+                {if "<?php echo $setCat; ?>" == "{category_url_title}"}
+                <li><a href="{site_url}{category_url_title}/">{category_name}</a></li>
+                {/if}
+                {/exp:channel:categories}
+                {exp:navee:custom nav_title="What-L3-<?php echo $setCat; ?>" wrap_type="none"}
+                {if link == '/<?php echo $setCat; ?>/landscaping-ideas/'}<li><a href="{link}">{text}</a></li>{/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+    <!-- end mobile nav -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        {snippet-socialsharing-breadcrumb}
+    </div>
+
+    <div class="inner">
+        {exp:ifelse parse="inward"}
+        {if "{panorama_slideshow_images_art:total_rows}" > 1 AND "{panorama_slide_order_art}" == "SetOrder"}
+        <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
+             data-cycle-pause-on-hover="true"
+             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-pager="#pager1">
+            {panorama_slideshow_images_art}
+            <img src="{art-panorama-image}" alt="{art-panorama-image-alt}"/>
+            {/panorama_slideshow_images_art}
+        </div>
+        <div class="cycle-pager" id="pager1"></div>
+        {if:elseif "{panorama_slideshow_images_art:total_rows}" > 1 AND "{panorama_slide_order_art}" != "SetOrder"}
+        <div id="wideslideshow" class="cycle-slideshow" data-cycle-fx="fadeout"
+             data-cycle-pause-on-hover="true"
+             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="true" data-cycle-pager="#pager1">
+            {panorama_slideshow_images_art}
+            <img src="{art-panorama-image}" alt="{art-panorama-image-alt}"/>
+            {/panorama_slideshow_images_art}
+        </div>
+        <div class="cycle-pager" id="pager1"></div>
+        {if:elseif "{panorama_slideshow_images_art:total_rows}" == 1}
+        <div id="wideslideshow">
+            {panorama_slideshow_images_art}
+            <img src="{art-panorama-image}" alt="{art-panorama-image-alt}"/>
+            {/panorama_slideshow_images_art}
+        </div>
+        {/if}
+        {/exp:ifelse}
+
+        <section id="content" class="panorama" role="main">
+            <div class="clearfix">
+                <div id="content-body">
+                    <div class="intro clearfix">
+                        <h1>{page_h1_heading_art}</h1>
+                        <?php
+$segment2Pagination = (preg_match("/P[0-9]+/", "{referrer:segment_2}"));
+$segment3Pagination = (preg_match("/P[0-9]+/", "{referrer:segment_3}"));
+
+if (("{referrer:segment_2}" == "showall")  || ("{referrer:segment_4}" == "showall")) {
+echo '<a href="{site_url}'.$setCat.'/landscaping-ideas/" onclick="history.back();return false;" class="view">';
+                        }
+                        else if (("{referrer:segment_2}" == "sort")  || ("{referrer:segment_3}" == "sort")) {
+                        echo '<a href="{site_url}'.$setCat.'/landscaping-ideas/" onclick="history.back();return false;" class="view">';
+                        }
+                        else if ((("{referrer:segment_1}" == "landscaping-ideas")  || ("{referrer:segment_1}" == "landscaping-ideas-product")  || ("{referrer:segment_1}" == "landscaping-ideas-expert")) && (("{referrer:segment_2}" == "") || ($segment2Pagination === 1))) {
+                        echo '<a href="{site_url}'.$setCat.'/landscaping-ideas/" onclick="history.back();return false;" class="view">';
+                            }
+                            else if (("{referrer:segment_2}" == "landscaping-ideas") && (("{referrer:segment_3}" == "") || ($segment3Pagination === 1))) {
+                            echo '<a href="{site_url}'.$setCat.'/landscaping-ideas/" onclick="history.back();return false;" class="view">';
+                                }
+                                else {
+                                echo '<a href="{site_url}'.$setCat.'/landscaping-ideas/" class="view">';
+                                    }
+                                    ?>back to article list</a>
+                    </div>
+
+                    {snippet-socialsharing-body}
+
+                    <div class="pagecopy">
+                        {if '{before_and_after_slider_art:total_rows}' > 0}
+                        {before_and_after_slider_art}
+                        <div class="slider-title">{title}</div>
+                        <div class="twentytwenty-container">
+                            <img src="{before}" />
+                            <img src="{after}" />
+                        </div>
+                        {/before_and_after_slider_art}
+                        {/if}
+                        {page_content_art}
+                    </div>
+                    {exp:channel:form channel="article" entry_id="{entry_id}" return="article/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
+                    {exp:ifelse parse="inward"}
+                    {if "{sharing_count_art}" == "" }
+                    <input type="hidden" id="count" name="sharing_count_art" value="0" />
+                    {if:else}
+                    <input type="hidden" id="count" name="sharing_count_art" value="{sharing_count_art}" />
+                    {/if}
+                    {/exp:ifelse}
+                    {/exp:channel:form}
+                    {/exp:channel:entries}
+
+                    {exp:structure:siblings}
+                    <p class="prev">
+                        {prev}
+                        <a href="{url}">previous article</a>
+                        {/prev}
+                        {/exp:structure:siblings}
+                        {if "{exp:structure:siblings}{prev}{title}{/prev}{/exp:structure:siblings}" != "" && "{exp:structure:siblings}{next}{title}{/next}{/exp:structure:siblings}" != ""}|{/if}
+                        {exp:structure:siblings}
+                        {next}
+                        <a href="{url}">next article</a>
+                        {/next}
+                    </p>
+                    {/exp:structure:siblings}
+                </div>
+
+                <div id="content-right">
+                    {exp:channel:entries disable="member_data|categories|pagination" url_title="{last_segment}" limit="1" channel="article"}
+                    <div class="sidebar">
+                        {!-- Get in touch form --}
+                        {if "{rightbar_getintouch_art}" == "Yes"}
+                        {snippet-getintouch-rightbar}
+                        {/if}
+                        {!-- END Get in touch form --}
+                        {!-- Personalisation banner --}
+                        {if "{personalisation_banner_ad_art:total_children}" == 1}
+                        <div id="personalisation-banner">
+                            {personalisation_banner_ad_art}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad_art}
+                        </div>
+                        {if:elseif "{personalisation_banner_ad_art:total_children}" > 1}
+                        <div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
+                             data-cycle-pause-on-hover="true"
+                             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
+                            {personalisation_banner_ad_art}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad_art}
+                        </div>
+                        {/if}
+                        {!-- END Personalisation banner --}
+                        {snippet-banner-rotatable}
+                    </div>
+                    {/exp:channel:entries}
+                </div>
+            </div>
+        </section>
+        <div class="sep footersep"></div>
+
+        {snippet-partners}
+    </div><!-- end .inner -->
+</div><!-- end #wrapper -->
+{snippet-sidey}
+
+{embed="includes/footer-with-slider"}

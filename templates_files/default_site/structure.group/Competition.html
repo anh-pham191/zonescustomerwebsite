@@ -1,0 +1,133 @@
+{exp:channel:entries disable="member_data|pagination" channel="competition" limit="1" url_title="{last_segment}" parse="inward" show_expired="yes"}
+{snippet-doctype}
+<title>{seo_page_header_title_comp} | Zones</title>
+<script type="text/javascript" language="javascript">
+    var navlevels = "single";
+</script>
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+
+<meta name="description" content="{seo_meta_description_comp}">
+<meta name="keywords" content="{seo_meta_keywords_comp}">
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+    <div id="sitebanner" class="clearfix">
+        {snippet-topnav}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-clippings}
+    </div>
+    <div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+            {if text == 'Competitions'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:else}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <!-- mobile nav start -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
+                {exp:navee:custom nav_title="TopLevel" wrap_type="none"}
+                <li><a href="{link}">{text}</a></li>
+                {/exp:navee:custom}
+                {exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+                {if text == 'Competitions'}
+                <li class="current"><a href="{link}">{text}</a></li>
+                {if:else}
+                <li><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+    <div class="contextnav-breadcrumb withtoggle justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="{site_url}clippings/">Clippings</a></li>
+                <li><a href="{site_url}competitions/">Competitions</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <!-- end mobile nav -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        <nav id="breadcrumbline" role="navigation">
+            <ul class="clearfix">
+                <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+                <li class="parent"><a href="{site_url}clippings/">Clippings</a></li>
+                <li><a href="{site_url}competitions/">Competitions</a></li>
+            </ul>
+            <div class="sep"></div>
+        </nav></div>
+    <div class="inner">
+        <section id="content" class="panorama" role="main">
+            <div class="intro clearfix borderbottom">
+                {snippet-enquirenow-picture}
+                <h1>{title}</h1>
+                {summary_text_comp}
+            </div>
+            {/exp:channel:entries}
+
+            {exp:channel:entries disable="member_data|pagination" channel="competition" limit="1" url_title="{last_segment}" parse="inward" category="21" show_expired="no"}
+            <div class="comp-details clearfix">
+                <span class="comp-pic fleft"><img src="{thumbnail_image_comp}" alt="{title}" /></span>
+                <div id="content-comp" class="fleft form">
+                    <div class="pagecopy"><p class="more"><a href="JavaScript:newPopup('{entry_form_url}');">Enter now</a></p></div>
+                </div>
+                <p class="prev" style="clear:left;"><a href="{site_url}clippings/competitions">View all competitions</a></p>
+            </div>{/exp:channel:entries}
+            {exp:channel:entries disable="member_data|pagination" channel="competition" limit="1" url_title="{last_segment}" parse="inward" category="22" show_expired="yes"}
+            <div id="content-body" class="whowon">
+                <div class="pagecopy">{find_out_who_won_copy}
+                    <p class="prev" style="clear:left;float: left;"><a href="{site_url}clippings/competitions">View all competitions</a></p></div>
+            </div>
+
+            <div id="content-right">
+                <div class="sidebar">
+                    {!-- Get in touch form --}
+                    {if "{rightbar_getintouch_comp}" == "Yes"}
+                    {snippet-getintouch-rightbar}
+                    {/if}
+                    {!-- END Get in touch form --}
+                    {!-- Personalisation banner --}
+                    {if "{personalisation_banner_ad_comp:total_children}" == 1}
+                    <div id="personalisation-banner">
+                        {personalisation_banner_ad_comp}
+                        <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                        {/personalisation_banner_ad_comp}
+                    </div>
+                    {if:elseif "{personalisation_banner_ad_comp:total_children}" > 1}
+                    <div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
+                         data-cycle-pause-on-hover="true"
+                         data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
+                        {personalisation_banner_ad_comp}
+                        <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                        {/personalisation_banner_ad_comp}
+                    </div>
+                    {/if}
+                    {!-- END Personalisation banner --}
+                    {snippet-banner-rotatable}
+                </div>
+            </div>
+            {/exp:channel:entries}
+
+        </section>
+
+        <div class="sep footersep"></div>
+
+        {snippet-partners}
+    </div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+{embed="includes/footer-new"}

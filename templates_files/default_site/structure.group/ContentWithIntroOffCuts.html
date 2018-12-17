@@ -1,0 +1,156 @@
+{exp:channel:entries disable="member_data|pagination|categories" channel="content_page_with_intro" limit="1"}
+{snippet-doctype}
+<title>{seo_page_header_title_cint} | Zones</title>
+<script type="text/javascript" language="javascript">
+    var navlevels = "single";
+</script>
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_cint}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+	"url": "https://www.zones.co.nz",
+	"telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_cint}"
+}
+</script>
+<meta name="description" content="{seo_meta_description_cint}">
+<meta name="keywords" content="{seo_meta_keywords_cint}">
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+	<div id="sitebanner" class="clearfix">
+		{snippet-topnav}
+		{snippet-bannersearch}
+		{snippet-mobilemenu-clippings}
+	</div>
+	<div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+	<div class="inner">
+		<ul id="section-sub" class="textnav clearfix">
+			{exp:navee:custom nav_title="OffcutsL2" wrap_type="none" selected_class="current"}
+			<li class="{class}"><a href="{link}">{text}</a></li>
+			{/exp:navee:custom}
+		</ul>
+		<div class="sep"></div>
+	</div><!-- end .inner -->
+	<!-- mobile nav start -->
+	<div class="contextnav-wrapper top justmobile">
+		<nav class="contextnav justmobile">
+			<ul class="clearfix">
+				{exp:navee:custom nav_title="OffcutsL2" wrap_type="none" selected_class="current"}
+				<li><a href="{link}">{text}</a></li>
+				{/exp:navee:custom}
+			</ul>
+		</nav>
+	</div>
+
+	<div class="contextnav-toggle justmobile open"><a href="#"><span class="hidelink">Hide navigation</span><span class="showlink">Show navigation</span></a></div>
+	<div class="contextnav-breadcrumb withtoggle justmobile">
+		<nav>
+			<ul class="clearfix">
+				{!--<li><a href="{site_url}clippings/">Clippings</a></li>--}
+				{exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+				{if is_selected}<li><a href="{link}">{text}</a></li>{/if}
+				{/exp:navee:custom}
+		</nav>
+	</div>
+	<!-- end mobile nav -->
+	<div id="breadcrumb-wrapper" style="display: none;">
+		<!-- <nav id="breadcrumbline" role="navigation">
+        <ul class="clearfix">
+        <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+        <li class="parent"><a href="{site_url}clippings/">Clippings</a></li>
+        {exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+        {if is_selected}<li><a href="{link}">{text}</a></li>{/if}
+        {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+        </nav> -->
+
+		{snippet-socialsharing-breadcrumb}
+
+	</div>
+	<div class="inner">
+		<section id="content" class="panorama" role="main">
+			<div class="intro clearfix cwi">
+				{snippet-enquirenow-picture}
+				<h1>{page_h1_heading_cint}</h1>
+				{page_introduction_cint}
+			</div>
+
+			<div class="clearfix">
+				<div id="content-body" class="clearfix cwi">
+					{if "{feature_image_cint}" != ""}
+					<span class="comp-pic fleft"><img class="lazy-load" data-src="{feature_image_cint}" alt="" /></span>
+					{/if}
+
+					{body_content_cint}
+					{exp:channel:form channel="content_page_with_intro" entry_id="{entry_id}" return="contentWithIntroOffCuts/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
+					{exp:ifelse parse="inward"}
+					{if "{sharing_count_cint}" == "" }
+					<input type="hidden" id="count" name="sharing_count_cint" value="0" />
+					{if:else}
+					<input type="hidden" id="count" name="sharing_count_cint" value="{sharing_count_cint}" />
+					{/if}
+					{/exp:ifelse}
+					{/exp:channel:form}
+				</div>
+				{/exp:channel:entries}
+				<div id="content-right" class="cwi">
+					{exp:channel:entries disable="member_data|categories|pagination" url_title="{last_segment}" limit="1" channel="content_page_with_intro"}
+					<div class="sidebar">
+						{if "{rightbar_getintouch_cint}" == "Yes"}
+						{snippet-getintouch-rightbar}
+						{/if}
+
+
+						{if "{personalisation_banner_ad_cint:total_children}" == 1}
+						<div id="personalisation-banner">
+							{personalisation_banner_ad_cint}
+							<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+							{/personalisation_banner_ad_cint}
+						</div>
+						{if:elseif "{personalisation_banner_ad_cint:total_children}" > 1}
+						<div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
+							 data-cycle-pause-on-hover="true"
+							 data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait" data-cycle-slides="> a">
+							{personalisation_banner_ad_cint}
+							<a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+							{/personalisation_banner_ad_cint}
+						</div>
+						{/if}
+						{snippet-banner-rotatable}
+					</div>
+					{/exp:channel:entries}
+				</div>
+			</div>
+		</section>
+		<div class="sep footersep"></div>
+
+		{snippet-partners}
+	</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+{snippet-sidey}
+{embed="includes/footer-new"}

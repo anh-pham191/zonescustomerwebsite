@@ -1,0 +1,848 @@
+{exp:channel:entries disable="member_data|pagination" channel="contact_enquiry" limit="1"}
+{snippet-doctype}
+<title>{seo_page_header_title_c_enq} | Zones</title>
+<script type="text/javascript" language="javascript">
+    var navlevels = "single";
+</script>
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_c_enq}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+	"url": "https://www.zones.co.nz",
+	"telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_c_enq}"
+}
+</script>
+<meta name="description" content="{seo_meta_description_c_enq}">
+<meta name="keywords" content="{seo_meta_keywords_c_enq}">
+<style>
+    .instructions{margin:10px 0}
+    @media only all and (min-width: 48em){
+        .pagecopy{width:80%;}
+    }
+    .pagecopy{margin-bottom: 20px}
+    h1.col-sm-12, p.col-sm-12{margin-bottom: 15px;}
+</style>
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+    <div id="sitebanner" class="clearfix">
+        {snippet-topnav-contact}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-contact}
+    </div>
+    <div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="current"}
+            {if "{link}" != "/contact-us/job-opportunities/"}
+            {if text == 'Landscape Enquiry'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:else}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <!-- start mobile nav -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="current" cache="yes" refresh="1500"}
+                {if "{link}" != "/contact-us/job-opportunities/"}
+                <li class="{class}"><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+    <div class="contextnav-breadcrumb justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="/contact-us/">Get in touch</a></li>
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" cache="yes" refresh="1500"}
+                {if is_selected}<li><span>{text}</span></li>{/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+    <!-- end mobile nav -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        <nav id="breadcrumbline" role="navigation">
+            <ul class="clearfix">
+                <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+                <li class="parent"><a href="{site_url}contact-us/">Get in touch</a></li>
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none"}
+                {if is_selected}<li><a href="{link}">{text}</a></li>{/if}
+                {/exp:navee:custom}
+            </ul>
+            <div class="sep"></div>
+        </nav></div>
+
+
+    <div class="inner">
+        <section id="content" class="panorama" role="main">
+            <div class="intro clearfix">
+                <h1>{contactus_enquiry_h1_heading}</h1>
+            </div>
+            <div class="theformarea-c formholder">
+                <div class="pagecopy">{contactus_enquiry_pageintro}</div>
+                {/exp:channel:entries}
+                <p class="instructions"></p>
+                <form action="/forms/enquiry-stage2.php" method="post" id="enquiry-stage2" class="clearfix">
+
+                    <!--first+last name-->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                            <label class="labelname">First name</label>
+                            <input type="text" class="form-control" placeholder="Enter first name" name="firstName-s2" id="firstName-s2" data-prefix="s2">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                            <label class="labelname">Last name</label>
+                            <input type="text" class="form-control" placeholder="Enter last name"  name="lastName-s2" id="lastName-s2" data-prefix="s2">
+                        </div>
+                    </div>
+                    <!--/first+last name-->
+
+                    <!--email address + phone # + mobile #-->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                            <label class="labelname">Email address</label>
+                            <input type="text" class="form-control" placeholder="Enter email address" name="email-s2" id="email-s2"  data-prefix="s2" />
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 input-label-wrapper">
+                            <label class="labelname">Mobile number</label>
+                            <input type="text" class="form-control" placeholder="Enter mobile number" name="mobile-s2" id="mobile-s2"  data-prefix="s2" />
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 input-label-wrapper phone-section">
+                            <label class="labelname">Landline</label>
+                            <input type="text" class="form-control"  placeholder="Enter landline number" name="landline-s2" id="landline-s2" data-prefix="s2" />
+                        </div>
+                    </div>
+                    <!--/email address + phone # + mobile #-->
+
+                    <!--googleplaces autocomplete + manual address-->
+                    <div id="googleaddress" class="row">
+                        <!--googleplaces autocomplete-->
+                        <div class="col-md-6 col-sm-6 input-label-wrapper">
+                            <label class="labelname">Address</label>
+                            <input type="text" class="form-control" name="geocomplete-s2" id="geocomplete-s2" placeholder="Enter a location" onFocus="geolocate()">
+                        </div>
+                        <div class="col-md-6 col-sm-6 input-label-wrapper">
+                            <label class="instruction">Can't find address? <a id="showManualAddress">Enter Manually</a></label>
+                        </div>
+                        <!--/googleplaces autocomplete-->
+                    </div>
+                    <div id="manualaddress" class="row">
+                        <!--manual address-->
+                        <div class="col-md-12 col-sm-8 col-xs-8 input-label-wrapper">
+                            <label class="labelname">Street address</label>
+                            <input type="text" class="form-control" name="streetaddress-s2" placeholder="Enter street address" id="streetaddress-s2" data-prefix="s2">
+                        </div>
+                        <div class="col-sm-4 col-xs-4 city-wrapper-responsive input-label-wrapper">
+                            <label class="labelname">City</label>
+                            <input type="text" class="form-control" name="city-s2" placeholder="Enter city" id="city-s2" data-prefix="s2">
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-3 input-label-wrapper">
+                            <label class="labelname">Postcode</label>
+                            <input type="text" class="form-control" name="postcode-s2" placeholder="PC" id="postcode-s2">
+                        </div>
+                        <div class="col-md-2 col-sm-3 province-wrapper input-label-wrapper">
+                            <label class="labelname">Suburb</label>
+                            <input type="text" class="form-control" name="stateprovince-s2" placeholder="Enter suburb" id="stateprovince-s2" data-prefix="s2">
+                        </div>
+                        <div class="select-wrapper input-label-wrapper country-select">
+                            <label class="labelname">Country</label>
+                            <div class="country-wrapper">
+                                <select id="country-s2" name="country-s2" class="apply-fancy form-control">
+                                    <option value="New Zealand" selected="selected">New Zealand</option>
+                                    <option value="Australia">Australia</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="instruction-google-wrapper input-label-wrapper text-right">
+                            <label class="instruction instruction-google"><a id="showGoogleAddress">Address lookup</a></label>
+                        </div>
+                        <!--/manual address-->
+                    </div>
+                    <!--/googleplaces autocomplete + manual address-->
+
+                    <!--enquiry-->
+                    <div class="row">
+                        <!--<div class="col-md-12">          -->
+                        <div class="form-group col-sm-12 col-xs-12">
+                            <label class="labelname">Enquiry</label>
+                            <textarea rows=5 class="form-control col-xs-12" name='enquiry-s2' placeholder="Enter enquiry" id="enquiry-s2"></textarea>
+                        </div>
+                        <!--</div>-->
+                    </div>
+                    <!--/enquiry-->
+
+                    <!--project stats-->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 input-label-wrapper">
+                            <label class="labelname">Budget / Size of project</label>
+                            <input type="number" class="form-control" name="budget-s2" id="budget-s2">
+                        </div>
+                        <!--/project stats-->
+
+                        <!--start time-->
+
+                        <div class="col-md-6 col-sm-6 input-label-wrapper">
+                            <label class="labelname">When would you like to start the renovation?</label>
+                            <div class="day-select col-md-3 col-sm-3">
+                                <select id="day-s2" name="day-s2" class="apply-fancy form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+                            </div>
+                            <div class="month-select col-md-6 col-sm-6">
+                                <select id="month-s2" name="month-s2" class="apply-fancy form-control month-select-item">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                            </div>
+                            <div class="year-select col-md-3 col-sm-3">
+                                <select id="year-s2" name="year-s2" class="apply-fancy form-control year-select-item">
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/start time-->
+
+
+                    <div class="row">
+                        <h1 class="col-sm-12">Project type(s)</h1>
+                        <p class="col-sm-12">Please select all that apply</p>
+
+                        <div class="project-type-list clearfix">
+                            <div class="col-sm-4 col-xs-12">
+                                <input type="checkbox" id="p1" name="p1" onchange="onItemCheckboxChange(this)" value="Landscape Design">
+                                <label for="p1" onmouseover="showEdit('p1')" onmouseout="hideEdit('p1')"><span id="p1-label">Landscape Design</span><span id="p1-times" class="times"> X </span><span id="p1-currentquantity"></span> <a class="inline-button-link" id="p1-edit" onclick="showQunatity('p1');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p1-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p1')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p1-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p1')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p2" name="p2" onchange="onItemCheckboxChange(this)" value="Outdoor Rooms">
+                                <label for="p2" onmouseover="showEdit('p2')" onmouseout="hideEdit('p2')"><span id="p2-label">Outdoor Rooms</span><span id="p2-times" class="times"> X </span><span id="p2-currentquantity"></span> <a class="inline-button-link" id="p2-edit" onclick="showQunatity('p2');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p2-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p2')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p2-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p2')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p3" name="p3" onchange="onItemCheckboxChange(this)" value="Outdoor Kitchens">
+                                <label for="p3" onmouseover="showEdit('p3')" onmouseout="hideEdit('p3')"><span id="p3-label">Outdoor Kitchens</span><span id="p3-times" class="times"> X </span><span id="p3-currentquantity"></span> <a class="inline-button-link" id="p3-edit" onclick="showQunatity('p3');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p3-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p3')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p3-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p3')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p4" name="p4" onchange="onItemCheckboxChange(this)" value="Gardens and Planting">
+                                <label for="p4" onmouseover="showEdit('p4')" onmouseout="hideEdit('p4')"><span id="p4-label">Gardens and Planting</span><span id="p4-times" class="times"> X </span><span id="p4-currentquantity"></span> <a class="inline-button-link" id="p4-edit" onclick="showQunatity('p4');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p4-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p4')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p4-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p4')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p5" name="p5" onchange="onItemCheckboxChange(this)" value="Lawns and Grass">
+                                <label for="p5" onmouseover="showEdit('p5')" onmouseout="hideEdit('p5')"><span id="p5-label">Lawns and Grass</span><span id="p5-times" class="times"> X </span><span id="p5-currentquantity"></span> <a class="inline-button-link" id="p5-edit" onclick="showQunatity('p5');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p5-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p5')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p5-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p5')">
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-12">
+                                <input type="checkbox" id="p6" name="p6" onchange="onItemCheckboxChange(this)" value="Swimming Pools">
+                                <label for="p6" onmouseover="showEdit('p6')" onmouseout="hideEdit('p6')"><span id="p6-label">Swimming Pools</span><span id="p6-times" class="times"> X </span><span id="p6-currentquantity"></span> <a class="inline-button-link" id="p6-edit" onclick="showQunatity('p6');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p6-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p6')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p6-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p6')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p7" name="p7" onchange="onItemCheckboxChange(this)" value="Pergolas and Decks">
+                                <label for="p7" onmouseover="showEdit('p7')" onmouseout="hideEdit('p7')"><span id="p7-label">Pergolas and Decks</span><span id="p7-times" class="times"> X </span><span id="p7-currentquantity"></span> <a class="inline-button-link" id="p7-edit" onclick="showQunatity('p7');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p7-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p7')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p7-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p7')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p8" name="p8" onchange="onItemCheckboxChange(this)" value="Lighting and Power">
+                                <label for="p8" onmouseover="showEdit('p8')" onmouseout="hideEdit('p8')"><span id="p8-label">Lighting and Power</span><span id="p8-times" class="times"> X </span><span id="p8-currentquantity"></span> <a class="inline-button-link" id="p8-edit" onclick="showQunatity('p8');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p8-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p8')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p8-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p8')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p9" name="p9" onchange="onItemCheckboxChange(this)" value="Driveways and Paths">
+                                <label for="p9" onmouseover="showEdit('p9')" onmouseout="hideEdit('p9')"><span id="p9-label">Driveways and Paths</span><span id="p9-times" class="times"> X </span><span id="p9-currentquantity"></span> <a class="inline-button-link" id="p9-edit" onclick="showQunatity('p9');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p9-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p9')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p9-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p9')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p10" name="p10" onchange="onItemCheckboxChange(this)" value="Rainwater Systems">
+                                <label for="p10" onmouseover="showEdit('p10')" onmouseout="hideEdit('p10')"><span id="p10-label">Rainwater Systems</span><span id="p10-times" class="times"> X </span><span id="p10-currentquantity"></span> <a class="inline-button-link" id="p10-edit" onclick="showQunatity('p10');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p10-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p10')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p10-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p10')">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <input type="checkbox" id="p11" name="p11" onchange="onItemCheckboxChange(this)" value="Retaining Walls">
+                                <label for="p11" onmouseover="showEdit('p11')" onmouseout="hideEdit('p11')"><span id="p11-label">Retaining Walls</span><span id="p11-times" class="times"> X </span><span id="p11-currentquantity"></span> <a class="inline-button-link" id="p11-edit" onclick="showQunatity('p11');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p11-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p11')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p11-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p11')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p12" name="p12" onchange="onItemCheckboxChange(this)" value="Fencing and Gates">
+                                <label for="p12" onmouseover="showEdit('p12')" onmouseout="hideEdit('p12')"><span id="p12-label">Fencing and Gates</span><span id="p12-times" class="times"> X </span><span id="p12-currentquantity"></span> <a class="inline-button-link" id="p12-edit" onclick="showQunatity('p12');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p12-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p12')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p12-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p12')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p13" name="p13" onchange="onItemCheckboxChange(this)" value="Maintenance and Cleaning">
+                                <label for="p13" onmouseover="showEdit('p13')" onmouseout="hideEdit('p13')"><span id="p13-label">Maintenance and Cleaning</span><span id="p13-times" class="times"> X </span><span id="p13-currentquantity"></span> <a class="inline-button-link" id="p13-edit" onclick="showQunatity('p13');return false;">Edit Quantity</a>
+                                    <div class="inline-edit" id="p13-quantity">
+                                        <button type="button" class="inline-button-primary" onclick="submitQuantity('p13')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                        <input id="p13-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p13')">
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="p100" name="p100" onchange="onOtherChange(this)" value="Other">
+                                <label for="p100" onmouseover="showEdit('p100')" onmouseout="hideEdit('p100')"><span id="p100-label">Other</span><span id="p100-custom-label"></span><span id="p100-times" class="times"> X </span><span id="p100-currentquantity"></span> <a class="inline-button-link" id="p100-edit" onclick="showQunatity('p100');return false;">Edit Label and Quantity</a>
+                                    <div class="other inline-edit inline-edit-other" id="p100-quantity">
+                                        <input id="p100-label-input" type="text" min=0 class="form-control form-check-input custom-label" placeholder="Enter label" onchange="updateLabel('p100')">
+                                        <input id="p100-num" type="number" min=0 class="form-control form-check-input" value="0" onchange="updateQuantity('p100')">
+                                        <button type="button" class="other inline-button-primary" onclick="submitQuantity('p100')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--seen/heard list-->
+                    <div class="row">
+                        <div class="referral-source clearfix referral-source-wrapper">
+                            <h1 class="col-sm-12">Where have you seen/heard about Zones? </h1>
+                            <p class="col-sm-12">Please select all that apply</p>
+                            <!--seen/heard refresh list 3 cols-->
+                            <div class="col-sm-4 ">
+                                <input type="checkbox" id="r1" name="r1">
+                                <label for="r1"><span id="r1-label">Banner on website</span></label>
+                                <input type="checkbox" id="r2" name="r2">
+                                <label for="r2"><span id="r2-label">Billboard</span></label>
+                                <input type="checkbox" id="r3" name="r3">
+                                <label for="r3"><span id="r3-label">Branded vehicle</span></label>
+                                <input type="checkbox" id="r4" name="r4">
+                                <label for="r4"><span id="r4-label">Friend referral</span></label>
+                                <input type="checkbox" id="r5" name="r5">
+                                <label for="r5"><span id="r5-label">Internet search</span></label>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <input type="checkbox" id="r6" name="r6">
+                                <label for="r6"><span id="r6-label">Home and Garden Show</span></label>
+                                <input type="checkbox" id="r7" name="r7">
+                                <label for="r7"><span id="r7-label">Leaflet</span></label>
+                                <input type="checkbox" id="r8" name="r8">
+                                <label for="r8"><span id="r8-label">Newspaper</span></label>
+                                <input type="checkbox" id="r9" name="r9">
+                                <label for="r9"><span id="r9-label">Renovate Magazine</span></label>
+                                <input type="checkbox" id="r10" name="r10">
+                                <label for="r10"><span id="r10-label">Other Magazine</span></label>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <input type="checkbox" id="r11" name="r11">
+                                <label for="r11"><span id="r11-label">Radio</span></label>
+                                <input type="checkbox" id="r12" name="r12">
+                                <label for="r12"><span id="r12-label">Sign in front of house</span></label>
+                                <input type="checkbox" id="r13" name="r13">
+                                <label for="r13"><span id="r13-label">TV ad</span></label>
+                                <input type="checkbox" id="r14" name="r14">
+                                <label for="r14"><span id="r14-label">On-Demand Video Ad</span></label>
+                                <input type="checkbox" id="r15" name="r15" onchange="onOtherChangeR(this)">
+                                <label for="r15" onmouseout="hideEdit('r15')"><span id="r15-label">Other</span><span id="r15-custom-label"></span> <a class="inline-button-link" id="r15-edit" onclick="showQunatity('r15');return false;">Edit Label</a>
+                                    <div class="inline-edit inline-edit-other" id="r15-quantity">
+                                        <input id="r15-label-input" type="text" min=0 class="form-control form-check-input custom-label-r" placeholder="Enter label" onchange="updateLabel('r15')">
+                                        <button type="button" class="other inline-button-primary" onclick="submitQuantity('r15')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+
+                                    </div>
+                                </label>
+                            </div>
+                            <!--/seen/heard refresh list 3 cols-->
+
+                        </div>
+                    </div>
+                    <!--/seen/heard list-->
+
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                            <div class="g-recaptcha"></div>
+                        </div>
+                    </div>
+
+                    <fieldset class="clearfix form-website">
+                        <legend></legend>
+                        <label id="c-enq-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" id="form-website" autocomplete="off" /></label>
+                    </fieldset>
+                    <input type="hidden" name="projectTypeList-s2" id="projectTypeList-s2"/>
+                    <input type="hidden" name="sourceList-s2" id="sourceList-s2"/>
+                    <input type="hidden" name="latitude-s2" id="latitude-s2"/>
+                    <input type="hidden" name="longitude-s2" id="longitude-s2"/>
+                    <input type="hidden" name="pagecountry" value="New Zealand" />
+                    <!--submit buttons-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary btn-block" id="c-enq-submit" onclick="submitEnquirePart2();">Submit Enquiry</button>
+                        </div>
+                    </div>
+
+                    <!--submit buttons-->
+                </form>
+                <div id="prog1" class="progress" style="display: none;"></div>
+            </div>
+            <div class="sep footersep"></div>
+
+            {snippet-partners}
+    </div><!-- end .inner -->
+</div><!-- end #wrapper -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-10321903-7', 'auto');
+    ga('require', 'GTM-TKQT9N7');
+    ga('require', 'displayfeatures');
+
+    {exp:switchee variable = "{segment_2}" parse="inward"}
+    {case value="SearchResults"}
+    ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=all');
+    {/case}
+        {case value="ArticlesSearch"}
+        ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=articles');
+        {/case}
+            {case value="EstimatesSearch"}
+            ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=estimates');
+            {/case}
+                {case value="CSwSearch"}
+                ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=case-studies');
+                {/case}
+                    {case value="CSsSearch"}
+                    ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=case-studies');
+                    {/case}
+                        {case value="ArticlesSiteSearch"}
+                        ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=articles');
+                        {/case}
+                            {case value="EstimatesSiteSearch"}
+                            ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=estimates');
+                            {/case}
+                                {case value="NoSearchResults"}
+                                ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=all-noresults');
+                                {/case}
+                                    {case value="ArticlesSearchNoResults"}
+                                    ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=articles-noresults');
+                                    {/case}
+                                        {case value="EstimatesSearchNoResults"}
+                                        ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=estimates-noresults');
+                                        {/case}
+                                            {case value="CSwSearchNoResults"}
+                                            ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=case-studies-noresults');
+                                            {/case}
+                                                {case value="CSsSearchNoResults"}
+                                                ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=case-studies-noresults');
+                                                {/case}
+                                                    {case value="ArticlesSiteSearchNoResults"}
+                                                    ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=articles-noresults');
+                                                    {/case}
+                                                        {case value="EstimatesSiteSearchNoResults"}
+                                                        ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=estimates-noresults');
+                                                        {/case}
+                                                            {case default="Yes"}
+                                                            ga('send', 'pageview');
+                                                            {/case}
+                                                                {/exp:switchee}
+
+</script>
+<?php if(isset($_GET['adwords']) && $_GET['adwords']=="tracking"){ ?>
+<!-- Google Code for Zones Consumer NZ Web enquiry conversions Conversion Page -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 882019083;
+    var google_conversion_language = "en";
+    var google_conversion_format = "3";
+    var google_conversion_color = "ffffff";
+    var google_conversion_label = "s8dICID4z2YQi5bKpAM";
+    var google_remarketing_only = false;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/882019083/?label=s8dICID4z2YQi5bKpAM&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+<script type="text/javascript">
+    fbq('track', 'Lead');
+    window.history.pushState("object or string", "Title", window.location.href.split("?")[0]);
+</script>
+<?php } ?>
+{snippet-footer-resources}
+{snippet-init-visitor}
+<script type="text/javascript" language="javascript">
+    $( "#showGoogleAddress" ).click(function() {
+        $( "#manualaddress" ).hide();
+        $( "#googleaddress" ).show();
+
+        if($.trim($("#streetaddress-s2").val()) != ""){
+            $("#geocomplete-s2").val($.trim($("#streetaddress-s2").val()));
+            $("#geocomplete-s2").focus();
+
+        }
+
+    });
+    $( "#showManualAddress" ).click(function() {
+        $( "#googleaddress" ).hide();
+        $( "#manualaddress" ).show();
+    });
+    var placeSearch, autocomplete;
+    var componentForm = {
+        street_number: 'short_name',
+        subpremise: 'short_name',
+        point_of_interest: 'short_name',
+        route: 'short_name',
+        locality: 'short_name',
+        neighborhood: 'short_name',
+        sublocality_level_1: 'short_name',
+        postal_town: 'short_name',
+        administrative_area_level_1: 'short_name',
+        administrative_area_level_2: 'short_name',
+        administrative_area_level_3: 'short_name',
+        country: 'long_name',
+        postal_code: 'short_name'
+    };
+
+
+    function initAutocomplete() {
+        // Create the autocomplete object, restricting the search to geographical
+        // location types.
+        autocomplete = new google.maps.places.Autocomplete(
+            /** @type {!HTMLInputElement} */(document.getElementById('geocomplete-s2')),
+            {types: ['geocode']});
+        // Set initial restrict to the greater list of countries.
+        autocomplete.setComponentRestrictions(
+            {'country': ['nz', 'au']});
+
+        // When the user selects an address from the dropdown, populate the address
+        // fields in the form.
+        autocomplete.addListener('place_changed', fillInAddress);
+    }
+
+    function fillInAddress() {
+        // Get the place details from the autocomplete object.
+        var place = autocomplete.getPlace();
+
+        // Get each component of the address from the place details
+        // and fill the corresponding field on the form.
+        var addressArray = new Array();
+        for (var i = 0; i < place.address_components.length; i++) {
+            var addressType = place.address_components[i].types[0];
+            if (componentForm[addressType]) {
+                var val = place.address_components[i][componentForm[addressType]];
+                // console.log(addressType, val);
+                addressArray[addressType] = val;
+            }
+        }
+        //console.log(addressArray);
+        //console.log(place.address_components);
+        //Address 1
+        if(addressArray['subpremise'] && addressArray['street_number']){
+            var street = addressArray['subpremise']+"/"+addressArray['street_number'];
+        }else if(addressArray['subpremise'] && !addressArray['street_number']){
+            var street = addressArray['subpremise'];
+        }else if(!addressArray['subpremise'] && addressArray['street_number']){
+            var street = addressArray['street_number'];
+        }else{
+            var street = "";
+        }
+        if(addressArray['point_of_interest']){
+            var route = addressArray['point_of_interest'];
+        }else if(addressArray['route']){
+            var route = addressArray['route'];
+        }else{
+            var route = "";
+        }
+
+        if(street != ""){
+            $('#streetaddress-s2').val(street+" "+route);
+        }else{
+            $('#streetaddress-s2').val(route);
+        }
+
+        if(addressArray['country']=="New Zealand"){
+            //Address 2
+            if(addressArray['neighborhood']){
+                var city = addressArray['neighborhood'];
+            }else if(addressArray['postal_town']){
+                var city = addressArray['postal_town'];
+            }else if(addressArray['sublocality_level_1']){
+                var city = addressArray['sublocality_level_1'];
+            }else{
+                var city = "";
+            }
+
+            //Address 3
+            if(addressArray['locality']){
+                var stateprovince = addressArray['locality'];
+            }else if(addressArray['administrative_area_level_3']){
+                var stateprovince = addressArray['administrative_area_level_3'];
+            }else if(addressArray['administrative_area_level_2']){
+                var stateprovince = addressArray['administrative_area_level_2'];
+            }else if(addressArray['administrative_area_level_1']){
+                var stateprovince = addressArray['administrative_area_level_1'];
+            }else{
+                var stateprovince = "";
+            }
+
+        }else if(addressArray['country']=="Australia"){
+            //Address 2
+            if(addressArray['neighborhood']){
+                var city = addressArray['neighborhood'];
+            }else if(addressArray['postal_town']){
+                var city = addressArray['postal_town'];
+            }else if(addressArray['sublocality_level_1']){
+                var city = addressArray['sublocality_level_1'];
+            }else if(addressArray['locality']){
+                var city = addressArray['locality'];
+            }else{
+                var city = "";
+            }
+
+            //Address 3
+            if(addressArray['administrative_area_level_1']){
+                var stateprovince = addressArray['administrative_area_level_1'];
+            }else if(addressArray['administrative_area_level_2']){
+                var stateprovince = addressArray['administrative_area_level_2'];
+            }else if(addressArray['administrative_area_level_3']){
+                var stateprovince = addressArray['administrative_area_level_3'];
+            }else{
+                var stateprovince = "";
+            }
+        }
+        $('#city-s2').val(city);
+        $('#stateprovince-s2').val(stateprovince);
+        $('#country-s2').val(addressArray['country']);
+        $('#country-s2').trigger('update.fs');
+        $('#postcode-s2').val(addressArray['postal_code']);
+        $('#latitude-s2').val(place.geometry.location.lat());
+        $('#longitude-s2').val(place.geometry.location.lng());
+    }
+
+    // Bias the autocomplete object to the user's geographical location,
+    // as supplied by the browser's 'navigator.geolocation' object.
+    function geolocate() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var geolocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                var circle = new google.maps.Circle({
+                    center: geolocation,
+                    radius: position.coords.accuracy
+                });
+                autocomplete.setBounds(circle.getBounds());
+            });
+        }
+    }
+    function showEdit(id){
+        if($("#"+id+"-quantity").is(":visible")=== false){
+            $("#"+id+"-edit").show();
+        }
+    }
+    function hideEdit(id){
+        $("#"+id+"-edit").hide();
+    }
+    function showQunatity(id){
+        $("#"+id+"-edit").hide();
+        $("#"+id+"-quantity").show();
+    }
+    function submitQuantity(id){
+        $("#"+id+"-quantity").hide();
+    }
+    function onItemCheckboxChange(obj){
+        if(obj.checked){
+            $("#"+obj.id+"-num").val("1");
+            $("#"+obj.id+"-currentquantity").text("1");
+            $("#"+obj.id+"-times").show();
+        }else{
+            $("#"+obj.id+"-num").val("0");
+            $("#"+obj.id+"-currentquantity").text("");
+            $("#"+obj.id+"-times").hide();
+            $("#"+obj.id+"-quantity").hide();
+        }
+
+    }
+    function onOtherChange(obj){
+        if(obj.checked){
+            $("#"+obj.id+"-num").val("1");
+            $("#"+obj.id+"-currentquantity").text("1");
+            $("#"+obj.id+"-times").show();
+        }else{
+            $("#"+obj.id+"-num").val("0");
+            $("#"+obj.id+"-currentquantity").text("");
+            $("#"+obj.id+"-custom-label").text("");
+            $("#"+obj.id+"-label-input").val("");
+            $("#"+obj.id+"-quantity").hide();
+            $("#"+obj.id+"-times").hide();
+        }
+    }
+    function onOtherChangeR(obj){
+        if(obj.checked){
+            $("#"+obj.id+"-edit").hide();
+            $("#"+obj.id+"-quantity").show();
+        }else{
+            $("#"+obj.id+"-custom-label").text("");
+            $("#"+obj.id+"-label-input").val("");
+            $("#"+obj.id+"-quantity").hide();
+        }
+    }
+
+    function updateQuantity(id){
+        if($("#"+id+"-num").val()==="0"){
+            $("#"+id+"-currentquantity").text("");
+            $("#"+id+"-times").hide();
+            $("#"+id).prop( "checked", false );
+        }else if($("#"+id+"-num").val()===""){
+            $("#"+id+"-currentquantity").text("");
+            $("#"+id+"-times").hide();
+            $("#"+id).prop( "checked", false );
+            $("#"+id+"-num").val("0");
+        }else{
+            $("#"+id+"-currentquantity").text($("#"+id+"-num").val());
+            $("#"+id+"-times").show();
+            $("#"+id).prop( "checked", true );
+        }
+    }
+    function updateLabel(id){
+        $("#"+id+"-custom-label").text(" ("+$("#"+id+"-label-input").val()+")");
+    }
+    $(function() {
+        $(".fancy-select").addClass("form-control");
+        var deal_id = window.location.search.substring(1);
+
+        var currentmth = (new Date().getMonth()+1);
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var thisyear = new Date().getFullYear();
+
+        $('#month-s2').val(monthNames[currentmth]);
+        $('#month-s2').trigger('update.fs');
+        if (currentmth == 12){
+            $('#year-s2').val(thisyear+1);
+        }else{
+            $('#year-s2').val(thisyear);
+        }
+        $('#year-s2').trigger('update.fs');
+
+        $('#firstName-s2').val($.cookie("pfirstnamestored"));
+        $('#lastName-s2').val($.cookie("plastnamestored"));
+        $('#email-s2').val($.cookie("pemailstored"));
+        $('#landline-s2').val($.cookie("pphonestored"));
+
+        if (!!$.cookie("penquiry")) {
+            $('#enquiry-s2').text($.cookie("penquiry"));
+        }
+
+        // $('#firstName-s2').val(obj.data.first_name);
+        //      $('#lastName-s2').val(obj.data.last_name);
+        //      $('#email-s2').val(obj.data.email_address);
+        //      $('#landline-s2').val(obj.data.phone);
+        //      $('#enquiry-s2').text(obj.data.project_description);
+        //      $('#countrycode-s2').val(obj.data.phone_country_code);
+        //      $('#countrycode-s2').trigger('update.fs');
+        //      $('#dealid-s2').val(obj.data.deal_id);
+    });
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg29UmrclswAOYDBkWeztNZbR45gLlz1w&libraries=places&callback=initAutocomplete" async defer></script>
+
+{embed="includes/footer-new-stage2"}

@@ -1,0 +1,365 @@
+<footer id="footer" class="clearfix">
+    <div class="clearfix">
+        <section id="firstchild">
+            <h2><a href="/what-is-zones/landscape-design-and-garden-maintenance/">What We Do</a></h2>
+            <ul>
+                {exp:navee:custom nav_title="WhatisRefreshL2" wrap_type="none"}
+                <li><a href="{link}">{text}</a></li>
+                {/exp:navee:custom}
+            </ul>
+            <h2><a href="/contact-us/">Get In Touch</a></h2>
+            <ul>
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none"}
+                {if "{link}" != "/contact-us/job-opportunities/"}
+                <li><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+        </section>
+
+        <section>
+            <h2><a href="/photo-gallery/">Work We’ve Done</a></h2>
+            <ul>
+                {exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
+                {if text == 'Photo Gallery'}
+                <li><a href="{link}">{text}</a></li>
+                {if:elseif text == 'Case Studies'}
+                <li><a href="{link}">{text}</a></li>
+                {if:elseif text == 'Testimonials'}
+                <li><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+            <h2><a href="/landscape-designers/">About us</a></h2>
+            <ul>
+                {exp:navee:custom nav_title="AboutL2" wrap_type="none"}
+                <li><a href="{link}">{if '{title}' != ""}{title}{if:else}{text}{/if}</a></li>
+                {/exp:navee:custom}
+            </ul>
+        </section>
+
+        <section class="notmobile">
+            <h2><a href="/landscaping-ideas/">Advice</a></h2>
+            <ul>
+                {exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+                <li><a href="{link}">{text}</a></li>
+                {/exp:navee:custom}
+            </ul>
+
+            <h2><a href="/">Clippings</a></h2>
+            <ul>
+                {exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+                <li><a href="{link}">{text}</a></li>
+                {/exp:navee:custom}
+            </ul>
+        </section>
+
+        <section class="justmobile">
+            <h2><a href="/landscaping-ideas/">Advice</a></h2>
+            <ul>
+                {exp:navee:custom nav_title="AdviceL2" wrap_type="none"}
+                <li><a href="{link}">{text}</a></li>
+                {/exp:navee:custom}
+            </ul>
+        </section>
+        <section class="justmobile">
+            <h2><a href="/">Clippings</a></h2>
+            <ul>
+                {exp:navee:custom nav_title="OffcutsL2" wrap_type="none"}
+                <li><a href="{link}">{text}</a></li>
+                {/exp:navee:custom}
+            </ul>
+        </section>
+
+        <section class="form">
+            <h2>Sign up to Newsletter</h2>
+            <h4>Join our mailing list to receive inspirational ideas and advice for your landscaping advice</h4>
+            <a class="subscribe" onclick="ga('send', 'event', 'Open Newsletter Subscribe popup', 'Click to Newsletter Subscribe popup', 'Newsletter Subscribe popup button');" href="/forms/subscribe/?layout=enquiry&ajax=true&width=680&height=500" rel="prettyPhoto[ajax] nofollow">Subscribe to Newsletter</a>
+
+            <div id="desktop-share" class="notmobile"></div>
+        </section>
+        <!-- <section class="form">
+        <h2>Join Newsletter</h2>
+        <div class="theformarea-sub">
+        <p class="instructions-sub">Join our mailing list to receive inspirational ideas and advice for your home renovation</p>
+        <form action="/forms/newsletter.php" method="post" id="myform-sub">
+        <div class="row">
+                <div class="col-sm-12 col-xs-12">
+        <label id="subscribe-name" class="input"><span>First Name</span> <input type="text" name="n-enq-firstname" class="required form-control" /></label>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-sm-12 col-xs-12">
+        <label id="subscribe-email" class="input"><span>Email address</span> <input type="email" name="n-enq-email" class="required email form-control" /></label>
+               </div>
+        </div>
+        <div class="row">
+                <div class="col-sm-8 col-xs-12">
+        <label id="subscribe-tel" class="input"><span>Mobile (optional)</span> <input type="text" name="n-enq-tel" class="form-control"/></label>
+                </div>
+
+                <div class="col-sm-4 col-xs-12 footer-submit">
+                  <button type="submit" class="btn btn-primary btn-block" id="submit">Join</button>
+                </div>
+        </div>
+
+
+        </form>
+        </div>
+
+        </section> -->
+        <section id="footer-tools">
+            {if "{segment_2}" == "service-areas" && "{segment_3}" != ""}
+            <br/><br/>
+            {exp:channel:entries channel="service_area" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_5}" limit="1" disable="member_data"}
+            {preload_replace:fregion="{exp:freebie:category_name segment='5' group_id='8'}"}
+            <h2 id="location-heading">{fregion} Locations</h2>
+            <div class="row">
+                <div class="col-sm-9 col-xs-12">
+                    {exp:ifelse parse="inward"}
+                    {if "{contact_address_sera:total_rows}" > 0 }
+                    {contact_address_sera}
+                    <section class="address" {if "{row_index}" == 0 }id="firstchild"{/if}>{address}</section>
+        {/contact_address_sera}
+        {/if}
+        {/exp:ifelse}
+    </div>
+    <div class="col-sm-3 col-xs-12">
+        <section id="location-contact">
+            <ul>
+                {if "{phone_number_sera}" != ""}
+                <li class="label">PHONE:</li><li class="phone">{phone_number_sera}</li>
+                {/if}
+                <li class="label">TOLL FREE:</li><li class="phone">0800 30 10 20</li>
+            </ul>
+        </section>
+    </div>
+    </div>
+    {/exp:channel:entries}
+    <br/><br/>
+    {/if}
+    <div class="wrapper">
+        <!-- <div id="choose-country">
+        <label for="choose-site">Select your region: </label><select id="choose-site" aria-label="Region">
+        <option value="{site_url_global}">Global</option>
+        <option value="{site_url_au}">Australia</option>
+        <option value="{site_url_uk}">United Kingdom</option>
+        <option value="" selected="selected">New Zealand</option>
+        </select>
+        </div> -->
+        <p class="fleft"><span class="f-copyright">&copy; {current_time format='%Y'} Zones Landscaping</span> <span class="notmobile">| </span><span class="f-links"><a href="/privacy-statement/">Privacy Statement</a></span><br />
+            <span class="f-by">Website strategy and design by <a href="http://www.traffic.net.nz/" target="_blank">Traffic New Zealand Ltd.</a></span></p>
+    </div>
+    </section>
+    <div class="adwordstracking-footer"></div></div>
+
+</footer>
+<!-- Search icon popup -->
+<div id="mobile-search" class="mobilepop">
+    <h2><img src="/design/logo-zones.png" alt="Search Zones" /></h2>
+    {exp:search:simple_form result_page="site/SearchResults" no_result_page="site/NoSearchResults" search_in="entries" status="open" form_class="search" results="16" where="word" channel="article|case_study|competition|contact_business_opportunity|contact_career_opportunities|contact_enquiry|contact_master_franchise|content_page|person" cache="yes" refresh="1500"}
+    <fieldset>
+        <legend></legend>
+        <input type="search" name="keywords" maxlength="100" placeholder="Search" />
+        <button type="submit" class="button" value="">Search Website</button>
+    </fieldset>
+    {/exp:search:simple_form}
+    <a href="#" class="close"></a><a href="#" class="close closetext">CLOSE</a>
+</div>
+<!-- end search icon popup -->
+<!-- Phone icon popup -->
+<div id="mobile-contact-chooser" class="mobilepop">
+    <h2><img src="/design/logo-zones.png" alt="Contact Zones" /></h2>
+    <div class="renovation">
+        <h3>Landscape Enquiries</h3>
+        <ul class="clearfix">
+            <li><a class="show-call-options" href="#">Phone Zones</a><a href="tel:0800301020" type="tel" class="number">0800301020</a></li>
+            <li><a href="/contact-us/enquire-about-landscaping-services/">Online Enquiry</a></li>
+        </ul>
+    </div>
+
+    <div class="other">
+        <h3>Other Enquiries</h3>
+        <ul class="clearfix">
+            {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" cache="yes" refresh="1500"}
+            {if text != "Landscape Enquiry"}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+    </div>
+    <a href="#" class="close"></a><a href="#" class="close closetext">CLOSE</a>
+</div>
+<!-- end phone icon popup -->
+<div id="mobile-share-instantly" class="mobilepop"><a href="#" class="close"></a></div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-10321903-7', 'auto');
+    ga('require', 'GTM-TKQT9N7');
+    ga('require', 'displayfeatures');
+
+    {exp:switchee variable = "{segment_2}" parse="inward"}
+    {case value="SearchResults"}
+    ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=all');
+    {/case}
+        {case value="ArticlesSearch"}
+        ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=articles');
+        {/case}
+            {case value="EstimatesSearch"}
+            ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=estimates');
+            {/case}
+                {case value="CSwSearch"}
+                ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=case-studies');
+                {/case}
+                    {case value="CSsSearch"}
+                    ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=case-studies');
+                    {/case}
+                        {case value="ArticlesSiteSearch"}
+                        ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=articles');
+                        {/case}
+                            {case value="EstimatesSiteSearch"}
+                            ga('send', 'pageview', '/search/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=estimates');
+                            {/case}
+                                {case value="NoSearchResults"}
+                                ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=all-noresults');
+                                {/case}
+                                    {case value="ArticlesSearchNoResults"}
+                                    ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=articles-noresults');
+                                    {/case}
+                                        {case value="EstimatesSearchNoResults"}
+                                        ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=estimates-noresults');
+                                        {/case}
+                                            {case value="CSwSearchNoResults"}
+                                            ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=case-studies-noresults');
+                                            {/case}
+                                                {case value="CSsSearchNoResults"}
+                                                ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=case-studies-noresults');
+                                                {/case}
+                                                    {case value="ArticlesSiteSearchNoResults"}
+                                                    ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=articles-noresults');
+                                                    {/case}
+                                                        {case value="EstimatesSiteSearchNoResults"}
+                                                        ga('send', 'pageview', '/searchnoresults/?q={exp:mah_eencode}{exp:search:keywords}{/exp:mah_eencode}&section=estimates-noresults');
+                                                        {/case}
+                                                            {case default="Yes"}
+                                                            ga('send', 'pageview');
+                                                            {/case}
+                                                                {/exp:switchee}
+
+</script>
+{snippet-footer-resources}
+{snippet-init-visitor}
+<script type="text/javascript" language="javascript">
+
+    function sharePage(socialMedia){
+
+        if(socialMedia === "facebook"){
+            var url = "http://www.facebook.com/sharer.php?u=";
+        }else if(socialMedia === "twitter"){
+            var url = "https://twitter.com/share?url=";
+        }else if(socialMedia === "googleplus"){
+            var url = "https://plus.google.com/share?url=";
+        }else if(socialMedia === "linkedin"){
+            var url = "http://www.linkedin.com/shareArticle?mini=true&amp;url=";
+        }else if(socialMedia === "pinterest"){
+            var e=document.createElement('script');
+            e.setAttribute('type','text/javascript');
+            e.setAttribute('charset','UTF-8');
+            e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+            document.body.appendChild(e);
+        }
+
+        if(socialMedia != "pinterest"){
+            window.open(url+window.location.href, '_blank', 'toolbar=0,location=0,menubar=0');
+        }
+
+    }
+    navigator.sayswho= (function(){
+        var ua= navigator.userAgent, tem,
+            M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+        if(/trident/i.test(M[1])){
+            tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+            return 'IE '+(tem[1] || '');
+        }
+        if(M[1]=== 'Chrome'){
+            tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+            if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+        }
+        M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+        if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+        return M.join(' ');
+    })();
+
+    var str = navigator.sayswho;
+    var browser = str.substring(0, str.indexOf(" "));
+    var version = str.substring(str.indexOf(" "));
+    version = version.trim();
+    version = parseInt(version);
+    if($.cookie('browserCheck') != '1'&& ((browser=="Chrome"&&version<40) || (browser=="Safari"&&version<9) || (browser=="Edge"&&version<15) || (browser=="Firefox"&&version<40) || (browser=="Opera"&&version<40) || browser=="IE")){
+        var mnow = new Date();
+        var mtime = mnow.getTime();
+        mtime += 3600 * 1000;
+        mnow.setTime(mtime);
+        $.cookie('browserCheck', '1', { expires: mnow, path: '/'});
+        window.location.href = "https://www.zones.co.nz/out-of-date-browser/";
+    }
+    var imgs = document.querySelectorAll('img');
+    var lazyload = function(){
+        var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        var winTop = window.innerHeight;
+        for(var i=0;i < imgs.length;i++){
+            if(imgs[i].offsetTop < scrollTop + winTop && imgs[i].src == "" ){
+                imgs[i].src = imgs[i].getAttribute('data-src');
+                imgs[i].classList.remove("lazy-load");
+            }
+        }
+    }
+    function throttle(method,delay){
+        var timer = null;
+        return function(){
+            var context = this, args=arguments;
+            clearTimeout(timer);
+            timer=setTimeout(function(){
+                method.apply(context,args);
+            },delay);
+        }
+    }
+    window.onload = throttle(lazyload,200);
+    window.onscroll = throttle(lazyload,200);
+</script>
+<script type="text/javascript" language="javascript">
+    if($.cookie("css")) {
+        $("link.switcher").attr("href",$.cookie("css"));
+    }
+    $(document).ready(function() {
+
+        $("a.switch-layout").click(function() {
+            $("link.switcher").attr("href",$(this).attr('rel'));
+            $.cookie("css",$(this).attr('rel'), {expires: 365, path: '/'});
+            return false;
+        });
+
+        $('#dynamic-select').on('change', function () {
+            var url = $(this).val();
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+        });
+
+    });
+</script>
+<script type="text/javascript">
+    var CaptchaCallback = function() {
+        $('.g-recaptcha').each(function(index, el) {
+            grecaptcha.render(el, {'sitekey' : '6Le4MFwUAAAAAC_xQ5nTR3GC8S6e4qKds-C4Yfkr'});
+        });
+    };
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+</body>
+</html>

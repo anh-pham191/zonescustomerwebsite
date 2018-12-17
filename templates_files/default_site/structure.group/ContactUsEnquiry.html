@@ -1,0 +1,269 @@
+{exp:channel:entries disable="member_data|pagination|categories" channel="contact_enquiry" limit="1"}
+{snippet-doctype}
+<title>{seo_page_header_title_c_enq} | Zones</title>
+<script type="text/javascript" language="javascript">
+    var navlevels = "single";
+</script>
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_c_enq}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+	"url": "http://www.zones.co.nz",
+	"telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_c_enq}"
+}
+
+</script>
+<meta name="description" content="{seo_meta_description_c_enq}">
+<meta name="keywords" content="{seo_meta_keywords_c_enq}">
+<style>
+    @media only all and (max-width: 47.937em) {
+        #content-body.form form .fancy-select {
+            margin-bottom: 1.142rem;
+        }
+    }
+
+    @media only all and (min-width: 48em) {
+        #content-body.form form .fancy-select {
+            width: 231px;
+        }
+    }
+
+    @media only all and (min-width: 64em) {
+        #content-body.form form .fancy-select {
+            width: 297px;
+        }
+    }
+
+    @media only all and (min-width: 78em) {
+        #content-body.form form .fancy-select {
+            width: 312px;
+        }
+    }
+
+</style>
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+    <div id="sitebanner" class="clearfix">
+        {snippet-topnav-contact}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-contact}
+    </div>
+    <div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="current"}
+            {if "{link}" != "/contact-us/job-opportunities/"}
+            <li class="{class}"><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <!-- start mobile nav -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="current" cache="yes"
+                refresh="1500"}
+                {if "{link}" != "/contact-us/job-opportunities/"}
+                <li class="{class}"><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+    <div class="contextnav-breadcrumb justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="/contact-us/">Get in touch</a></li>
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" cache="yes" refresh="1500"}
+                {if is_selected}
+                <li><span>{text}</span></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+    <!-- end mobile nav -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        <nav id="breadcrumbline" role="navigation">
+            <ul class="clearfix">
+                <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home"
+                                                           class="sprite-bread-home" width="47" height="38"/></a></li>
+                <li class="parent"><a href="{site_url}contact-us/">Get in touch</a></li>
+                {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none"}
+                {if is_selected}
+                <li><a href="{link}">{text}</a></li>
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+            <div class="sep"></div>
+        </nav>
+    </div>
+    <div class="inner">
+        <section id="content" class="panorama" role="main">
+            <div class="clearfix">
+                <div id="content-body" class="form">
+                    <div class="intro clearfix">
+                        <h1>{contactus_enquiry_h1_heading}</h1>
+                    </div>
+                    <div class="pagecopy">{contactus_enquiry_pageintro}</div>
+                    <div class="theformarea-c formholder">
+                        <p class="instructions"></p>
+                        <form action="{site_url}forms/enquiry-stage1.php" method="post" id="enquiry-s1">
+                            <!--first+last name-->
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                                    <input type="text" class="form-control" placeholder="Enter first name"
+                                           name="firstName" id="firstName-s1" data-prefix="s1">
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                                    <input type="text" class="form-control" placeholder="Enter last name"
+                                           name="lastName" id="lastName-s1" data-prefix="s1">
+                                </div>
+                            </div>
+                            <!--/first+last name-->
+
+                            <!--email #-->
+                            <div class="row">
+                                <div class="col-md-12 input-label-wrapper">
+                                    <input type="text" class="form-control" placeholder="Enter email address"
+                                           name="email" id="email-s1" data-prefix="s1">
+                                </div>
+                            </div>
+                            <!--/email #-->
+
+                            <!--phone # + Preferred time #-->
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper phone-number-stage1">
+
+                                    <input type="text" class="form-control" placeholder="Enter phone number"
+                                           name="mobile" id="mobile-s1" data-prefix="s1">
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper">
+                                    <select id="select-preftime" name="preftime" class="apply-fancy form-control">
+                                        <option value="" selected="selected">Preferred time to be contacted</option>
+                                        <option value="Any Time">Don't mind</option>
+                                        <option value="Morning">Morning</option>
+                                        <option value="Afternoon">Afternoon</option>
+                                        <option value="Evening">Evening</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--/phone # + Preferred time # #-->
+
+                            <!--enquiry-->
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                    <textarea rows=5 class="form-control col-xs-12" name="enquiry" id="enquiry-s1"
+                                              placeholder="Enter message / enquiry"></textarea>
+                                </div>
+                            </div>
+                            <!--/enquiry-->
+
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                    <label><input type="checkbox" class="uniform-styles" name="privacy" id="privacy-s1"
+                                                  checked="checked" data-prefix="s1"/> I have read, understood and
+                                        accepted the <a href="/privacy-statement/" target="_blank">Privacy
+                                            Policy.</a></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                    <label><input type="checkbox" class="uniform-styles" name="subscribe"
+                                                  id="subscribe-s1" checked="checked"/> I consent to receiving advice
+                                        and information relating to home improvements.</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                    <div class="g-recaptcha"></div>
+                                </div>
+                            </div>
+                            <fieldset class="clearfix form-website">
+                                <legend></legend>
+                                <label id="c-enq-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span>
+                                    <input type="text" name="website" autocomplete="off"/></label>
+                            </fieldset>
+                            <input type="hidden" name="formpage" id="formpage-s1"/>
+                            <!--submit buttons-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-primary btn-block" id="submit"
+                                            onclick="submitEnquirePart1('Landscape Enquiry');">Submit Enquiry
+                                    </button>
+                                </div>
+                            </div>
+                            <!--submit buttons-->
+                        </form>
+                        <div id="prog1" class="progress" style="display: none;"></div>
+                    </div>
+                    <div class="adwordstracking"></div>
+                    <div class="pagecopy">{copy_below_form_enq}</div>
+                </div>
+
+                <div id="content-right" class="form">
+                    {contactus_enquiry_rhs_details}
+                    <h2>Other enquiries</h2>
+                    <ul>
+                        {exp:navee:custom nav_title="GetInTouchL2" wrap_type="none" selected_class="hide"}
+                        {if "{link}" != "/contact-us/job-opportunities/"}
+                        <li class="{class}"><a href="{link}">{text}</a></li>
+                        {/if}
+                        {/exp:navee:custom}
+                    </ul>
+
+                    <div class="sidebar">
+                        {if "{personalisation_banner_ad_cenq:total_children}" == 1}
+                        <div id="personalisation-banner">
+                            {personalisation_banner_ad_cenq}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad_cenq}
+                        </div>
+                        {if:elseif "{personalisation_banner_ad_cenq:total_children}" > 1}
+                        <div id="personalisation-banner" class="cycle-slideshow" data-cycle-fx="fadeout"
+                             data-cycle-pause-on-hover="true"
+                             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="wait"
+                             data-cycle-slides="> a">
+                            {personalisation_banner_ad_cenq}
+                            <a href="{url_to_link_to}"><img src="{banner_advert_image_file}" alt="{alt_text}"/></a>
+                            {/personalisation_banner_ad_cenq}
+                            {/if}
+                            {snippet-banner-rotatable}
+                        </div>
+                    </div>
+                </div>
+        </section>
+        {/exp:channel:entries}
+        <div class="sep footersep"></div>
+        {snippet-partners}
+    </div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+{embed="includes/footer-new"}

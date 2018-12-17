@@ -1,0 +1,89 @@
+{exp:channel:entries disable="member_data|pagination|categories" channel="case_studies_list" limit="1" entry_id="200" parse="inward"}
+{!-- WORK WEVE DONE STYLE DISPLAY --}
+{snippet-doctype}
+<title>{seo_page_header_title_cslist} | Zones</title>
+<script type="text/javascript" language="javascript">
+    var navlevels = "singleicons";
+</script>
+{snippet-callfiles-new}
+<meta name="description" content="{seo_meta_description_cslist}">
+<meta name="keywords" content="{seo_meta_keywords_cslist}">
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+    <div id="sitebanner" class="clearfix">
+
+        {snippet-topnav-work}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-work}
+    </div>
+    <div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+    <div class="inner">
+        <ul id="section-sub" class="textnav clearfix">
+            {exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
+            {if text == 'Case Studies'}
+            <li class="current"><a href="{link}">{text}</a></li>
+            {if:elseif text == 'Photo Gallery'}
+            <li><a href="{link}">{text}</a></li>
+            {/if}
+            {/exp:navee:custom}
+        </ul>
+        <div class="sep"></div>
+
+        <ul id="area-icons" class="clearfix">
+            <li class="current"><a href="{site_url}case-studies/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-all" width="48" height="48" />All</a></li>
+            {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not 13"}
+            <li><a href="{site_url}case-studies/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            {/exp:channel:categories}
+        </ul>
+
+        <div class="sep"></div>
+    </div><!-- end .inner -->
+    <div id="breadcrumb-wrapper" style="display: none;">
+        <nav id="breadcrumbline" role="navigation">
+            <ul>
+                <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+                <li class="parent"><a href="{site_url}photo-gallery/">Our work</a></li>
+                <li class="parent"><a href="{site_url}case-studies/">Case studies</a></li>
+                <li><span>Search results</span></li>
+            </ul>
+            <div class="sep"></div>
+        </nav></div>
+    <div class="inner">
+
+        <section id="content" role="main">
+            <div class="intro clearfix">
+                {snippet-enquirenow-picture}
+                <h1>Case Studies: No Search Results</h1>
+                {page_introduction_cslist}
+            </div>
+            {/exp:channel:entries}
+
+            <div class="clearfix list-tools top bottom">
+                <p class="fleft">Your search for <strong class="highlight">{exp:search:keywords}</strong> found no results. Try searching again, or <a href="{site_url}case-studies">Browse all case studies</a></p>
+
+                {exp:search:simple_form result_page="site/CSwSearch" no_result_page="site/CSwSearchNoResults" search_in="entries" status="open" form_class="fright" results="8" channel="case_study" where="word"}
+                <fieldset class="clearfix">
+                    <legend></legend>
+                    <input type="text" id="list-search" name="keywords" maxlength="100" value="{exp:search:keywords parse="inward"}" />
+                    <button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /></button>
+                </fieldset>
+                {/exp:search:simple_form}
+            </div>
+
+        </section>
+        <div class="sep footersep"></div>
+
+        <aside role="complementary" id="associations" class="clearfix">
+            <ul id="partner-logos">
+                {exp:channel:entries channel="partner_logo" dynamic="no" disable="member_data|pagination|categories"}
+                <li>{if "{logo_link}" != ""}<a href="{logo_link}" target="_blank">{/if}<img src="{logo_image}" alt="{title}" />{if "{logo_link}" != ""}</a>{/if}</li>
+                {/exp:channel:entries}
+            </ul>
+        </aside>
+    </div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+{embed="includes/footer-new"}

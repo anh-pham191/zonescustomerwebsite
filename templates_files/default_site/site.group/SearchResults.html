@@ -1,0 +1,111 @@
+{snippet-doctype}
+<title>Search results | Zones</title>
+<script type="text/javascript" language="javascript">
+    var navlevels = "none";
+</script>
+{snippet-callfiles-new}
+</head>
+<body id="top" class="sitepage searchresults">
+<nav role="navigation" id="topnav">
+    <div id="sitebanner" class="clearfix">
+
+        {snippet-topnav}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-home}
+    </div>
+    <div class="sep"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+    <div class="inner">
+        <section id="content" role="main">
+            <div class="intro clearfix">
+                {snippet-enquirenow-picture}
+                <h1>Search results</h1>
+                <div class="search-results">
+                    {exp:search:simple_form result_page="site/SearchResults" no_result_page="site/NoSearchResults" search_in="entries" status="open" results="8" channel="article|contact_business_opportunity|contact_enquiry|estimate|content_page" where="word"}
+                    <fieldset class="clearfix">
+                        <legend></legend>
+                        <input type="text" id="list-search" name="keywords" maxlength="100" value="{exp:search:keywords}" />
+                        <button type="submit" value="" id="list-search-submit"><img src="{site_url}design/list-search-submit.png" alt="Search" /><span>Search Again</span></button>
+                    </fieldset>
+                    {/exp:search:simple_form}
+                </div>
+            </div>
+
+            <div class="clearfix list-tools top"><p>Your search for <strong class="highlight">{exp:search:keywords}</strong> found <strong>{exp:search:total_results}</strong>
+                {if "{exp:search:total_results}" > 1}
+                results.
+                {if:else}
+                result.
+                {/if}</p></div>
+
+            <div id="list" class="listview searchresults">
+                {exp:search:search_results paginate="bottom"}
+                <div class="item clearfix">
+                    <div class="fullwidth">
+                        {if "{channel_short_name}" == "article"}
+                        <h2>{page_h1_heading_art}</h2>
+                        {if:elseif "{channel_short_name}" == "case_study"}
+                        <h2>{page_h1_heading_casestudy}</h2>
+                        {if:elseif "{channel_short_name}" == "content_page"}
+                        <h2>{page_h1_heading_c}</h2>
+                        {if:elseif "{channel_short_name}" == "estimate"}
+                        <h2>{page_h1_heading_est}</h2>
+                        {if:elseif "{channel_short_name}" == "person"}
+                        <h2>{page_h1_heading_pers}</h2>
+                        {if:elseif "{channel_short_name}" == "contact_business_opportunity"}
+                        <h2>{contactus_bus_h1_heading}</h2>
+                        {if:elseif "{channel_short_name}" == "contact_career_opportunities"}
+                        <h2>{contactus_car_h1_heading}</h2>
+                        {if:elseif "{channel_short_name}" == "contact_enquiry"}
+                        <h2>{contactus_enquiry_h1_heading}</h2>
+                        {if:elseif "{channel_short_name}" == "community_article"}
+                        <h2>{page_h1_heading_cart}</h2>
+                        {if:else}
+                        <h2>{title}</h2>
+                        {/if}
+                        <p>{exp:zm_excerpt}{full_text}{/exp:zm_excerpt}</p>
+                        <p class="more"><a href="{auto_path}">Go to page</a></p>
+                    </div></div>
+
+                {paginate}
+                {pagination_links}
+                <div class="paginate-bottom">
+                    <nav class="pagination clearfix">
+                        <span>Page:</span>
+                        <ul>
+                            {previous_page}
+                            <li><a href="{pagination_url}">«Previous</a></li>
+                            {/previous_page}
+                            {page}
+                            {if current_page}
+                            <li>{pagination_page_number}</li>
+                            {if:else}
+                            <li><a href="{pagination_url}">{pagination_page_number}</a></li>
+                            {/if}
+                            {/page}
+                            {next_page}
+                            <li><a href="{pagination_url}">Next»</a></li>
+                            {/next_page}
+                        </ul>
+                    </nav></div>
+                {/pagination_links}
+                {/paginate}
+
+                {/exp:search:search_results}
+            </div>
+        </section>
+
+        <div class="sep footersep"></div>
+
+        <aside role="complementary" id="associations" class="clearfix">
+            <ul id="partner-logos">
+                {exp:channel:entries channel="partner_logo" dynamic="no" disable="member_data|pagination|categories"}
+                <li>{if "{logo_link}" != ""}<a href="{logo_link}" target="_blank">{/if}<img src="{logo_image}" alt="{title}" />{if "{logo_link}" != ""}</a>{/if}</li>
+                {/exp:channel:entries}
+            </ul>
+        </aside>
+    </div><!-- end .inner -->
+</div><!-- end #wrapper -->
+
+{embed="includes/footer-new"}
