@@ -1,10 +1,9 @@
 {exp:channel:entries disable="member_data|pagination|categories" channel="case_studies_list" limit="1" cache="yes" refresh="1500"}
 {snippet-doctype}
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{seo_page_header_title_page} | Zones</title>
 
 <script type="text/javascript" language="javascript">
-    var navlevels = "double";
+    var navlevels = "singleicons";
 </script>
 {snippet-callfiles-new}
 {FirstTimeVisitorEnable}
@@ -37,19 +36,43 @@
 }
 
 </script>
+<meta name="description" content="{seo_meta_description_serv}">
+<meta name="keywords" content="{seo_meta_keywords_serv}">
 <link rel="sitemap" type="application/xml" href="/site/sitemap-xml/" />
 <script type="text/javascript" language="javascript">
     var navlevels = "singleicons";
 </script>
 {FirstTimeVisitorEnable}
 <style>
-    .country-filter p{padding:10px 0;}
-    .country-filter{margin-bottom: 15px;}
-    div.contextnav-wrapper.icons{display: none;}
-    .filter-container{width:600px;margin:0 auto}
-    #testimonial-select{margin:0;float: left;}
-    .title{font-size:1.2em !important}
-    @media only all and (max-width: 47.937em){
+
+    .country-filter p {
+        padding: 10px 0;
+    }
+
+    .country-filter {
+        margin-bottom: 15px;
+    }
+
+    div.contextnav-wrapper.icons {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        .filter-container {
+            width: 600px;
+            margin: 0 auto
+        }
+    }
+
+    #testimonial-select {
+        margin: 0;
+        float: left;
+    }
+
+    .title {
+        font-size: 1.2em !important
+    }
+
+    @media only all and (max-width: 47.937em) {
         #testimonial-select {
             float: none;
             margin-bottom: 15px;
@@ -151,8 +174,8 @@
             <p>{if page_introduction_cslist_au != ""}{page_introduction_cslist_au}{if:else}{page_introduction_cslist}{/if}</p>
         </div>
     </div>
-
     {/exp:channel:entries}
+
     <div class="inner">
         <div id="testimonial-selectsection" class="clearfix">
             <div class="filter-container">
@@ -171,18 +194,7 @@
                 <div class="region-filter" id="testimonial-select">
                     <div class="select">
                         <select class="region-select" onchange="s_click(this)">
-                            <option value="{site_url}landscaping-projects/sort/{freebie_3}/all/" selected="selected">All regions</option>
-                            <!--{exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="8"}-->
-                            <!--{if "{cat_id}" != "64" AND "{cat_id}" != "65" AND "{cat_id}" != "63"}-->
-                            <!--{if "{freebie_4}" == "{output_path}"}-->
-                            <!--<option value="{site_url}case-studies/sort/{freebie_3}/{output_path}/" selected="selected">{cat_name}</option>-->
-                            <!--{if:else}-->
-                            <!--<option value="{site_url}case-studies/sort/{freebie_3}/{output_path}/">{cat_name}</option>-->
-                            <!--{/if}-->
-                            <!--{/if}-->
-                            <!--{/if}-->
-                            <!--{/exp:gwcode_categories}-->
-
+                            <option value="{site_url}landscaping-projects/sort/{freebie_3}/all/" selected="selected">All Regions</option>
                             <!--for now category group 8 indicates the region which is New Zealand by default-->
                             <!--in the future need to create hierachy to indicate New Zealand -> Auckland-->
                             <!--at the moment every region is dependant but all are understood to be within NZ-->
@@ -344,7 +356,6 @@
 </div><!-- end #wrapper -->
 {snippet-sidey}
 {embed="includes/footer-new"}
-{snippet-init-visitor}
 
 <script>
     var jWindow = $(window).width();

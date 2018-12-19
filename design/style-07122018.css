@@ -6802,7 +6802,7 @@ div.person-upper h1, div.person-upper span.picture {
     height: auto !important
 }
 
-#wrapper #pagecontent .fullwidth{
+#wrapper #pagecontent .fullwidth {
     width: 100% !important;
     height: auto !important;
 }
@@ -16706,7 +16706,7 @@ ul li.enquiry-button:hover {
 
     #topnav div#sitebanner.scroll p img {
         margin: 0;
-        content:url(zones-scroll.svg);
+        content: url(zones-scroll.svg);
         width: 300px !important;
         height: 35px !important;
         background-size: 792px 612px !important
@@ -16787,7 +16787,7 @@ ul li.enquiry-button:hover {
     }
 
     #topnav p img {
-        content:url("zones-scroll.svg");
+        content: url("zones-scroll.svg");
         margin: 0;
         background-position: -11px -191px !important;
         width: 240px !important;
@@ -17007,7 +17007,7 @@ ul li.enquiry-button:hover {
 
     #topnav p img {
         margin: 0 auto 2px auto;
-        content:url("zones-scroll.svg");
+        content: url("zones-scroll.svg");
         background-position: -403px -58px !important;
         width: 170px !important;
         height: 65px !important;
