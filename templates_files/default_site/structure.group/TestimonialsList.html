@@ -59,6 +59,9 @@
     div.contextnav-wrapper.icons{display: none;}
     .filter-container{width:400px;margin:0 auto}
     #testimonial-select{margin:0;float: left;}
+    .textnav .tes {
+        padding: 12px 28px;
+    }
 </style>
 </head>
 <body id="top">
@@ -88,9 +91,9 @@
     <ul id="section-sub" class="textnav clearfix">
         {exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none"}
         {if text == 'Testimonials'}
-        <li class="current"><a href="{link}">{text}</a></li>
+        <li class="current tes"><a href="{link}">{text}</a></li>
         {if:else}
-        <li><a href="{link}">{text}</a></li>
+        <li class="tes"><a href="{link}">{text}</a></li>
         {/if}
         {/exp:navee:custom}
     </ul>
