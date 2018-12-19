@@ -1,0 +1,401 @@
+{exp:channel:entries disable="member_data|pagination|categories" channel="case_studies_list" limit="1" cache="yes" refresh="1500"}
+{snippet-doctype}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{seo_page_header_title_page} | Zones</title>
+
+<script type="text/javascript" language="javascript">
+    var navlevels = "double";
+</script>
+{snippet-callfiles-new}
+{FirstTimeVisitorEnable}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "{seo_page_header_title_page}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zones Landscaping Specialists",
+	"url": "http://www.zones.co.nz",
+	"telephone": "+64 0800301020",
+  	"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 1, 287-289 Parnell Road",
+    "addressLocality": "Parnell",
+    "addressRegion": "Auckland",
+    "postalCode": "1052",
+    "addressCountry": "NZ"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.zones.co.nz/design/logo-zones.png",
+      "width": 155,
+      "height": 60
+    }
+  },
+  "description": "{seo_meta_description_page}"
+}
+
+</script>
+<link rel="sitemap" type="application/xml" href="/site/sitemap-xml/" />
+<script type="text/javascript" language="javascript">
+    var navlevels = "singleicons";
+</script>
+{FirstTimeVisitorEnable}
+<style>
+    .country-filter p{padding:10px 0;}
+    .country-filter{margin-bottom: 15px;}
+    div.contextnav-wrapper.icons{display: none;}
+    .filter-container{width:600px;margin:0 auto}
+    #testimonial-select{margin:0;float: left;}
+    .title{font-size:1.2em !important}
+    @media only all and (max-width: 47.937em){
+        #testimonial-select {
+            float: none;
+            margin-bottom: 15px;
+            margin-left: 15%;
+        }
+    }
+</style>
+</head>
+<body id="top">
+<nav role="navigation" id="topnav">
+    <div id="sitebanner" class="clearfix">
+        {snippet-topnav-work}
+        {snippet-bannersearch}
+        {snippet-mobilemenu-work}
+    </div>
+    <div class="sep-new"></div>
+</nav>
+<div id="wrapper" class="clearfix">
+    <div class="breadcrumbspacer">
+        <div class="inner">
+            <div class="contextnav-breadcrumb withtoggle notmobile">
+                <nav>
+                    <ul class="clearfix">
+                        <li><a href="/case-studies/">Work We've Done</a></li>
+                        <li>Our Projects</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="contextnav-breadcrumb justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="/case-studies/" onClick="ga('send', 'event', 'Mobile navigation', 'Mobile breadcrumb', 'Work We have Done');">Work We've Done</a></li>
+                <li><span>Our Projects</span></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="breadcrumb-wrapper" style="display: none;">
+        <nav id="breadcrumbline" role="navigation">
+            <ul>
+                <li class="home"><a href="/"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
+                <li class="parent"><a href="/case-studies/">Work We've Done</a></li>
+                <li><a href="#">Our Projects</a></li>
+            </ul>
+            <div class="sep"></div>
+        </nav></div>
+    <div class="inner">
+        <div class="flexnav-outerwrap">
+            <div class="flexnav-innerwrap">
+                <ul id="section-sub" class="textnav clearfix">
+                    {exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none" cache="yes" refresh="1500"}
+                    {if custom != "nz"}
+                    {if text == 'Our Projects'}
+                    <li class="current"><a href="{link}">{text}</a></li>
+                    {if:else}
+                    <li><a href="{link}">{text}</a></li>
+                    {/if}
+                    {/if}
+                    {/exp:navee:custom}
+                </ul>
+            </div></div>
+    </div><!-- end .inner -->
+
+    <!-- mobile nav start -->
+    <div class="contextnav-wrapper top justmobile">
+        <nav class="contextnav justmobile">
+            <ul class="clearfix">
+                {exp:navee:custom nav_title="WorkWeveDoneL2" wrap_type="none" cache="yes" refresh="1500"}
+                {if custom != "nz"}
+                {if text == 'Our Projects'}
+                <li class="current"><a href="{link}">{text}</a></li>
+                {if:else}
+                <li><a href="{link}">{text}</a></li>
+                {/if}
+                {/if}
+                {/exp:navee:custom}
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="wideslideshow" class="notmobile overlay">
+        {panorama_slideshow_images_cslist}
+        <img src="{cslist-panorama-image}" alt="{cslist-panorama-image-alt}"/>
+        {/panorama_slideshow_images_cslist}
+        <div class="overlay-container">
+            <h2 id="top">1,000+ Landscaping Projects Completed All Over New Zealand</h2>
+            <h1>{if page_h1_heading_cs_nz != ""}{page_h1_heading_cs_nz}{if:else}{page_h1_heading_cs}{/if}</h1>
+            <h2 id="bottom">{if page_introduction_cslist_nz != ""}{page_introduction_cslist_nz}{if:else}{page_introduction_cslist}{/if}</h2>
+            <h2 id="arrow"><div class="arrow-down"></div></h2>
+        </div>
+    </div>
+    <div class="inner justmobile">
+        <div class="full-width-text">
+            <p>1,000+ Landscaping Projects Completed All Over New Zealand</p><br/><br/>
+            <div class="title">{if page_h1_heading_cs_au != ""}{page_h1_heading_cs_au}{if:else}{page_h1_heading_cs}{/if}</div>
+            <p>{if page_introduction_cslist_au != ""}{page_introduction_cslist_au}{if:else}{page_introduction_cslist}{/if}</p>
+        </div>
+    </div>
+
+    {/exp:channel:entries}
+    <div class="inner">
+        <div id="testimonial-selectsection" class="clearfix">
+            <div class="filter-container">
+                <div class="region-filter" id="testimonial-select">
+
+
+                    <div class="select">
+                        <select class="region-select" onchange="s_click(this)">
+                            <option value="">Select...</option>
+                            <option selected="selected" value="">New Zealand</option>
+
+                        </select>
+                    </div>
+
+                </div>
+                <div class="region-filter" id="testimonial-select">
+                    <div class="select">
+                        <select class="region-select" onchange="s_click(this)">
+                            <option value="{site_url}landscaping-projects/sort/{freebie_3}/all/" selected="selected">All regions</option>
+                            <!--{exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="8"}-->
+                            <!--{if "{cat_id}" != "64" AND "{cat_id}" != "65" AND "{cat_id}" != "63"}-->
+                            <!--{if "{freebie_4}" == "{output_path}"}-->
+                            <!--<option value="{site_url}case-studies/sort/{freebie_3}/{output_path}/" selected="selected">{cat_name}</option>-->
+                            <!--{if:else}-->
+                            <!--<option value="{site_url}case-studies/sort/{freebie_3}/{output_path}/">{cat_name}</option>-->
+                            <!--{/if}-->
+                            <!--{/if}-->
+                            <!--{/if}-->
+                            <!--{/exp:gwcode_categories}-->
+
+                            <!--for now category group 8 indicates the region which is New Zealand by default-->
+                            <!--in the future need to create hierachy to indicate New Zealand -> Auckland-->
+                            <!--at the moment every region is dependant but all are understood to be within NZ-->
+                            <!--need to update the code to check the freebie value to see which region are selected first, and then use the group ID to loop through-->
+                            <!--at the moment not sure if exp:channel:categories can specify the id of each category to specify NZ (US, UK, AU) -->
+                            <!--if yes then please run loop through category ID to get all the children category ( get Australia and loop through Sydney, Melborne...)https://docs.expressionengine.com/v2/add-ons/channel/category_heading.html -->
+                            <!--if this doesn't work please check the work on refresh with gwcode_categories library-->
+                            {exp:channel:categories category_group="8" orderby="category_name" sort="asc" style="linear" show="25|85|87|52|79|32|77|45|27" status="Open"}
+                            {exp:ifelse parse="inward"}
+                            {if "{freebie_4}" == "{category_url_title}"} <!--logic to check if the selected category is selected-->
+                            <option selected="selected" value="{site_url}landscaping-projects/sort/new-zealand/{category_url_title}/">{category_name}</option>
+                            {if:else}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/{category_url_title}/">{category_name}</option>
+                            {/if}
+                            {/exp:ifelse}
+                            {/exp:channel:categories}
+                            <!--to be add this option when more countries are added and no region is displayed please-->
+                            <!--<option value=""> - </option>-->
+
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="region-filter" id="testimonial-select">
+                    <div class="select">
+                        <select class="region-select" onchange="s_click(this)">
+                            {if ("{freebie_3}" == "") }
+                            {if ("{site_version}" == "version-nz") || ("{site_version}" == "version-global")}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/">All Projects</option>
+                            {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
+                            {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
+                            {if "{freebie_5}" == "{output_path}"}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/" selected="selected">{cat_name}</option>
+                            {if:else}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/">{cat_name}</option>
+                            {/if}
+                            {/if}
+                            {/exp:gwcode_categories}
+                            {if:elseif ("{site_version}" == "version-au") }
+                            <option value="{site_url}landscaping-projects/sort/australia/all/">All Projects</option>
+                            {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
+                            {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
+                            {if "{freebie_5}" == "{output_path}"}
+                            <option value="{site_url}landscaping-projects/sort/australia/all/{output_path}/" selected="selected">{cat_name}</option>
+                            {if:else}
+                            <option value="{site_url}landscaping-projects/sort/australia/all/{output_path}/">{cat_name}</option>
+                            {/if}
+                            {/if}
+                            {/exp:gwcode_categories}
+                            {if:else }
+                            <option value="{site_url}landscaping-projects/">All Projects</option>
+                            {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
+                            {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
+                            {if "{freebie_5}" == "{output_path}"}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/" selected="selected">{cat_name}</option>
+                            {if:else}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/">{cat_name}</option>
+                            {/if}
+                            {/if}
+                            {/exp:gwcode_categories}
+                            {/if}
+                            {if:elseif ("{freebie_3}" == "all") || ("{freebie_4}" == "")}
+                            <option value="{site_url}landscaping-projects/sort/{freebie_3}/all/">All Projects</option>
+                            {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
+                            {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
+                            {if "{freebie_5}" == "{output_path}"}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/" selected="selected">{cat_name}</option>
+                            {if:else}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/">{cat_name}</option>
+                            {/if}
+                            {/if}
+                            {/exp:gwcode_categories}
+                            {if:else}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/{freebie_4}/">All Projects</option>
+                            {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
+                            {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
+                            {if "{freebie_5}" == "{output_path}"}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/{freebie_4}/{output_path}/" selected="selected">{cat_name}</option>
+                            {if:else}
+                            <option value="{site_url}landscaping-projects/sort/new-zealand/{freebie_4}/{output_path}/">{cat_name}</option>
+                            {/if}
+                            {/if}
+                            {/exp:gwcode_categories}
+                            {/if}
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="content" class="onecol" role="main">
+            <div id="content-body">
+                <div class="row services-types">
+                    <!--needs to function exp:channel here as 2 sorting goes-->
+                    {exp:ifelse parse="inward"}
+                        {if ("{freebie_5}" == "") OR ("{freebie_5}" == "all")} <!--if type of project is ALL-->
+                            {if ("{freebie_4}" != "all") AND ("{freebie_4}" != "")} <!--if type of region != all, then categories by region only-->
+                                {exp:channel:entries channel="case_study" dynamic="no" orderby="date" sort="desc" limit="16" category_group="8" category="{exp:freebie:category_id segment='4'}" parse="inward" paginate="bottom" disable="member_data"}
+                            {if:else} <!-- if type of region == all, then just display everything -->
+                                {exp:channel:entries channel="case_study" dynamic="no" orderby="date" sort="desc" limit="16" parse="inward" paginate="bottom" disable="member_data" cache="yes" refresh="1500"}
+                            {/if}
+                        {if:else} <!--if type of project is specified -->
+                            {if ("{freebie_4}" != 'all') AND ("{freebie_4}" != '')} <!--if type of region is speicfied, categorize by both, most complicated one -->
+                                {exp:channel:entries channel="case_study" dynamic="no" orderby="date" sort="desc" limit="16" category_group="8|1" category='{exp:freebie:category_id segment="4"}&{exp:freebie:category_id segment="5"}' parse="inward" paginate="bottom" disable="member_data"}
+                            {if:else} <!--if type of region is all or not specified, categorized by projects only -->
+                                {exp:channel:entries channel="case_study" dynamic="no" orderby="date" sort="desc" limit="16" category_group="1" category="{exp:freebie:category_id segment='5'}" parse="inward" paginate="bottom" disable="member_data"}
+                            {/if}
+                        {/if}
+                    {/exp:ifelse}
+                    {if no_results}<div class="notfoundmsg">Sorry, no result found.</div>{/if}
+                    <div class="col-md-6 col-sm-6 services-col">
+                        <div class="container-box">
+                            <div class="content">
+
+
+                            <div class="title">{if page_h1_heading_casestudy_nz == ""}
+                                {page_h1_heading_casestudy}
+                                {if:else}
+                                {page_h1_heading_casestudy_nz}
+                                {/if}</div>
+                            <div class="text">{if summary_text_cs_nz == ""}{summary_text_cs}
+                                {if:else}
+                                {summary_text_cs_nz}
+                                {/if} </div>
+                            <a class="btn-more-blue" role="button" href="/case-studies/{url_title}/">MORE</a>
+                        </div>
+                        <div class="image" style="background-image: url({thumbnail_image_cs})"></div>
+
+
+    </div>
+</div>
+{paginate}
+
+<div class="paginate-bottom">
+    <p class="fright">Showing {abp_entry_from} - {abp_entry_to} of {abp_total_entries}</p>
+    <nav class="pagination clearfix">
+        <span>Page:</span>
+        <ul>
+            {if abp_has_previous}<li><a href="{abp_previous_link}/">«Previous</a></li>{/if}
+            {abp_pages padding="no"}
+            {if abp_is_current}
+            <li>{abp_num}</li>
+            {if:else}
+            <li><a href="{abp_link}/">{abp_num}</a></li>
+            {/if}
+            {/abp_pages}
+            {if abp_has_next}<li><a href="{abp_next_link}/">Next»</a></li>{/if}
+        </ul>
+    </nav></div>{/paginate}
+{/exp:channel:entries}
+</div>
+
+</div>
+</section>
+
+{snippet-partners}
+</div><!-- end .inner -->
+</div><!-- end #wrapper -->
+{snippet-sidey}
+{embed="includes/footer-new"}
+{snippet-init-visitor}
+
+<script>
+    var jWindow = $(window).width();
+    $( ".arrow-down" ).click(function() {
+        if ( jWindow <= 768 ) {
+            $('html, body').animate({scrollTop: $(".services-types").offset().top}, 1000);
+        }else{
+            $('html, body').animate({scrollTop: $(".services-types").offset().top-200}, 1000);
+        }
+
+    });
+
+    var showTitle = 60;
+    var showText = 160;
+    var ellipsestext = "...";
+
+    $('.title').each(function() {
+        var content = $(this).html();
+        if(content.length > showTitle) {
+            var c = content.substr(0, showTitle);
+            var html = c + ellipsestext;
+            $(this).html(html);
+        }
+    });
+    $('.text').each(function() {
+        var content = $(this).html();
+        if(content.length > showText) {
+            var c = content.substr(0, showText);
+            var html = c + ellipsestext;
+            $(this).html(html);
+        }
+    });
+
+    $( ".current" ).click(function() {
+        $('html, body').animate({scrollTop: $(".current-list").offset().top-130}, 1000);
+    });
+    $( ".past" ).click(function() {
+        $('html, body').animate({scrollTop: $(".past-list").offset().top-130}, 1000);
+    });
+    function s_click(obj) {
+        var num = 0;
+        for (var i = 0; i < obj.options.length; i++) {
+            if (obj.options[i].selected == true) {
+                num++;
+            }
+        }
+        if (num == 1) {
+            var url = obj.options[obj.selectedIndex].value;
+            window.location.href = url;
+        }
+    }
+</script>
+</body>
+</html>
