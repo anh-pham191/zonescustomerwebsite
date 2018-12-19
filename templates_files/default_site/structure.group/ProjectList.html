@@ -194,7 +194,7 @@
                 <div class="region-filter" id="testimonial-select">
                     <div class="select">
                         <select class="region-select" onchange="s_click(this)">
-                            <option value="{site_url}landscaping-projects/sort/{freebie_3}/all/" selected="selected">All Regions</option>
+                            <option value="{site_url}case-studies/sort/{freebie_3}/all/" selected="selected">All Regions</option>
                             <!--for now category group 8 indicates the region which is New Zealand by default-->
                             <!--in the future need to create hierachy to indicate New Zealand -> Auckland-->
                             <!--at the moment every region is dependant but all are understood to be within NZ-->
@@ -205,9 +205,9 @@
                             {exp:channel:categories category_group="8" orderby="category_name" sort="asc" style="linear" show="25|85|87|52|79|32|77|45|27" status="Open"}
                             {exp:ifelse parse="inward"}
                             {if "{freebie_4}" == "{category_url_title}"} <!--logic to check if the selected category is selected-->
-                            <option selected="selected" value="{site_url}landscaping-projects/sort/new-zealand/{category_url_title}/">{category_name}</option>
+                            <option selected="selected" value="{site_url}case-studies/sort/new-zealand/{category_url_title}/">{category_name}</option>
                             {if:else}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/{category_url_title}/">{category_name}</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/{category_url_title}/">{category_name}</option>
                             {/if}
                             {/exp:ifelse}
                             {/exp:channel:categories}
@@ -224,58 +224,58 @@
                         <select class="region-select" onchange="s_click(this)">
                             {if ("{freebie_3}" == "") }
                             {if ("{site_version}" == "version-nz") || ("{site_version}" == "version-global")}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/">All Projects</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/all/">All Projects</option>
                             {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
                             {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
                             {if "{freebie_5}" == "{output_path}"}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/" selected="selected">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/all/{output_path}/" selected="selected">{cat_name}</option>
                             {if:else}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/all/{output_path}/">{cat_name}</option>
                             {/if}
                             {/if}
                             {/exp:gwcode_categories}
                             {if:elseif ("{site_version}" == "version-au") }
-                            <option value="{site_url}landscaping-projects/sort/australia/all/">All Projects</option>
+                            <option value="{site_url}case-studies/sort/australia/all/">All Projects</option>
                             {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
                             {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
                             {if "{freebie_5}" == "{output_path}"}
-                            <option value="{site_url}landscaping-projects/sort/australia/all/{output_path}/" selected="selected">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/australia/all/{output_path}/" selected="selected">{cat_name}</option>
                             {if:else}
-                            <option value="{site_url}landscaping-projects/sort/australia/all/{output_path}/">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/australia/all/{output_path}/">{cat_name}</option>
                             {/if}
                             {/if}
                             {/exp:gwcode_categories}
                             {if:else }
-                            <option value="{site_url}landscaping-projects/">All Projects</option>
+                            <option value="{site_url}case-studies/">All Projects</option>
                             {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
                             {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
                             {if "{freebie_5}" == "{output_path}"}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/" selected="selected">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/all/{output_path}/" selected="selected">{cat_name}</option>
                             {if:else}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/all/{output_path}/">{cat_name}</option>
                             {/if}
                             {/if}
                             {/exp:gwcode_categories}
                             {/if}
                             {if:elseif ("{freebie_3}" == "all") || ("{freebie_4}" == "")}
-                            <option value="{site_url}landscaping-projects/sort/{freebie_3}/all/">All Projects</option>
+                            <option value="{site_url}case-studies/sort/{freebie_3}/all/">All Projects</option>
                             {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
                             {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
                             {if "{freebie_5}" == "{output_path}"}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/" selected="selected">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/all/{output_path}/" selected="selected">{cat_name}</option>
                             {if:else}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/all/{output_path}/">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/all/{output_path}/">{cat_name}</option>
                             {/if}
                             {/if}
                             {/exp:gwcode_categories}
                             {if:else}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/{freebie_4}/">All Projects</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/{freebie_4}/">All Projects</option>
                             {exp:gwcode_categories orderby="cat_name" sort="asc" style="linear" show_empty="no" status="Open" group_id="1"}
                             {if "{cat_id}" != "102" AND "{cat_id}" != "13"}
                             {if "{freebie_5}" == "{output_path}"}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/{freebie_4}/{output_path}/" selected="selected">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/{freebie_4}/{output_path}/" selected="selected">{cat_name}</option>
                             {if:else}
-                            <option value="{site_url}landscaping-projects/sort/new-zealand/{freebie_4}/{output_path}/">{cat_name}</option>
+                            <option value="{site_url}case-studies/sort/new-zealand/{freebie_4}/{output_path}/">{cat_name}</option>
                             {/if}
                             {/if}
                             {/exp:gwcode_categories}
