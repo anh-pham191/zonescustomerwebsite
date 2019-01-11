@@ -87,29 +87,29 @@ if($urltitle  == "all"){
 <div id="wrapper" class="clearfix">
     <div class="inner">
         <ul id="section-sub" class="textnav clearfix">
-            <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/">View Other Service Areas</a></li>
+            <li class="current"><a href="{site_url}landscape-designers/locations/{freebie_6}">{region} Landscape Designers</a></li>
+            <li><a href="{site_url}landscape-designers/locations/">View Other Service Areas</a></li>
         </ul>
         <div class="sep"></div>
         <div class="flexnav-outerwrap">
             <div class="flexnav-innerwrap">
                 <ul id="section-detail" class="textnav clearfix">
-                    <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
-                    <li class="current"><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
-                    <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
-                    <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
-                    <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
-                    <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
-                    <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/{freebie_6}">Landscaping in {region}</a></li>
+                    <li class="current"><a href="{site_url}landscape-designers/locations/services/sort/{freebie_6}">Our Services</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/case-studies/sort/{freebie_6}">Case Studies</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/gallery/sort/{freebie_6}">Gallery</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/team/sort/{freebie_6}">Our People in {region}</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/news/sort/{freebie_6}">News</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/advice/sort/{freebie_6}">Advice</a></li>
                 </ul>
             </div></div>
         <div class="sep"></div>
         <ul id="area-icons" class="clearfix">
             {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
             {if "{freebie_7}" == "{category_url_title}"}
-            <li class="current"><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            <li class="current"><a href="{site_url}landscape-designers/locations/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
             {if:else}
-            <li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+            <li><a href="{site_url}landscape-designers/locations/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
             {/if}
             {/exp:channel:categories}
         </ul>
@@ -119,13 +119,13 @@ if($urltitle  == "all"){
     <div class="contextnav-wrapper top justmobile">
         <nav class="contextnav justmobile">
             <ul class="clearfix">
-                <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
-                <li class="current"><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+                <li><a href="{site_url}landscape-designers/locations/{freebie_6}">Landscaping in {region}</a></li>
+                <li class="current"><a href="{site_url}landscape-designers/locations/services/sort/{freebie_6}">Our Services</a></li>
+                <li><a href="{site_url}landscape-designers/locations/case-studies/sort/{freebie_6}">Case Studies</a></li>
+                <li><a href="{site_url}landscape-designers/locations/gallery/sort/{freebie_6}">Gallery</a></li>
+                <li><a href="{site_url}landscape-designers/locations/team/sort/{freebie_6}">Our People in {region}</a></li>
+                <li><a href="{site_url}landscape-designers/locations/news/sort/{freebie_6}">News</a></li>
+                <li><a href="{site_url}landscape-designers/locations/advice/sort/{freebie_6}">Advice</a></li>
             </ul>
         </nav>
     </div>
@@ -134,9 +134,9 @@ if($urltitle  == "all"){
             <ul class="clearfix"  id="area-icons">
                 {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
                 {if "{freebie_7}" == "{category_url_title}"}
-                <li class="current"><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+                <li class="current"><a href="{site_url}landscape-designers/locations/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
                 {if:else}
-                <li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
+                <li><a href="{site_url}landscape-designers/locations/services/type/sort/{freebie_6}/{category_url_title}/"><img src="{site_url}design/image.png" alt="" class="sprite-icon-{category_url_title}" width="48" height="48" />{category_description}</a></li>
                 {/if}
                 {/exp:channel:categories}
             </ul>
@@ -148,12 +148,12 @@ if($urltitle  == "all"){
         <nav>
             <ul class="clearfix">
                 <li><a href="{site_url}landscape-designers/">About us</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/">Service Areas</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
+                <li><a href="{site_url}landscape-designers/locations/">Service Areas</a></li>
+                <li><a href="{site_url}landscape-designers/locations/{freebie_6}">{region} Landscape Designers</a></li>
+                <li><a href="{site_url}landscape-designers/locations/services/sort/{freebie_6}">Our Services</a></li>
                 {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500"}
                 {if "{freebie_7}" == "{category_url_title}"}
-                <li><a href="{site_url}landscape-designers/service-areas/services/type/sort/{freebie_6}/{category_url_title}/">{category_name}</a></li>
+                <li><a href="{site_url}landscape-designers/locations/services/type/sort/{freebie_6}/{category_url_title}/">{category_name}</a></li>
                 {/if}
                 {/exp:channel:categories}
             </ul>

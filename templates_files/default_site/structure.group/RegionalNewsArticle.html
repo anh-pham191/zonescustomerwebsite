@@ -53,25 +53,25 @@
 <div id="wrapper" class="clearfix">
     <div class="inner">
         <ul id="section-sub" class="textnav clearfix">
-            <li class="current"><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
-            <li><a href="{site_url}landscape-designers/service-areas/">View Other Service Areas</a></li>
+            <li class="current"><a href="{site_url}landscape-designers/locations/{freebie_6}">{region} Landscape Designers</a></li>
+            <li><a href="{site_url}landscape-designers/locations/">View Other Service Areas</a></li>
         </ul>
         <div class="sep"></div>
         {exp:channel:entries channel="service_area" dynamic="no" orderby="date" sort="desc" parse="inward" url_title="{freebie_6}" limit="1" disable="member_data"}
         <div class="flexnav-outerwrap">
             <div class="flexnav-innerwrap">
                 <ul id="section-detail" class="textnav clearfix">
-                    <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/{freebie_6}">Landscaping in {region}</a></li>
                     {if services_or_whatwedo:label == "What We Do"}
-                    <li><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}">What We Do</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/what-we-do/sort/{freebie_6}">What We Do</a></li>
                     {if:else}
-                    <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/services/sort/{freebie_6}">Our Services</a></li>
                     {/if}
-                    <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
-                    <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
-                    <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
-                    <li class="current"><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
-                    <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/case-studies/sort/{freebie_6}">Case Studies</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/gallery/sort/{freebie_6}">Gallery</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/team/sort/{freebie_6}">Our People in {region}</a></li>
+                    <li class="current"><a href="{site_url}landscape-designers/locations/news/sort/{freebie_6}">News</a></li>
+                    <li><a href="{site_url}landscape-designers/locations/advice/sort/{freebie_6}">Advice</a></li>
                 </ul>
             </div></div>
         <div class="sep"></div>
@@ -80,17 +80,17 @@
     <div class="contextnav-wrapper top justmobile">
         <nav class="contextnav justmobile">
             <ul class="clearfix">
-                <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">Landscaping in {region}</a></li>
+                <li><a href="{site_url}landscape-designers/locations/{freebie_6}">Landscaping in {region}</a></li>
                 {if services_or_whatwedo:label == "What We Do"}
-                <li><a href="{site_url}landscape-designers/service-areas/what-we-do/sort/{freebie_6}">What We Do</a></li>
+                <li><a href="{site_url}landscape-designers/locations/what-we-do/sort/{freebie_6}">What We Do</a></li>
                 {if:else}
-                <li><a href="{site_url}landscape-designers/service-areas/services/sort/{freebie_6}">Our Services</a></li>
+                <li><a href="{site_url}landscape-designers/locations/services/sort/{freebie_6}">Our Services</a></li>
                 {/if}
-                <li><a href="{site_url}landscape-designers/service-areas/case-studies/sort/{freebie_6}">Case Studies</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/gallery/sort/{freebie_6}">Gallery</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/team/sort/{freebie_6}">Our People in {region}</a></li>
-                <li class="current"><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/advice/sort/{freebie_6}">Advice</a></li>
+                <li><a href="{site_url}landscape-designers/locations/case-studies/sort/{freebie_6}">Case Studies</a></li>
+                <li><a href="{site_url}landscape-designers/locations/gallery/sort/{freebie_6}">Gallery</a></li>
+                <li><a href="{site_url}landscape-designers/locations/team/sort/{freebie_6}">Our People in {region}</a></li>
+                <li class="current"><a href="{site_url}landscape-designers/locations/news/sort/{freebie_6}">News</a></li>
+                <li><a href="{site_url}landscape-designers/locations/advice/sort/{freebie_6}">Advice</a></li>
 
             </ul>
         </nav>
@@ -101,9 +101,9 @@
         <nav>
             <ul class="clearfix">
                 <li><a href="{site_url}landscape-designers/">About us</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/">Service Areas</a></li>
-                <li><a href="{site_url}landscape-designers/service-areas/{freebie_6}">{region} Landscape Designers</a></li>
-                <li class="current"><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
+                <li><a href="{site_url}landscape-designers/locations/">Service Areas</a></li>
+                <li><a href="{site_url}landscape-designers/locations/{freebie_6}">{region} Landscape Designers</a></li>
+                <li class="current"><a href="{site_url}landscape-designers/locations/news/sort/{freebie_6}">News</a></li>
             </ul>
         </nav>
     </div>
@@ -113,8 +113,8 @@
         <ul class="clearfix">
         <li class="home"><a href="{site_url}"><img src="{site_url}design/image.png" alt="Home" class="sprite-bread-home" width="47" height="38" /></a></li>
         <li class="parent"><a href="{site_url}landscape-designers/">About us</a></li>
-        <li class="parent"><a href="{site_url}landscape-designers/service-areas/">Service Areas</a></li>
-        <li><a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}">News</a></li>
+        <li class="parent"><a href="{site_url}landscape-designers/locations/">Service Areas</a></li>
+        <li><a href="{site_url}landscape-designers/locations/news/sort/{freebie_6}">News</a></li>
         </ul>
         <div class="sep"></div>
         </nav> -->
@@ -156,7 +156,7 @@
                 <div id="content-body">
                     <div class="intro clearfix">
                         <h1>{page_h1_heading_cart}</h1>
-                        <a href="{site_url}landscape-designers/service-areas/news/sort/{freebie_6}" onclick="history.back();return false;" class="view">back to list</a>
+                        <a href="{site_url}landscape-designers/locations/news/sort/{freebie_6}" onclick="history.back();return false;" class="view">back to list</a>
                     </div>
 
                     {snippet-socialsharing-body}
