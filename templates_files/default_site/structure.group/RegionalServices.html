@@ -129,30 +129,73 @@
             </ul>
             <div class="sep"></div>
         </nav></div>
+    <div id="wideslideshow" class="notmobile overlay">
+        <img src="/design/types-of-services.jpg" alt="{page_h1_heading}"/>
+        <div class="overlay-container">
+            <h2 id="top">1,000+ Landscaping Projects Completed All Over New Zealand</h2>
+            <h1>{region} {page_h1_heading}</h1>
+            <h2 id="bottom">Zones have the experience and expertise to ensure that your landscaping project looks
+                fantastic - and is delivered on time and on budget.</h2>
+            <h2 id="arrow">
+                <div class="arrow-down"></div>
+            </h2>
+        </div>
+    </div>
+
+    <div class="inner justmobile">
+        <div class="full-width-text">
+            <p>1,000+ Landscaping Projects Completed All Over New Zealand</p><br/><br/>
+            <div class="title">{region} {page_h1_heading}</div>
+            <p>Zones have the experience and expertise to ensure that your landscaping project looks
+                fantastic - and is delivered on time and on budget.
+            </p>
+        </div>
+    </div>
+
     <div class="inner">
 
-        <section id="content" class="onecol" role="main">
-            <div id="content-body">
-                <div class="intro clearfix">
-                    <h1>{region} {page_h1_heading}</h1>
-                    <span class="view">Click to read more</span>
-                </div>
-                {/exp:channel:entries}
+        <div class="inner">
 
-                <ul class="serviceslist clearfix">
-                    {exp:channel:categories category_group="1" style="linear"}
-                    <li><a class="thumblink" href="{site_url}landscape-designers/locations/services/type/sort/{freebie_5}/{category_url_title}/"><img class="lazy-load" data-src="{category_image}" alt="{category_name}" /></a>
-                        <a class="textlink" href="{site_url}landscape-designers/locations/services/type/sort/{freebie_5}/{category_url_title}/">{category_name}</a></li>
+            <section id="content" class="onecol" role="main">
+                <div id="content-body">
+                    <div class="row services-types">
+                        {exp:channel:categories category_group="1" style="linear" cache="yes" refresh="1500" show="not
+                        102"}
+                        <div class="col-md-6 col-sm-6 services-col">
+                            <div class="container-box">
+                                <div class="content">
+                                    <div class="title">{category_description}</div>
+
+                                    <div class="text">{text-for-types-of-services}</div>
+                                    <a class="btn-more-blue" role="button"
+                                       href="{site_url}landscape-designers/locations/services/type/sort/{freebie_5}/{category_url_title}/">MORE</a>
+                                </div>
+                                <div class="image" style="background-image: url({if " {category-image-nz-url}" == ""}{category_image}{if:else}{category-image-nz-url}{/if})"></div>
+                        </div>
+                    </div>
                     {/exp:channel:categories}
-                </ul>
-
-            </div>
+                </div>
+        </div>
         </section>
-
         <div class="sep footersep"></div>
+        {/exp:channel:entries}
 
         {snippet-partners}
     </div><!-- end .inner -->
 </div><!-- end #wrapper -->
 {snippet-sidey}
 {embed="includes/footer-new"}
+
+<script>
+    var jWindow = $(window).width();
+    $(".arrow-down").click(function () {
+        if (jWindow <= 768) {
+            $('html, body').animate({scrollTop: $(".services-types").offset().top}, 1000);
+        } else {
+            $('html, body').animate({scrollTop: $(".services-types").offset().top - 200}, 1000);
+        }
+
+    });
+</script>
+</body>
+</html>

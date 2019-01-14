@@ -73,6 +73,21 @@ if($urltitle  == "all"){
 </script>
 <meta name="description" content="{seo_meta_description_page}">
 <meta name="keywords" content="{seo_meta_keywords_page}">
+<style>
+    .trigger {
+        background: #f1f1f1 !important;
+    }
+
+    #submit{
+        background-color: #077b3a;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 1.4em;
+        padding: 15px 35px !important;
+        border-radius: 25px !important;
+    }
+</style>
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
@@ -165,54 +180,509 @@ if($urltitle  == "all"){
     </div>
 
 
-    <div class="inner">
-
-        <div id="wideslideshow">
-            {panorama_slideshow_images_page}
+    {!-- PANO IMAGES NOW PER COUNTRY NO SET ORDER --}
+    {exp:ifelse parse="inward"}
+    {if '{panorama_slideshow_images_page:total_rows search:pano-image-page-site-check="IS_EMPTY|New Zealand"}' > 1}
+    <!-- <a href="#" class="view-images justmobile">View Images</a> -->
+    <div id="popslideshow" class="mobile-pop">
+        <a href="#" class="logo-close justmobile"></a>
+        <div id="wideslideshow" class="cycle-slideshow overlay" data-cycle-swipe="true" data-cycle-fx="fadeout"
+             data-cycle-pause-on-hover="true"
+             data-cycle-speed="1200" data-cycle-timeout="4000" data-cycle-loader="true" data-cycle-pager="#pager1" data-cycle-swipe="true" data-cycle-swipe-fx="scrollHorz">
+            <div class="cycle-prev"></div>
+            <div class="cycle-next"></div>
+            {panorama_slideshow_images_page search:pano-image-page-site-check="IS_EMPTY|New Zealand"}
             <img src="{pano-image-page}" alt="{alt-pano-image-page}"/>
             {/panorama_slideshow_images_page}
+            <div class="overlay-container">
+                <h2 id="top">1,000+ Landscaping projects completed all over New Zealand</h2>
+                {if page_h1_heading_c_nz == ""}<h1>{page_h1_heading_c}</h1>
+                {if:else}
+                <h1>{page_h1_heading_c_nz}</h1>
+                {/if}
+                <h2 id="bottom">{if text_after_h1_heading_c_nz == ""}{text_after_h1_heading_c}{if:else}{text_after_h1_heading_c_nz}{/if}<br/><br/><b class="link-builders">Experts right on your doorstep.</b></h2>
+                <h2 id="arrow"><div class="arrow-down"></div></h2>
+            </div>
         </div>
+        <div class="cycle-pager" id="pager1"></div>
+    </div>
 
+    {if:elseif '{panorama_slideshow_images_page:total_rows search:pano-image-page-site-check="IS_EMPTY|New Zealand"}' == 1}
+    <div id="wideslideshow" class="notmobile overlay">
+        {panorama_slideshow_images_page search:pano-image-page-site-check="IS_EMPTY|New Zealand"}
+        <img src="{pano-image-page}" alt="{alt-pano-image-page}"/>
+        {/panorama_slideshow_images_page}
+        <div class="overlay-container">
+            <h2 id="top">1,000+ Landscaping projects completed all over New Zealand</h2>
+            {if page_h1_heading_c_nz == ""}<h1>{page_h1_heading_c}</h1>
+            {if:else}
+            <h1>{page_h1_heading_c_nz}</h1>
+            {/if}
+            <h2 id="bottom">{if text_after_h1_heading_c_nz == ""}{text_after_h1_heading_c}{if:else}{text_after_h1_heading_c_nz}{/if}<br/><br/><b class="link-builders">Experts right on your doorstep.</b></h2>
+            <h2 id="arrow"><div class="arrow-down"></div></h2>
+        </div>
+    </div>
+    {/if}
+    {/exp:ifelse}
+    <div class="inner justmobile">
+        <div class="full-width-text">
+            <p>1,000+ Landscaping projects completed all over New Zealand</p><br/><br/>
+            <div class="title">{if page_h1_heading_c_nz == ""}{page_h1_heading_c}{if:else}{page_h1_heading_c_nz}{/if}</div>
+            <p>{if text_after_h1_heading_c_nz == ""}{text_after_h1_heading_c}{if:else}{text_after_h1_heading_c_nz}{/if}</p>
+        </div>
+    </div>
 
-        <section id="content" class="panorama" role="main">
-            <div class="clearfix">
-                <div id="content-body">
-                    <div class="intro clearfix">
-                        <h1>{page_h1_heading_c}</h1>
-                    </div>
+    <div class="inner">
 
-                    {snippet-socialsharing-body}
-
-                    <div class="pagecopy">{page_content_page}</div>
-                    {exp:channel:form channel="content_page" entry_id="{entry_id}" return="contentPage/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
-                    {exp:ifelse parse="inward"}
-                    {if "{sharing_count_con}" == "" }
-                    <input type="hidden" id="count" name="sharing_count_con" value="0" />
-                    {if:else}
-                    <input type="hidden" id="count" name="sharing_count_con" value="{sharing_count_con}" />
-                    {/if}
-                    {/exp:ifelse}
-                    {/exp:channel:form}
-                </div>
-
-                {/exp:channel:entries}
-
-                <div id="content-right">
-
-                    <div class="sidebar">
-
-                        {snippet-getintouch-rightbar}
-
-                        {snippet-banner-rotatable}
-                    </div>
-
+        <div class="full-width-text">
+            <div class="title">{full_width_title_con}</div>
+            <p>{if "{full_width_text_con_nz}" !=""}{full_width_text_con_nz}{if:else}{full_width_text_con}{/if}</p>
+        </div>
+        <div class="row notmobile services-three-cols" id="services-box">
+            <div class="col-md-4 col-sm-4">
+                <div class="three-cols">
+                    <div class="box-icon" id="design"></div>
+                    <div class="box-title">BRIEFING & DESIGN</div>
+                    <p>Zones' Role is to work with you to design and deliver the best project you can achieve with your budget. We will translate your requirements into landscape design for you to review. During this stage, a budget indication range will be provided to avoid any nasty surprises in the build stage.
+                    </p>
                 </div>
             </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="three-cols">
+                    <div class="box-icon" id="build"></div>
+                    <div class="box-title">PROJECT MANAGEMENT</div>
+                    <p>Landscaping is a complicated process and trades need to be constantly re-scheduled to ensure the project is not held up. Your Zones project manager will ensure work is completed to the right standards at each stage so there are no quality issues or disputes at the end of the project.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="three-cols">
+                    <div class="box-icon" id="pm"></div>
+                    <div class="box-title">MAINTAIN</div>
+                    <p>The final stage is to implement an optional maintenance programme to keep your project looking new over its lifetime. Zones can also provide general maintenance services to keep your home looking great year round.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="mobile-boxes slider justmobile" id="three-boxes">
+            <div class="box-mobile">
+                <div class="box-title">BRIEFING & DESIGN</div>
+                <p>Zones' Role is to work with you to design and deliver the best project you can achieve with your budget. We will translate your requirements into landscape design for you to review. During this stage, a budget indication range will be provided to avoid any nasty surprises in the build stage.
+                </p>
+            </div>
+            <div class="box-mobile">
+                <div class="box-title">PROJECT MANAGEMENT</div>
+                <p>Landscaping is a complicated process and trades need to be constantly re-scheduled to ensure the project is not held up. Your Zones project manager will ensure work is completed to the right standards at each stage so there are no quality issues or disputes at the end of the project.
+                </p>
+            </div>
+            <div class="box-mobile">
+                <div class="box-title">MAINTAIN</div>
+                <p>The final stage is to implement an optional maintenance programme to keep your project looking new over its lifetime. Zones can also provide general maintenance services to keep your home looking great year round.
+                </p>
+            </div>
         </section>
-        <div class="sep footersep"></div>
+    </div>
+    {image_block_con search:country="IS_EMPTY|New Zealand"}
+    <div class="services-image-block clearfix notmobile">
+        <img data-src="{image}" alt="{if "{image-alt}"!=""}{image-alt}{if:else}{title}{/if}"{if "{align}" == "Left"} class="lazy-load fleft" {if:else} class="lazy-load fright" {/if} />
+        <div class="fleft">
+            <div class="content-box">
+                <div class="title">{title}</div>
+                <div class="content">{content}</div>
+                <a class="btn-blue enquiry-link" role="button">ENQUIRE NOW</a>
+            </div>
+        </div>
+    </div>
+    {/image_block_con}
 
-        {snippet-partners}
-    </div><!-- end .inner -->
+    <section class="mobile-boxes slider justmobile" id="image-boxes">
+        {image_block_con search:country="IS_EMPTY|New Zealand"}
+        <div class="box-mobile">
+            <img data-src="{image}" alt="{if "{image-alt}"!=""}{image-alt}{if:else}{title}{/if}" class="lazy-load">
+            <div class="box-title">{title}</div>
+            {content}
+        </div>
+        {/image_block_con}
+    </section>
+    <a class="btn-blue enquiry-link justmobile" role="button">ENQUIRE NOW</a>
+
+{!-- testimonial --}
+<div id="wideslideshow" class="overlay sm">
+    <img src="/design/renovation-customer-giving-a-testimonial.jpg" alt="Customer Testimonials"/>
+    <div class="overlay-container">
+        <div class="text-content">
+            <div class="heading-content">Customer Testimonials</div>
+            <div class="intro-bottom">WHAT PEOPLE ARE SAYING…</div>
+        </div>
+    </div>
+</div>
+
+<div class="inner">
+    <div class="testimonial-list notmobile">
+        {exp:playa:children channel="testimonial|video_testimonial"}
+        <div class="testimonial-box">
+            <div class="box-icon" id="testimonial"></div>
+            {if "{testimonial_copy}"!=""}
+            <div class="box-title">{title}</div>
+            <div class="more">
+                {testimonial_copy}
+            </div>
+            {if:else}
+            <div class="box-title">{title}<div class="video-hide-right">HIDE VIDEO</div></div>
+            <div class="video" id="video-{count}"></div>
+            {video_clips_tt limit="1"}
+            <input type="hidden" name="video-url" value="{slideshow-video-url-tt}"/>
+            {/video_clips_tt}
+            <div class="more">
+                {summary_text_tt}
+            </div>
+            <div class="video-play">WATCH VIDEO</div>
+            <div class="video-hide">HIDE VIDEO</div>
+            {/if}
+        </div>
+        {/exp:playa:children}
+    </div>
+    <section class="mobile-boxes slider justmobile" id="testimonial-boxes">
+        {exp:playa:children channel="testimonial|video_testimonial"}
+        <div class="box-mobile">
+            {if "{testimonial_copy}"!=""}
+            <div class="box-title">{title}</div>
+            {testimonial_copy}
+            {if:else}
+            <div class="box-title">{title}<div class="video-hide-right">HIDE VIDEO</div></div>
+            <div class="video" id="video-{count}"></div>
+            {video_clips_tt limit="1"}
+            <input type="hidden" name="video-url-mobile" value="{slideshow-video-url-tt}"/>
+            {/video_clips_tt}
+            {summary_text_tt}
+            <div class="video-play-mobile">WATCH VIDEO</div>
+            <div class="video-hide-mobile">HIDE VIDEO</div>
+            {/if}
+        </div>
+        {/exp:playa:children}
+    </section>
+    <div id="video-box-mobile" class="justmobile">
+    </div>
+</div>
+    {!-- builders near you --}
+    <div id="wideslideshow" class="overlay notmobile near-you">
+        <img src="/design/builders-near-you.jpg" alt="{builders_near_you_heading_c}"/>
+        <div class="overlay-container">
+            <h2 class="heading">{builders_near_you_heading_c}</h2>
+            <h2 id="bottom">{builders_near_you_text_c} <b>view the list below to contact a specialist near you today.</b></h2>
+        </div>
+    </div>
+
+    <div class="inner notmobile" id="builders">
+        <div class="region-filter row">
+            <div class="col-md-9 col-sm-9 col-xs-12 current-region">
+                {page_h1_heading_c}<span class="notmobile">, New Zealand</span>
+            </div>
+
+        </div>
+        <div class="region-name">New Zealand</div>
+        <ul class="region-list">
+            <li class="region-item">
+                <div class="main">AUCKLAND</div>
+                <div class="sub"><a href="/landscape-designers/locations/auckland-central">Auckland Central</a>
+                </div>
+                <div class="sub"><a href="/landscape-designers/locations/franklin">Franklin / Pukekohe</a></div>
+                <div class="sub"><a href="/landscape-designers/locations/north-shore">North Shore</a></div>
+                <div class="sub"><a href="/landscape-designers/locations/rodney">Rodney</a></div>
+            </li>
+            <li class="region-item">
+                <div class="main">NORTHLAND</div>
+                <div class="sub"><a href="/landscape-designers/locations/whangarei">Whangarei</a></div>
+            </li>
+
+            <li class="region-item">
+                <div class="main">WEST AUCKLAND</div>
+                <div class="sub"><a href="/landscape-designers/locations/waitakere">Waitakere</a></div>
+            </li>
+
+            <li class="region-item">
+                <div class="main">BAY OF PLENTY</div>
+                <div class="sub"><a href="/landscape-designers/locations/tauranga">Tauranga</a></div>
+            </li>
+            <li class="region-item">
+                <div class="main">WAIKATO</div>
+                <div class="sub"><a href="/landscape-designers/locations/waikato">Waikato</a></div>
+            </li>
+            <li class="region-item">
+                <div class="main">OTAGO</div>
+                <div class="sub"><a href="/landscape-designers/locations/queenstown-wanaka">Queenstown and
+                    Wanaka</a></div>
+            </li>
+            <li class="region-item">
+                <div class="main">WELLINGTON</div>
+                <div class="sub"><a href="/landscape-designers/locations/wellington/">Wellington</a></div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="services-image-block clearfix" style="display: flex">
+
+        <div class="fleft">
+            <div class="content-box" id="enquiry-form">
+                <div class="title">Let's discuss your project</div>
+                <div class="description">Arrange a free one hour consultation to discuss options for your landscaping project</div>
+                <div class="theformarea-c formholder">
+                    <p class="instructions"></p>
+                    <form action="{site_url}forms/enquiry-stage1.php" method="post" id="enquiry-s1">
+                        <!--first+last name-->
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                                <input type="text" class="form-control" placeholder="Enter first name" name="firstName" id="firstName-s1" data-prefix="s1">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
+                                <input type="text" class="form-control" placeholder="Enter last name"  name="lastName" id="lastName-s1" data-prefix="s1" >
+                            </div>
+                        </div>
+                        <!--/first+last name-->
+
+                        <!--email #-->
+                        <div class="row">
+                            <div class="col-md-12 input-label-wrapper">
+                                <input type="text" class="form-control" placeholder="Enter email address" name="email" id="email-s1"  data-prefix="s1">
+                            </div>
+                        </div>
+                        <!--/email #-->
+
+                        <!--phone # + Preferred time #-->
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper phone-number-stage1">
+
+                                <input type="text" class="form-control" placeholder="Enter phone number" name="mobile" id="mobile-s1"  data-prefix="s1">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper">
+                                <select id="select-preftime" name="preftime" class="apply-fancy form-control">
+                                    <option value="" selected="selected">Preferred time to be contacted</option>
+                                    <option value="Any Time">Don't mind</option>
+                                    <option value="Morning">Morning</option>
+                                    <option value="Afternoon">Afternoon</option>
+                                    <option value="Evening">Evening</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--/phone # + Preferred time # #-->
+
+                        <!--enquiry-->
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                <textarea rows=1 class="form-control col-xs-12" name="enquiry" id="enquiry-s1" placeholder="Enter message / enquiry"></textarea>
+                            </div>
+                        </div>
+                        <!--/enquiry-->
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-12 desktop-right">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                        <label><input type="checkbox" class="uniform-styles" name="privacy" id="privacy-s1" checked="checked" data-prefix="s1" /> I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy.</a></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                        <label><input type="checkbox" class="uniform-styles" name="subscribe" id="subscribe-s1" checked="checked" /> <span class="note"> I consent to receiving advice and information relating to home improvements. </span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                    <div class="g-recaptcha"></div>
+                                </div>
+                            </div>
+                            <fieldset class="clearfix form-website">
+                                <legend></legend>
+                                <label id="c-enq-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" autocomplete="off" /></label>
+                            </fieldset>
+                            <input type="hidden" name="formpage" id="formpage-s1"/>
+                        </div>
+
+
+
+                        <!--submit buttons-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-primary btn-blue" id="submit" onclick="submitEnquirePart1('Landscape Enquiry');">Submit Enquiry</button>
+                            </div>
+                        </div>
+                        <!--submit buttons-->
+                    </form>
+                    <div id="prog1" class="progress" style="display: none;"></div>
+                </div>
+                <div class="adwordstracking"></div>
+            </div>
+        </div>
+        <img data-src="/design/Matt-besides-form.jpg" alt="Let's discuss your project" class="lazy-load fright notmobile" />
+
+    </div>
+
+    {!-- page content --}
+
+<div id="wideslideshow" class="notmobile overlay">
+    {panorama_slideshow_images_page search:pano-image-page-site-check="IS_EMPTY|New Zealand"}
+    {if "{row_index}"=="0"}<img src="{pano-image-page}" alt="{alt-pano-image-page}"/>{/if}
+    {/panorama_slideshow_images_page}
+    <div class="overlay-container">
+        {if page_h1_heading_c_nz == ""}<h2 class="heading">{page_h1_heading_c}</h2>
+        {if:else}
+        <h2 class="heading">{page_h1_heading_c_nz}</h2>
+        {/if}
+        <h2 id="bottom">{if text_after_h1_heading_c_nz == ""}{text_after_h1_heading_c}{if:else}{text_after_h1_heading_c_nz}{/if}</h2>
+    </div>
+</div>
+<div class="inner justmobile">
+    <div class="full-width-text" id="pagecontent-heading">
+        <div class="title">{if page_h1_heading_c_nz == ""}{page_h1_heading_c}{if:else}{page_h1_heading_c_nz}{/if}</div>
+        <p>{if text_after_h1_heading_c_nz == ""}{text_after_h1_heading_c}{if:else}{text_after_h1_heading_c_nz}{/if}</p>
+    </div>
+</div>
+<div class="inner" id="pagecontent">
+    {if page_content_page_nz == ""}{page_content_page}
+    {if:else}
+    {page_content_page_nz}
+    {/if}
+
+</div>
+{exp:channel:form channel="content_page" entry_id="{entry_id}" return="contentPage/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
+{exp:ifelse parse="inward"}
+{if "{sharing_count_con}" == "" }
+<input type="hidden" id="count" name="sharing_count_con" value="0" />
+{if:else}
+<input type="hidden" id="count" name="sharing_count_con" value="{sharing_count_con}" />
+{/if}
+{/exp:ifelse}
+{/exp:channel:form}
+
+
 </div><!-- end #wrapper -->
+{/exp:channel:entries}
+
 {snippet-sidey}
 {embed="includes/footer-new"}
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+{snippet-init-visitor}
+<script>
+    var jWindow = $(window).width();
+
+    var showChar = 250;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Show more >";
+    var lesstext = "Show less";
+
+    $('.more').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+
+    $(".mobile-boxes").slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+    $('.testimonial-list').masonry();
+    $( ".video-play" ).click(function() {
+        $(this).parent().css( "width", "100%" );
+        $(this).css( "display", "none" );
+        $(this).next().css( "display", "block" );
+        $(".video-hide-right").css( "display", "block" );
+        $(this).parent().children('.video').css( "display", "block" );
+        $(this).parent().children('.video').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+$(this).parent().children('input[name="video-url"]').val()+'?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $('.testimonial-list').masonry();
+        $('html, body').animate({scrollTop: $("#"+$(this).parent().children('.video').attr('id')).offset().top}, 1000);
+    });
+    $( ".video-play-mobile" ).click(function() {
+        $('#video-box-mobile').html("");
+        $(this).css( "display", "none" );
+        $(this).next().css( "display", "block" );
+        $('#video-box-mobile').show(1000);
+        $('#video-box-mobile').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+$(this).parent().children('input[name="video-url-mobile"]').val()+'?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $('html, body').animate({scrollTop: $("#video-box-mobile").offset().top-130}, 1000);
+    });
+
+    $( ".video-hide" ).click(function() {
+        $(this).parent().css( "width", "29%" );
+        $(this).parent().children('.video').html("");
+        $(this).parent().children('.video').css( "display", "none" );
+        $(this).css( "display", "none" );
+        $(this).prev().css( "display", "block" );
+        $(".video-hide-right").css( "display", "none" );
+        $('.testimonial-list').masonry();
+    });
+    $( ".video-hide-right").click(function() {
+        $(this).parent().parent().css( "width", "29%" );
+        $(this).parent().parent().children('.video').html("");
+        $(this).parent().parent().children('.video').css( "display", "none" );
+        $(this).css( "display", "none" );
+        $(this).parent().parent().children('.video-play').css( "display", "block" );
+        $(".video-hide").css( "display", "none" );
+        $('.testimonial-list').masonry();
+    });
+    $( ".video-hide-mobile" ).click(function() {
+        $('#video-box-mobile').html("");
+        $('#video-box-mobile').hide(1000);
+        $(this).css( "display", "none" );
+        $(this).prev().css( "display", "block" );
+    });
+    $( ".arrow-down" ).click(function() {
+        $('html, body').animate({scrollTop: $("#services-box").offset().top-130}, 1000);
+    });
+    $( ".enquiry-link" ).click(function() {
+        if ( jWindow <= 768 ) {
+            $('html, body').animate({scrollTop: $("#enquiry-form").offset().top}, 1000);
+        }else{
+            $('html, body').animate({scrollTop: $("#enquiry-form").offset().top-200}, 1000);
+        }
+
+    });
+    $('#region-select').on('change', function () {
+        var url = $(this).val();
+        if (url) { // require a URL
+            window.location = url; // redirect
+        }
+        return false;
+    });
+    $( ".link-builders" ).click(function() {
+        $('html, body').animate({scrollTop: $(".near-you").offset().top-100}, 500);
+    });
+
+
+    var pathArray = window.location.pathname.split('/');
+    if (pathArray[3] =="sort"){$('html, body').animate({scrollTop: $("#builders").offset().top-130}, 500);}
+
+
+
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        // $(this).parent().prev().toggle();
+        $(this).prev().children('.moreellipses').toggle(500);
+        $(this).prev().children('.morecontent').children('span').toggle(500);
+        $('.testimonial-list').masonry();
+        return false;
+    });
+
+</script>
+</body>
+</html>
