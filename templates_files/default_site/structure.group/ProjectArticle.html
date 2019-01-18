@@ -1,7 +1,7 @@
 {exp:channel:entries disable="member_data" url_title="{last_segment}" limit="1" channel="case_study" cache="yes" refresh="1500"}
 {if no_results}{redirect="404"}{/if}
 {snippet-doctype}
-<title>{seo_page_header_title_page} | Zones</title>
+<title>{seo_page_header_title} | Zones</title>
 
 <script type="text/javascript" language="javascript">
     var navlevels = "singleicons";
@@ -33,7 +33,7 @@
       "height": 60
     }
   },
-  "description": "{seo_meta_description_page}"
+  "description": "{seo_meta_description_cs}"
 }
 
 </script>
@@ -45,6 +45,38 @@
 
 <link href="/design/twentytwenty-no-compass.css" rel="stylesheet" type="text/css" />
 {FirstTimeVisitorEnable}
+<style>
+    #gallery-video {
+        display: block !important;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    #gallery-video  iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .trigger {
+        background: #f1f1f1 !important;
+    }
+
+    #submit {
+        background-color: #077b3a;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 1.4em;
+        padding: 15px 35px !important;
+        border-radius: 25px !important
+    }
+</style>
 </head>
 <body id="top">
 <nav role="navigation" id="topnav">
@@ -95,19 +127,34 @@
             </ul>
         </nav>
     </div>
+
+
+    <div class="contextnav-breadcrumb justmobile">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="/case-studies/" onClick="ga('send', 'event', 'Mobile navigation', 'Mobile breadcrumb', 'Work We have Done');">Work We've Done</a></li>
+                <li><a href="/case-studies/" onClick="ga('send', 'event', 'Mobile navigation', 'Mobile breadcrumb', 'Our Projects');">Our Projects</a></li>
+                {if page_h1_heading_casestudy_nz == ""}
+                <li><span>{page_h1_heading_casestudy}</span></li>
+                {if:else}
+                <li><span>{page_h1_heading_casestudy_nz}</span></li>
+                {/if}
+            </ul>
+        </nav>
+    </div>
     <div id="project-top">
         <div class="inner">
             <div id="top-line"></div>
-            <div class="page-font">{if project_type_cs != ""}{project_type_cs}{if:else}Home Renovation Project{/if}</div>
+            <div class="page-font">{if project_type_cs != ""}{project_type_cs}{if:else}Landscaping Project{/if}</div>
             <h1>{if page_h1_heading_casestudy_nz == ""}{page_h1_heading_casestudy}{if:else}{page_h1_heading_casestudy_nz}{/if}</h1>
             <div class="row" id="project-intro">
                 <div class="col-md-7 col-sm-6 page-font">
                     {if summary_text_cs_nz == ""}{summary_text_cs}{if:else}{summary_text_cs_nz}{/if}
                 </div>
                 <ul class="col-md-5 col-sm-6 clearfix items">
-                    <li><b>Client:</b> {client_cs}</li>
+                    {if client_cs != ""}<li><b>Client:</b> {client_cs}</li>{/if}
                     {categories show_group="8"}
-                    {if parent_id == "84" OR parent_id == "85" OR parent_id == "86" OR parent_id == "80" OR parent_id == "67" OR parent_id == "88" OR parent_id == "64" OR parent_id == "65" OR parent_id == "68"}
+                    {if parent_id == "84" OR parent_id == "85" OR parent_id == "86" OR parent_id == "80" OR parent_id == "67" OR parent_id == "88" OR parent_id == "64" OR parent_id == "65" OR category_id == "68"}
                     <li><b>Location:</b> {category_name} </li>
                     {if:elseif parent_id == "0"}
                     <li><b>Country:</b> {category_name} </li>
@@ -130,12 +177,15 @@
 
     <div class="inner" id="project-gallery">
         <section class="slider gallery-container">
+
             {exp:playa:children channel="gallery_item"}
             {slideshow_items}
             {if slideshow-video-url == ""}
-            <div><img data-src="{slideshow-image-fullsize}" alt="{slideshow-image-alt}" class="lazy-load" /></div>
+            <div><img src="{slideshow-image-fullsize}" alt="{slideshow-image-alt}" /></div>
             {if:else}
-            <div><a rel="prettyPhoto[{entry_id}]" href="http://youtu.be/{slideshow-video-url}?&rel=0&width=853&height=480" onClick="ga('send', 'event', 'Gallery', 'Click to watch', '{exp:mah_eencode}{title}{/exp:mah_eencode}');"><img src="{slideshow-video-thumb}" alt="{slideshow-video-thumb-alt}" /><img src="{site_url}design/click-to-watch.png" alt="Click to watch" class="overlay watch" /></a></div>
+            <div id="gallery-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{slideshow-video-url}" frameborder="0" allowfullscreen></iframe>
+            </div>
             {/if}
             {/slideshow_items}
 
@@ -158,7 +208,10 @@
         {if:else}
         {page_content_cs_nz}
         {/if}
+
+
     </div>
+
 
     {exp:channel:form channel="case_study" entry_id="{entry_id}" return="casestudy/{entry_id}" json="yes" id="sharingcount" logged_out_member_id="{author_id}"}
     {exp:ifelse parse="inward"}
@@ -171,192 +224,113 @@
     {/exp:channel:form}
     {/exp:channel:entries}
 
-    {exp:structure:siblings}
     <div class="nav-bottom clearfix notmobile">
-        {prev}
-        <a id="prev" href="{url}">
+        {exp:channel:prev_entry channel="case_study"}
+        <a id="prev" href="/case-studies{comment_url_title_auto_path}">
             <span>< PREV</span>
-            <p>{title}</p>
+            {exp:channel:entries channel="case_study" entry_id="{entry_id}"}
+            <p>{page_h1_heading_casestudy}</p>
+            {/exp:channel:entries}
         </a>
-        {/prev}
+        {/exp:channel:prev_entry}
         <a id="top">
             <span class="arrow-top">^<br/> TOP</span>
         </a>
-        {next}
-        <a id="next" href="{url}">
+        {exp:channel:next_entry channel="case_study"}
+        <a id="next" href="/case-studies{comment_url_title_auto_path}">
             <span>NEXT ></span>
-            <p>{title}</p>
+            {exp:channel:entries channel="case_study" entry_id="{entry_id}"}
+            <p>{page_h1_heading_casestudy}</p>
+            {/exp:channel:entries}
         </a>
-        {/next}
+        {/exp:channel:next_entry}
     </div>
-    {/exp:structure:siblings}
-    <div class="services-image-block clearfix">
-        <img data-src="{site_url}design/Matt-besides-form.jpg" alt="Let's discuss your project" class="lazy-load fright" />
+
+    <div class="services-image-block clearfix" style="display: flex">
+
         <div class="fleft">
             <div class="content-box" id="enquiry-form">
-                <div class="title">Let's get connected?</div>
-                <div class="description">Arrange a free one hour consultation to discuss options and ideas or your home renovation project</div>
+                <div class="title">Let's discuss your project</div>
+                <div class="description">Arrange a free one hour consultation to discuss options for your landscaping project</div>
                 <div class="theformarea-c formholder">
                     <p class="instructions"></p>
-
-                    <form action="/forms/enquiry-part1.php" method="post" id="enquiry-part1" class="clearfix">
+                    <form action="{site_url}forms/enquiry-stage1.php" method="post" id="enquiry-s1">
                         <!--first+last name-->
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
-                                <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="firstName" id="firstName-s1" data-prefix="s1">
+                                <input type="text" class="form-control" placeholder="Enter first name" name="firstName" id="firstName-s1" data-prefix="s1">
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12 input-label-wrapper">
-                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lastName" id="lastName-s1" data-prefix="s1" >
+                                <input type="text" class="form-control" placeholder="Enter last name"  name="lastName" id="lastName-s1" data-prefix="s1" >
                             </div>
                         </div>
                         <!--/first+last name-->
-                        <!--phone # -->
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper">
-                                <select id="countrycode-s1" name="countrycode" aria-label="Country code" class="apply-fancy form-control">
-                                </select>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper">
-                                <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number" name="mobile" id="mobile-s1" data-prefix="s1" data-phoneformat="yes">
-                            </div>
-                        </div>
-                        <!--/phone # -->
+
                         <!--email #-->
                         <div class="row">
                             <div class="col-md-12 input-label-wrapper">
-                                <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" name="email" id="email-s1" data-prefix="s1">
+                                <input type="text" class="form-control" placeholder="Enter email address" name="email" id="email-s1"  data-prefix="s1">
                             </div>
                         </div>
                         <!--/email #-->
-                        {if "{site_version}"=="version-us"}
+
+                        <!--phone # + Preferred time #-->
                         <div class="row">
-                            <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                <select id="select-region" name="region" aria-label="Region" class="apply-fancy form-control">
-                                    <option value="Florida - Pensacola">Florida - Pensacola</option>
-                                    <option value="Florida - Gulf Breeze">Florida - Gulf Breeze</option>
-                                    <option value="Florida - Warrington">Florida - Warrington</option>
-                                    <option value="Florida - West Pensacola">Florida - West Pensacola</option>
-                                    <option value="Florida - Goulding">Florida - Goulding</option>
-                                    <option value="Florida - Brent">Florida - Brent</option>
-                                    <option value="USA - Other">USA - Other</option>
+                            <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper phone-number-stage1">
+
+                                <input type="text" class="form-control" placeholder="Enter phone number" name="mobile" id="mobile-s1"  data-prefix="s1">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 input-label-wrapper">
+                                <select id="select-preftime" name="preftime" class="apply-fancy form-control">
+                                    <option value="" selected="selected">Preferred time to be contacted</option>
+                                    <option value="Any Time">Don't mind</option>
+                                    <option value="Morning">Morning</option>
+                                    <option value="Afternoon">Afternoon</option>
+                                    <option value="Evening">Evening</option>
                                 </select>
                             </div>
                         </div>
-                        {/if}
-                        <fieldset class="clearfix form-website">
-                            <legend></legend>
-                            <label id="c-enq-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" autocomplete="off" /></label>
-                        </fieldset>
+                        <!--/phone # + Preferred time # #-->
 
-                        <input type="hidden" name="formpage" id="formpage-s1"/>
+                        <!--enquiry-->
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                <textarea rows=1 class="form-control col-xs-12" name="enquiry" id="enquiry-s1" placeholder="Enter message / enquiry"></textarea>
+                            </div>
+                        </div>
+                        <!--/enquiry-->
 
-                        {exp:switchee variable = "{site_version}" parse="inward"}
-                        {case value="version-nz"}
                         <div class="row">
                             <div class="col-md-6 col-sm-12 col-xs-12 desktop-right">
                                 <div class="row">
                                     <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="privacy" aria-label="Privacy" id="privacy-s1" data-prefix="s1" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note">I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy</a>.</span></label>
+                                        <label><input type="checkbox" class="uniform-styles" name="privacy" id="privacy-s1" checked="checked" data-prefix="s1" /> I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy.</a></label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="subscribe" aria-label="Subscribe" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note"> I consent to receiving advice and information relating to home improvements.</span></label>
+                                        <label><input type="checkbox" class="uniform-styles" name="subscribe" id="subscribe-s1" checked="checked" /> <span class="note"> I consent to receiving advice and information relating to home improvements. </span></label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="g-recaptcha" data-sitekey="6LedfR0UAAAAAIQKZbZDZMK9kkZyyXMDwn665h9l"></div>
+                                <div class="col-sm-12 col-xs-12 input-label-wrapper">
+                                    <div class="g-recaptcha"></div>
+                                </div>
                             </div>
+                            <fieldset class="clearfix form-website">
+                                <legend></legend>
+                                <label id="c-enq-website" class="input fullwidth"><span>Prove you are human by leaving this field blank</span> <input type="text" name="website" autocomplete="off" /></label>
+                            </fieldset>
+                            <input type="hidden" name="formpage" id="formpage-s1"/>
                         </div>
-                        <input type="hidden" name="country" value="New Zealand" id="country-s1"/>
-                        {/case}
-                        {case value="version-au"}
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12 desktop-right">
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="privacy" aria-label="Privacy" id="privacy-s1" data-prefix="s1" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note">I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy</a>.</span></label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="subscribe" aria-label="Subscribe" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note"> I consent to receiving advice and information relating to home improvements.</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="g-recaptcha" data-sitekey="6Ld6qCUUAAAAAA6WF1SX1weFWeD1GTvG-5Jdn4Ny"></div>
-                            </div>
-                        </div>
-                        <input type="hidden" name="country" value="Australia" id="country-s1"/>
-                        {/case}
-                        {case value="version-uk"}
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12 desktop-right">
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="privacy" aria-label="Privacy" id="privacy-s1" data-prefix="s1" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note">I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy</a>.</span></label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="subscribe" aria-label="Subscribe" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note"> I consent to receiving advice and information relating to home improvements.</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="g-recaptcha" data-sitekey="6LfhpyUUAAAAADTVW1V7JYPqJf1tpzQ6BNV2_4Jj"></div>
-                            </div>
-                        </div>
-                        <input type="hidden" name="country" value="United Kingdom" id="country-s1"/>
-                        {/case}
-                        {case value="version-us"}
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12 desktop-right">
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="privacy" aria-label="Privacy" id="privacy-s1" data-prefix="s1" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note">I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy</a>.</span></label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="subscribe" aria-label="Subscribe" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note"> I consent to receiving advice and information relating to home improvements.</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="g-recaptcha" data-sitekey="6LcuqCUUAAAAACIB-H_UYZI78mT8AH-PVprW77Hp"></div>
-                            </div>
-                        </div>
-                        <input type="hidden" name="country" value="United States" id="country-s1"/>
-                        {/case}
-                        {case default="Yes"}
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12 desktop-right">
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="privacy" aria-label="Privacy" id="privacy-s1" data-prefix="s1" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note">I have read, understood and accepted the <a href="/privacy-statement/" target="_blank">Privacy Policy</a>.</span></label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 input-label-wrapper">
-                                        <label><input type="checkbox" class="uniform-styles input-label-wrapper" name="subscribe" aria-label="Subscribe" {if "{site_version}" != "version-uk"} checked{/if}/> <span class="note"> I consent to receiving advice and information relating to home improvements.</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="g-recaptcha" data-sitekey="6LfcpSUUAAAAAAhXFNNZ8S6D7_OGyDq7MuEhNtZ4"></div>
-                            </div>
-                        </div>
-                        <input type="hidden" name="country" value="New Zealand" id="country-s1"/>
-                        {/case}
-                        {/exp:switchee}
+
+
 
                         <!--submit buttons-->
-                        <div class="row" id="submit">
+                        <div class="row">
                             <div class="col-md-12">
-                                <a class="btn-blue" onclick="submitEnquirePart1('Home Renovation Enquiry');">REQUEST CALL</a>
+                                <button type="button" class="btn btn-primary btn-blue" id="submit" onclick="submitEnquirePart1('Landscape Enquiry');">Submit Enquiry</button>
                             </div>
                         </div>
                         <!--submit buttons-->
@@ -366,8 +340,9 @@
                 <div class="adwordstracking"></div>
             </div>
         </div>
-    </div>
+        <img data-src="/design/Matt-besides-form.jpg" alt="Let's discuss your project" class="lazy-load fright notmobile" />
 
+    </div>
     <div class="inner">
         {snippet-partners}
     </div><!-- end .inner -->

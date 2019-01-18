@@ -265,11 +265,9 @@ echo '<a href="{site_url}'.$setCat.'/landscaping-ideas/" onclick="history.back()
                     {exp:structure:siblings}
                     <p class="prev">
                         {prev}
-                        <a href="{url}">previous article</a>
+                        <a href="{url}">previous article</a> |
                         {/prev}
-                        {/exp:structure:siblings}
-                        {if "{exp:structure:siblings}{prev}{title}{/prev}{/exp:structure:siblings}" != "" && "{exp:structure:siblings}{next}{title}{/next}{/exp:structure:siblings}" != ""}|{/if}
-                        {exp:structure:siblings}
+               
                         {next}
                         <a href="{url}">next article</a>
                         {/next}
